@@ -1,28 +1,33 @@
 CC=g++
-CFLAGS= -g
+CFLAGS= -g -Iinclude
 BUILDDIR=./build
 SRCDIR=./src
 SRCFILES_C=$(wildcard ./src/*.c) 
 SRCFILES_CPP=$(wildcard ./src/*.cpp)
-OBJS +=main.o
-OBJS +=$(subst .cpp,.o, $(notdir $(SRCFILES_CPP)))
-OBJS +=$(subst .c,.o, $(notdir $(SRCFILES_C)))
+OBJS_ORIGIN +=$(subst .cpp,.o, $(SRCFILES_CPP))
+OBJS_ORIGIN +=$(subst .c,.o, $(SRCFILES_C))
+OBJS +=$(BUILDDIR)/main.o  $(subst $(SRCDIR), $(BUILDDIR), $(OBJS_ORIGIN))
 
-main :$(OBJS)
-	echo $(OBJS)
-	cd $(BUILDDIR) && $(CC) $(CFLAGS) $^ -o ../$@  -lGL -lglfw -ldl 
+all: preper main
+	
+preper: 
+	$(shell if [ ! -d build ]; then mkdir build ; fi;)
 
-main.o: main.cpp
+main : $(OBJS)
+	@echo $(OBJS)
+	$(CC) $(CFLAGS) $^ -o $@  -lGL -lglfw -ldl 
+
+$(BUILDDIR)/main.o: main.cpp
 	$(CC) $(CFLAGS) -c main.cpp -o $(BUILDDIR)/main.o
 
-%.o: $(SRCDIR)/%.c 
-	$(CC) $(CFLAGS) -o $(BUILDDIR)/$@ -c $<
+$(BUILDDIR)/%.o: $(SRCDIR)/%.c 
+	$(CC) $(CFLAGS) -o $@ -c $<
 
-%.o: $(SRCDIR)/%.cpp
-	$(CC) $(CFLAGS) -o $(BUILDDIR)/$@ -c $< 
+$(BUILDDIR)/%.o: $(SRCDIR)/%.cpp
+	$(CC) $(CFLAGS) -o $@ -c $< 
 
-printInfo:
-	echo $(OBJS)
+info:
+	@echo $(OBJS)
 
 clean:
 	rm main $(BUILDDIR)/*
