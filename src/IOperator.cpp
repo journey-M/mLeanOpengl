@@ -5,6 +5,8 @@
 #include "../include/TestFileShader.h"
 #include "../include/Texture.h"
 #include "../include/Texture2.h"
+#include "../include/Transformations.h"
+
 
 Single::Single(){
 }
@@ -15,8 +17,8 @@ IOperator* Single::getOperator(){
 		//  currentOperator = new LeanShader();
 		//  currentOperator = new TestFileShader();
 		//  currentOperator = new Texture();
-		 currentOperator = new Texture2();
-
+		// currentOperator = new Texture2();
+		currentOperator = new Transformation();
 
 		return currentOperator; 
 }
