@@ -1,19 +1,22 @@
-#include "../include/Texture.h"
+#include "../include/Texture2.h"
 
-
-
-void Texture::init(){
+void Texture2::init(){
+    
+    printf("this is Texture2 init ! \n");
+    glActiveTexture(GL_TEXTURE0);
+    
     this->initVertex();
     this->initShader();
     this->initTexture();
+    this->afterInit();
 }
 
-void Texture::initShader(){
-    shader = new Shader("res/texture.vs", "res/texture.fs");
+void Texture2::initShader(){
+    shader = new Shader("res/texture2.vs", "res/texture2.fs");
 }
 
-void Texture::initVertex(){
-    float vertices[] = {
+void Texture2::initVertex(){
+ float vertices[] = {
     //     ---- 位置 ----       ---- 颜色 ----     - 纹理坐标 -
         0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f,   // 右上
         0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,   1.0f, 0.0f,   // 右下
@@ -53,15 +56,15 @@ void Texture::initVertex(){
 	glBindVertexArray(0);	
 }
 
-void Texture::initTexture(){
-    glGenTextures(1, &texture);
-    glBindTexture(GL_TEXTURE_2D, texture);
+void Texture2::initTexture(){
+    glGenTextures(1, &texture1);
+    glBindTexture(GL_TEXTURE_2D, texture1);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);   
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-
     int width, height, nrChannels;
+    stbi_set_flip_vertically_on_load(true); // tell stb_image.h to flip loaded texture's on the y-axis.
     unsigned char *data = stbi_load("res/container.jpg", &width, &height, &nrChannels, 0);
     if (data)
     {
@@ -73,17 +76,53 @@ void Texture::initTexture(){
         std::cout << "Failed to load texture" << std::endl;
     }
     stbi_image_free(data);
+
+    //create texture2
+    glGenTextures(1, &texture2);
+    glBindTexture(GL_TEXTURE_2D, texture2);
+
+  // set the texture wrapping parameters
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);	// set texture wrapping to GL_REPEAT (default wrapping method)
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    // set texture filtering parameters
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+    data = stbi_load("res/awesomeface.png", &width, &height, &nrChannels, 0);
+    if (data)
+    {
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
+        glGenerateMipmap(GL_TEXTURE_2D);
+    }
+    else
+    {
+        std::cout << "Failed to load texture" << std::endl;
+    }
+    stbi_image_free(data);
+
 }
 
-void Texture::render(){
+void Texture2::afterInit(){
+    shader->use(); // don't forget to activate/use the shader before setting uniforms!
+    // either set it manually like so:
+    glUniform1i(glGetUniformLocation(shader->ID, "texture1"), 0);
+    // or set it via the texture class
+    shader->setInt("texture2", 1);
+    
+    printf("afterInit  --- : %d  \n", glGetError());
+}
 
-    // printf("this is in Texture... \n");
-    glBindTexture(GL_TEXTURE_2D ,texture);
+
+void Texture2::render(){
+
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D ,texture1); 
+    glActiveTexture(GL_TEXTURE1);
+    glBindTexture(GL_TEXTURE_2D ,texture2);
 
     shader->use();
     glBindVertexArray(VAO); 
 	// seeing as we only have a single VAO there's no need to bind it every time, but we'll do so to keep things a bit more organized
 	// glDrawArrays(GL_TRIANGLES, 0, 6);
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-
 }
