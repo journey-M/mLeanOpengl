@@ -7,6 +7,8 @@
 #include "../include/Texture2.h"
 #include "../include/Transformations.h"
 #include "../include/Coordinate.h"
+#include "../include/CoordinateCube.h"
+#include "../include/CoordinateCubes_More.h"
 
 
 Single::Single(){
@@ -20,7 +22,9 @@ IOperator* Single::getOperator(){
 		//  currentOperator = new Texture();
 		// currentOperator = new Texture2();
 		// currentOperator = new Transformation();
-		 currentOperator = new Coordinate();
+		//  currentOperator = new Coordinate();
+		//   currentOperator = new CoordinateCube();
+		   currentOperator = new CoordinateCubeMore();
 
 		return currentOperator; 
 }
