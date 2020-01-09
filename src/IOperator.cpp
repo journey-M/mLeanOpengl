@@ -6,6 +6,7 @@
 #include "../include/Texture.h"
 #include "../include/Texture2.h"
 #include "../include/Transformations.h"
+#include "../include/Coordinate.h"
 
 
 Single::Single(){
@@ -18,7 +19,8 @@ IOperator* Single::getOperator(){
 		//  currentOperator = new TestFileShader();
 		//  currentOperator = new Texture();
 		// currentOperator = new Texture2();
-		currentOperator = new Transformation();
+		// currentOperator = new Transformation();
+		 currentOperator = new Coordinate();
 
 		return currentOperator; 
 }
