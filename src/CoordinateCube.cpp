@@ -11,6 +11,9 @@ void CoordinateCube::init(){
 void CoordinateCube::initShader(){
 
 }
+void CoordinateCube::initVertex(){
+
+}
 
 void CoordinateCube::initTexture(){
 

@@ -5,10 +5,8 @@ void Coordinate::init(){
 	this->initVertex();
 	this->initTexture();
 	
-
 	shader->use();
-	 glUniform1i(glGetUniformLocation(shader->ID, "texture1"), 0);
-	// shader->setInt("texture1",0);
+	shader->setInt("texture1",0);
 	shader->setInt("texture2",1);
 
     printf("afterInit  --- : %d  \n", glGetError());
@@ -46,6 +44,7 @@ void Coordinate::initVertex(){
 	glEnableVertexAttribArray(0);
 	//texture coord attribute
 	glVertexAttribPointer(1,2,GL_FLOAT, GL_FALSE, 5*sizeof(float), (void*)(3*sizeof(float)));
+    glEnableVertexAttribArray(1);
 
 	// note that this is allowed, the call to glVertexAttribPointer registered VBO as the vertex attribute's bound vertex buffer object so afterwards we can safely unbind
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
@@ -120,7 +119,7 @@ void Coordinate::render(){
 	glm::mat4 projection = glm::mat4(1.0f);
 	model = glm::rotate(model, glm::radians(-55.0f), glm::vec3(1.0f, 0.0f, 0.0f));
 	view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
-	projection = glm::perspective(glm::radians(45.0f), 800.0f/600 ,0.1f, 100.00f);
+	projection = glm::perspective(glm::radians(45.0f), 800.0f/600.0f ,0.1f, 100.0f);
 
 	//retrive the matrix uniform locations
 	unsigned int modeLoc = glGetUniformLocation(shader->ID, "model");
@@ -134,5 +133,4 @@ void Coordinate::render(){
 	glBindVertexArray(VAO); 
 	glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
-    printf("render  --- : %d  \n", glGetError());
 }
