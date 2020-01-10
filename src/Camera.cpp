@@ -1,7 +1,7 @@
-#include "../include/CoordinateCubes_More.h"
+#include "../include/Camera.h"
 
 
-void CoordinateCubeMore::init(){
+void Camera::init(){
     this->initShader();
     this->initVertex();
     this->initTexture();
@@ -13,11 +13,34 @@ void CoordinateCubeMore::init(){
 	shader->setInt("texture2",1);
 }
 
+void Camera::proceessKeyEvent(int key){
+    printf("this is in Camera proceessInput \n");
+    float cameraSpeed = 2.5 * deltaTime;
+    switch (key)
+    {
+    case GLFW_KEY_W: 
+        cameraPos += cameraSpeed * cameraFront;
+        break;
+    case GLFW_KEY_A: 
+        cameraPos -= glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+        break;
+    case GLFW_KEY_S: 
+        cameraPos -= cameraSpeed * cameraFront;
+        break;
+    case GLFW_KEY_D: 
+        cameraPos += glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+        break;
+    
+    default:
+        break;
+    }
 
-void CoordinateCubeMore::initShader(){
-    shader = new Shader("res/coordinate_cube.vs","res/coordinate_cube.fs"); 
 }
-void CoordinateCubeMore::initVertex(){
+
+void Camera::initShader(){
+    shader = new Shader("res/camera.vs","res/camera.fs"); 
+}
+void Camera::initVertex(){
     float vertices[] = {
      -0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
      0.5f, -0.5f, -0.5f,  1.0f, 0.0f,
@@ -81,7 +104,7 @@ void CoordinateCubeMore::initVertex(){
 	glBindVertexArray(0);	
 }
 
-void CoordinateCubeMore::initTexture(){
+void Camera::initTexture(){
 
     glGenTextures(1, &texture1);
     glBindTexture(GL_TEXTURE_2D, texture1);
@@ -128,9 +151,9 @@ void CoordinateCubeMore::initTexture(){
 }
 
 
-void CoordinateCubeMore::render(){
+void Camera::render(){
 
-    glm::vec3 cubePositions[] = {
+    static glm::vec3 cubePositions[] = {
         glm::vec3( 0.0f,  0.0f,  0.0f), 
         glm::vec3( 2.0f,  5.0f, -15.0f), 
         glm::vec3(-1.5f, -2.2f, -2.5f),  
@@ -141,7 +164,7 @@ void CoordinateCubeMore::render(){
         glm::vec3( 1.5f,  2.0f, -2.5f), 
         glm::vec3( 1.5f,  0.2f, -1.5f), 
         glm::vec3(-1.3f,  1.0f, -1.5f)  
-        };
+    };
 
     //clear the depth buffer noew !
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -154,20 +177,26 @@ void CoordinateCubeMore::render(){
 
 	shader->use();
 	
-	glm::mat4 model = glm::mat4(1.0f);
-	glm::mat4 view = glm::mat4(1.0f);
-	glm::mat4 projection = glm::mat4(1.0f);
-	model = glm::rotate(model, (float) glfwGetTime(),glm::vec3(0.5, 1.0f, 0.0f));
-	view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
-	projection = glm::perspective(glm::radians(45.0f), 800.0f/600.0f ,0.1f, 100.0f);
+	// glm::mat4 model = glm::mat4(1.0f);
+	// glm::mat4 view = glm::mat4(1.0f);
+	// glm::mat4 projection = glm::mat4(1.0f);
+	// model = glm::rotate(model, (float) glfwGetTime(),glm::vec3(0.5, 1.0f, 0.0f));
+	// view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
+	// projection = glm::perspective(glm::radians(45.0f), 800.0f/600.0f ,0.1f, 100.0f);
 
-	//retrive the matrix uniform locations
-	unsigned int modeLoc = glGetUniformLocation(shader->ID, "model");
-	unsigned int viewLoc = glGetUniformLocation(shader->ID, "view");
-	//pass them ot the shaders 
-	glUniformMatrix4fv(modeLoc, 1, GL_FALSE, glm::value_ptr(model));
-	glUniformMatrix4fv(viewLoc, 1, GL_FALSE, &view[0][0]);
-	shader->setMat4("projection", projection);
+	// //retrive the matrix uniform locations
+	// unsigned int modeLoc = glGetUniformLocation(shader->ID, "model");
+	// unsigned int viewLoc = glGetUniformLocation(shader->ID, "view");
+	// //pass them ot the shaders 
+	// glUniformMatrix4fv(modeLoc, 1, GL_FALSE, glm::value_ptr(model));
+	// glUniformMatrix4fv(viewLoc, 1, GL_FALSE, &view[0][0]);
+	// shader->setMat4("projection", projection);
+
+
+    // camera/view transformation
+   glm::mat4 view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
+   shader->setMat4("view", view);
+
 
 	//render container	
 	glBindVertexArray(VAO); 

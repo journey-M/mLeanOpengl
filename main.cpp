@@ -2,12 +2,28 @@
 #include "include/glad/glad.h"
 #include <GLFW/glfw3.h>
 #include "include/IOperator.h"
+#include "include/Camera.h"
 
 void processInput(GLFWwindow* window){
 
 	if(glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS){
 		glfwSetWindowShouldClose(window, true);				
 	}
+
+}
+
+void key_callback(GLFWwindow * window, int key, int scancode , int action , int mods){
+
+	if (action != GLFW_PRESS)
+	{
+		return ;
+	}
+	
+	if(Single::getInstance()->getOperator()){
+		IOperator * opt = Single::getInstance()->getOperator();
+		opt -> proceessKeyEvent(key);
+	}
+
 }
 
 
@@ -28,6 +44,7 @@ int main(int argc, char** argv){
 		return -1;
 	}
 	glfwMakeContextCurrent(window);
+	glfwSetKeyCallback(window, key_callback);
 
 	if(!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)){
 			printf("Failed to initialize GLAD ! \n");

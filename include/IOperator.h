@@ -9,6 +9,11 @@ class IOperator{
 		};
 		virtual void render(){
 		};
+		virtual void proceessKeyEvent(int key ){
+		};
+		virtual void proceessMouseEvent(){
+
+		};
 };
 
 class Single{
