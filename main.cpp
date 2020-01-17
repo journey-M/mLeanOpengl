@@ -9,7 +9,19 @@ void processInput(GLFWwindow* window){
 	if(glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS){
 		glfwSetWindowShouldClose(window, true);				
 	}
-
+	IOperator * opt = Single::getInstance()->getOperator();
+	if(glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS){
+		opt -> proceessKeyEvent(GLFW_KEY_W);
+	}
+	if(glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS){
+		opt -> proceessKeyEvent(GLFW_KEY_A);
+	}
+	if(glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS){
+		opt -> proceessKeyEvent(GLFW_KEY_D);
+	}
+	if(glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS){
+		opt -> proceessKeyEvent(GLFW_KEY_S);
+	}
 }
 
 void key_callback(GLFWwindow * window, int key, int scancode , int action , int mods){
@@ -44,7 +56,7 @@ int main(int argc, char** argv){
 		return -1;
 	}
 	glfwMakeContextCurrent(window);
-	glfwSetKeyCallback(window, key_callback);
+	// glfwSetKeyCallback(window, key_callback);
 
 	if(!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)){
 			printf("Failed to initialize GLAD ! \n");

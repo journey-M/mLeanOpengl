@@ -10,6 +10,7 @@
 #include "../include/CoordinateCube.h"
 #include "../include/CoordinateCubes_More.h"
 #include "../include/Camera.h"
+#include "../include/Camera_move.h"
 
 
 Single::Single(){
@@ -26,7 +27,8 @@ IOperator* Single::getOperator(){
 		//  currentOperator = new Coordinate();
 		//   currentOperator = new CoordinateCube();
 		//    currentOperator = new CoordinateCubeMore();
-		currentOperator = new Camera();
+		// currentOperator = new Camera();
+		currentOperator = new CameraMove();
 
 		return currentOperator; 
 }
