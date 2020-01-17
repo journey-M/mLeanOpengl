@@ -11,6 +11,8 @@ void Camera::init(){
     shader->use();
     shader->setInt("texture1",0);
 	shader->setInt("texture2",1);
+    // glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float)800 / (float)600, 0.1f, 100.0f);
+    // shader->setMat4("projection", projection); 
 }
 
 void Camera::proceessKeyEvent(int key){
@@ -177,26 +179,17 @@ void Camera::render(){
 
 	shader->use();
 	
-	// glm::mat4 model = glm::mat4(1.0f);
-	// glm::mat4 view = glm::mat4(1.0f);
-	// glm::mat4 projection = glm::mat4(1.0f);
-	// model = glm::rotate(model, (float) glfwGetTime(),glm::vec3(0.5, 1.0f, 0.0f));
-	// view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
-	// projection = glm::perspective(glm::radians(45.0f), 800.0f/600.0f ,0.1f, 100.0f);
 
-	// //retrive the matrix uniform locations
-	// unsigned int modeLoc = glGetUniformLocation(shader->ID, "model");
-	// unsigned int viewLoc = glGetUniformLocation(shader->ID, "view");
-	// //pass them ot the shaders 
-	// glUniformMatrix4fv(modeLoc, 1, GL_FALSE, glm::value_ptr(model));
-	// glUniformMatrix4fv(viewLoc, 1, GL_FALSE, &view[0][0]);
-	// shader->setMat4("projection", projection);
-
+    glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float)800 / (float)600, 0.1f, 100.0f);
+    shader->setMat4("projection", projection); 
 
     // camera/view transformation
-   glm::mat4 view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
-   shader->setMat4("view", view);
-
+    glm::mat4 view = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
+    float radius = 10.0f;
+    float camX   = sin(glfwGetTime()) * radius;
+    float camZ   = cos(glfwGetTime()) * radius;
+    view = glm::lookAt(glm::vec3(camX, 0.0f, camZ), glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+    shader->setMat4("view", view);
 
 	//render container	
 	glBindVertexArray(VAO); 
