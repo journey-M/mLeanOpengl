@@ -1,13 +1,11 @@
 #include "../include/Camera_move.h"
 #include <unistd.h>
 
-float deltaTime = 0.0f;	// time between current frame and last frame
-float lastFrame = 0.0f;
-
-        // camera
-glm::vec3 cameraPos   = glm::vec3(0.0f, 0.0f,  3.0f);
-glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
-glm::vec3 cameraUp    = glm::vec3(0.0f, 1.0f,  0.0f);
+CameraMove::CameraMove() : deltaTime(0.0f) ,lastFrame(0.0f){
+    cameraPos   = glm::vec3(0.0f, 0.0f,  3.0f);
+	cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
+	cameraUp    = glm::vec3(0.0f, 1.0f,  0.0f);
+}
 
 void CameraMove::init(){
     this->initShader();
@@ -33,9 +31,7 @@ void CameraMove::proceessKeyEvent(int key){
     switch (key)
     {
     case GLFW_KEY_W: 
-        printf("before add : %f %f  %f, \n", cameraPos.x, cameraPos.y, cameraPos.z);
         cameraPos += cameraSpeed * cameraFront;
-        printf("after add  : %f %f  %f, \n", cameraPos.x, cameraPos.y, cameraPos.z);
         break;
     case GLFW_KEY_A: 
         cameraPos -= glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
@@ -169,12 +165,12 @@ void CameraMove::initTexture(){
 
 void CameraMove::render(){
 
-
+    printf("before deltaTime: %f %f \n", lastFrame,  this->deltaTime);
     // printf("in rendder  now tid is %d  \n", gettid());
     float currentFrame = glfwGetTime();
     deltaTime = currentFrame - lastFrame;
     lastFrame = currentFrame;
-    // printf("currentFram : %f  %f \n", currentFrame, this->deltaTime);
+    printf("currentFram : %f  %f \n", currentFrame, this->deltaTime);
 
     
     static glm::vec3 cubePositions[] = {
@@ -203,7 +199,6 @@ void CameraMove::render(){
 	
 
  // camera/view transformation
-    printf("this is in printf : %f %f  %f, \n", cameraPos.x, cameraPos.y, cameraPos.z);
     glm::mat4 view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
     shader->setMat4("view", view);
 	//render container	

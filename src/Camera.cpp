@@ -16,26 +16,6 @@ void Camera::init(){
 }
 
 void Camera::proceessKeyEvent(int key){
-    printf("this is in Camera proceessInput \n");
-    float cameraSpeed = 2.5 * deltaTime;
-    switch (key)
-    {
-    case GLFW_KEY_W: 
-        cameraPos += cameraSpeed * cameraFront;
-        break;
-    case GLFW_KEY_A: 
-        cameraPos -= glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
-        break;
-    case GLFW_KEY_S: 
-        cameraPos -= cameraSpeed * cameraFront;
-        break;
-    case GLFW_KEY_D: 
-        cameraPos += glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
-        break;
-    
-    default:
-        break;
-    }
 
 }
 

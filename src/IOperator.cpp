@@ -28,7 +28,9 @@ IOperator* Single::getOperator(){
 		//   currentOperator = new CoordinateCube();
 		//    currentOperator = new CoordinateCubeMore();
 		// currentOperator = new Camera();
-		currentOperator = new CameraMove();
-
+		if (!currentOperator)
+		{
+		 	currentOperator= new CameraMove();
+		}
 		return currentOperator; 
 }

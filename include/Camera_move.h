@@ -17,16 +17,20 @@ class CameraMove:public IOperator{
         unsigned int VAO;
         unsigned int VBO;
 		unsigned int texture1, texture2;
-		// camera
-		glm::vec3 cameraPos   = glm::vec3(0.0f, 0.0f,  3.0f);
-		glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
-		glm::vec3 cameraUp    = glm::vec3(0.0f, 1.0f,  0.0f);
-
 
 		char * strTest = "this is a test in char * ";
 
+		float deltaTime;	// time between current frame and last frame
+		float lastFrame;
+
+		// camera
+		glm::vec3 cameraPos;
+		glm::vec3 cameraFront;
+		glm::vec3 cameraUp;
+
 	public:
 
+		CameraMove();
 	 	void render();
 		void initShader();
 		void initVertex();
@@ -34,7 +38,7 @@ class CameraMove:public IOperator{
 
 		void proceessKeyEvent(int key);
 
-				// timing
+
 
 };
 

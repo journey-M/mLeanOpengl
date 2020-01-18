@@ -4,12 +4,14 @@
 #include "include/IOperator.h"
 #include "include/Camera.h"
 
+Single Single::instance;
+
 void processInput(GLFWwindow* window){
 
 	if(glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS){
 		glfwSetWindowShouldClose(window, true);				
 	}
-	IOperator * opt = Single::getInstance()->getOperator();
+	IOperator * opt = Single::instance.getOperator();
 	if(glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS){
 		opt -> proceessKeyEvent(GLFW_KEY_W);
 	}
@@ -31,15 +33,14 @@ void key_callback(GLFWwindow * window, int key, int scancode , int action , int 
 		return ;
 	}
 	
-	if(Single::getInstance()->getOperator()){
-		IOperator * opt = Single::getInstance()->getOperator();
+	if(Single::instance.getOperator()){
+		IOperator * opt = Single::instance.getOperator();
 		opt -> proceessKeyEvent(key);
 	}
 
 }
 
 
-Single* Single::instance=nullptr;
 
 int main(int argc, char** argv){
 	printf("this is in main function ! \n");
@@ -67,7 +68,7 @@ int main(int argc, char** argv){
 
 
 	IOperator* opclz;
-	opclz = Single::getInstance()->getOperator(); 
+	opclz = Single::instance.getOperator(); 
 	opclz ->init();
 
 

@@ -18,19 +18,10 @@ class IOperator{
 
 class Single{
 	private :
-		static Single * instance;	
 		IOperator* currentOperator;
 		Single();
-		
 	public:
+		static Single instance;	
 		IOperator* getOperator();
-		static Single* getInstance(){
-			if(instance == nullptr){
-				instance = new Single();
-			}
-			return instance;
-		}
 };
-
-
 #endif
