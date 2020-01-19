@@ -42,9 +42,9 @@ class CameraMouse:public IOperator{
 		void initVertex();
         void initTexture();
 
-		void proceessKeyEvent(int key);
-		void mouse_callback(double xoffset, double yoffset);
-		void scroll_callback(double xoffset, double yoffset);
+		void proceessKeyEvent(int key) override;
+		void mouse_callback(double xoffset, double yoffset) override;
+		void scroll_callback(double xoffset, double yoffset) override;
 
 
 };
