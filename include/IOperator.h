@@ -11,7 +11,11 @@ class IOperator{
 		};
 		virtual void proceessKeyEvent(int key ){
 		};
-		virtual void proceessMouseEvent(){
+		virtual void mouse_callback(double xoffset, double yoffset){
+
+		};
+
+		virtual void scroll_callback(double xoffset, double yoffset){
 
 		};
 };

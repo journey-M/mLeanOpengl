@@ -11,26 +11,29 @@
 #include "../include/CoordinateCubes_More.h"
 #include "../include/Camera.h"
 #include "../include/Camera_move.h"
+#include "../include/Camera_mouse.h"
 
 
 Single::Single(){
 }
 
 IOperator* Single::getOperator(){
-		//currentOperator = new Trigle();
-		// currentOperator = new Square();
-		//  currentOperator = new LeanShader();
-		//  currentOperator = new TestFileShader();
-		//  currentOperator = new Texture();
-		// currentOperator = new Texture2();
-		// currentOperator = new Transformation();
-		//  currentOperator = new Coordinate();
-		//   currentOperator = new CoordinateCube();
-		//    currentOperator = new CoordinateCubeMore();
-		// currentOperator = new Camera();
+
 		if (!currentOperator)
 		{
-		 	currentOperator= new CameraMove();
+			// currentOperator = new Trigle();
+			// currentOperator = new Square();
+			// currentOperator = new LeanShader();
+			// currentOperator = new TestFileShader();
+			// currentOperator = new Texture();
+			// currentOperator = new Texture2();
+			// currentOperator = new Transformation();
+			// currentOperator = new Coordinate();
+			// currentOperator = new CoordinateCube();
+			// currentOperator = new CoordinateCubeMore();
+			// currentOperator = new Camera();
+			// currentOperator= new CameraMove();
+			currentOperator= new CameraMouse();
 		}
 		return currentOperator; 
 }

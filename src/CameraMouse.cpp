@@ -1,13 +1,55 @@
-#include "../include/Camera_move.h"
+#include "../include/Camera_mouse.h"
 #include <unistd.h>
 
-CameraMove::CameraMove() : deltaTime(0.0f) ,lastFrame(0.0f){
+CameraMouse::CameraMouse() : deltaTime(0.0f) ,lastFrame(0.0f){
     cameraPos   = glm::vec3(0.0f, 0.0f,  3.0f);
 	cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
 	cameraUp    = glm::vec3(0.0f, 1.0f,  0.0f);
 }
 
-void CameraMove::init(){
+void CameraMouse::mouse_callback(double xpos, double ypos){
+        if (firstMouse)
+    {
+        lastX = xpos;
+        lastY = ypos;
+        firstMouse = false;
+    }
+
+    float xoffset = xpos - lastX;
+    float yoffset = lastY - ypos; // reversed since y-coordinates go from bottom to top
+    lastX = xpos;
+    lastY = ypos;
+
+    float sensitivity = 0.1f; // change this value to your liking
+    xoffset *= sensitivity;
+    yoffset *= sensitivity;
+
+    yaw += xoffset;
+    pitch += yoffset;
+
+    // make sure that when pitch is out of bounds, screen doesn't get flipped
+    if (pitch > 89.0f)
+        pitch = 89.0f;
+    if (pitch < -89.0f)
+        pitch = -89.0f;
+
+    glm::vec3 front;
+    front.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
+    front.y = sin(glm::radians(pitch));
+    front.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
+    cameraFront = glm::normalize(front);
+
+}
+void CameraMouse::scroll_callback(double xoffset, double yoffset){
+    if (fov >= 1.0f && fov <= 45.0f)
+        fov -= yoffset;
+    if (fov <= 1.0f)
+        fov = 1.0f;
+    if (fov >= 45.0f)
+        fov = 45.0f; 
+}
+
+void CameraMouse::init(){
     this->initShader();
     this->initVertex();
     this->initTexture();
@@ -17,11 +59,9 @@ void CameraMove::init(){
     shader->use();
     shader->setInt("texture1",0);
 	shader->setInt("texture2",1);
-    glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float)800 / (float)600, 0.1f, 100.0f);
-    shader->setMat4("projection", projection); 
 }
 
-void CameraMove::proceessKeyEvent(int key){
+void CameraMouse::proceessKeyEvent(int key){
     float cameraSpeed = 2.5f * deltaTime;
     // printf("in proccessKeyEvent  now tid is %d  \n", gettid());
     printf("this is in Camera proceessInput %d , deltaTime %f  cameraSpeed : %f \n",
@@ -45,13 +85,12 @@ void CameraMove::proceessKeyEvent(int key){
     default:
         break;
     }
-
 }
 
-void CameraMove::initShader(){
+void CameraMouse::initShader(){
     shader = new Shader("res/camera.vs","res/camera.fs"); 
 }
-void CameraMove::initVertex(){
+void CameraMouse::initVertex(){
     float vertices[] = {
      -0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
      0.5f, -0.5f, -0.5f,  1.0f, 0.0f,
@@ -115,7 +154,7 @@ void CameraMove::initVertex(){
 	glBindVertexArray(0);	
 }
 
-void CameraMove::initTexture(){
+void CameraMouse::initTexture(){
 
     glGenTextures(1, &texture1);
     glBindTexture(GL_TEXTURE_2D, texture1);
@@ -162,14 +201,14 @@ void CameraMove::initTexture(){
 }
 
 
-void CameraMove::render(){
+void CameraMouse::render(){
 
-    // printf("before deltaTime: %f %f \n", lastFrame,  this->deltaTime);
+    printf("before deltaTime: %f %f \n", lastFrame,  this->deltaTime);
     // printf("in rendder  now tid is %d  \n", gettid());
     float currentFrame = glfwGetTime();
     deltaTime = currentFrame - lastFrame;
     lastFrame = currentFrame;
-    // printf("currentFram : %f  %f \n", currentFrame, this->deltaTime);
+    printf("currentFram : %f  %f \n", currentFrame, this->deltaTime);
 
     
     static glm::vec3 cubePositions[] = {
@@ -196,6 +235,11 @@ void CameraMove::render(){
 
 	shader->use();
 	
+    //fov 参数在这里使用
+    // pass projection matrix to shader (note that in this case it could change every frame)
+    glm::mat4 projection = glm::perspective(glm::radians(fov), (float)800 / (float)600, 0.1f, 100.0f);
+    shader->setMat4("projection", projection); 
+
 
  // camera/view transformation
     glm::mat4 view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
