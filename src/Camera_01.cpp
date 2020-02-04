@@ -1,7 +1,7 @@
-#include "../include/Camera.h"
+#include "../include/Camera_01.h"
 
 
-void Camera::init(){
+void Camera01::init(){
     this->initShader();
     this->initVertex();
     this->initTexture();
@@ -15,14 +15,14 @@ void Camera::init(){
     // shader->setMat4("projection", projection); 
 }
 
-void Camera::proceessKeyEvent(int key){
+void Camera01::proceessKeyEvent(int key){
 
 }
 
-void Camera::initShader(){
+void Camera01::initShader(){
     shader = new Shader("res/camera.vs","res/camera.fs"); 
 }
-void Camera::initVertex(){
+void Camera01::initVertex(){
     float vertices[] = {
      -0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
      0.5f, -0.5f, -0.5f,  1.0f, 0.0f,
@@ -86,7 +86,7 @@ void Camera::initVertex(){
 	glBindVertexArray(0);	
 }
 
-void Camera::initTexture(){
+void Camera01::initTexture(){
 
     glGenTextures(1, &texture1);
     glBindTexture(GL_TEXTURE_2D, texture1);
@@ -133,7 +133,7 @@ void Camera::initTexture(){
 }
 
 
-void Camera::render(){
+void Camera01::render(){
 
     static glm::vec3 cubePositions[] = {
         glm::vec3( 0.0f,  0.0f,  0.0f), 

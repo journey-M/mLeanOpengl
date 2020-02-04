@@ -9,9 +9,10 @@
 #include "../include/Coordinate.h"
 #include "../include/CoordinateCube.h"
 #include "../include/CoordinateCubes_More.h"
-#include "../include/Camera.h"
+#include "../include/Camera_01.h"
 #include "../include/Camera_move.h"
 #include "../include/Camera_mouse.h"
+#include "../include/L_Color1.h"
 
 
 Single::Single(){
@@ -31,9 +32,9 @@ IOperator* Single::getOperator(){
 			// currentOperator = new Coordinate();
 			// currentOperator = new CoordinateCube();
 			// currentOperator = new CoordinateCubeMore();
-			// currentOperator = new Camera();
+			// currentOperator = new Camera01();
 			// currentOperator= new CameraMove();
-			currentOperator= new CameraMouse();
+			currentOperator= new LColor1();
 		}
 		return currentOperator; 
 }
