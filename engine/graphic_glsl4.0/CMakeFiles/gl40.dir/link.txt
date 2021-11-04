@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgl40.a CMakeFiles/gl40.dir/CameraMouse.cpp.o CMakeFiles/gl40.dir/CameraMove.cpp.o CMakeFiles/gl40.dir/Camera_01.cpp.o CMakeFiles/gl40.dir/GLObject.cpp.o CMakeFiles/gl40.dir/GraphicGL40.cpp.o CMakeFiles/gl40.dir/Shader.cpp.o CMakeFiles/gl40.dir/glad.c.o CMakeFiles/gl40.dir/std_image.cpp.o
+/usr/bin/ranlib libgl40.a
