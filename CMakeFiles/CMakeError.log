@@ -1,0 +1,17 @@
+Performing C++ SOURCE FILE Test _flag_supported failed with the following output:
+Change Dir: /home/gwj/workspaces/TowerDefends/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3e3bf/fast && /usr/bin/make  -f CMakeFiles/cmTC_3e3bf.dir/build.make CMakeFiles/cmTC_3e3bf.dir/build
+make[1]: Entering directory '/home/gwj/workspaces/TowerDefends/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3e3bf.dir/src.cxx.o
+/usr/bin/c++ -D_flag_supported  /W4 -o CMakeFiles/cmTC_3e3bf.dir/src.cxx.o -c /home/gwj/workspaces/TowerDefends/CMakeFiles/CMakeTmp/src.cxx
+c++: warning: /W4: linker input file unused because linking not done
+c++: error: /W4: linker input file not found: No such file or directory
+make[1]: *** [CMakeFiles/cmTC_3e3bf.dir/build.make:78: CMakeFiles/cmTC_3e3bf.dir/src.cxx.o] Error 1
+make[1]: *** Deleting file 'CMakeFiles/cmTC_3e3bf.dir/src.cxx.o'
+make[1]: Leaving directory '/home/gwj/workspaces/TowerDefends/CMakeFiles/CMakeTmp'
+make: *** [Makefile:127: cmTC_3e3bf/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }

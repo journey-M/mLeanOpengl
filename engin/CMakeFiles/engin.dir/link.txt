@@ -1,0 +1,2 @@
+/usr/bin/ar qc libengin.a CMakeFiles/engin.dir/ClockBase.cpp.o CMakeFiles/engin.dir/Engine.cpp.o CMakeFiles/engin.dir/Scene.cpp.o CMakeFiles/engin.dir/Sprite.cpp.o
+/usr/bin/ranlib libengin.a

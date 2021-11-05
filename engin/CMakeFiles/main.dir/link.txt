@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/main.dir/ClockBase.cpp.o CMakeFiles/main.dir/Engine.cpp.o CMakeFiles/main.dir/Scene.cpp.o CMakeFiles/main.dir/Sprite.cpp.o CMakeFiles/main.dir/run.cpp.o -o main  -lGL -lglfw -ldl -lpthread graphic_glsl4.0/libgl40.a -lGL -lglfw -ldl 

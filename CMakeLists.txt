@@ -1,5 +1,11 @@
+cmake_minimum_required(VERSION 3.2.0)
+
 project(TowerDefends)
 
-set(APP_SRC main.cpp)
+ADD_SUBDIRECTORY(engin)
+aux_source_directory(logic LOGIC_SRC)
 
-add_executable(main)
+link_libraries(GL glfw dl pthread)
+
+add_executable(TowerDefends ${LOGIC_SRC})
+target_link_libraries(TowerDefends engin )
