@@ -69,66 +69,24 @@ include engin/graphic_glsl4.0/CMakeFiles/gl40.dir/progress.make
 # Include the compile flags for this target's objects.
 include engin/graphic_glsl4.0/CMakeFiles/gl40.dir/flags.make
 
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/CameraMouse.cpp.o: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/flags.make
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/CameraMouse.cpp.o: engin/graphic_glsl4.0/CameraMouse.cpp
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/CameraMouse.cpp.o: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object engin/graphic_glsl4.0/CMakeFiles/gl40.dir/CameraMouse.cpp.o"
-	cd /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engin/graphic_glsl4.0/CMakeFiles/gl40.dir/CameraMouse.cpp.o -MF CMakeFiles/gl40.dir/CameraMouse.cpp.o.d -o CMakeFiles/gl40.dir/CameraMouse.cpp.o -c /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0/CameraMouse.cpp
+engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GLNode.cpp.o: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/flags.make
+engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GLNode.cpp.o: engin/graphic_glsl4.0/GLNode.cpp
+engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GLNode.cpp.o: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GLNode.cpp.o"
+	cd /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GLNode.cpp.o -MF CMakeFiles/gl40.dir/GLNode.cpp.o.d -o CMakeFiles/gl40.dir/GLNode.cpp.o -c /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0/GLNode.cpp
 
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/CameraMouse.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl40.dir/CameraMouse.cpp.i"
-	cd /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0/CameraMouse.cpp > CMakeFiles/gl40.dir/CameraMouse.cpp.i
+engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GLNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl40.dir/GLNode.cpp.i"
+	cd /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0/GLNode.cpp > CMakeFiles/gl40.dir/GLNode.cpp.i
 
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/CameraMouse.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl40.dir/CameraMouse.cpp.s"
-	cd /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0/CameraMouse.cpp -o CMakeFiles/gl40.dir/CameraMouse.cpp.s
-
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/CameraMove.cpp.o: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/flags.make
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/CameraMove.cpp.o: engin/graphic_glsl4.0/CameraMove.cpp
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/CameraMove.cpp.o: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object engin/graphic_glsl4.0/CMakeFiles/gl40.dir/CameraMove.cpp.o"
-	cd /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engin/graphic_glsl4.0/CMakeFiles/gl40.dir/CameraMove.cpp.o -MF CMakeFiles/gl40.dir/CameraMove.cpp.o.d -o CMakeFiles/gl40.dir/CameraMove.cpp.o -c /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0/CameraMove.cpp
-
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/CameraMove.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl40.dir/CameraMove.cpp.i"
-	cd /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0/CameraMove.cpp > CMakeFiles/gl40.dir/CameraMove.cpp.i
-
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/CameraMove.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl40.dir/CameraMove.cpp.s"
-	cd /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0/CameraMove.cpp -o CMakeFiles/gl40.dir/CameraMove.cpp.s
-
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/Camera_01.cpp.o: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/flags.make
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/Camera_01.cpp.o: engin/graphic_glsl4.0/Camera_01.cpp
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/Camera_01.cpp.o: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object engin/graphic_glsl4.0/CMakeFiles/gl40.dir/Camera_01.cpp.o"
-	cd /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engin/graphic_glsl4.0/CMakeFiles/gl40.dir/Camera_01.cpp.o -MF CMakeFiles/gl40.dir/Camera_01.cpp.o.d -o CMakeFiles/gl40.dir/Camera_01.cpp.o -c /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0/Camera_01.cpp
-
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/Camera_01.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl40.dir/Camera_01.cpp.i"
-	cd /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0/Camera_01.cpp > CMakeFiles/gl40.dir/Camera_01.cpp.i
-
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/Camera_01.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl40.dir/Camera_01.cpp.s"
-	cd /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0/Camera_01.cpp -o CMakeFiles/gl40.dir/Camera_01.cpp.s
-
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GLObject.cpp.o: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/flags.make
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GLObject.cpp.o: engin/graphic_glsl4.0/GLObject.cpp
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GLObject.cpp.o: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GLObject.cpp.o"
-	cd /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GLObject.cpp.o -MF CMakeFiles/gl40.dir/GLObject.cpp.o.d -o CMakeFiles/gl40.dir/GLObject.cpp.o -c /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0/GLObject.cpp
-
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GLObject.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl40.dir/GLObject.cpp.i"
-	cd /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0/GLObject.cpp > CMakeFiles/gl40.dir/GLObject.cpp.i
-
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GLObject.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl40.dir/GLObject.cpp.s"
-	cd /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0/GLObject.cpp -o CMakeFiles/gl40.dir/GLObject.cpp.s
+engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GLNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl40.dir/GLNode.cpp.s"
+	cd /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0/GLNode.cpp -o CMakeFiles/gl40.dir/GLNode.cpp.s
 
 engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GraphicGL40.cpp.o: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/flags.make
 engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GraphicGL40.cpp.o: engin/graphic_glsl4.0/GraphicGL40.cpp
 engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GraphicGL40.cpp.o: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GraphicGL40.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GraphicGL40.cpp.o"
 	cd /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GraphicGL40.cpp.o -MF CMakeFiles/gl40.dir/GraphicGL40.cpp.o.d -o CMakeFiles/gl40.dir/GraphicGL40.cpp.o -c /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0/GraphicGL40.cpp
 
 engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GraphicGL40.cpp.i: cmake_force
@@ -139,24 +97,10 @@ engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GraphicGL40.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl40.dir/GraphicGL40.cpp.s"
 	cd /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0/GraphicGL40.cpp -o CMakeFiles/gl40.dir/GraphicGL40.cpp.s
 
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/Shader.cpp.o: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/flags.make
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/Shader.cpp.o: engin/graphic_glsl4.0/Shader.cpp
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/Shader.cpp.o: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object engin/graphic_glsl4.0/CMakeFiles/gl40.dir/Shader.cpp.o"
-	cd /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engin/graphic_glsl4.0/CMakeFiles/gl40.dir/Shader.cpp.o -MF CMakeFiles/gl40.dir/Shader.cpp.o.d -o CMakeFiles/gl40.dir/Shader.cpp.o -c /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0/Shader.cpp
-
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/Shader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl40.dir/Shader.cpp.i"
-	cd /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0/Shader.cpp > CMakeFiles/gl40.dir/Shader.cpp.i
-
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/Shader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl40.dir/Shader.cpp.s"
-	cd /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0/Shader.cpp -o CMakeFiles/gl40.dir/Shader.cpp.s
-
 engin/graphic_glsl4.0/CMakeFiles/gl40.dir/glad.c.o: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/flags.make
 engin/graphic_glsl4.0/CMakeFiles/gl40.dir/glad.c.o: engin/graphic_glsl4.0/glad.c
 engin/graphic_glsl4.0/CMakeFiles/gl40.dir/glad.c.o: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object engin/graphic_glsl4.0/CMakeFiles/gl40.dir/glad.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object engin/graphic_glsl4.0/CMakeFiles/gl40.dir/glad.c.o"
 	cd /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT engin/graphic_glsl4.0/CMakeFiles/gl40.dir/glad.c.o -MF CMakeFiles/gl40.dir/glad.c.o.d -o CMakeFiles/gl40.dir/glad.c.o -c /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0/glad.c
 
 engin/graphic_glsl4.0/CMakeFiles/gl40.dir/glad.c.i: cmake_force
@@ -167,45 +111,21 @@ engin/graphic_glsl4.0/CMakeFiles/gl40.dir/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/gl40.dir/glad.c.s"
 	cd /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0 && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0/glad.c -o CMakeFiles/gl40.dir/glad.c.s
 
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/std_image.cpp.o: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/flags.make
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/std_image.cpp.o: engin/graphic_glsl4.0/std_image.cpp
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/std_image.cpp.o: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object engin/graphic_glsl4.0/CMakeFiles/gl40.dir/std_image.cpp.o"
-	cd /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engin/graphic_glsl4.0/CMakeFiles/gl40.dir/std_image.cpp.o -MF CMakeFiles/gl40.dir/std_image.cpp.o.d -o CMakeFiles/gl40.dir/std_image.cpp.o -c /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0/std_image.cpp
-
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/std_image.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gl40.dir/std_image.cpp.i"
-	cd /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0/std_image.cpp > CMakeFiles/gl40.dir/std_image.cpp.i
-
-engin/graphic_glsl4.0/CMakeFiles/gl40.dir/std_image.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gl40.dir/std_image.cpp.s"
-	cd /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0/std_image.cpp -o CMakeFiles/gl40.dir/std_image.cpp.s
-
 # Object files for target gl40
 gl40_OBJECTS = \
-"CMakeFiles/gl40.dir/CameraMouse.cpp.o" \
-"CMakeFiles/gl40.dir/CameraMove.cpp.o" \
-"CMakeFiles/gl40.dir/Camera_01.cpp.o" \
-"CMakeFiles/gl40.dir/GLObject.cpp.o" \
+"CMakeFiles/gl40.dir/GLNode.cpp.o" \
 "CMakeFiles/gl40.dir/GraphicGL40.cpp.o" \
-"CMakeFiles/gl40.dir/Shader.cpp.o" \
-"CMakeFiles/gl40.dir/glad.c.o" \
-"CMakeFiles/gl40.dir/std_image.cpp.o"
+"CMakeFiles/gl40.dir/glad.c.o"
 
 # External object files for target gl40
 gl40_EXTERNAL_OBJECTS =
 
-engin/graphic_glsl4.0/libgl40.a: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/CameraMouse.cpp.o
-engin/graphic_glsl4.0/libgl40.a: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/CameraMove.cpp.o
-engin/graphic_glsl4.0/libgl40.a: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/Camera_01.cpp.o
-engin/graphic_glsl4.0/libgl40.a: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GLObject.cpp.o
+engin/graphic_glsl4.0/libgl40.a: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GLNode.cpp.o
 engin/graphic_glsl4.0/libgl40.a: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GraphicGL40.cpp.o
-engin/graphic_glsl4.0/libgl40.a: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/Shader.cpp.o
 engin/graphic_glsl4.0/libgl40.a: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/glad.c.o
-engin/graphic_glsl4.0/libgl40.a: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/std_image.cpp.o
 engin/graphic_glsl4.0/libgl40.a: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/build.make
 engin/graphic_glsl4.0/libgl40.a: engin/graphic_glsl4.0/CMakeFiles/gl40.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libgl40.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libgl40.a"
 	cd /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0 && $(CMAKE_COMMAND) -P CMakeFiles/gl40.dir/cmake_clean_target.cmake
 	cd /home/gwj/workspaces/TowerDefends/engin/graphic_glsl4.0 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gl40.dir/link.txt --verbose=$(VERBOSE)
 

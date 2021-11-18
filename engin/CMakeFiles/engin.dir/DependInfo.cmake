@@ -8,10 +8,16 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/gwj/workspaces/TowerDefends/engin/Camera.cpp" "engin/CMakeFiles/engin.dir/Camera.cpp.o" "gcc" "engin/CMakeFiles/engin.dir/Camera.cpp.o.d"
   "/home/gwj/workspaces/TowerDefends/engin/ClockBase.cpp" "engin/CMakeFiles/engin.dir/ClockBase.cpp.o" "gcc" "engin/CMakeFiles/engin.dir/ClockBase.cpp.o.d"
   "/home/gwj/workspaces/TowerDefends/engin/Engine.cpp" "engin/CMakeFiles/engin.dir/Engine.cpp.o" "gcc" "engin/CMakeFiles/engin.dir/Engine.cpp.o.d"
+  "/home/gwj/workspaces/TowerDefends/engin/Material.cpp" "engin/CMakeFiles/engin.dir/Material.cpp.o" "gcc" "engin/CMakeFiles/engin.dir/Material.cpp.o.d"
+  "/home/gwj/workspaces/TowerDefends/engin/Mesh.cpp" "engin/CMakeFiles/engin.dir/Mesh.cpp.o" "gcc" "engin/CMakeFiles/engin.dir/Mesh.cpp.o.d"
+  "/home/gwj/workspaces/TowerDefends/engin/Node.cpp" "engin/CMakeFiles/engin.dir/Node.cpp.o" "gcc" "engin/CMakeFiles/engin.dir/Node.cpp.o.d"
+  "/home/gwj/workspaces/TowerDefends/engin/Primitive.cpp" "engin/CMakeFiles/engin.dir/Primitive.cpp.o" "gcc" "engin/CMakeFiles/engin.dir/Primitive.cpp.o.d"
+  "/home/gwj/workspaces/TowerDefends/engin/Program.cpp" "engin/CMakeFiles/engin.dir/Program.cpp.o" "gcc" "engin/CMakeFiles/engin.dir/Program.cpp.o.d"
+  "/home/gwj/workspaces/TowerDefends/engin/ResourceParser.cpp" "engin/CMakeFiles/engin.dir/ResourceParser.cpp.o" "gcc" "engin/CMakeFiles/engin.dir/ResourceParser.cpp.o.d"
   "/home/gwj/workspaces/TowerDefends/engin/Scene.cpp" "engin/CMakeFiles/engin.dir/Scene.cpp.o" "gcc" "engin/CMakeFiles/engin.dir/Scene.cpp.o.d"
-  "/home/gwj/workspaces/TowerDefends/engin/Sprite.cpp" "engin/CMakeFiles/engin.dir/Sprite.cpp.o" "gcc" "engin/CMakeFiles/engin.dir/Sprite.cpp.o.d"
   )
 
 # Targets to which this target links.

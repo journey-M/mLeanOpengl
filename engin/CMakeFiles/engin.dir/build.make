@@ -69,10 +69,24 @@ include engin/CMakeFiles/engin.dir/progress.make
 # Include the compile flags for this target's objects.
 include engin/CMakeFiles/engin.dir/flags.make
 
+engin/CMakeFiles/engin.dir/Camera.cpp.o: engin/CMakeFiles/engin.dir/flags.make
+engin/CMakeFiles/engin.dir/Camera.cpp.o: engin/Camera.cpp
+engin/CMakeFiles/engin.dir/Camera.cpp.o: engin/CMakeFiles/engin.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object engin/CMakeFiles/engin.dir/Camera.cpp.o"
+	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engin/CMakeFiles/engin.dir/Camera.cpp.o -MF CMakeFiles/engin.dir/Camera.cpp.o.d -o CMakeFiles/engin.dir/Camera.cpp.o -c /home/gwj/workspaces/TowerDefends/engin/Camera.cpp
+
+engin/CMakeFiles/engin.dir/Camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engin.dir/Camera.cpp.i"
+	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gwj/workspaces/TowerDefends/engin/Camera.cpp > CMakeFiles/engin.dir/Camera.cpp.i
+
+engin/CMakeFiles/engin.dir/Camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engin.dir/Camera.cpp.s"
+	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gwj/workspaces/TowerDefends/engin/Camera.cpp -o CMakeFiles/engin.dir/Camera.cpp.s
+
 engin/CMakeFiles/engin.dir/ClockBase.cpp.o: engin/CMakeFiles/engin.dir/flags.make
 engin/CMakeFiles/engin.dir/ClockBase.cpp.o: engin/ClockBase.cpp
 engin/CMakeFiles/engin.dir/ClockBase.cpp.o: engin/CMakeFiles/engin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object engin/CMakeFiles/engin.dir/ClockBase.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object engin/CMakeFiles/engin.dir/ClockBase.cpp.o"
 	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engin/CMakeFiles/engin.dir/ClockBase.cpp.o -MF CMakeFiles/engin.dir/ClockBase.cpp.o.d -o CMakeFiles/engin.dir/ClockBase.cpp.o -c /home/gwj/workspaces/TowerDefends/engin/ClockBase.cpp
 
 engin/CMakeFiles/engin.dir/ClockBase.cpp.i: cmake_force
@@ -86,7 +100,7 @@ engin/CMakeFiles/engin.dir/ClockBase.cpp.s: cmake_force
 engin/CMakeFiles/engin.dir/Engine.cpp.o: engin/CMakeFiles/engin.dir/flags.make
 engin/CMakeFiles/engin.dir/Engine.cpp.o: engin/Engine.cpp
 engin/CMakeFiles/engin.dir/Engine.cpp.o: engin/CMakeFiles/engin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object engin/CMakeFiles/engin.dir/Engine.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object engin/CMakeFiles/engin.dir/Engine.cpp.o"
 	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engin/CMakeFiles/engin.dir/Engine.cpp.o -MF CMakeFiles/engin.dir/Engine.cpp.o.d -o CMakeFiles/engin.dir/Engine.cpp.o -c /home/gwj/workspaces/TowerDefends/engin/Engine.cpp
 
 engin/CMakeFiles/engin.dir/Engine.cpp.i: cmake_force
@@ -97,10 +111,94 @@ engin/CMakeFiles/engin.dir/Engine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engin.dir/Engine.cpp.s"
 	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gwj/workspaces/TowerDefends/engin/Engine.cpp -o CMakeFiles/engin.dir/Engine.cpp.s
 
+engin/CMakeFiles/engin.dir/Material.cpp.o: engin/CMakeFiles/engin.dir/flags.make
+engin/CMakeFiles/engin.dir/Material.cpp.o: engin/Material.cpp
+engin/CMakeFiles/engin.dir/Material.cpp.o: engin/CMakeFiles/engin.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object engin/CMakeFiles/engin.dir/Material.cpp.o"
+	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engin/CMakeFiles/engin.dir/Material.cpp.o -MF CMakeFiles/engin.dir/Material.cpp.o.d -o CMakeFiles/engin.dir/Material.cpp.o -c /home/gwj/workspaces/TowerDefends/engin/Material.cpp
+
+engin/CMakeFiles/engin.dir/Material.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engin.dir/Material.cpp.i"
+	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gwj/workspaces/TowerDefends/engin/Material.cpp > CMakeFiles/engin.dir/Material.cpp.i
+
+engin/CMakeFiles/engin.dir/Material.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engin.dir/Material.cpp.s"
+	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gwj/workspaces/TowerDefends/engin/Material.cpp -o CMakeFiles/engin.dir/Material.cpp.s
+
+engin/CMakeFiles/engin.dir/Mesh.cpp.o: engin/CMakeFiles/engin.dir/flags.make
+engin/CMakeFiles/engin.dir/Mesh.cpp.o: engin/Mesh.cpp
+engin/CMakeFiles/engin.dir/Mesh.cpp.o: engin/CMakeFiles/engin.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object engin/CMakeFiles/engin.dir/Mesh.cpp.o"
+	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engin/CMakeFiles/engin.dir/Mesh.cpp.o -MF CMakeFiles/engin.dir/Mesh.cpp.o.d -o CMakeFiles/engin.dir/Mesh.cpp.o -c /home/gwj/workspaces/TowerDefends/engin/Mesh.cpp
+
+engin/CMakeFiles/engin.dir/Mesh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engin.dir/Mesh.cpp.i"
+	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gwj/workspaces/TowerDefends/engin/Mesh.cpp > CMakeFiles/engin.dir/Mesh.cpp.i
+
+engin/CMakeFiles/engin.dir/Mesh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engin.dir/Mesh.cpp.s"
+	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gwj/workspaces/TowerDefends/engin/Mesh.cpp -o CMakeFiles/engin.dir/Mesh.cpp.s
+
+engin/CMakeFiles/engin.dir/Node.cpp.o: engin/CMakeFiles/engin.dir/flags.make
+engin/CMakeFiles/engin.dir/Node.cpp.o: engin/Node.cpp
+engin/CMakeFiles/engin.dir/Node.cpp.o: engin/CMakeFiles/engin.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object engin/CMakeFiles/engin.dir/Node.cpp.o"
+	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engin/CMakeFiles/engin.dir/Node.cpp.o -MF CMakeFiles/engin.dir/Node.cpp.o.d -o CMakeFiles/engin.dir/Node.cpp.o -c /home/gwj/workspaces/TowerDefends/engin/Node.cpp
+
+engin/CMakeFiles/engin.dir/Node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engin.dir/Node.cpp.i"
+	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gwj/workspaces/TowerDefends/engin/Node.cpp > CMakeFiles/engin.dir/Node.cpp.i
+
+engin/CMakeFiles/engin.dir/Node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engin.dir/Node.cpp.s"
+	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gwj/workspaces/TowerDefends/engin/Node.cpp -o CMakeFiles/engin.dir/Node.cpp.s
+
+engin/CMakeFiles/engin.dir/Primitive.cpp.o: engin/CMakeFiles/engin.dir/flags.make
+engin/CMakeFiles/engin.dir/Primitive.cpp.o: engin/Primitive.cpp
+engin/CMakeFiles/engin.dir/Primitive.cpp.o: engin/CMakeFiles/engin.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object engin/CMakeFiles/engin.dir/Primitive.cpp.o"
+	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engin/CMakeFiles/engin.dir/Primitive.cpp.o -MF CMakeFiles/engin.dir/Primitive.cpp.o.d -o CMakeFiles/engin.dir/Primitive.cpp.o -c /home/gwj/workspaces/TowerDefends/engin/Primitive.cpp
+
+engin/CMakeFiles/engin.dir/Primitive.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engin.dir/Primitive.cpp.i"
+	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gwj/workspaces/TowerDefends/engin/Primitive.cpp > CMakeFiles/engin.dir/Primitive.cpp.i
+
+engin/CMakeFiles/engin.dir/Primitive.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engin.dir/Primitive.cpp.s"
+	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gwj/workspaces/TowerDefends/engin/Primitive.cpp -o CMakeFiles/engin.dir/Primitive.cpp.s
+
+engin/CMakeFiles/engin.dir/Program.cpp.o: engin/CMakeFiles/engin.dir/flags.make
+engin/CMakeFiles/engin.dir/Program.cpp.o: engin/Program.cpp
+engin/CMakeFiles/engin.dir/Program.cpp.o: engin/CMakeFiles/engin.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object engin/CMakeFiles/engin.dir/Program.cpp.o"
+	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engin/CMakeFiles/engin.dir/Program.cpp.o -MF CMakeFiles/engin.dir/Program.cpp.o.d -o CMakeFiles/engin.dir/Program.cpp.o -c /home/gwj/workspaces/TowerDefends/engin/Program.cpp
+
+engin/CMakeFiles/engin.dir/Program.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engin.dir/Program.cpp.i"
+	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gwj/workspaces/TowerDefends/engin/Program.cpp > CMakeFiles/engin.dir/Program.cpp.i
+
+engin/CMakeFiles/engin.dir/Program.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engin.dir/Program.cpp.s"
+	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gwj/workspaces/TowerDefends/engin/Program.cpp -o CMakeFiles/engin.dir/Program.cpp.s
+
+engin/CMakeFiles/engin.dir/ResourceParser.cpp.o: engin/CMakeFiles/engin.dir/flags.make
+engin/CMakeFiles/engin.dir/ResourceParser.cpp.o: engin/ResourceParser.cpp
+engin/CMakeFiles/engin.dir/ResourceParser.cpp.o: engin/CMakeFiles/engin.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object engin/CMakeFiles/engin.dir/ResourceParser.cpp.o"
+	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engin/CMakeFiles/engin.dir/ResourceParser.cpp.o -MF CMakeFiles/engin.dir/ResourceParser.cpp.o.d -o CMakeFiles/engin.dir/ResourceParser.cpp.o -c /home/gwj/workspaces/TowerDefends/engin/ResourceParser.cpp
+
+engin/CMakeFiles/engin.dir/ResourceParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engin.dir/ResourceParser.cpp.i"
+	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gwj/workspaces/TowerDefends/engin/ResourceParser.cpp > CMakeFiles/engin.dir/ResourceParser.cpp.i
+
+engin/CMakeFiles/engin.dir/ResourceParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engin.dir/ResourceParser.cpp.s"
+	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gwj/workspaces/TowerDefends/engin/ResourceParser.cpp -o CMakeFiles/engin.dir/ResourceParser.cpp.s
+
 engin/CMakeFiles/engin.dir/Scene.cpp.o: engin/CMakeFiles/engin.dir/flags.make
 engin/CMakeFiles/engin.dir/Scene.cpp.o: engin/Scene.cpp
 engin/CMakeFiles/engin.dir/Scene.cpp.o: engin/CMakeFiles/engin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object engin/CMakeFiles/engin.dir/Scene.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object engin/CMakeFiles/engin.dir/Scene.cpp.o"
 	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engin/CMakeFiles/engin.dir/Scene.cpp.o -MF CMakeFiles/engin.dir/Scene.cpp.o.d -o CMakeFiles/engin.dir/Scene.cpp.o -c /home/gwj/workspaces/TowerDefends/engin/Scene.cpp
 
 engin/CMakeFiles/engin.dir/Scene.cpp.i: cmake_force
@@ -111,37 +209,35 @@ engin/CMakeFiles/engin.dir/Scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engin.dir/Scene.cpp.s"
 	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gwj/workspaces/TowerDefends/engin/Scene.cpp -o CMakeFiles/engin.dir/Scene.cpp.s
 
-engin/CMakeFiles/engin.dir/Sprite.cpp.o: engin/CMakeFiles/engin.dir/flags.make
-engin/CMakeFiles/engin.dir/Sprite.cpp.o: engin/Sprite.cpp
-engin/CMakeFiles/engin.dir/Sprite.cpp.o: engin/CMakeFiles/engin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object engin/CMakeFiles/engin.dir/Sprite.cpp.o"
-	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engin/CMakeFiles/engin.dir/Sprite.cpp.o -MF CMakeFiles/engin.dir/Sprite.cpp.o.d -o CMakeFiles/engin.dir/Sprite.cpp.o -c /home/gwj/workspaces/TowerDefends/engin/Sprite.cpp
-
-engin/CMakeFiles/engin.dir/Sprite.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engin.dir/Sprite.cpp.i"
-	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/gwj/workspaces/TowerDefends/engin/Sprite.cpp > CMakeFiles/engin.dir/Sprite.cpp.i
-
-engin/CMakeFiles/engin.dir/Sprite.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engin.dir/Sprite.cpp.s"
-	cd /home/gwj/workspaces/TowerDefends/engin && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/gwj/workspaces/TowerDefends/engin/Sprite.cpp -o CMakeFiles/engin.dir/Sprite.cpp.s
-
 # Object files for target engin
 engin_OBJECTS = \
+"CMakeFiles/engin.dir/Camera.cpp.o" \
 "CMakeFiles/engin.dir/ClockBase.cpp.o" \
 "CMakeFiles/engin.dir/Engine.cpp.o" \
-"CMakeFiles/engin.dir/Scene.cpp.o" \
-"CMakeFiles/engin.dir/Sprite.cpp.o"
+"CMakeFiles/engin.dir/Material.cpp.o" \
+"CMakeFiles/engin.dir/Mesh.cpp.o" \
+"CMakeFiles/engin.dir/Node.cpp.o" \
+"CMakeFiles/engin.dir/Primitive.cpp.o" \
+"CMakeFiles/engin.dir/Program.cpp.o" \
+"CMakeFiles/engin.dir/ResourceParser.cpp.o" \
+"CMakeFiles/engin.dir/Scene.cpp.o"
 
 # External object files for target engin
 engin_EXTERNAL_OBJECTS =
 
+engin/libengin.a: engin/CMakeFiles/engin.dir/Camera.cpp.o
 engin/libengin.a: engin/CMakeFiles/engin.dir/ClockBase.cpp.o
 engin/libengin.a: engin/CMakeFiles/engin.dir/Engine.cpp.o
+engin/libengin.a: engin/CMakeFiles/engin.dir/Material.cpp.o
+engin/libengin.a: engin/CMakeFiles/engin.dir/Mesh.cpp.o
+engin/libengin.a: engin/CMakeFiles/engin.dir/Node.cpp.o
+engin/libengin.a: engin/CMakeFiles/engin.dir/Primitive.cpp.o
+engin/libengin.a: engin/CMakeFiles/engin.dir/Program.cpp.o
+engin/libengin.a: engin/CMakeFiles/engin.dir/ResourceParser.cpp.o
 engin/libengin.a: engin/CMakeFiles/engin.dir/Scene.cpp.o
-engin/libengin.a: engin/CMakeFiles/engin.dir/Sprite.cpp.o
 engin/libengin.a: engin/CMakeFiles/engin.dir/build.make
 engin/libengin.a: engin/CMakeFiles/engin.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libengin.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/gwj/workspaces/TowerDefends/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX static library libengin.a"
 	cd /home/gwj/workspaces/TowerDefends/engin && $(CMAKE_COMMAND) -P CMakeFiles/engin.dir/cmake_clean_target.cmake
 	cd /home/gwj/workspaces/TowerDefends/engin && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/engin.dir/link.txt --verbose=$(VERBOSE)
 

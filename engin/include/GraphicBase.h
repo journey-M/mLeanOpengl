@@ -3,6 +3,17 @@
 #define __GRAPHIC_BASE__
 
 #include "EventBase.h"
+#include "../third-libs/tinygltf/tiny_gltf.h"
+#include <iostream>
+
+#include "Mesh.h"
+#include "Material.h"
+#include "Primitive.h"
+
+
+namespace engin{
+
+
 
 class GraphicBase{
 
@@ -18,7 +29,19 @@ class GraphicBase{
 
     virtual bool release() = 0;
 
+	virtual	void drawNode(tinygltf::Model &model, const tinygltf::Node &node) = 0;
+
+	virtual	void DrawTest() = 0;
+
+
+    virtual std::shared_ptr<std::vector<unsigned int>> buildBuffers(const tinygltf::Model &model) = 0;
+
+    virtual std::shared_ptr<std::vector<unsigned int>> buildTextures(const tinygltf::Model &model) = 0;
+
+
 };
+
+}
 
 
 #endif

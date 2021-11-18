@@ -175,101 +175,29 @@ gl40/fast:
 	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/graphic_glsl4.0/CMakeFiles/gl40.dir/build.make engin/graphic_glsl4.0/CMakeFiles/gl40.dir/build
 .PHONY : gl40/fast
 
-CameraMouse.o: CameraMouse.cpp.o
-.PHONY : CameraMouse.o
+GLNode.o: GLNode.cpp.o
+.PHONY : GLNode.o
 
 # target to build an object file
-CameraMouse.cpp.o:
-	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/graphic_glsl4.0/CMakeFiles/gl40.dir/build.make engin/graphic_glsl4.0/CMakeFiles/gl40.dir/CameraMouse.cpp.o
-.PHONY : CameraMouse.cpp.o
+GLNode.cpp.o:
+	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/graphic_glsl4.0/CMakeFiles/gl40.dir/build.make engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GLNode.cpp.o
+.PHONY : GLNode.cpp.o
 
-CameraMouse.i: CameraMouse.cpp.i
-.PHONY : CameraMouse.i
-
-# target to preprocess a source file
-CameraMouse.cpp.i:
-	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/graphic_glsl4.0/CMakeFiles/gl40.dir/build.make engin/graphic_glsl4.0/CMakeFiles/gl40.dir/CameraMouse.cpp.i
-.PHONY : CameraMouse.cpp.i
-
-CameraMouse.s: CameraMouse.cpp.s
-.PHONY : CameraMouse.s
-
-# target to generate assembly for a file
-CameraMouse.cpp.s:
-	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/graphic_glsl4.0/CMakeFiles/gl40.dir/build.make engin/graphic_glsl4.0/CMakeFiles/gl40.dir/CameraMouse.cpp.s
-.PHONY : CameraMouse.cpp.s
-
-CameraMove.o: CameraMove.cpp.o
-.PHONY : CameraMove.o
-
-# target to build an object file
-CameraMove.cpp.o:
-	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/graphic_glsl4.0/CMakeFiles/gl40.dir/build.make engin/graphic_glsl4.0/CMakeFiles/gl40.dir/CameraMove.cpp.o
-.PHONY : CameraMove.cpp.o
-
-CameraMove.i: CameraMove.cpp.i
-.PHONY : CameraMove.i
+GLNode.i: GLNode.cpp.i
+.PHONY : GLNode.i
 
 # target to preprocess a source file
-CameraMove.cpp.i:
-	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/graphic_glsl4.0/CMakeFiles/gl40.dir/build.make engin/graphic_glsl4.0/CMakeFiles/gl40.dir/CameraMove.cpp.i
-.PHONY : CameraMove.cpp.i
+GLNode.cpp.i:
+	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/graphic_glsl4.0/CMakeFiles/gl40.dir/build.make engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GLNode.cpp.i
+.PHONY : GLNode.cpp.i
 
-CameraMove.s: CameraMove.cpp.s
-.PHONY : CameraMove.s
-
-# target to generate assembly for a file
-CameraMove.cpp.s:
-	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/graphic_glsl4.0/CMakeFiles/gl40.dir/build.make engin/graphic_glsl4.0/CMakeFiles/gl40.dir/CameraMove.cpp.s
-.PHONY : CameraMove.cpp.s
-
-Camera_01.o: Camera_01.cpp.o
-.PHONY : Camera_01.o
-
-# target to build an object file
-Camera_01.cpp.o:
-	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/graphic_glsl4.0/CMakeFiles/gl40.dir/build.make engin/graphic_glsl4.0/CMakeFiles/gl40.dir/Camera_01.cpp.o
-.PHONY : Camera_01.cpp.o
-
-Camera_01.i: Camera_01.cpp.i
-.PHONY : Camera_01.i
-
-# target to preprocess a source file
-Camera_01.cpp.i:
-	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/graphic_glsl4.0/CMakeFiles/gl40.dir/build.make engin/graphic_glsl4.0/CMakeFiles/gl40.dir/Camera_01.cpp.i
-.PHONY : Camera_01.cpp.i
-
-Camera_01.s: Camera_01.cpp.s
-.PHONY : Camera_01.s
+GLNode.s: GLNode.cpp.s
+.PHONY : GLNode.s
 
 # target to generate assembly for a file
-Camera_01.cpp.s:
-	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/graphic_glsl4.0/CMakeFiles/gl40.dir/build.make engin/graphic_glsl4.0/CMakeFiles/gl40.dir/Camera_01.cpp.s
-.PHONY : Camera_01.cpp.s
-
-GLObject.o: GLObject.cpp.o
-.PHONY : GLObject.o
-
-# target to build an object file
-GLObject.cpp.o:
-	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/graphic_glsl4.0/CMakeFiles/gl40.dir/build.make engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GLObject.cpp.o
-.PHONY : GLObject.cpp.o
-
-GLObject.i: GLObject.cpp.i
-.PHONY : GLObject.i
-
-# target to preprocess a source file
-GLObject.cpp.i:
-	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/graphic_glsl4.0/CMakeFiles/gl40.dir/build.make engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GLObject.cpp.i
-.PHONY : GLObject.cpp.i
-
-GLObject.s: GLObject.cpp.s
-.PHONY : GLObject.s
-
-# target to generate assembly for a file
-GLObject.cpp.s:
-	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/graphic_glsl4.0/CMakeFiles/gl40.dir/build.make engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GLObject.cpp.s
-.PHONY : GLObject.cpp.s
+GLNode.cpp.s:
+	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/graphic_glsl4.0/CMakeFiles/gl40.dir/build.make engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GLNode.cpp.s
+.PHONY : GLNode.cpp.s
 
 GraphicGL40.o: GraphicGL40.cpp.o
 .PHONY : GraphicGL40.o
@@ -295,30 +223,6 @@ GraphicGL40.cpp.s:
 	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/graphic_glsl4.0/CMakeFiles/gl40.dir/build.make engin/graphic_glsl4.0/CMakeFiles/gl40.dir/GraphicGL40.cpp.s
 .PHONY : GraphicGL40.cpp.s
 
-Shader.o: Shader.cpp.o
-.PHONY : Shader.o
-
-# target to build an object file
-Shader.cpp.o:
-	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/graphic_glsl4.0/CMakeFiles/gl40.dir/build.make engin/graphic_glsl4.0/CMakeFiles/gl40.dir/Shader.cpp.o
-.PHONY : Shader.cpp.o
-
-Shader.i: Shader.cpp.i
-.PHONY : Shader.i
-
-# target to preprocess a source file
-Shader.cpp.i:
-	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/graphic_glsl4.0/CMakeFiles/gl40.dir/build.make engin/graphic_glsl4.0/CMakeFiles/gl40.dir/Shader.cpp.i
-.PHONY : Shader.cpp.i
-
-Shader.s: Shader.cpp.s
-.PHONY : Shader.s
-
-# target to generate assembly for a file
-Shader.cpp.s:
-	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/graphic_glsl4.0/CMakeFiles/gl40.dir/build.make engin/graphic_glsl4.0/CMakeFiles/gl40.dir/Shader.cpp.s
-.PHONY : Shader.cpp.s
-
 glad.o: glad.c.o
 .PHONY : glad.o
 
@@ -343,30 +247,6 @@ glad.c.s:
 	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/graphic_glsl4.0/CMakeFiles/gl40.dir/build.make engin/graphic_glsl4.0/CMakeFiles/gl40.dir/glad.c.s
 .PHONY : glad.c.s
 
-std_image.o: std_image.cpp.o
-.PHONY : std_image.o
-
-# target to build an object file
-std_image.cpp.o:
-	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/graphic_glsl4.0/CMakeFiles/gl40.dir/build.make engin/graphic_glsl4.0/CMakeFiles/gl40.dir/std_image.cpp.o
-.PHONY : std_image.cpp.o
-
-std_image.i: std_image.cpp.i
-.PHONY : std_image.i
-
-# target to preprocess a source file
-std_image.cpp.i:
-	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/graphic_glsl4.0/CMakeFiles/gl40.dir/build.make engin/graphic_glsl4.0/CMakeFiles/gl40.dir/std_image.cpp.i
-.PHONY : std_image.cpp.i
-
-std_image.s: std_image.cpp.s
-.PHONY : std_image.s
-
-# target to generate assembly for a file
-std_image.cpp.s:
-	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/graphic_glsl4.0/CMakeFiles/gl40.dir/build.make engin/graphic_glsl4.0/CMakeFiles/gl40.dir/std_image.cpp.s
-.PHONY : std_image.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -380,30 +260,15 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... gl40"
-	@echo "... CameraMouse.o"
-	@echo "... CameraMouse.i"
-	@echo "... CameraMouse.s"
-	@echo "... CameraMove.o"
-	@echo "... CameraMove.i"
-	@echo "... CameraMove.s"
-	@echo "... Camera_01.o"
-	@echo "... Camera_01.i"
-	@echo "... Camera_01.s"
-	@echo "... GLObject.o"
-	@echo "... GLObject.i"
-	@echo "... GLObject.s"
+	@echo "... GLNode.o"
+	@echo "... GLNode.i"
+	@echo "... GLNode.s"
 	@echo "... GraphicGL40.o"
 	@echo "... GraphicGL40.i"
 	@echo "... GraphicGL40.s"
-	@echo "... Shader.o"
-	@echo "... Shader.i"
-	@echo "... Shader.s"
 	@echo "... glad.o"
 	@echo "... glad.i"
 	@echo "... glad.s"
-	@echo "... std_image.o"
-	@echo "... std_image.i"
-	@echo "... std_image.s"
 .PHONY : help
 
 

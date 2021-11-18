@@ -6,9 +6,13 @@
 #include "EventBase.h"
 #include "ClockBase.h"
 #include "Scene.h"
+#include "ResourceParser.h"
 #include <string>
 #include <vector>
 #include <memory>
+
+namespace engin {
+
 
 class Engine : public EventBase{
 
@@ -39,6 +43,8 @@ class Engine : public EventBase{
 
         std::shared_ptr<ClockBase> clock;
 
+        std::shared_ptr<ResourceParser> resParser;
+
 
         void createGraphics();
 
@@ -51,4 +57,5 @@ class Engine : public EventBase{
 };
 
 
+}
 #endif

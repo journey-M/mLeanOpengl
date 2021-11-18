@@ -17,7 +17,7 @@ int main(int argc, char** argv){
 
     auto scene = engine->createSceneFromAssest("/home/gwj/workspaces/TowerDefends/logic/Assests/cube.gltf");
 
-    auto sprite = scene->addSprite("test");
+    // auto sprite = scene->addSprite("test");
 
 
     std::this_thread::sleep_for(std::chrono::seconds(50));

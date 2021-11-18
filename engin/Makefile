@@ -175,6 +175,30 @@ engin/fast:
 	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/CMakeFiles/engin.dir/build.make engin/CMakeFiles/engin.dir/build
 .PHONY : engin/fast
 
+Camera.o: Camera.cpp.o
+.PHONY : Camera.o
+
+# target to build an object file
+Camera.cpp.o:
+	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/CMakeFiles/engin.dir/build.make engin/CMakeFiles/engin.dir/Camera.cpp.o
+.PHONY : Camera.cpp.o
+
+Camera.i: Camera.cpp.i
+.PHONY : Camera.i
+
+# target to preprocess a source file
+Camera.cpp.i:
+	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/CMakeFiles/engin.dir/build.make engin/CMakeFiles/engin.dir/Camera.cpp.i
+.PHONY : Camera.cpp.i
+
+Camera.s: Camera.cpp.s
+.PHONY : Camera.s
+
+# target to generate assembly for a file
+Camera.cpp.s:
+	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/CMakeFiles/engin.dir/build.make engin/CMakeFiles/engin.dir/Camera.cpp.s
+.PHONY : Camera.cpp.s
+
 ClockBase.o: ClockBase.cpp.o
 .PHONY : ClockBase.o
 
@@ -223,6 +247,150 @@ Engine.cpp.s:
 	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/CMakeFiles/engin.dir/build.make engin/CMakeFiles/engin.dir/Engine.cpp.s
 .PHONY : Engine.cpp.s
 
+Material.o: Material.cpp.o
+.PHONY : Material.o
+
+# target to build an object file
+Material.cpp.o:
+	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/CMakeFiles/engin.dir/build.make engin/CMakeFiles/engin.dir/Material.cpp.o
+.PHONY : Material.cpp.o
+
+Material.i: Material.cpp.i
+.PHONY : Material.i
+
+# target to preprocess a source file
+Material.cpp.i:
+	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/CMakeFiles/engin.dir/build.make engin/CMakeFiles/engin.dir/Material.cpp.i
+.PHONY : Material.cpp.i
+
+Material.s: Material.cpp.s
+.PHONY : Material.s
+
+# target to generate assembly for a file
+Material.cpp.s:
+	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/CMakeFiles/engin.dir/build.make engin/CMakeFiles/engin.dir/Material.cpp.s
+.PHONY : Material.cpp.s
+
+Mesh.o: Mesh.cpp.o
+.PHONY : Mesh.o
+
+# target to build an object file
+Mesh.cpp.o:
+	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/CMakeFiles/engin.dir/build.make engin/CMakeFiles/engin.dir/Mesh.cpp.o
+.PHONY : Mesh.cpp.o
+
+Mesh.i: Mesh.cpp.i
+.PHONY : Mesh.i
+
+# target to preprocess a source file
+Mesh.cpp.i:
+	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/CMakeFiles/engin.dir/build.make engin/CMakeFiles/engin.dir/Mesh.cpp.i
+.PHONY : Mesh.cpp.i
+
+Mesh.s: Mesh.cpp.s
+.PHONY : Mesh.s
+
+# target to generate assembly for a file
+Mesh.cpp.s:
+	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/CMakeFiles/engin.dir/build.make engin/CMakeFiles/engin.dir/Mesh.cpp.s
+.PHONY : Mesh.cpp.s
+
+Node.o: Node.cpp.o
+.PHONY : Node.o
+
+# target to build an object file
+Node.cpp.o:
+	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/CMakeFiles/engin.dir/build.make engin/CMakeFiles/engin.dir/Node.cpp.o
+.PHONY : Node.cpp.o
+
+Node.i: Node.cpp.i
+.PHONY : Node.i
+
+# target to preprocess a source file
+Node.cpp.i:
+	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/CMakeFiles/engin.dir/build.make engin/CMakeFiles/engin.dir/Node.cpp.i
+.PHONY : Node.cpp.i
+
+Node.s: Node.cpp.s
+.PHONY : Node.s
+
+# target to generate assembly for a file
+Node.cpp.s:
+	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/CMakeFiles/engin.dir/build.make engin/CMakeFiles/engin.dir/Node.cpp.s
+.PHONY : Node.cpp.s
+
+Primitive.o: Primitive.cpp.o
+.PHONY : Primitive.o
+
+# target to build an object file
+Primitive.cpp.o:
+	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/CMakeFiles/engin.dir/build.make engin/CMakeFiles/engin.dir/Primitive.cpp.o
+.PHONY : Primitive.cpp.o
+
+Primitive.i: Primitive.cpp.i
+.PHONY : Primitive.i
+
+# target to preprocess a source file
+Primitive.cpp.i:
+	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/CMakeFiles/engin.dir/build.make engin/CMakeFiles/engin.dir/Primitive.cpp.i
+.PHONY : Primitive.cpp.i
+
+Primitive.s: Primitive.cpp.s
+.PHONY : Primitive.s
+
+# target to generate assembly for a file
+Primitive.cpp.s:
+	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/CMakeFiles/engin.dir/build.make engin/CMakeFiles/engin.dir/Primitive.cpp.s
+.PHONY : Primitive.cpp.s
+
+Program.o: Program.cpp.o
+.PHONY : Program.o
+
+# target to build an object file
+Program.cpp.o:
+	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/CMakeFiles/engin.dir/build.make engin/CMakeFiles/engin.dir/Program.cpp.o
+.PHONY : Program.cpp.o
+
+Program.i: Program.cpp.i
+.PHONY : Program.i
+
+# target to preprocess a source file
+Program.cpp.i:
+	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/CMakeFiles/engin.dir/build.make engin/CMakeFiles/engin.dir/Program.cpp.i
+.PHONY : Program.cpp.i
+
+Program.s: Program.cpp.s
+.PHONY : Program.s
+
+# target to generate assembly for a file
+Program.cpp.s:
+	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/CMakeFiles/engin.dir/build.make engin/CMakeFiles/engin.dir/Program.cpp.s
+.PHONY : Program.cpp.s
+
+ResourceParser.o: ResourceParser.cpp.o
+.PHONY : ResourceParser.o
+
+# target to build an object file
+ResourceParser.cpp.o:
+	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/CMakeFiles/engin.dir/build.make engin/CMakeFiles/engin.dir/ResourceParser.cpp.o
+.PHONY : ResourceParser.cpp.o
+
+ResourceParser.i: ResourceParser.cpp.i
+.PHONY : ResourceParser.i
+
+# target to preprocess a source file
+ResourceParser.cpp.i:
+	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/CMakeFiles/engin.dir/build.make engin/CMakeFiles/engin.dir/ResourceParser.cpp.i
+.PHONY : ResourceParser.cpp.i
+
+ResourceParser.s: ResourceParser.cpp.s
+.PHONY : ResourceParser.s
+
+# target to generate assembly for a file
+ResourceParser.cpp.s:
+	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/CMakeFiles/engin.dir/build.make engin/CMakeFiles/engin.dir/ResourceParser.cpp.s
+.PHONY : ResourceParser.cpp.s
+
 Scene.o: Scene.cpp.o
 .PHONY : Scene.o
 
@@ -247,30 +415,6 @@ Scene.cpp.s:
 	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/CMakeFiles/engin.dir/build.make engin/CMakeFiles/engin.dir/Scene.cpp.s
 .PHONY : Scene.cpp.s
 
-Sprite.o: Sprite.cpp.o
-.PHONY : Sprite.o
-
-# target to build an object file
-Sprite.cpp.o:
-	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/CMakeFiles/engin.dir/build.make engin/CMakeFiles/engin.dir/Sprite.cpp.o
-.PHONY : Sprite.cpp.o
-
-Sprite.i: Sprite.cpp.i
-.PHONY : Sprite.i
-
-# target to preprocess a source file
-Sprite.cpp.i:
-	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/CMakeFiles/engin.dir/build.make engin/CMakeFiles/engin.dir/Sprite.cpp.i
-.PHONY : Sprite.cpp.i
-
-Sprite.s: Sprite.cpp.s
-.PHONY : Sprite.s
-
-# target to generate assembly for a file
-Sprite.cpp.s:
-	cd /home/gwj/workspaces/TowerDefends && $(MAKE) $(MAKESILENT) -f engin/CMakeFiles/engin.dir/build.make engin/CMakeFiles/engin.dir/Sprite.cpp.s
-.PHONY : Sprite.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -284,18 +428,36 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... engin"
+	@echo "... Camera.o"
+	@echo "... Camera.i"
+	@echo "... Camera.s"
 	@echo "... ClockBase.o"
 	@echo "... ClockBase.i"
 	@echo "... ClockBase.s"
 	@echo "... Engine.o"
 	@echo "... Engine.i"
 	@echo "... Engine.s"
+	@echo "... Material.o"
+	@echo "... Material.i"
+	@echo "... Material.s"
+	@echo "... Mesh.o"
+	@echo "... Mesh.i"
+	@echo "... Mesh.s"
+	@echo "... Node.o"
+	@echo "... Node.i"
+	@echo "... Node.s"
+	@echo "... Primitive.o"
+	@echo "... Primitive.i"
+	@echo "... Primitive.s"
+	@echo "... Program.o"
+	@echo "... Program.i"
+	@echo "... Program.s"
+	@echo "... ResourceParser.o"
+	@echo "... ResourceParser.i"
+	@echo "... ResourceParser.s"
 	@echo "... Scene.o"
 	@echo "... Scene.i"
 	@echo "... Scene.s"
-	@echo "... Sprite.o"
-	@echo "... Sprite.i"
-	@echo "... Sprite.s"
 .PHONY : help
 
 
