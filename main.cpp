@@ -39,7 +39,7 @@ void scroll_callback(GLFWwindow* window, double xoffset, double yoffset){
 int main(int argc, char** argv){
 	printf("this is in main function ! \n");
 
-	glfwInit();
+	int ret =	glfwInit();
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);

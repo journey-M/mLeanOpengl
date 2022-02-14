@@ -33,8 +33,8 @@ IOperator* Single::getOperator(){
 			// currentOperator = new CoordinateCube();
 			// currentOperator = new CoordinateCubeMore();
 			// currentOperator = new Camera01();
-			// currentOperator= new CameraMove();
-			currentOperator= new LColor1();
+			currentOperator= new CameraMove();
+			//currentOperator= new LColor1();
 		}
 		return currentOperator; 
 }
