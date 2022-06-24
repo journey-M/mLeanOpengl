@@ -1,0 +1,356 @@
+[
+{
+    "Notes": " 2f2-yard 栅栏围成的农场 ",
+
+    "yardName": "farm_forest_2f2",
+
+    "pngLPath": "farm_2f2.M.png",
+    "frameNum.col":  3,
+    "frameNum.row":  4,
+    "totalFrameNum": 12,
+
+    "isHaveMajorGos": true,
+    "isHaveFloorGos": false,
+
+    "public_varTypes":[
+        {
+            "Notes": " 栅栏 ",
+            "type": "V_1",
+            "isFloorGo": false,
+            "isAllInstanceUseSamePlan": true,
+            "goSpecPool":[
+                { "goSpeciesName": "fence", "goLabel": "T2", "num": 1 }
+            ]
+        },
+
+        {
+            "Notes": " 生物 tmp ",
+            "type": "V_3",
+            "isFloorGo": false,
+            "isAllInstanceUseSamePlan": false,
+            "goSpecPool":[
+                { "goSpeciesName": "chicken", "goLabel": "Hen", "num": 1 }
+            ]
+        },
+
+        {
+            "Notes": " glass-1 ",
+            "type": "V_10",
+            "isFloorGo": false,
+            "isAllInstanceUseSamePlan": false,
+            "goSpecPool":[
+                
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Big", "num": 1 },
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Mid", "num": 3 },
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Sml", "num": 1 },
+                { "goSpeciesName": "grass", "goLabel":"Shamrock_Green_Sml", "num": 2 },
+                { "goSpeciesName": "grass", "goLabel":"Shamrock_Green_Mid", "num": 7 }
+
+            ]
+        },
+
+        {
+            "Notes": " glass-2 ",
+            "type": "V_11",
+            "isFloorGo": false,
+            "isAllInstanceUseSamePlan": false,
+            "goSpecPool":[
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Big", "num": 1 },
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Mid", "num": 3 },
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Sml", "num": 1 },
+
+                { "goSpeciesName": "mushroom", "goLabel":"Mid", "num": 1 },
+                { "goSpeciesName": "breakStone", "goLabel": "Light", "num": 1 },
+                { "goSpeciesName": "bush", "goLabel": "Greyberry", "num": 1 }
+            ]
+        }
+    ],
+
+    "yardObjs":[
+        {
+            "yardLabel": "",
+            "dir": "Left",
+            "isAllFramesInclude": false,
+            "fstFrameIdx": 0,
+            "frameNums": 3,
+
+            "varTypes":[]
+        },
+
+        {
+            "yardLabel": "",
+            "dir": "Top",
+            "isAllFramesInclude": false,
+            "fstFrameIdx": 3,
+            "frameNums": 3,
+
+            "varTypes":[]
+        },
+
+        {
+            "yardLabel": "",
+            "dir": "Right",
+            "isAllFramesInclude": false,
+            "fstFrameIdx": 6,
+            "frameNums": 3,
+
+            "varTypes":[]
+        },
+
+        {
+            "yardLabel": "",
+            "dir": "Bottom",
+            "isAllFramesInclude": false,
+            "fstFrameIdx": 9,
+            "frameNums": 3,
+
+            "varTypes":[]
+        }
+    ]
+},
+
+{
+    "Notes": " 3f3-yard 栅栏围成的农场 ",
+
+    "yardName": "farm_forest_3f3",
+
+    "pngLPath": "farm_3f3.M.png",
+    "frameNum.col":  3,
+    "frameNum.row":  4,
+    "totalFrameNum": 12,
+
+    "isHaveMajorGos": true,
+    "isHaveFloorGos": false,
+
+    "public_varTypes":[
+        {
+            "Notes": " 栅栏 ",
+            "type": "V_1",
+            "isFloorGo": false,
+            "isAllInstanceUseSamePlan": true,
+            "goSpecPool":[
+                { "goSpeciesName": "fence", "goLabel": "T2", "num": 1 }
+            ]
+        },
+
+        {
+            "Notes": " 生物 tmp ",
+            "type": "V_3",
+            "isFloorGo": false,
+            "isAllInstanceUseSamePlan": false,
+            "goSpecPool":[
+                { "goSpeciesName": "chicken", "goLabel": "Hen", "num": 1 }
+            ]
+        },
+
+        {
+            "Notes": " glass-1 ",
+            "type": "V_10",
+            "isFloorGo": false,
+            "isAllInstanceUseSamePlan": false,
+            "goSpecPool":[
+                
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Big", "num": 1 },
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Mid", "num": 3 },
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Sml", "num": 1 },
+                { "goSpeciesName": "grass", "goLabel":"Shamrock_Green_Sml", "num": 2 },
+                { "goSpeciesName": "grass", "goLabel":"Shamrock_Green_Mid", "num": 7 }
+
+            ]
+        },
+
+        {
+            "Notes": " glass-2 ",
+            "type": "V_11",
+            "isFloorGo": false,
+            "isAllInstanceUseSamePlan": false,
+            "goSpecPool":[
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Big", "num": 1 },
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Mid", "num": 3 },
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Sml", "num": 1 },
+
+                { "goSpeciesName": "mushroom", "goLabel":"Mid", "num": 1 },
+                { "goSpeciesName": "breakStone", "goLabel": "Light", "num": 1 },
+                { "goSpeciesName": "bush", "goLabel": "Greyberry", "num": 1 }
+            ]
+        }
+    ],
+
+    "yardObjs":[
+        {
+            "yardLabel": "",
+            "dir": "Left",
+            "isAllFramesInclude": false,
+            "fstFrameIdx": 0,
+            "frameNums": 3,
+
+            "varTypes":[]
+        },
+
+        {
+            "yardLabel": "",
+            "dir": "Top",
+            "isAllFramesInclude": false,
+            "fstFrameIdx": 3,
+            "frameNums": 3,
+
+            "varTypes":[]
+        },
+
+        {
+            "yardLabel": "",
+            "dir": "Right",
+            "isAllFramesInclude": false,
+            "fstFrameIdx": 6,
+            "frameNums": 3,
+
+            "varTypes":[]
+        },
+
+        {
+            "yardLabel": "",
+            "dir": "Bottom",
+            "isAllFramesInclude": false,
+            "fstFrameIdx": 9,
+            "frameNums": 3,
+
+            "varTypes":[]
+        }
+    ]
+},
+
+{
+    "Notes": " 4f4-yard 栅栏围成的农场 ",
+
+    "yardName": "farm_forest_4f4",
+
+    "pngLPath": "farm_4f4.M.png",
+    "frameNum.col":  3,
+    "frameNum.row":  4,
+    "totalFrameNum": 12,
+
+    "isHaveMajorGos": true,
+    "isHaveFloorGos": false,
+
+    "public_varTypes":[
+        {
+            "Notes": " 栅栏 ",
+            "type": "V_1",
+            "isFloorGo": false,
+            "isAllInstanceUseSamePlan": true,
+            "goSpecPool":[
+                { "goSpeciesName": "fence", "goLabel": "T2", "num": 1 }
+            ]
+        },
+
+        {
+            "Notes": " 生物 tmp ",
+            "type": "V_3",
+            "isFloorGo": false,
+            "isAllInstanceUseSamePlan": false,
+            "goSpecPool":[
+                { "goSpeciesName": "chicken", "goLabel": "Hen", "num": 1 }
+            ]
+        },
+
+        {
+            "Notes": " glass-1 ",
+            "type": "V_10",
+            "isFloorGo": false,
+            "isAllInstanceUseSamePlan": false,
+            "goSpecPool":[
+                
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Big", "num": 1 },
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Mid", "num": 3 },
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Sml", "num": 1 },
+                { "goSpeciesName": "grass", "goLabel":"Shamrock_Green_Sml", "num": 2 },
+                { "goSpeciesName": "grass", "goLabel":"Shamrock_Green_Mid", "num": 7 }
+
+            ]
+        },
+
+        {
+            "Notes": " glass-2 ",
+            "type": "V_11",
+            "isFloorGo": false,
+            "isAllInstanceUseSamePlan": false,
+            "goSpecPool":[
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Big", "num": 1 },
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Mid", "num": 3 },
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Sml", "num": 1 },
+
+                { "goSpeciesName": "mushroom", "goLabel":"Mid", "num": 1 },
+                { "goSpeciesName": "breakStone", "goLabel": "Light", "num": 1 },
+                { "goSpeciesName": "bush", "goLabel": "Greyberry", "num": 1 }
+            ]
+        },
+
+        {
+            "Notes": " rock 4m3 / 3m4 ",
+            "type": "V_16",
+            "isFloorGo": false,
+            "isAllInstanceUseSamePlan": false,
+            "plotPool":[ 
+
+                { "plotName": "whiteRock", "plotLabel": "4m3", "num": 1 },
+                { "plotName": "whiteRock", "plotLabel": "4m3_lichen", "num": 2 },
+                { "plotName": "whiteRock", "plotLabel": "3m4", "num": 1 },
+                { "plotName": "whiteRock", "plotLabel": "3m4_lichen", "num": 2 },
+
+                { "plotName": "hollowLog", "plotLabel": "forest_2m2", "num": 1 },
+                { "plotName": "hollowLog", "plotLabel": "forest_2m3", "num": 1 },
+                { "plotName": "hollowLog", "plotLabel": "forest_3m2", "num": 1 }
+
+            ]
+        }
+    ],
+
+    "yardObjs":[
+        {
+            "yardLabel": "",
+            "dir": "Left",
+            "isAllFramesInclude": false,
+            "fstFrameIdx": 0,
+            "frameNums": 3,
+
+            "varTypes":[]
+        },
+
+        {
+            "yardLabel": "",
+            "dir": "Top",
+            "isAllFramesInclude": false,
+            "fstFrameIdx": 3,
+            "frameNums": 3,
+
+            "varTypes":[]
+        },
+
+        {
+            "yardLabel": "",
+            "dir": "Right",
+            "isAllFramesInclude": false,
+            "fstFrameIdx": 6,
+            "frameNums": 3,
+
+            "varTypes":[]
+        },
+
+        {
+            "yardLabel": "",
+            "dir": "Bottom",
+            "isAllFramesInclude": false,
+            "fstFrameIdx": 9,
+            "frameNums": 3,
+
+            "varTypes":[]
+        }
+    ]
+}
+
+
+
+
+
+
+]

@@ -1,0 +1,33 @@
+[
+    {
+        "goSpeciesName": "hollowLog",
+        "without_holds": true,
+
+        "renderLayerType": "MajorGoes",
+        "shaderType": "OriginColor",
+        
+        "plans":[
+            {
+                "goLabel": "Poplar_Normal",
+                "collide":{
+                    "collideType": "Square",
+                    "signInMapEnts_square_type": "T_1m1"
+                },
+                "goMeshs":[
+                    { "afsName": "hollowLog_poplar", "animLabel": "Normal"  }
+                ]
+            },
+            {
+                "goLabel": "Poplar_Special",
+                "collide":{
+                    "collideType": "Square",
+                    "signInMapEnts_square_type": "T_1m1"
+                },
+                "goMeshs":[
+                    { "afsName": "hollowLog_poplar", "animLabel": "Special"  }
+                ]
+            }
+        ]
+    }
+]
+

@@ -1,0 +1,30 @@
+[
+  {
+    "goSpeciesName": "firewood",
+    "parentID": 0,
+    "family": "Major",
+    "state": "Waked",
+    "moveState": "AbsFixed",
+    "isMoveCollide": true,
+    "isDoPass": false,
+    "isBePass": false,
+
+    "alti": 0,
+    "lAltiRanges": [
+        { "label": "", "val": [0.0, 40.0] }
+    ],
+
+    "weight": 5,
+    "pub.HP": 50,
+    "pub.MP": 50,
+
+    "afs_lPaths": [ 
+        "_firewood.afs.json"
+    ],
+    "goAsm_lPaths": [
+        "_firewood.asm.json"
+    ]
+
+  }
+]
+

@@ -1,0 +1,32 @@
+[
+    {
+        "goSpeciesName": "playerGoCircle",
+        "family": "WorldUI",
+        "state": "Waked",
+        "moveState": "Movable",
+        "moveType": "Drag",
+        "isMoveCollide": false,
+        "isDoPass": true,
+        "isBePass": true,
+        "moveSpeedLvl": 9,
+
+        "alti": 0,
+        "lAltiRanges": [
+            { "label": "", "val": [0.0, 0.0] }
+        ],
+
+
+        "weight": 1,
+        "pub.HP": 1,
+        "pub.MP": 1,
+
+
+        "afs_lPaths": [ 
+            "_playerGoCircle.afs.json"
+        ],
+        "goAsm_lPaths": [
+            "_playerGoCircle.asm.json"
+        ]
+
+      }
+]

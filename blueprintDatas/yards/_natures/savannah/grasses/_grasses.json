@@ -1,0 +1,77 @@
+[
+{
+    "Notes": "nature yard majorGos，all grasses",
+
+    "yardName": "N_savannah_grasses",
+    
+
+    "pngLPath": "N_Savannah_grasses.M.png",
+    "frameNum.col":  5,
+    "frameNum.row":  2,
+    "totalFrameNum": 10,
+
+    "isHaveMajorGos": true,
+    "isHaveFloorGos": false,
+
+
+    "yardObjs":[
+        {
+            "yardLabel": "",
+            "dir": "Center",
+            "isAllFramesInclude": true,
+
+            "varTypes":[
+                {
+                    "Notes": "高草",
+                    "type": "V_1",
+                    "isFloorGo": false,
+                    "isAllInstanceUseSamePlan": false,
+                    "goSpecPool":[
+                        
+                        { "goSpeciesName": "grass", "goLabel":"Savannah_Grass1_Big", "num": 1 },
+                        { "goSpeciesName": "grass", "goLabel":"Savannah_Grass1_Mid", "num": 3 },
+                        { "goSpeciesName": "grass", "goLabel":"Savannah_Grass1_Sml", "num": 1 }
+        
+                    ]
+                },
+        
+                {
+                    "Notes": " 矮草-1 ",
+                    "type": "V_10",
+                    "isFloorGo": false,
+                    "isAllInstanceUseSamePlan": false,
+                    "goSpecPool":[
+        
+                        { "goSpeciesName": "grass", "goLabel":"Shamrock_Green_Sml", "num": 1 },
+                        { "goSpeciesName": "grass", "goLabel":"Shamrock_Green_Mid", "num": 5 }
+                        
+                    ]
+                },
+        
+                {
+                    "Notes": " 矮草-2 ",
+                    "type": "V_16",
+                    "isFloorGo": false,
+                    "isAllInstanceUseSamePlan": false,
+                    "goSpecPool":[
+        
+                        { "goSpeciesName": "grass", "goLabel":"Flower_White_Big", "num": 1 },
+                        { "goSpeciesName": "grass", "goLabel":"Flower_White_Mid", "num": 3 },
+                        { "goSpeciesName": "grass", "goLabel":"Flower_White_Sml", "num": 1 }
+        
+                    ]
+                }
+        
+                
+            ]
+
+        }
+    ]
+
+    
+}
+
+
+
+
+]

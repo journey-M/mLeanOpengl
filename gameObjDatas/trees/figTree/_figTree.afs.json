@@ -1,0 +1,50 @@
+[
+    {
+        "afsName": "figTree",
+        "pngs": [
+            {
+                "path": "figTree_mid.P.png",
+                "frameNum.col":  2,
+                "frameNum.row":  1,
+                "totalFrameNum": 2,
+                "isHaveShadow": true,
+                "isPjtSingle": true,
+                "isShadowSingle": false,
+             
+                "subspecs": [
+                    {
+                        "type": "batch",
+                        "animLabel": "Mid",
+                        "fstSubIdx": 0,
+                        "fstIdx": 0,
+                        "idxNums": 2,
+                        "actionEName": "Idle", "dir": "Center", "brokenLvl": 0,
+                        "isOpaque": true
+                    }
+                ]
+            },
+    
+            {
+                "path": "figTree2_mid.P.png",
+                "frameNum.col":  2,
+                "frameNum.row":  1,
+                "totalFrameNum": 2,
+                "isHaveShadow": true,
+                "isPjtSingle": true,
+                "isShadowSingle": false,
+            
+                "subspecs": [
+                    {
+                        "type": "batch",
+                        "animLabel": "Mid",
+                        "fstSubIdx": 2,
+                        "fstIdx": 0,
+                        "idxNums": 2,
+                        "actionEName": "Idle", "dir": "Center", "brokenLvl": 0,
+                        "isOpaque": true
+                    }
+                ]
+            }
+        ]
+    }
+]

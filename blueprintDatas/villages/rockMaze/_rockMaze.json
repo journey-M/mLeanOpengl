@@ -1,0 +1,28 @@
+[
+{
+    "Notes": " 石制迷宫 ",
+
+    "villageName": "rockMaze",
+
+    "pngLPath": "rockMaze3.M.png",
+    "frameNum.col":  1,
+    "frameNum.row":  1,
+    "totalFrameNum": 1,
+
+    "isHaveRoad": false,
+
+    "varTypes":[
+        {
+            "type": "V_1",
+            "isAllInstanceUseSamePlan": false,
+            "isRoad": false,
+            "yardPool":[ 
+                { "yardName": "rockMaze", "yardLabel": "Center", "num": 3 } 
+            ]
+        }
+
+        
+    ]
+}
+
+]

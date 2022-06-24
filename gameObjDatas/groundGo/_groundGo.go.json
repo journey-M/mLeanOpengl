@@ -1,0 +1,36 @@
+[
+    {
+        "goSpeciesName": "groundGo",
+        "family": "GroundGo",
+        "state": "Waked",
+        "moveState": "AbsFixed",
+        "isMoveCollide": false,
+        "isDoPass": false,
+        "isBePass": true,
+
+        "alti": 0,
+        "lAltiRanges": [
+            { "label": "", "val": [0.0, 0.0] }
+        ],
+
+
+        "weight": 1,
+        "pub.HP": "nil",
+        "pub.MP": "nil",
+
+
+
+        "afs_lPaths": [ 
+            "darkForest/_afs.json",
+            "desert/_afs.json",
+            "forest/_afs.json",
+            "savannah/_afs.json"
+            
+        ],
+        "goAsm_lPaths": [
+            "_asm.json"
+        ]
+
+
+    }
+]

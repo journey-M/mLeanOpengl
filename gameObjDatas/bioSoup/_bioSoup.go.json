@@ -1,0 +1,34 @@
+[
+    {
+        "goSpeciesName": "bioSoup",
+        "family": "BioSoup",
+        "state": "Waked",
+        "moveState": "AbsFixed",
+        "isMoveCollide": true,
+        "isDoPass": false,
+        "isBePass": false,
+
+        "alti": 0,
+        "lAltiRanges": [
+            { "label": "", "val": [0.0, 10.0] }
+        ],
+
+        "weight": 1,
+        "pub.HP": "nil",
+        "pub.MP": "nil",
+
+
+        "afs_lPaths": [ 
+            "active/_afs.json",
+            "inertia/_afs.json",
+            "particle/_afs.json"
+
+        ],
+        "goAsm_lPaths": [
+            "active/_active.asm.json",
+            "inertia/_inertia.asm.json"
+        ]
+
+
+    }
+]

@@ -1,0 +1,71 @@
+[
+
+{
+    "afsName": "mushroom",
+    "pngs": [
+        {
+            "path": "mushroom_sml.P.png",
+            "frameNum.col":  5,
+            "frameNum.row":  2,
+            "totalFrameNum": 10,
+            "isHaveShadow": false,
+            "isPjtSingle": true,
+         
+            "subspecs": [
+                {
+                    "type": "batch",
+                    "animLabel": "Sml",
+                    "fstSubIdx": 0,
+                    "fstIdx": 0,
+                    "idxNums": 10,
+                    "actionEName": "Idle", "dir": "Center", "brokenLvl": 0,
+                    "isOpaque": true
+                }
+            ]
+        },
+        {
+            "path": "mushroom_mid.P.png",
+            "frameNum.col":  5,
+            "frameNum.row":  4,
+            "totalFrameNum": 20,
+            "isHaveShadow": true,
+            "isPjtSingle": true,
+            "isShadowSingle": false,
+           
+            "subspecs": [
+                {
+                    "type": "batch",
+                    "animLabel": "Mid",
+                    "fstSubIdx": 0,
+                    "fstIdx": 0,
+                    "idxNums": 20,
+                    "actionEName": "Idle", "dir": "Center", "brokenLvl": 0,
+                    "isOpaque": true
+                }
+            ]
+        },
+        {
+            "path": "mushroom_big.P.png",
+            "frameNum.col":  4,
+            "frameNum.row":  3,
+            "totalFrameNum": 11,
+            "isHaveShadow": true,
+            "isPjtSingle": true,
+            "isShadowSingle": false,
+         
+            "subspecs": [
+                {
+                    "type": "batch",
+                    "animLabel": "Big",
+                    "fstSubIdx": 0,
+                    "fstIdx": 0,
+                    "idxNums": 11,
+                    "actionEName": "Idle", "dir": "Center", "brokenLvl": 0,
+                    "isOpaque": true
+                }
+            ]
+        }
+    ]
+}
+
+]

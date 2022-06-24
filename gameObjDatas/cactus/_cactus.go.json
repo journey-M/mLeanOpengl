@@ -1,0 +1,33 @@
+[
+  {
+    "goSpeciesName": "cactus",
+    "family": "Major",
+    "state": "Waked",
+    "moveState": "AbsFixed",
+    "isMoveCollide": true,
+    "isDoPass": false,
+    "isBePass": false,
+
+    "alti": 0, 
+    "lAltiRanges": [
+        { "label": "Mid", "val": [0.0, 240.0] },
+        { "label": "Sml", "val": [0.0, 150.0] }
+    ],
+
+    "weight": 50,
+    "pub.HP": 170,
+    "pub.MP": 50,
+
+
+    "afs_lPaths": [ 
+        "_cactus.afs.json"
+    ],
+    "goAsm_lPaths": [
+        "_cactus.asm.json"
+    ]
+
+  }
+
+
+
+]

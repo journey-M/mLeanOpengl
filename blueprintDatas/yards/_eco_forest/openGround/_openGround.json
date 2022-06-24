@@ -1,0 +1,217 @@
+[
+{
+    "Notes": " 1f1-yard 开阔场地 ",
+
+    "yardName": "openGround_forest_1f1",
+
+    "pngLPath": "openG_1f1.M.png",
+    "frameNum.col":  3,
+    "frameNum.row":  3,
+    "totalFrameNum": 9,
+
+    "isHaveMajorGos": true,
+    "isHaveFloorGos": false,
+
+    "public_varTypes":[
+        {
+            "Notes": " grass-1 ",
+            "type": "V_10",
+            "isFloorGo": false,
+            "isAllInstanceUseSamePlan": false,
+            "goSpecPool":[
+                { "goSpeciesName": "grass", "goLabel":"Shamrock_Green_Sml", "num": 1 },
+                { "goSpeciesName": "grass", "goLabel":"Shamrock_Green_Mid", "num": 5 }
+            ]
+        },
+
+        {
+            "Notes": " grass-2 ",
+            "type": "V_11",
+            "isFloorGo": false,
+            "isAllInstanceUseSamePlan": false,
+            "goSpecPool":[
+                { "goSpeciesName": "grass", "goLabel":"Shamrock_Green_Sml", "num": 1 },
+                { "goSpeciesName": "grass", "goLabel":"Shamrock_Green_Mid", "num": 1 },
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Big", "num": 1 },
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Mid", "num": 3 },
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Sml", "num": 1 },
+
+                { "goSpeciesName": "mushroom", "goLabel":"Mid", "num": 1 },
+                { "goSpeciesName": "bush", "goLabel": "Greyberry", "num": 1 }
+            ]
+        },
+
+        {
+            "Notes": " 碎石  ",
+            "type": "V_20",
+            "isFloorGo": false,
+            "isAllInstanceUseSamePlan": false,
+            "goSpecPool":[
+                { "goSpeciesName": "breakStone", "goLabel": "Light", "num": 7 },
+                { "goSpeciesName": "bush", "goLabel": "Origin", "num": 1 }
+            ]
+        }
+
+
+    ],
+
+    "yardObjs":[
+        {
+            "yardLabel": "",
+            "dir": "Center",
+            "isAllFramesInclude": false,
+            "fstFrameIdx": 0,
+            "frameNums": 9,
+
+            "varTypes":[]
+        }
+    ]
+},
+
+{
+    "Notes": " 2f2-yard 开阔场地 ",
+
+    "yardName": "openGround_forest_2f2",
+
+    "pngLPath": "openG_2f2.M.png",
+    "frameNum.col":  4,
+    "frameNum.row":  4,
+    "totalFrameNum": 16,
+
+    "isHaveMajorGos": true,
+    "isHaveFloorGos": false,
+
+    "public_varTypes":[
+        {
+            "Notes": " grass-1 ",
+            "type": "V_10",
+            "isFloorGo": false,
+            "isAllInstanceUseSamePlan": false,
+            "goSpecPool":[
+                { "goSpeciesName": "grass", "goLabel":"Shamrock_Green_Sml", "num": 1 },
+                { "goSpeciesName": "grass", "goLabel":"Shamrock_Green_Mid", "num": 5 }
+            ]
+        },
+
+        {
+            "Notes": " grass-2 ",
+            "type": "V_11",
+            "isFloorGo": false,
+            "isAllInstanceUseSamePlan": false,
+            "goSpecPool":[
+                { "goSpeciesName": "grass", "goLabel":"Shamrock_Green_Sml", "num": 1 },
+                { "goSpeciesName": "grass", "goLabel":"Shamrock_Green_Mid", "num": 1 },
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Big", "num": 1 },
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Mid", "num": 3 },
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Sml", "num": 1 },
+
+                { "goSpeciesName": "mushroom", "goLabel":"Mid", "num": 1 },
+                { "goSpeciesName": "bush", "goLabel": "Greyberry", "num": 1 }
+            ]
+        },
+
+        {
+            "Notes": " 碎石  ",
+            "type": "V_20",
+            "isFloorGo": false,
+            "isAllInstanceUseSamePlan": false,
+            "goSpecPool":[
+                { "goSpeciesName": "breakStone", "goLabel": "Light", "num": 7 },
+                { "goSpeciesName": "bush", "goLabel": "Origin", "num": 1 }
+            ]
+        }
+
+
+    ],
+
+    "yardObjs":[
+        {
+            "yardLabel": "",
+            "dir": "Center",
+            "isAllFramesInclude": false,
+            "fstFrameIdx": 0,
+            "frameNums": 16,
+
+            "varTypes":[]
+        }
+    ]
+},
+
+
+{
+    "Notes": " 3f3-yard 开阔场地 ",
+
+    "yardName": "openGround_forest_3f3",
+
+    "pngLPath": "openG_3f3.M.png",
+    "frameNum.col":  4,
+    "frameNum.row":  3,
+    "totalFrameNum": 12,
+
+    "isHaveMajorGos": true,
+    "isHaveFloorGos": false,
+
+    "public_varTypes":[
+        {
+            "Notes": " grass-1 ",
+            "type": "V_10",
+            "isFloorGo": false,
+            "isAllInstanceUseSamePlan": false,
+            "goSpecPool":[
+                { "goSpeciesName": "grass", "goLabel":"Shamrock_Green_Sml", "num": 1 },
+                { "goSpeciesName": "grass", "goLabel":"Shamrock_Green_Mid", "num": 5 }
+            ]
+        },
+
+        {
+            "Notes": " grass-2 ",
+            "type": "V_11",
+            "isFloorGo": false,
+            "isAllInstanceUseSamePlan": false,
+            "goSpecPool":[
+                { "goSpeciesName": "grass", "goLabel":"Shamrock_Green_Sml", "num": 1 },
+                { "goSpeciesName": "grass", "goLabel":"Shamrock_Green_Mid", "num": 1 },
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Big", "num": 1 },
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Mid", "num": 3 },
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Sml", "num": 1 },
+
+                { "goSpeciesName": "mushroom", "goLabel":"Mid", "num": 1 },
+                { "goSpeciesName": "bush", "goLabel": "Greyberry", "num": 1 }
+            ]
+        },
+
+        {
+            "Notes": " 碎石  ",
+            "type": "V_20",
+            "isFloorGo": false,
+            "isAllInstanceUseSamePlan": false,
+            "goSpecPool":[
+                { "goSpeciesName": "breakStone", "goLabel": "Light", "num": 7 },
+                { "goSpeciesName": "bush", "goLabel": "Origin", "num": 1 }
+            ]
+        }
+
+
+    ],
+
+    "yardObjs":[
+        {
+            "yardLabel": "",
+            "dir": "Center",
+            "isAllFramesInclude": false,
+            "fstFrameIdx": 0,
+            "frameNums": 12,
+
+            "varTypes":[]
+        }
+    ]
+}
+
+
+
+
+
+
+
+
+]

@@ -1,0 +1,116 @@
+[
+{
+    "name": "Forest_1",
+    "EcoSysPlanType": "Forest",
+    "colorTableName": "forest",
+    "density.SeaLvlOff": 15.0,
+    "density.DivideType": "default",
+
+    "natureMajorYardPools":[
+
+        {
+            "annotate": "====================[ -3 ]====================",
+            "density.lvl": -3,
+            "applyPercent": 0.0,
+
+            "yardPool":[
+                
+            ]
+            
+        },
+
+        {
+            "annotate": "====================[ -2 ]====================",
+            "density.lvl": -2,
+            "applyPercent": 0.0,
+
+            "yardPool":[
+               
+            ]
+        },
+
+        {
+            "annotate": "====================[ -1 ]====================",
+            "density.lvl": -1,
+            "applyPercent": 0.0,
+
+            "yardPool":[
+                
+            ]
+        },
+
+        {
+            "annotate": "====================[ 0 ]====================",
+            "density.lvl": 0,
+            "applyPercent": 0.0,
+
+            "yardPool":[
+                
+            ]
+
+        },
+        
+        {
+            "annotate": "====================[ 1 ]====================",
+            "density.lvl": 1,
+            "applyPercent": 0.99,
+
+            "yardPool":[
+                { "yardName": "N_forest_trees", "yardLabel": "1Mid1Sml", "num": 17 },
+
+                { "yardName": "N_forest_hollowLogs", "yardLabel": "", "num": 1 }
+                
+            ]
+
+        },
+
+        {
+            "annotate": "====================[ 2 ]====================",
+            "density.lvl": 2,
+            "applyPercent": 0.88,
+
+            "yardPool":[
+                { "yardName": "N_forest_trees", "yardLabel": "1Mid1Sml", "num": 7 },
+                
+                { "yardName": "N_breakStones", "yardLabel": "Forest", "num": 5 },
+
+                { "yardName": "N_forest_hollowLogs", "yardLabel": "", "num": 1 }
+              
+            ]
+            
+        },
+
+        {
+            "annotate": "====================[ 3 ]====================",
+            "density.lvl": 3,
+            "applyPercent": 0.2,
+
+            "yardPool":[   
+
+                { "yardName": "N_forest_hollowLogs", "yardLabel": "", "num": 1 }    
+
+            ]
+        }
+    ],
+
+
+    "villageBlueprintPool":[ 
+        { "villageName": "empty_test", "num": 0 },
+        { "villageName": "v_1", "num": 0 },
+        { "villageName": "road_test", "num": 0 },
+
+        { "villageName": "circleVillage_forest", "num": 1 }
+    ],
+
+
+    "natureFloorYards": {
+        "yardPool":[
+            { "yardName": "N_floorGo", "yardLabel": "Forest", "num": 1 }
+        ],
+        "density.lvls":[ 1,2,3 ]
+    }
+
+}
+
+
+]

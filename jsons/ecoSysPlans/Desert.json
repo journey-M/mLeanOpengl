@@ -1,0 +1,101 @@
+[
+{
+    "name": "Desert_1",
+    "EcoSysPlanType": "Desert",
+    "colorTableName": "desert",
+    "density.SeaLvlOff": 15.0,
+    "density.DivideType": "default",
+    "natureMajorYardPools":[
+
+        {
+            "annotate": "====================[ -3 ]====================",
+            "density.lvl": -3,
+            "applyPercent": 0.0,
+
+            "yardPool":[
+            ]
+            
+        },
+
+        {
+            "annotate": "====================[ -2 ]====================",
+            "density.lvl": -2,
+            "applyPercent": 0.0,
+
+            "yardPool":[
+            ]
+        },
+
+        {
+            "annotate": "====================[ -1 ]====================",
+            "density.lvl": -1,
+            "applyPercent": 0.0,
+
+            "yardPool":[
+            ]
+        },
+
+        {
+            "annotate": "====================[ 0 ]====================",
+            "density.lvl": 0,
+            "applyPercent": 0.0,
+
+            "yardPool":[
+            ]
+
+        },
+        
+        {
+            "annotate": "====================[ 1 ]====================",
+            "density.lvl": 1,
+            "applyPercent": 0.99,
+
+            "yardPool":[
+                { "yardName": "N_desert_trees", "yardLabel": "1Mid", "num": 3 }
+            ]
+
+        },
+
+        {
+            "annotate": "====================[ 2 ]====================",
+            "density.lvl": 2,
+            "applyPercent": 0.79,
+
+            "yardPool":[
+                { "yardName": "N_desert_trees", "yardLabel": "1Mid", "num": 3 },
+
+                { "yardName": "N_breakStones", "yardLabel": "Desert", "num": 1 }
+            ]
+            
+        },
+
+        {
+            "annotate": "====================[ 3 ]====================",
+            "density.lvl": 3,
+            "applyPercent": 0.0,
+
+            "yardPool":[
+
+            ]
+        }
+    ],
+
+
+    "villageBlueprintPool":[ 
+        { "villageName": "v_1", "num": 0 },
+
+        { "villageName": "circleVillage_forest", "num": 1 }
+    ],
+
+
+    "natureFloorYards": {
+        "yardPool":[
+            { "yardName": "N_floorGo", "yardLabel": "Desert", "num": 1 }
+        ],
+        "density.lvls":[ 0,1,3 ]
+    }
+
+}
+
+
+]

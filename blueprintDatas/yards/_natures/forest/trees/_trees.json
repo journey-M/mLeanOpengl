@@ -1,0 +1,213 @@
+[
+{
+    "Notes": "nature yard majorGos，1-tree",
+
+    "yardName": "N_forest_trees",
+    
+
+    "pngLPath": "N_forest_1tree.M.png",
+    "frameNum.col":  8,
+    "frameNum.row":  9,
+    "totalFrameNum": 72,
+
+    "isHaveMajorGos": true,
+    "isHaveFloorGos": false,
+
+    "yardObjs":[
+        {
+            "yardLabel": "1Mid",
+            "dir": "Center",
+            "isAllFramesInclude": true,
+
+            "varTypes":[
+                {
+                    "Notes": "单独一颗树",
+                    "type": "V_1",
+                    "isFloorGo": false,
+                    "isAllInstanceUseSamePlan": false,
+                    "goSpecPool":[
+                        { "goSpeciesName": "poplarTree", "goLabel": "Mid", "num": 3 }
+                    ]
+                },
+        
+                {
+                    "Notes": "草-矮",
+                    "type": "V_10",
+                    "isFloorGo": false,
+                    "isAllInstanceUseSamePlan": false,
+                    "goSpecPool":[
+                        { "goSpeciesName": "grass", "goLabel":"Flower_White_Big", "num": 1 },
+                        { "goSpeciesName": "grass", "goLabel":"Flower_White_Mid", "num": 3 },
+                        { "goSpeciesName": "grass", "goLabel":"Flower_White_Sml", "num": 1 }
+                    ]
+                },
+        
+                {
+                    "Notes": "草-高",
+                    "type": "V_11",
+                    "isFloorGo": false,
+                    "isAllInstanceUseSamePlan": false,
+                    "goSpecPool":[
+                        { "goSpeciesName": "grass", "goLabel":"Flower_HighWhite_Big", "num": 1 },
+                        { "goSpeciesName": "grass", "goLabel":"Flower_HighWhite_Mid", "num": 3 },
+                        { "goSpeciesName": "grass", "goLabel":"Flower_HighWhite_Sml", "num": 1 }
+                    ]
+                }
+            ]
+        }
+    ]
+
+    
+},
+
+
+
+{
+    "Notes": "nature yard majorGos，2-tree",
+
+    "yardName": "N_forest_trees",
+    
+
+    "pngLPath": "N_forest_2tree.M.png",
+    "frameNum.col":  11,
+    "frameNum.row":  5,
+    "totalFrameNum": 55,
+
+    "isHaveMajorGos": true,
+    "isHaveFloorGos": false,
+
+    "yardObjs":[
+        {
+            "yardLabel": "2Mid",
+            "dir": "Center",
+            "isAllFramesInclude": true,
+
+            "varTypes":[
+                {
+                    "Notes": "单独一颗树",
+                    "type": "V_1",
+                    "isFloorGo": false,
+                    "isAllInstanceUseSamePlan": false,
+                    "goSpecPool":[
+                        { "goSpeciesName": "poplarTree", "goLabel": "Mid", "num": 3 }
+                    ]
+                },
+        
+                {
+                    "Notes": "草-矮",
+                    "type": "V_10",
+                    "isFloorGo": false,
+                    "isAllInstanceUseSamePlan": false,
+                    "goSpecPool":[
+                        { "goSpeciesName": "grass", "goLabel":"Flower_White_Big", "num": 1 },
+                        { "goSpeciesName": "grass", "goLabel":"Flower_White_Mid", "num": 3 },
+                        { "goSpeciesName": "grass", "goLabel":"Flower_White_Sml", "num": 1 }
+                    ]
+                },
+        
+                {
+                    "Notes": "草-高",
+                    "type": "V_11",
+                    "isFloorGo": false,
+                    "isAllInstanceUseSamePlan": false,
+                    "goSpecPool":[
+                        { "goSpeciesName": "grass", "goLabel":"Flower_HighWhite_Big", "num": 1 },
+                        { "goSpeciesName": "grass", "goLabel":"Flower_HighWhite_Mid", "num": 3 },
+                        { "goSpeciesName": "grass", "goLabel":"Flower_HighWhite_Sml", "num": 1 }
+                    ]
+                }
+        
+            ]
+        }
+    ]
+
+    
+},
+
+
+
+
+{
+    "Notes": "nature yard majorGos，2-tree",
+
+    "yardName": "N_forest_trees",
+    
+
+    "pngLPath": "N_forest_tree_1mid1sml.M.png",
+    "frameNum.col":  11,
+    "frameNum.row":  5,
+    "totalFrameNum": 55,
+
+    "isHaveMajorGos": true,
+    "isHaveFloorGos": false,
+
+    "yardObjs":[
+        {
+            "yardLabel": "1Mid1Sml",
+            "dir": "Center",
+            "isAllFramesInclude": true,
+
+            "varTypes":[
+                {
+                    "Notes": "mid树",
+                    "type": "V_1",
+                    "isFloorGo": false,
+                    "isAllInstanceUseSamePlan": false,
+                    "goSpecPool":[
+                        { "goSpeciesName": "poplarTree", "goLabel": "Mid", "num": 3 }
+                    ]
+                },
+        
+                {
+                    "Notes": "sml树",
+                    "type": "V_2",
+                    "isFloorGo": false,
+                    "isAllInstanceUseSamePlan": false,
+                    "goSpecPool":[
+                        { "goSpeciesName": "poplarTree", "goLabel": "Sml", "num": 3 }
+                    ]
+                },
+        
+                {
+                    "Notes": "草-矮",
+                    "type": "V_10",
+                    "isFloorGo": false,
+                    "isAllInstanceUseSamePlan": false,
+                    "goSpecPool":[
+                        { "goSpeciesName": "grass", "goLabel":"Flower_White_Big", "num": 1 },
+                        { "goSpeciesName": "grass", "goLabel":"Flower_White_Mid", "num": 3 },
+                        { "goSpeciesName": "grass", "goLabel":"Flower_White_Sml", "num": 1 },
+        
+                        { "goSpeciesName": "grass", "goLabel":"Shamrock_Green_Sml", "num": 1 },
+                        { "goSpeciesName": "grass", "goLabel":"Shamrock_Green_Mid", "num": 5 }
+        
+        
+        
+                    ]
+                },
+        
+                {
+                    "Notes": "草-高",
+                    "type": "V_11",
+                    "isFloorGo": false,
+                    "isAllInstanceUseSamePlan": false,
+                    "goSpecPool":[
+                        { "goSpeciesName": "grass", "goLabel":"Flower_HighWhite_Big", "num": 1 },
+                        { "goSpeciesName": "grass", "goLabel":"Flower_HighWhite_Mid", "num": 3 },
+                        { "goSpeciesName": "grass", "goLabel":"Flower_HighWhite_Sml", "num": 1 }
+
+                        
+                    ]
+                }
+        
+            ]
+            
+        }
+    ]
+
+    
+}
+
+
+
+]

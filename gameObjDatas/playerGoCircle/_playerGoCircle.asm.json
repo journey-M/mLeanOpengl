@@ -1,0 +1,20 @@
+[
+    {
+        "goSpeciesName": "playerGoCircle",
+        "without_holds": true,
+
+        "renderLayerType": "MajorGoes",
+        "shaderType": "PlayerGoCircle",
+
+        "plans":[
+            {
+                "goLabel": "",
+                "collide":{ "collideType": "Nil" },
+                "goMeshs":[
+                    { "zOff": -100.0,  "afsName": "playerGoCircle", "animLabel": ""  }
+                ]
+            }
+        ]
+    }
+]
+

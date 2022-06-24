@@ -1,0 +1,87 @@
+[
+{
+    "Notes": "nature yard majorGos， hollowLogs 倒地树干，周围点缀小草小花",
+
+    "yardName": "N_forest_hollowLogs",
+    
+
+    "pngLPath": "hollowLog.M.png",
+    "frameNum.col":  4,
+    "frameNum.row":  4,
+    "totalFrameNum": 15,
+
+    "isHaveMajorGos": true,
+    "isHaveFloorGos": false,
+
+    "yardObjs":[
+        {
+            "yardLabel": "",
+            "dir": "Center",
+            "isAllFramesInclude": true,
+
+            "varTypes":[
+                {
+                    "Notes": " 普通 倒地树干 ",
+                    "type": "V_1",
+                    "isFloorGo": false,
+                    "isAllInstanceUseSamePlan": false,
+                    "goSpecPool":[
+                        { "goSpeciesName": "hollowLog", "goLabel": "Poplar_Normal", "num": 1 }
+                    ]
+                },
+        
+                {
+                    "Notes": " 特殊 倒地树干 ",
+                    "type": "V_2",
+                    "isFloorGo": false,
+                    "isAllInstanceUseSamePlan": false,
+                    "goSpecPool":[
+                        { "goSpeciesName": "hollowLog", "goLabel": "Poplar_Special", "num": 1 }
+                    ]
+                },
+        
+                {
+                    "Notes": " 草 - 多 ",
+                    "type": "V_10",
+                    "isFloorGo": false,
+                    "isAllInstanceUseSamePlan": false,
+                    "goSpecPool":[
+                        { "goSpeciesName": "grass", "goLabel":"Flower_White_Big", "num": 1 },
+                        { "goSpeciesName": "grass", "goLabel":"Flower_White_Mid", "num": 3 },
+                        { "goSpeciesName": "grass", "goLabel":"Flower_White_Sml", "num": 1 }
+                    ]
+                },
+        
+                {
+                    "Notes": " 草 - 少 ",
+                    "type": "V_13",
+                    "isFloorGo": false,
+                    "isAllInstanceUseSamePlan": false,
+                    "goSpecPool":[
+        
+                        { "goSpeciesName": "grass", "goLabel":"Flower_White_Sml", "num": 7 },
+                        { "goSpeciesName": "grass", "goLabel":"Flower_HighWhite_Mid", "num": 1 },
+        
+                        { "goSpeciesName": "mushroom", "goLabel":"Mid", "num": 1 },
+        
+                        { "goSpeciesName": "breakStone", "goLabel": "Light", "num": 1 },
+                        { "goSpeciesName": "bush", "goLabel": "Blackberry", "num": 1 },
+                        { "goSpeciesName": "bush", "goLabel": "Greyberry", "num": 1 }
+        
+        
+                    ]
+                }
+        
+        
+                
+            ]
+
+        }
+    ]
+
+    
+}
+
+
+
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "goSpeciesName": "chicken",
+        "family": "Major",
+        "state": "Waked",
+        "moveState": "Movable",
+        "moveType": "Crawl",
+        "isMoveCollide": true,
+        "isDoPass": false,
+        "isBePass": false,
+        "moveSpeedLvl": 4,
+
+        "moveStateTable":[
+            { "speedLvl": 0, "actionEName": "Walk", "timeStepOff": 2 },
+            { "speedLvl": 1, "actionEName": "Walk", "timeStepOff": 2 },
+            { "speedLvl": 2, "actionEName": "Walk", "timeStepOff": 1 },
+            { "speedLvl": 3, "actionEName": "Walk", "timeStepOff": 0 },
+                
+            { "speedLvl": 4, "actionEName": "Run", "timeStepOff": 0 },
+
+            { "speedLvl": 5, "actionEName": "Fly", "timeStepOff": 0 },
+            { "speedLvl": 6, "actionEName": "Fly", "timeStepOff": 0 },
+            { "speedLvl": 7, "actionEName": "Fly", "timeStepOff": 0 },
+            { "speedLvl": 8, "actionEName": "Fly", "timeStepOff": 0 },
+            { "speedLvl": 9, "actionEName": "Fly", "timeStepOff": 0 }
+        ],
+
+        "alti": 0,
+        "lAltiRanges": [
+            { "label": "", "val": [0.0, 60.0] }
+        ],
+
+        "weight": 5,
+        "pub.HP": 170,
+        "pub.MP": 50,
+
+
+        "afs_lPaths": [ 
+            "_hen.afs.json"
+        ],
+        "goAsm_lPaths": [
+            "_chicken.asm.json"
+        ]
+
+      }
+]

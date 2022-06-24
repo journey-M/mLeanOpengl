@@ -1,0 +1,142 @@
+[
+
+    {
+        "goSpeciesName": "mushroom",
+
+        "renderLayerType": "MajorGoes",
+        "shaderType": "OriginColor",
+        
+        "plans":[
+
+            {
+                "Notes": "========== type_1 ==========",
+                "goLabel.hold": "goLabel_1",
+                "collide.hold": "C_1",
+                "goMeshs":[
+                    {  "dpos": [0, 0], "zOff": 0.0, "afsName.hold": "afs_1", "animLabel":"Big" }
+                ]
+            },
+
+            {
+                "Notes": "========== type_2 ==========",
+                "goLabel.hold": "goLabel_2",
+                "collide.hold": "C_1",
+                "goMeshs":[
+                    {  "dpos": [10, 5], "zOff": 0.0, "afsName.hold": "afs_1", "animLabel":"Sml" }
+                ]
+            },
+            {
+                "goLabel.hold": "goLabel_2",
+                "collide.hold": "C_1",
+                "goMeshs":[
+                    {  "dpos": [-15, -5], "zOff": 0.0, "afsName.hold": "afs_1", "animLabel": "Sml" }
+                ]
+            },
+            {
+                "goLabel.hold": "goLabel_2",
+                "collide.hold": "C_1",
+                "goMeshs":[
+                    {  "dpos": [-10, 10], "zOff": 0.0, "afsName.hold": "afs_1", "animLabel": "Sml" },
+                    {  "dpos": [12, -15], "zOff": 0.0, "afsName.hold": "afs_1", "animLabel": "Sml" }
+                ]
+            },
+            {
+                "goLabel.hold": "goLabel_2",
+                "collide.hold": "C_1",
+                "goMeshs":[
+                    {  "dpos": [8, 15], "zOff": 0.0, "afsName.hold": "afs_1", "animLabel": "Sml" },
+                    {  "dpos": [-10, -15], "zOff": 0.0, "afsName.hold": "afs_1", "animLabel": "Sml" }
+                ]
+            },
+            {
+                "goLabel.hold": "goLabel_2",
+                "collide.hold": "C_1",
+                "goMeshs":[
+                    {  "dpos": [17, 5], "zOff": 0.0, "afsName.hold": "afs_1", "animLabel": "Sml" },
+                    {  "dpos": [-15, -5], "zOff": 0.0, "afsName.hold": "afs_1", "animLabel": "Sml" }
+                ]
+            },
+            {
+                "goLabel.hold": "goLabel_2",
+                "collide.hold": "C_1",
+                "goMeshs":[
+                    {  "dpos": [17, 15], "zOff": 0.0, "afsName.hold": "afs_1", "animLabel": "Sml"  },
+                    {  "dpos": [-15, 9], "zOff": 0.0, "afsName.hold": "afs_1", "animLabel": "Sml"  },
+                    {  "dpos": [5, -20], "zOff": 0.0, "afsName.hold": "afs_1", "animLabel": "Sml"  }
+                ]
+            },
+
+
+            {
+                "Notes": "========== type_3 ==========",
+                "goLabel.hold": "goLabel_3",
+                "collide.hold": "C_1",
+                "goMeshs":[
+                    {  "dpos": [-12, -17], "zOff": 0.0, "afsName.hold": "afs_1", "animLabel": "Mid"  },
+                    {  "dpos": [17, 14], "zOff": 0.0, "afsName.hold": "afs_1", "animLabel": "Sml"  }
+                ]
+            },
+            {
+                "goLabel.hold": "goLabel_3",
+                "collide.hold": "C_1",
+                "goMeshs":[
+                    {  "dpos": [12, -17], "zOff": 0.0, "afsName.hold": "afs_1", "animLabel": "Mid"  },
+                    {  "dpos": [-17, 14], "zOff": 0.0, "afsName.hold": "afs_1", "animLabel": "Sml"  }
+                ]
+            },
+            {
+                "goLabel.hold": "goLabel_3",
+                "collide.hold": "C_1",
+                "goMeshs":[
+                    {  "dpos": [5, -20], "zOff": 0.0, "afsName.hold": "afs_1", "animLabel": "Mid"  },
+                    {  "dpos": [-18, 12], "zOff": 0.0, "afsName.hold": "afs_1", "animLabel": "Sml"  }
+                ]
+            },
+            {
+                "goLabel.hold": "goLabel_3",
+                "collide.hold": "C_1",
+                "goMeshs":[
+                    {  "dpos": [4, 11], "zOff": 0.0, "afsName.hold": "afs_1", "animLabel": "Mid"  },
+                    {  "dpos": [-18, -14], "zOff": 0.0, "afsName.hold": "afs_1", "animLabel": "Sml"  }
+                ]
+            },
+            {
+                "goLabel.hold": "goLabel_3",
+                "collide.hold": "C_1",
+                "goMeshs":[
+                    {  "dpos": [4, 10], "zOff": 0.0, "afsName.hold": "afs_1", "animLabel": "Mid"  },
+                    {  "dpos": [-18, -13], "zOff": 0.0, "afsName.hold": "afs_1", "animLabel": "Sml"  },
+                    {  "dpos": [30, -8], "zOff": 0.0, "afsName.hold": "afs_1", "animLabel": "Sml"  }
+                ]
+            }
+
+            
+
+        
+        ],
+
+        "holds":[
+            {
+                "afsName.holds":{
+                    "afs_1": "mushroom"
+                },
+
+                "collide.holds":{
+                    "C_1":{
+                        "collideType": "Square",
+                        "signInMapEnts_square_type": "T_1m1"
+                    }
+                },
+                
+                "goLabel.holds":{
+                    "goLabel_1": "SingleBig",
+                    "goLabel_2": "Sml",
+                    "goLabel_3": "Mid"
+                }
+            }
+        ]
+
+    }
+
+]
+

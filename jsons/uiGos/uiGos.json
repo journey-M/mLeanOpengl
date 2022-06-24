@@ -1,0 +1,14 @@
+[
+  {
+    "goSpeciesName": "button_sceneBegin_archive_2",
+    "family": "UI",
+    "moveType": "Adsorb",
+    "moveSpeedLvl": 0
+  },
+  {
+    "goSpeciesName": "button_sceneBegin_pointer_2",
+    "family": "UI",
+    "moveType": "Adsorb",
+    "moveSpeedLvl": 8
+  }
+]

@@ -1,0 +1,254 @@
+[
+{
+    "Notes": " 路面 floorGo forest ",
+
+    "yardName": "Road_forest",
+    
+    "pngLPath": "road.M.png",
+    "frameNum.col":  8,
+    "frameNum.row":  10,
+    "totalFrameNum": 80,
+
+
+    "specialFrameAllocateTimes": [
+        { "frameIdx": 0, "allocateNum": 9 },
+        { "frameIdx": 8, "allocateNum": 9 },
+        { "frameIdx": 16, "allocateNum": 9 },
+        { "frameIdx": 24, "allocateNum": 9 },
+        { "frameIdx": 32, "allocateNum": 11 },
+        { "frameIdx": 40, "allocateNum": 11 },
+        { "frameIdx": 48, "allocateNum": 7 },
+        { "frameIdx": 56, "allocateNum": 7 },
+        { "frameIdx": 64, "allocateNum": 7 },
+        { "frameIdx": 72, "allocateNum": 7 }
+    ],
+
+
+    "isHaveMajorGos": true,
+    "isHaveFloorGos": true,
+
+
+    "public_varTypes":[
+        {
+            "Notes": " 低矮的草/花 ",
+            "type": "V_10",
+            "isFloorGo": false,
+            "isAllInstanceUseSamePlan": false,
+            "goSpecPool":[
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Big", "num": 1 },
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Mid", "num": 3 },
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Sml", "num": 1 },
+
+                { "goSpeciesName": "grass", "goLabel":"Shamrock_Green_Mid", "num": 2 }
+
+            ]
+        },
+
+        {
+            "Notes": " 稀有灌木 / 碎石 ",
+            "type": "V_1",
+            "isFloorGo": false,
+            "isAllInstanceUseSamePlan": false,
+            "goSpecPool":[
+                { "goSpeciesName": "grass", "goLabel":"Flower_White_Mid", "num": 2 },
+        
+                { "goSpeciesName": "breakStone", "goLabel": "Light", "num": 1 },
+                { "goSpeciesName": "bush", "goLabel": "Blackberry", "num": 1 },
+                { "goSpeciesName": "bush", "goLabel": "Greyberry", "num": 1 },
+                { "goSpeciesName": "bush", "goLabel":"Origin", "num": 1 }
+
+            ]
+        }
+    ],
+
+
+    "yardObjs":[
+        {
+            "yardLabel": "TwoPorts",
+            "dir": "LeftTop",
+            "fstFrameIdx": 0, "frameNums": 8,
+
+            "varTypes":[
+                {
+                    "Notes": " 2端口，左上 ",
+                    "type": "V_30",
+                    "isFloorGo": true,
+                    "FloorGoSize": "MapEnt_4m4",
+                    "isAllInstanceUseSamePlan": false,
+                    "goSpecPool":[
+                        { "goSpeciesName": "floorGo", "goLabel": "Forest_RoadYard_TwoPorts", "num": 1 }
+                    ]
+                }
+            ]
+        },
+        {
+            "yardLabel": "TwoPorts",
+            "dir": "RightTop",
+            "fstFrameIdx": 8, "frameNums": 8,
+
+            "varTypes":[
+                {
+                    "Notes": " 2端口，右上 ",
+                    "type": "V_30",
+                    "isFloorGo": true,
+                    "FloorGoSize": "MapEnt_4m4",
+                    "isAllInstanceUseSamePlan": false,
+                    "goSpecPool":[
+                        { "goSpeciesName": "floorGo", "goLabel": "Forest_RoadYard_TwoPorts", "num": 1 }
+                    ]
+                }
+            ]
+        },
+        {
+            "yardLabel": "TwoPorts",
+            "dir": "RightBottom",
+            "fstFrameIdx": 16, "frameNums": 8,
+
+            "varTypes":[
+                {
+                    "Notes": " 2端口，右下 ",
+                    "type": "V_30",
+                    "isFloorGo": true,
+                    "FloorGoSize": "MapEnt_4m4",
+                    "isAllInstanceUseSamePlan": false,
+                    "goSpecPool":[
+                        { "goSpeciesName": "floorGo", "goLabel": "Forest_RoadYard_TwoPorts", "num": 1 }
+                    ]
+                }
+            ]
+        },
+        {
+            "yardLabel": "TwoPorts",
+            "dir": "LeftBottom",
+            "fstFrameIdx": 24, "frameNums": 8,
+
+            "varTypes":[
+                {
+                    "Notes": " 2端口，左下 ",
+                    "type": "V_30",
+                    "isFloorGo": true,
+                    "FloorGoSize": "MapEnt_4m4",
+                    "isAllInstanceUseSamePlan": false,
+                    "goSpecPool":[
+                        { "goSpeciesName": "floorGo", "goLabel": "Forest_RoadYard_TwoPorts", "num": 1 }
+                    ]
+                }
+            ]
+        },
+        {
+            "yardLabel": "TwoPorts",
+            "dir": "Left",
+            "fstFrameIdx": 32, "frameNums": 8,
+
+            "varTypes":[
+                {
+                    "Notes": " 2端口，左 ",
+                    "type": "V_30",
+                    "isFloorGo": true,
+                    "FloorGoSize": "MapEnt_4m4",
+                    "isAllInstanceUseSamePlan": false,
+                    "goSpecPool":[
+                        { "goSpeciesName": "floorGo", "goLabel": "Forest_RoadYard_TwoPorts", "num": 1 }
+                    ]
+                }
+            ]
+        },
+        {
+            "yardLabel": "TwoPorts",
+            "dir": "Bottom",
+            "fstFrameIdx": 40, "frameNums": 8,
+
+            "varTypes":[
+                {
+                    "Notes": " 2端口，下 ",
+                    "type": "V_30",
+                    "isFloorGo": true,
+                    "FloorGoSize": "MapEnt_4m4",
+                    "isAllInstanceUseSamePlan": false,
+                    "goSpecPool":[
+                        { "goSpeciesName": "floorGo", "goLabel": "Forest_RoadYard_TwoPorts", "num": 1 }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "yardLabel": "ThreePorts",
+            "dir": "Left",
+            "fstFrameIdx": 48, "frameNums": 8,
+
+            "varTypes":[
+                {
+                    "Notes": " 3端口，左 ----------------------------------------- ",
+                    "type": "V_30",
+                    "isFloorGo": true,
+                    "FloorGoSize": "MapEnt_4m4",
+                    "isAllInstanceUseSamePlan": false,
+                    "goSpecPool":[
+                        { "goSpeciesName": "floorGo", "goLabel": "Forest_RoadYard_ThreePorts", "num": 1 }
+                    ]
+                }
+            ]
+        },
+        {
+            "yardLabel": "ThreePorts",
+            "dir": "Top",
+            "fstFrameIdx": 56, "frameNums": 8,
+
+            "varTypes":[
+                {
+                    "Notes": " 3端口, 上 ",
+                    "type": "V_30",
+                    "isFloorGo": true,
+                    "FloorGoSize": "MapEnt_4m4",
+                    "isAllInstanceUseSamePlan": false,
+                    "goSpecPool":[
+                        { "goSpeciesName": "floorGo", "goLabel": "Forest_RoadYard_ThreePorts", "num": 1 }
+                    ]
+                }
+            ]
+        },
+        {
+            "yardLabel": "ThreePorts",
+            "dir": "Right",
+            "fstFrameIdx": 64, "frameNums": 8,
+
+            "varTypes":[
+                {
+                    "Notes": " 3端口，右 ",
+                    "type": "V_30",
+                    "isFloorGo": true,
+                    "FloorGoSize": "MapEnt_4m4",
+                    "isAllInstanceUseSamePlan": false,
+                    "goSpecPool":[
+                        { "goSpeciesName": "floorGo", "goLabel": "Forest_RoadYard_ThreePorts", "num": 1 }
+                    ]
+                }
+            ]
+        },
+        {
+            "yardLabel": "ThreePorts",
+            "dir": "Bottom",
+            "fstFrameIdx": 72, "frameNums": 8,
+
+            "varTypes":[
+                {
+                    "Notes": " 3端口，下 ",
+                    "type": "V_30",
+                    "isFloorGo": true,
+                    "FloorGoSize": "MapEnt_4m4",
+                    "isAllInstanceUseSamePlan": false,
+                    "goSpecPool":[
+                        { "goSpeciesName": "floorGo", "goLabel": "Forest_RoadYard_ThreePorts", "num": 1 }
+                    ]
+                }
+            ]
+        }
+
+
+    ]
+
+}
+
+
+]

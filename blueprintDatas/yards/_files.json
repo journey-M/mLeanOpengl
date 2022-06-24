@@ -1,0 +1,38 @@
+[
+
+    {"_eco_forest/farm/_farm.json": true },
+    {"_eco_forest/house/_house.json": true },
+    {"_eco_forest/openGround/_openGround.json": true },
+
+    {"2m2_1/_2m2.json": true },
+
+    {"_natures/_regulars/breakStones/_forest.json": true },
+    {"_natures/_regulars/breakStones/_darkForest.json": true },
+    {"_natures/_regulars/breakStones/_desert.json": true },
+
+
+    {"_natures/darkForest/_N_darkForest_trees.json": true },
+    {"_natures/desert/_N_desert_trees.json": true },
+
+    {"_natures/forest/trees/_trees.json": true },
+    {"_natures/forest/hollowLogs/_hollowLog.json": true },
+    
+
+    {"_natures/savannah/1tree/_1tree.json": true },
+    {"_natures/savannah/grasses/_grasses.json": true },
+
+    {"_natures/_floorGos/_natureFloorGo_B.json": true },
+
+
+    {"_roads/forest/_road.json": true },
+
+
+    {"plot_test/_plot_test.json": true },
+
+    {"rockMaze/_rockMaze.json": true },
+
+
+    {"stoneWall_test/_stoneWall_test.json": true }
+
+
+]

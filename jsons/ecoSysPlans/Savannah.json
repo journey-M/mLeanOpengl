@@ -1,0 +1,105 @@
+[
+{
+    "name": "Savannah_1",
+    "EcoSysPlanType": "Savannah",
+    "colorTableName": "savannah",
+    "density.SeaLvlOff": 15.0,
+    "density.DivideType": "default",
+    "natureMajorYardPools":[
+
+        {
+            "annotate": "====================[ -3 ]====================",
+            "density.lvl": -3,
+            "applyPercent": 0.0,
+
+            "yardPool":[
+        
+            ]
+            
+        },
+
+        {
+            "annotate": "====================[ -2 ]====================",
+            "density.lvl": -2,
+            "applyPercent": 0.0,
+
+            "yardPool":[
+              
+            ]
+        },
+
+        {
+            "annotate": "====================[ -1 ]====================",
+            "density.lvl": -1,
+            "applyPercent": 0.0,
+
+            "yardPool":[
+              
+            ]
+        },
+
+        {
+            "annotate": "====================[ 0 ]====================",
+            "density.lvl": 0,
+            "applyPercent": 0.5,
+
+            "yardPool":[
+                { "yardName": "N_savannah_grasses", "yardLabel": "", "num": 1 }
+            ]
+
+        },
+        
+        {
+            "annotate": "====================[ 1 ]====================",
+            "density.lvl": 1,
+            "applyPercent": 0.99,
+
+            "yardPool":[
+                { "yardName": "N_savannah_trees", "yardLabel": "1Mid", "num": 3 },
+                { "yardName": "N_savannah_grasses", "yardLabel": "", "num": 1 }
+            ]
+
+        },
+
+        {
+            "annotate": "====================[ 2 ]====================",
+            "density.lvl": 2,
+            "applyPercent": 0.89,
+
+            "yardPool":[
+                { "yardName": "N_savannah_trees", "yardLabel": "1Mid", "num": 3 },
+                { "yardName": "N_savannah_grasses", "yardLabel": "", "num": 1 }
+            ]
+            
+        },
+
+        {
+            "annotate": "====================[ 3 ]====================",
+            "density.lvl": 3,
+            "applyPercent": 0.0,
+
+            "yardPool":[
+              
+            ]
+        }
+    ],
+
+
+    "villageBlueprintPool":[ 
+        { "villageName": "rockMaze", "num": 0 },
+
+        { "villageName": "circleVillage_forest", "num": 1 }
+    ],
+
+
+    "natureFloorYards": {
+        "yardPool":[
+            { "yardName": "N_floorGo", "yardLabel": "Savannah", "num": 1 }
+        ],
+        "density.lvls":[ 0,1,2,3 ]
+    }
+    
+}
+
+
+]

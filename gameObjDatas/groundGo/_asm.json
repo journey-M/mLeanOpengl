@@ -1,0 +1,37 @@
+[
+    {
+        "goSpeciesName": "groundGo",
+        "without_holds": true,
+
+        "renderLayerType": "GroundGo",
+        "shaderType": "OriginColor",
+
+        "plans":[
+            {
+
+                "Notes": " 并非真正的plan，所有 groundGo 的 gomesh 数据，都是在代码中动态创建的 ",
+
+                "goLabel": "",
+                "collide":{ "collideType": "Nil" },
+                "goMeshs":[
+                    { "goMeshName": "darkForest_sml", "isAutoInit": false, "afsName": "groundGo_darkForest", "animLabel": "Sml"  },
+                    { "goMeshName": "darkForest_mid", "isAutoInit": false, "afsName": "groundGo_darkForest", "animLabel": "Mid"  },
+                    { "goMeshName": "darkForest_big", "isAutoInit": false, "afsName": "groundGo_darkForest", "animLabel": "Big"  },
+
+                    { "goMeshName": "desert_sml", "isAutoInit": false, "afsName": "groundGo_desert", "animLabel": "Sml"  },
+                    { "goMeshName": "desert_mid", "isAutoInit": false, "afsName": "groundGo_desert", "animLabel": "Mid"  },
+                    { "goMeshName": "desert_big", "isAutoInit": false, "afsName": "groundGo_desert", "animLabel": "Big"  },
+
+                    { "goMeshName": "forest_sml", "isAutoInit": false, "afsName": "groundGo_forest", "animLabel": "Sml"  },
+                    { "goMeshName": "forest_mid", "isAutoInit": false, "afsName": "groundGo_forest", "animLabel": "Mid"  },
+                    { "goMeshName": "forest_big", "isAutoInit": false, "afsName": "groundGo_forest", "animLabel": "Big"  },
+
+                    { "goMeshName": "savannah_sml", "isAutoInit": false, "afsName": "groundGo_savannah", "animLabel": "Sml"  },
+                    { "goMeshName": "savannah_mid", "isAutoInit": false, "afsName": "groundGo_savannah", "animLabel": "Mid"  },
+                    { "goMeshName": "savannah_big", "isAutoInit": false, "afsName": "groundGo_savannah", "animLabel": "Big"  }
+                ]
+            }
+        ]
+    }
+]
+

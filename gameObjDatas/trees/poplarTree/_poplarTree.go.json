@@ -1,0 +1,32 @@
+[
+    {
+        "goSpeciesName": "poplarTree",
+        "family": "Major",
+        "state": "Waked",
+        "moveState": "AbsFixed",
+        "isMoveCollide": true,
+        "isDoPass": false,
+        "isBePass": false,
+
+        "alti": 0,
+        "lAltiRanges": [
+            { "label": "Mid", "val": [0.0, 300.0] },
+            { "label": "Sml", "val": [0.0, 200.0] }
+        ],
+
+
+        "weight": 50,
+        "pub.HP": 170,
+        "pub.MP": 50,
+
+
+        "afs_lPaths": [ 
+            "_poplarTree.afs.json"
+        ],
+        "goAsm_lPaths": [
+            "_poplarTree.asm.json"
+        ]
+
+
+    }
+]

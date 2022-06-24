@@ -1,0 +1,55 @@
+[
+
+{
+    "afsName": "cactus",
+    "pngs": [
+        {
+            "path": "cactus_sml.P.png",
+            "frameNum.col":  3,
+            "frameNum.row":  1,
+            "totalFrameNum": 3,
+            "isHaveShadow": true,
+            "isPjtSingle": true,
+            "isShadowSingle": false,
+            "subspecs": [
+                {
+                    "type": "batch",
+                    "animLabel": "Sml",
+                    "fstSubIdx": 0,
+                    "fstIdx": 0,
+                    "idxNums": 3,
+                    "actionEName": "Idle", "dir": "Center", "brokenLvl": 0,
+                    "isOpaque": true
+                }
+            ]
+        },
+
+        {
+            "path": "cactus_mid.P.png",
+            "frameNum.col":  2,
+            "frameNum.row":  1,
+            "totalFrameNum": 2,
+            "isHaveShadow": true,
+            "isPjtSingle": true,
+            "isShadowSingle": false,
+            "subspecs": [
+                {
+                    "type": "batch",
+                    "animLabel": "Mid",
+                    "fstSubIdx": 0,
+                    "fstIdx": 0,
+                    "idxNums": 2,
+                    "actionEName": "Idle", "dir": "Center", "brokenLvl": 0,
+                    "isOpaque": true
+                }
+            ]
+        }
+
+
+
+
+    ]
+}
+
+]
+

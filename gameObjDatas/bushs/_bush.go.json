@@ -1,0 +1,33 @@
+[
+    {
+        "goSpeciesName": "bush",
+        "family": "Major",
+        "state": "Waked",
+        "moveState": "AbsFixed",
+        "isMoveCollide": false,
+        "isDoPass": false,
+        "isBePass": true,
+
+        "alti": 0,
+        "lAltiRanges": [
+            { "label": "", "val": [0.0, 40.0] }
+        ],
+
+
+        "weight": 50,
+        "pub.HP": 170,
+        "pub.MP": 50,
+
+        "afs_lPaths": [ 
+            "blackberry/_afs.json",
+            "greyberry/_afs.json",
+            "origin/_afs.json"
+
+        ],
+        "goAsm_lPaths": [
+            "_bush.asm.json"
+            
+        ]
+    }
+
+]

@@ -1,0 +1,96 @@
+[
+
+{
+    "afsName": "fence",
+    "pngs": [
+        {
+            "path": "fence_1.P.png",
+            "frameNum.col":  1,
+            "frameNum.row":  8,
+            "totalFrameNum": 8,
+            "isHaveShadow": true,
+            "isPjtSingle": true,
+            "isShadowSingle": false,
+            "subspecs": [
+                {
+                    "type": "handle",
+                    "animLabel": "T1",
+                    "subIdx": 0,
+                    "AnimActionParams":[
+
+                        { "actionEName": "Idle", "dir": "L", "brokenLvl": 0, "type": "singleFrame", "lFrameIdx": 0, "isOpaque": true },
+
+                        { "actionEName": "Idle", "dir": "LT", "brokenLvl": 0, "type": "singleFrame", "lFrameIdx": 1, "isOpaque": true },
+
+                        { "actionEName": "Idle", "dir": "T", "brokenLvl": 0, "type": "singleFrame", "lFrameIdx": 2, "isOpaque": true },
+                        
+
+                        { "actionEName": "Idle", "dir": "RT", "brokenLvl": 0, "type": "singleFrame", "lFrameIdx": 3, "isOpaque": true },
+                       
+
+                        { "actionEName": "Idle", "dir": "R", "brokenLvl": 0, "type": "singleFrame", "lFrameIdx": 4, "isOpaque": true },
+                        
+
+                        { "actionEName": "Idle", "dir": "RB", "brokenLvl": 0, "type": "singleFrame", "lFrameIdx": 5, "isOpaque": true },
+                       
+
+                        { "actionEName": "Idle", "dir": "B", "brokenLvl": 0, "type": "singleFrame", "lFrameIdx": 6, "isOpaque": true },
+                  
+
+                        { "actionEName": "Idle", "dir": "LB", "brokenLvl": 0, "type": "singleFrame", "lFrameIdx": 7, "isOpaque": true }
+                        
+                    ]
+                }
+
+
+            ]
+        },
+
+        {
+            "path": "fence_2.P.png",
+            "frameNum.col":  1,
+            "frameNum.row":  8,
+            "totalFrameNum": 8,
+            "isHaveShadow": true,
+            "isPjtSingle": true,
+            "isShadowSingle": false,
+            "subspecs": [
+                {
+                    "type": "handle",
+                    "animLabel": "T2",
+                    "subIdx": 0,
+                    "AnimActionParams":[
+
+                        { "actionEName": "Idle", "dir": "L", "brokenLvl": 0, "type": "singleFrame", "lFrameIdx": 0, "isOpaque": true },
+
+                        { "actionEName": "Idle", "dir": "LT", "brokenLvl": 0, "type": "singleFrame", "lFrameIdx": 1, "isOpaque": true },
+
+                        { "actionEName": "Idle", "dir": "T", "brokenLvl": 0, "type": "singleFrame", "lFrameIdx": 2, "isOpaque": true },
+                        
+
+                        { "actionEName": "Idle", "dir": "RT", "brokenLvl": 0, "type": "singleFrame", "lFrameIdx": 3, "isOpaque": true },
+                       
+
+                        { "actionEName": "Idle", "dir": "R", "brokenLvl": 0, "type": "singleFrame", "lFrameIdx": 4, "isOpaque": true },
+                        
+
+                        { "actionEName": "Idle", "dir": "RB", "brokenLvl": 0, "type": "singleFrame", "lFrameIdx": 5, "isOpaque": true },
+                       
+
+                        { "actionEName": "Idle", "dir": "B", "brokenLvl": 0, "type": "singleFrame", "lFrameIdx": 6, "isOpaque": true },
+                  
+
+                        { "actionEName": "Idle", "dir": "LB", "brokenLvl": 0, "type": "singleFrame", "lFrameIdx": 7, "isOpaque": true }
+                        
+                    ]
+                }
+
+
+            ]
+        }
+
+    ]
+}
+
+]
+

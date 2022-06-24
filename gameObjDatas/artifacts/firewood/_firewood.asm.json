@@ -1,0 +1,26 @@
+[
+    {
+        "goSpeciesName": "firewood",
+        "without_holds": true,
+
+        "renderLayerType": "MajorGoes",
+        "shaderType": "OriginColor",
+
+        "plans":[
+            {
+                "goLabel": "",
+
+                "collide":{
+                    "collideType": "Square",
+                    "signInMapEnts_square_type": "T_1m1"
+                },
+
+
+                "goMeshs":[
+                    { "afsName": "firewood", "animLabel": ""  }
+                ]
+            }
+        ]
+    }
+]
+

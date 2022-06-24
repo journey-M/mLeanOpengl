@@ -1,0 +1,32 @@
+[
+  {
+    "goSpeciesName": "rock",
+    "family": "Major",
+    "state": "Waked",
+    "moveState": "AbsFixed",
+    "isMoveCollide": true,
+    "isDoPass": false,
+    "isBePass": false,
+
+    "alti": 0,
+    "lAltiRanges": [
+        { "label": "", "val": [0.0, 80.0] }
+    ],
+
+
+    "weight": 50,
+    "pub.HP": 170,
+    "pub.MP": 50,
+
+
+
+    "afs_lPaths": [ 
+        "whiteRock/_afs.json"
+    ],
+    "goAsm_lPaths": [
+        "_rock.asm.json"
+    ]
+
+
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "goSpeciesName": "stoneWall",
+    "parentID": 0,
+    "family": "Major",
+    "state": "Waked",
+    "moveState": "AbsFixed",
+    "isMoveCollide": true,
+    "isDoPass": false,
+    "isBePass": false,
+    "extraPassableDogoSpeciesNames":[],
+
+    "alti": 0,
+    "lAltiRanges": [
+        { "label": "", "val": [0.0, 100.0] }
+    ],
+
+    "weight": 50,
+    "pub.HP": 170,
+    "pub.MP": 50,
+
+    "afs_lPaths": [ 
+        "_stoneWall.afs.json"
+    ],
+    "goAsm_lPaths": [
+        "_stoneWall.asm.json"
+    ]
+
+  }
+]
+

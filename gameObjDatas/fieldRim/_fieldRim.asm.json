@@ -1,0 +1,20 @@
+[
+    {
+        "goSpeciesName": "fieldRim",
+        "without_holds": true,
+
+        "renderLayerType": "Floor",
+        "shaderType": "Shadow",
+
+        "plans":[
+            {
+                "goLabel": "",
+                "collide":{ "collideType": "Nil" },
+                "goMeshs":[
+                    {  "zOff": 2.0, "afsName": "fieldRim", "animLabel": ""  }
+                ]
+            }
+        ]
+    }
+]
+

@@ -1,0 +1,44 @@
+[
+{
+    "afsName": "button_beginScene",
+    "pngs": [
+        {
+            "path": "button_beginScene.P.png",
+            "frameNum.col":  1,
+            "frameNum.row":  3,
+            "totalFrameNum": 3,
+            "isHaveShadow": false,
+            "isPjtSingle": false,
+            "isShadowSingle": false,
+    
+            "subspecs": [
+                {
+                    "type": "handle",
+                    "animLabel": "",
+                    "subIdx": 0,
+                    "AnimActionParams":[
+                        {
+                            "actionEName": "Pointer", "dir": "Center", "brokenLvl": 0,
+                            "type": "singleFrame",
+                            "lFrameIdx": 0,
+                            "isOpaque": true
+                        },
+                        {
+                            "actionEName": "New", "dir": "Center", "brokenLvl": 0,
+                            "type": "singleFrame",
+                            "lFrameIdx": 1,
+                            "isOpaque": true
+                        },
+                        {
+                            "actionEName": "Data", "dir": "Center", "brokenLvl": 0,
+                            "type": "singleFrame",
+                            "lFrameIdx": 2,
+                            "isOpaque": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+]

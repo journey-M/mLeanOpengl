@@ -1,0 +1,26 @@
+[
+    {
+        "goSpeciesName": "campfire",
+        "without_holds": true,
+
+        "renderLayerType": "MajorGoes",
+        "shaderType": "OriginColor",
+
+        "plans":[
+            {
+                "goLabel": "Fire",
+
+                "collide":{
+                    "collideType": "Square",
+                    "signInMapEnts_square_type": "T_2m2"
+                },
+
+                "goMeshs":[
+                    { "goMeshName": "root", "zOff": 0.0, "afsName": "campfire_base", "animLabel": "", "animAction": "Idle"  },
+                    { "goMeshName": "fire", "zOff": 0.1, "afsName": "campfire_fire", "animLabel": "", "animAction": "Burn"  }
+                ]
+            }
+        ]
+    }
+]
+

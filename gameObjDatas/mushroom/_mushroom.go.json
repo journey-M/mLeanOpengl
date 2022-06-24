@@ -1,0 +1,32 @@
+[
+    {
+        "goSpeciesName": "mushroom",
+        "family": "Major",
+        "state": "Waked",
+        "moveState": "AbsFixed",
+        "isMoveCollide": false,
+        "isDoPass": false,
+        "isBePass": true,
+
+        "alti": 0,
+        "lAltiRanges": [
+            { "label": "", "val": [0.0, 40.0] }
+        ],
+
+
+        "weight": 50,
+        "pub.HP": 170,
+        "pub.MP": 50,
+
+
+
+        "afs_lPaths": [ 
+            "_mushroom.afs.json"
+        ],
+        "goAsm_lPaths": [
+            "_mushroom.asm.json"
+        ]
+
+
+    }
+]
