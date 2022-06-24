@@ -2,3 +2,21 @@
 main
 build
 build/*
+
+
+*.DS_Store
+*/.DS_Store
+*DailyLog
+ud.sh
+ur.sh
+excels/
+/.vscode
+/build/
+/old/
+/regularOut/
+/obj/
+
+# Visual Studio
+.vs/
+out/
+install/
