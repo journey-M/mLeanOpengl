@@ -7,8 +7,7 @@
  */
 #ifndef TPR_JOB_GROUND_GO_ENT_H
 #define TPR_JOB_GROUND_GO_ENT_H
-//--- glm - 0.9.9.5 ---
-#include "glm_no_warnings.h"
+
 
 //-------------------- Engine --------------------//
 #include "sectionKey.h"

@@ -8,7 +8,7 @@
 #ifndef TPR_GAME_OBJ_POS_H
 #define TPR_GAME_OBJ_POS_H
 
-#include "pch.h"
+
 
 //-------------------- CPP --------------------//
 #include <utility> // pair

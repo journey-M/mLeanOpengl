@@ -8,7 +8,7 @@
  *   handle single texture.
  * ----------------------------
  */
-#include "pch.h"
+
 #include "Mesh.h" 
 
 //-------------------- Engine --------------------//

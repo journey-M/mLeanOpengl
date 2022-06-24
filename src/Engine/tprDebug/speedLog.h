@@ -7,8 +7,7 @@
  */
 #ifndef TPR_SPEED_LOG_H
 #define TPR_SPEED_LOG_H
-//--- glm - 0.9.9.5 ---
-#include "glm_no_warnings.h"
+
 
 namespace tprDebug {//---------- namespace: tprDebug --------------//
 

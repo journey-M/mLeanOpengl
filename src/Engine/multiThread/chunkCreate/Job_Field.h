@@ -8,7 +8,7 @@
 #ifndef TPR_JOB_FIELD_H
 #define TPR_JOB_FIELD_H
 
-#include "pch.h"
+
 
 //-------------------- Engine --------------------//
 #include "Job_MapEnt.h"

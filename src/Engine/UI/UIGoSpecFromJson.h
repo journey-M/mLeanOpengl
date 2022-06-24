@@ -7,8 +7,7 @@
  */
 #ifndef TPR_UI_GO_SPEC_FROM_JSON_H
 #define TPR_UI_GO_SPEC_FROM_JSON_H
-//--- glm - 0.9.9.5 ---
-#include "glm_no_warnings.h"
+
 
 
 //-------------------- CPP --------------------//

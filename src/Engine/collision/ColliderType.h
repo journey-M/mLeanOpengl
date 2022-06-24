@@ -8,7 +8,7 @@
 #ifndef TPR_COLLIDER_TYPE_H
 #define TPR_COLLIDER_TYPE_H
 
-#include "pch.h"
+
 
 enum class ColliderType{
     Nil,

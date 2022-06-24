@@ -7,7 +7,7 @@
  *    MOST  POOR DEBUG SYSTEM
  * ----------------------------
  */
-#include "pch.h"
+
 #include "tprDebug.h"
 
 // 临时版 ...

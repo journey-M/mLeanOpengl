@@ -14,8 +14,7 @@
 // Don't include glfw3.h ALONE!!!
 #include <glad/glad.h>  
 
-//--- glm - 0.9.9.5 ---
-#include "glm_no_warnings.h"
+
 
 //-------------------- CPP --------------------//
 #include <vector>

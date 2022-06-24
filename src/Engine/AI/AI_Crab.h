@@ -10,7 +10,7 @@
 #ifndef TPR_AI_CRAB_H
 #define TPR_AI_CRAB_H
 
-#include "pch.h"
+
 
 //-------------------- Engine --------------------//
 #include "GameObj.h"

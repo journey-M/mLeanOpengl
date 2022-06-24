@@ -5,7 +5,7 @@
  *                                        MODIFY -- 
  * ----------------------------------------------------------
  */
-#include "pch.h"
+
 #include "Script/uiGos/Button_SceneBegin_Pointer.h"
 
 //-------------------- Engine --------------------//

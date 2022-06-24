@@ -10,8 +10,7 @@
 #ifndef TPR_CHUNK_KEY_H
 #define TPR_CHUNK_KEY_H
 
-//--- glm - 0.9.9.5 ---
-#include "glm_no_warnings.h"
+
 
 //-------------------- CPP --------------------//
 #include <vector>

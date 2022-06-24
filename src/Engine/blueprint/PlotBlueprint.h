@@ -8,7 +8,7 @@
 #ifndef TPR_PLOT_BLUE_PRINT_H
 #define TPR_PLOT_BLUE_PRINT_H
 
-#include "pch.h"
+
 
 //-------------------- CPP --------------------//
 #include <variant>

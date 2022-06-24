@@ -8,14 +8,12 @@
 #ifndef TPR_MATH_H
 #define TPR_MATH_H
 
-//--- glm - 0.9.9.5 ---
-#include "glm_no_warnings.h"
+
 
 //-------------------- CPP --------------------//
 #include <cmath>
 
 //-------------------- Engine --------------------//
-#include "tprAssert.h"
 
 
 #ifndef TPR_PI

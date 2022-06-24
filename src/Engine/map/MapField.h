@@ -10,7 +10,7 @@
 #ifndef TPR_MAP_FIELD_H
 #define TPR_MAP_FIELD_H
 
-#include "pch.h"
+
 
 //-------------------- Engine --------------------//
 #include "EcoSysPlanType.h"

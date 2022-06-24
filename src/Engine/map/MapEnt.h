@@ -8,7 +8,7 @@
 #ifndef TPR_MAP_ENT_H
 #define TPR_MAP_ENT_H
 
-#include "pch.h"
+
 
 //-------------------- Engine --------------------//
 #include "GoAltiRange.h"

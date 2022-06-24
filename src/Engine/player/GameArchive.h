@@ -8,8 +8,7 @@
 #ifndef TPR_GAME_ARCHIVE_H
 #define TPR_GAME_ARCHIVE_H
 
-//--- glm - 0.9.9.5 ---
-#include "glm_no_warnings.h"
+
 
 //-------------------- Engine --------------------//
 #include "IntVec.h"

@@ -8,7 +8,7 @@
 #ifndef TPR_CIRCUIT_BOARD_H
 #define TPR_CIRCUIT_BOARD_H
 
-#include "pch.h"
+
 
 //------------------- Engine --------------------//
 #include "GameObjType.h"

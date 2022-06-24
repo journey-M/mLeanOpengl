@@ -15,7 +15,7 @@
 #ifndef TPR_COLOR_TABLE_H
 #define TPR_COLOR_TABLE_H
 
-#include "pch.h"
+
 
 //-------------------- CPP --------------------//
 #include <utility> // pair

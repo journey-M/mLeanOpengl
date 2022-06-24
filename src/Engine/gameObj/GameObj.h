@@ -10,7 +10,7 @@
 #ifndef TPR_GAME_OBJ_H
 #define TPR_GAME_OBJ_H
 
-#include "pch.h"
+
 
 //-------------------- CPP --------------------//
 #include <variant>

@@ -9,7 +9,7 @@
  * 
  * -----
  */
-#include "pch.h"
+
 #include "create_goes.h"
 
 //------------------- Engine --------------------//

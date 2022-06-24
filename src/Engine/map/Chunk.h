@@ -10,7 +10,7 @@
 #ifndef TPR_CHUNK_H
 #define TPR_CHUNK_H
 
-#include "pch.h"
+
 
 //-------------------- Engine --------------------//
 #include "MapEnt.h"

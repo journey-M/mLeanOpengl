@@ -5,7 +5,7 @@
  *                                        MODIFY -- 
  * ----------------------------------------------------------
  */
-#include "pch.h"
+
 #include "Script/gameObjs/majorGos/chicken/Chicken.h"
 
 //-------------------- Engine --------------------//

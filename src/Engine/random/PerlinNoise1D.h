@@ -12,8 +12,7 @@
 #define TPR_PERLIN_NOISE_1D_H
 #include "random.h"
 
-//--- glm - 0.9.9.5 ---
-#include "glm_no_warnings.h"
+
 
 //------------------- CPP --------------------//
 #include <cstdint> // uint8_t

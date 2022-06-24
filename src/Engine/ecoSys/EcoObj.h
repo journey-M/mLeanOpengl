@@ -8,7 +8,7 @@
 #ifndef TPR_ECO_OBJ_H
 #define TPR_ECO_OBJ_H
 
-#include "pch.h"
+
 
 //-------------------- Engine --------------------//
 #include "sectionKey.h"

@@ -8,7 +8,7 @@
 #ifndef TPR_GO_SPEC_FROM_JSON_H
 #define TPR_GO_SPEC_FROM_JSON_H
 
-#include "pch.h"
+
 
 //-------------------- Engine --------------------//
 #include "GameObjType.h" 

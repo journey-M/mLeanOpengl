@@ -5,7 +5,7 @@
  *                                        MODIFY -- 
  * ----------------------------------------------------------
  */
-#include "pch.h"
+
 //-------------------- Engine --------------------//
 #include "sceneLoop.h"
 #include "sceneLoopInn.h"

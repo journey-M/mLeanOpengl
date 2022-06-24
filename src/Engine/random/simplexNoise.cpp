@@ -7,7 +7,7 @@
  *   glsl版 simplex-noise, 移植到 cpu上
  * ----------------------------
  */
-#include "pch.h"
+
 #include "simplexNoise.h"
 
 

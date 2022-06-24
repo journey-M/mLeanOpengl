@@ -7,8 +7,7 @@
  */
 #ifndef TPR_GO_BIO_SOUP_PARTICLE_H
 #define TPR_GO_BIO_SOUP_PARTICLE_H
-//--- glm - 0.9.9.5 ---
-#include "glm_no_warnings.h"
+
 
 
 //-------------------- CPP --------------------//

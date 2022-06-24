@@ -7,7 +7,7 @@
  *  资源管理:  animFrameSeta
  * ----------------------------
  */
-#include "pch.h"
+
 
 //-------------------- Engine --------------------//
 #include "esrc_animFrameSet.h"

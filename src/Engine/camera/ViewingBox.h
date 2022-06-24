@@ -10,8 +10,6 @@
 #ifndef TPR_VIEWING_BOX_H
 #define TPR_VIEWING_BOX_H
 
-#include "pch.h"
-
 //-------------------- Engine --------------------//
 #include "RenderLayerType.h"
 

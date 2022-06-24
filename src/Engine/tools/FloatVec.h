@@ -9,7 +9,6 @@
 #define TPR_FLOAT_VEC_H
 
 //--- glm - 0.9.9.5 ---
-#include "glm_no_warnings.h"
 
 //-------------------- Engine --------------------//
 #include "tprMath.h"

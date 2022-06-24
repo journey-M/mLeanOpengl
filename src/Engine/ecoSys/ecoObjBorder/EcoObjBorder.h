@@ -8,7 +8,7 @@
 #ifndef TPR_ECO_OBJ_BORDER_H
 #define TPR_ECO_OBJ_BORDER_H
 
-#include "pch.h"
+
 
 //-------------------- CPP --------------------//
 #include <tuple>

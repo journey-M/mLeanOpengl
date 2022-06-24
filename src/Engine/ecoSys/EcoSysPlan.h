@@ -10,7 +10,7 @@
 #ifndef TPR_ECOSYS_PLAN_H
 #define TPR_ECOSYS_PLAN_H
 
-#include "pch.h"
+
 
 //-------------------- Engine --------------------//
 #include "RGBA.h" 

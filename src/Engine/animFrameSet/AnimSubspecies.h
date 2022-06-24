@@ -8,7 +8,7 @@
 #ifndef TPR_ANIM_SUB_SPECIES_H
 #define TPR_ANIM_SUB_SPECIES_H
 
-#include "pch.h"
+
 
 //-------------------- CPP --------------------//
 #include <algorithm> 

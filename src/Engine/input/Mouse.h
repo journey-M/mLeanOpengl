@@ -7,8 +7,7 @@
  */
 #ifndef TPR_Mouse_H
 #define TPR_Mouse_H
-//--- glm - 0.9.9.5 ---
-#include "glm_no_warnings.h"
+
 
 
 

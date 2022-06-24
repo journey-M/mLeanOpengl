@@ -7,7 +7,7 @@
  * 
  * ----------------------------
  */
-#include "pch.h"
+
 #include "Script/gameObjs/oth/PlayerGoCircle.h"
 
 //-------------------- Engine --------------------//

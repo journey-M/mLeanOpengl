@@ -10,7 +10,7 @@
 #ifndef TPR_COORD_H
 #define TPR_COORD_H
 
-#include "pch.h"
+
 
 //-------------------- Engine --------------------//
 #include "NineDirection.h"

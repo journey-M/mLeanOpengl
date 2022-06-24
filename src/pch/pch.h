@@ -8,8 +8,7 @@
 #ifndef TPR_PRE_COMPILE_HEADS_H
 #define TPR_PRE_COMPILE_HEADS_H
 
-//--- glm - 0.9.9.5 ---
-#include "glm_no_warnings.h"
+
 
 #include "fmt/format.h"
 

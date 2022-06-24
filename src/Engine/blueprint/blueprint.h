@@ -9,7 +9,7 @@
 #ifndef TPR_BLUE_PRINT_H
 #define TPR_BLUE_PRINT_H
 
-#include "pch.h"
+
 
 //-------------------- Engine --------------------//
 #include "blueprintId.h"

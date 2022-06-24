@@ -15,10 +15,10 @@
 #ifndef TPR_ACTION_FSM_H
 #define TPR_ACTION_FSM_H
 
-#include "pch.h"
-
 //-------------------- Engine --------------------//
 #include "functorTypes.h"
+#include <string>
+#include <vector>
 
 
 //- 节点状态 --
@@ -49,7 +49,6 @@ public:
         // ***| INSERT FIRST, INIT LATER  |***
         ActionState state {};
         auto [insertIt, insertBool] = states.emplace( name_, state ); //- copy
-        tprAssert( insertBool );
 
         // init...
         

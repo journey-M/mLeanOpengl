@@ -8,7 +8,7 @@
 #ifndef TPR_BLUE_PRINT_VARIABLE_H
 #define TPR_BLUE_PRINT_VARIABLE_H
 
-#include "pch.h"
+
 
 //-------------------- Engine --------------------//
 #include "RGBA.h"

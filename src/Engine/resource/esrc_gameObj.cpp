@@ -7,7 +7,7 @@
  *  GameObj 在 内存中的 管理
  * ----------------------------
  */
-#include "pch.h"
+
 #include "esrc_gameObj.h"
 #include "esrc_camera.h"
 

@@ -9,7 +9,7 @@
 #ifndef TPR_ANIM_ACTION_POS_H
 #define TPR_ANIM_ACTION_POS_H
 
-#include "pch.h"
+
 
 //-------------------- Engine --------------------//
 #include "GoAltiRange.h"

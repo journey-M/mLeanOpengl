@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  * check some struct/class in app, make sure them are POD  
  */
-#include "pch.h"
+
 //-------------------- CPP --------------------//
 #include <type_traits>
 #include <any>

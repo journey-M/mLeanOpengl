@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  * handle plot-blueprint json files
  */
-#include "pch.h"
+
 #include "PlotBlueprint.h"
 
 

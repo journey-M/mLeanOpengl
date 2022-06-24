@@ -10,8 +10,7 @@
 #ifndef TPR_INPUT_ORIGIN_DATA_H
 #define TPR_INPUT_ORIGIN_DATA_H
 
-//--- glm - 0.9.9.5 ---
-#include "glm_no_warnings.h"
+
 
 
 //-------------------- CPP --------------------//

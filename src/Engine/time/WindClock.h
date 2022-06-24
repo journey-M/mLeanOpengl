@@ -9,8 +9,7 @@
  */
 #ifndef TPR_WIND_CLOCK_H
 #define TPR_WIND_CLOCK_H
-//--- glm - 0.9.9.5 ---
-#include "glm_no_warnings.h"
+
 
 //------------------- CPP --------------------// 
 #include <cmath>

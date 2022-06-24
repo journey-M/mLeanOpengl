@@ -5,7 +5,7 @@
  *                                        MODIFY -- 
  * ----------------------------------------------------------
  */
-#include "pch.h"
+
 #include "Script/components/windAnim/WindAnim.h"
 
 //-------------------- Engine --------------------//

@@ -8,7 +8,7 @@
 #ifndef TPR_VILLAGE_BLUE_PRINT_H
 #define TPR_VILLAGE_BLUE_PRINT_H
 
-#include "pch.h"
+
 
 //-------------------- Engine --------------------//
 #include "BlueprintVarType.h"

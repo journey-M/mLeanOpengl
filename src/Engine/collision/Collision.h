@@ -8,7 +8,7 @@
 #ifndef TPR_COLLISION_2_H
 #define TPR_COLLISION_2_H
 
-#include "pch.h"
+
 
 //-------------------- CPP --------------------//
 #include <utility> //pair

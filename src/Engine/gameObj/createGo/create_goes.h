@@ -8,8 +8,7 @@
 #ifndef TPR_CREATE_GOES_H
 #define TPR_CREATE_GOES_H
 
-//--- glm - 0.9.9.5 ---
-#include "glm_no_warnings.h"
+
 
 //-------------------- Engine --------------------//
 #include "IntVec.h"

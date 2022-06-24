@@ -7,7 +7,7 @@
  *  job: build job_ecoObj
  * ----------------------------
  */
-#include "pch.h"
+
 
 //-------------------- CPP --------------------//
 #include <cstring>

@@ -8,7 +8,7 @@
 #ifndef TPR_GO_ASSEMBLE_PLAN_H
 #define TPR_GO_ASSEMBLE_PLAN_H
 
-#include "pch.h"
+
 
 //------------------- CPP --------------------//
 #include <variant>

@@ -10,7 +10,7 @@
 #ifndef TPR_COLLIDE_OTH_H
 #define TPR_COLLIDE_OTH_H
 
-#include "pch.h"
+
 
 //-------------------- Engine --------------------//
 #include "ColliderType.h"

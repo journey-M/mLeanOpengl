@@ -9,10 +9,9 @@
 #define TPR_CAMERA_H
 //=== *** glad FIRST, glfw SECEND *** ===
 // Don't include glfw3.h ALONE!!!
-#include<glad/glad.h>  
+#include<glad/glad.h>
 #include<GLFW/glfw3.h>
 
-#include "pch.h"
 
 //-------------------- Engine --------------------//
 #include "ViewingBox.h"

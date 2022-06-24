@@ -8,7 +8,7 @@
 #ifndef TPR_SignInMapEnts_CIRCLE_H
 #define TPR_SignInMapEnts_CIRCLE_H
 
-#include "pch.h"
+
 
 //-------------------- CPP --------------------//
 #include <utility> // pair

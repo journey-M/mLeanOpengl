@@ -8,7 +8,7 @@
 #ifndef TPR_CHUNK_CREATE_ZONE_H
 #define TPR_CHUNK_CREATE_ZONE_H
 
-#include "pch.h"
+
 
 //-------------------- Engine --------------------//
 #include "Chunk.h"

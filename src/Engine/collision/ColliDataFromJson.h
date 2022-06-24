@@ -9,7 +9,7 @@
 #ifndef TPR_COLLI_DATA_FROM_JPNG_H
 #define TPR_COLLI_DATA_FROM_JPNG_H
 
-#include "pch.h"
+
 
 //-------------------- Engine --------------------//
 #include "GoAltiRange.h"

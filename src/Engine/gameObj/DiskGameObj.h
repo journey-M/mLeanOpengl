@@ -10,8 +10,6 @@
 #ifndef TPR_DISK_GAME_OBJ_H
 #define TPR_DISK_GAME_OBJ_H
 
-//--- glm - 0.9.9.5 ---
-#include "glm_no_warnings.h"
 
 //------------------- Engine --------------------//
 #include "IntVec.h"

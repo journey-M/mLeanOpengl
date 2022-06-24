@@ -7,7 +7,7 @@
  *   hold data about player
  * ----------------------------
  */
-#include "pch.h"
+
 #include "Player.h"
 
 //-------------------- Engine --------------------//

@@ -8,7 +8,7 @@
 #ifndef TPR_DENSITY_POOL_H
 #define TPR_DENSITY_POOL_H
 
-#include "pch.h"
+
 
 //-------------------- Engine --------------------//
 #include "GoSpecData.h"

@@ -8,7 +8,7 @@
 #ifndef TPR_CALC_COLLI_POINTS_H
 #define TPR_CALC_COLLI_POINTS_H
 
-#include "pch.h"
+
 
 
 void calc_colliPoints_for_circular(  std::vector<glm::dvec2> &container_, double radius_ );

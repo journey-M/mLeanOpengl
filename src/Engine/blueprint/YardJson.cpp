@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  * handle yard-blueprint json files
  */
-#include "pch.h"
+
 #include "YardBlueprint.h"
 
 

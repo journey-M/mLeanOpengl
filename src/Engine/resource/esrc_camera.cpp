@@ -5,7 +5,7 @@
  *                                        MODIFY --
  * ----------------------------------------------------------
  */
-#include "pch.h"
+
 #include "esrc_camera.h"
 #include "esrc_state.h"
 

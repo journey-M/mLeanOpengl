@@ -9,7 +9,7 @@
 #ifndef TPR_DATA_BASE_INN_H
 #define TPR_DATA_BASE_INN_H
 
-#include "pch.h"
+
 
 //-------------------- CPP --------------------//
 #include <mutex>

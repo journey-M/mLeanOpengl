@@ -17,8 +17,7 @@
 #ifndef TPR_MAP_COORD_H
 #define TPR_MAP_COORD_H
 
-//--- glm - 0.9.9.5 ---
-#include "glm_no_warnings.h"
+
 
 //-------------------- CPP --------------------//
 #include <cmath>

@@ -21,7 +21,7 @@
 // Don't include glfw3.h ALONE!!!
 #include <glad/glad.h>  
 
-#include "pch.h"
+
 
 //-------------------- Engine --------------------//
 #include "ChildMesh.h"

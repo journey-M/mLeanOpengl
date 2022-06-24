@@ -8,8 +8,7 @@
 #ifndef TPR_CHILD_MESH_H
 #define TPR_CHILD_MESH_H
 
-//--- glm - 0.9.9.5 ---
-#include "glm_no_warnings.h"
+
 
 //-------------------- Engine --------------------//
 #include "ShaderProgram.h" //-- each GameObjMesh instance,will bind a shader

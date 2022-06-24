@@ -12,8 +12,7 @@
 #ifndef TPR_INPUT_INS_H
 #define TPR_INPUT_INS_H
 
-//--- glm - 0.9.9.5 ---
-#include "glm_no_warnings.h"
+
 
 //------------------- CPP --------------------//
 #include <cstdint> // uint8_t

@@ -8,7 +8,7 @@
 #ifndef TPR_LOAD_AND_DIVIDE_PNG_H
 #define TPR_LOAD_AND_DIVIDE_PNG_H
 
-#include "pch.h"
+
 
 
 //------------------- Engine --------------------//
