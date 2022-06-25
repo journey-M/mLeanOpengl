@@ -1,1 +1,0 @@
-/usr/bin/c++ -rdynamic CMakeFiles/TowerDefends.dir/logic/run.cpp.o -o TowerDefends  -lGL -lglfw -ldl -lpthread engin/libengin.a -lpthread engin/graphic_glsl4.0/libgl40.a -lGL -lglfw -ldl engin/third-libs/json11-master/libjson11.a engin/third-libs/tinygltf/libtinygltf.a 
