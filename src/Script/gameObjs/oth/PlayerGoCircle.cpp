@@ -11,7 +11,7 @@
 #include "Script/gameObjs/oth/PlayerGoCircle.h"
 
 //-------------------- Engine --------------------//
-#include "animSubspeciesId.h"
+#include "animFrameSet/animSubspeciesId.h"
 #include "assemble_go.h"
 
 #include "esrc_player.h"

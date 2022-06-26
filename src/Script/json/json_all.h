@@ -9,7 +9,7 @@
 #define TPR_JSON_ALL_H
 
 //-------------------- Engine --------------------//
-#include "GameObj.h"
+#include "gameObj/GameObj.h"
 
 
 namespace json{//------------- namespace json ----------------

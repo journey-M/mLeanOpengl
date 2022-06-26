@@ -6,12 +6,12 @@
  * ----------------------------------------------------------
  */
 
-#include "esrc_chunkMemState.h"
+#include "resource/esrc_chunkMemState.h"
 //-------------------- CPP --------------------//
 #include <deque>
 
 //-------------------- Engine --------------------//
-#include "esrc_state.h"
+#include "resource/esrc_state.h"
 
 
 

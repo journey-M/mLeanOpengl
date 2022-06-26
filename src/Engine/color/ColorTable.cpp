@@ -6,10 +6,10 @@
  * ----------------------------------------------------------
  */
 
-#include "ColorTable.h"
+#include "color/ColorTable.h"
 
 //------------------- Engine --------------------//
-#include "esrc_time.h"
+#include "resource/esrc_time.h"
 
 
 //============== static ===============//

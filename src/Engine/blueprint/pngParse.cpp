@@ -6,13 +6,13 @@
  * ----------------------------------------------------------
  */
 
-#include "PlotBlueprint.h"
-#include "YardBlueprint.h"
+#include "blueprint/PlotBlueprint.h"
+#include "blueprint/YardBlueprint.h"
 
 //------------------- Engine --------------------//
-#include "load_and_divide_png.h"
-#include "RGBA.h"
-#include "blueprint_oth.h"
+#include "animFrameSet/load_and_divide_png.h"
+#include "tools/RGBA.h"
+#include "blueprint/blueprint_oth.h"
 
 
 

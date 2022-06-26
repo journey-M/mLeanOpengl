@@ -6,14 +6,14 @@
  * ----------------------------------------------------------
  */
 
-#include "Chunk.h"
+#include "map/Chunk.h"
 
 //-------------------- Engine --------------------//
-#include "ViewingBox.h"
-#include "EcoObj.h"
-#include "random.h"
-#include "occupyWeight.h"
-#include "Quad.h"
+#include "camera/ViewingBox.h"
+#include "ecoSys/EcoObj.h"
+#include "random/random.h"
+#include "map/occupyWeight.h"
+#include "map/Quad.h"
 #include "MapField.h"
 #include "Job_Chunk.h"
 #include "simplexNoise.h"

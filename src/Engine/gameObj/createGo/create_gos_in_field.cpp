@@ -9,16 +9,16 @@
 
 //-------------------- Engine --------------------//
 #include "esrc_field.h"
-#include "chunkKey.h"
+#include "map/chunkKey.h"
 #include "dyParams.h"
-#include "GameObj.h"
+#include "gameObj/GameObj.h"
 #include "create_goes.h"
-#include "GoSpecFromJson.h"
+#include "gameObj/goDataForCreate/GoSpecFromJson.h"
 
 #include "esrc_field.h"
 #include "esrc_ecoObj.h"
 #include "esrc_gameObj.h" 
-#include "esrc_time.h" 
+#include "resource/esrc_time.h" 
 #include "esrc_chunk.h" 
 #include "esrc_job_chunk.h"
 

@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "GoAssemblePlan.h"
+#include "gameObj/goDataForCreate/GoAssemblePlan.h"
 
 //--------------- CPP ------------------//
 #include <utility>
@@ -19,19 +19,19 @@
 #include "tprGeneral.h"
 
 //------------------- Engine --------------------//
-#include "global.h"
-#include "fileIO.h"
-#include "RenderLayerType.h"
-#include "ShaderType.h"
-#include "FloorGoType.h"
-#include "GoSpecFromJson.h"
-#include "json_oth.h"
-#include "SignInMapEnts_Square_Type.h"
-#include "ColliderType.h"
+#include "sys/global.h"
+#include "fileIO/fileIO.h"
+#include "camera/RenderLayerType.h"
+#include "shaderProgram/ShaderType.h"
+#include "gameObj/FloorGoType.h"
+#include "gameObj/goDataForCreate/GoSpecFromJson.h"
+#include "json/json_oth.h"
+#include "collision/signInMapEnts/SignInMapEnts_Square_Type.h"
+#include "collision/ColliderType.h"
 
-#include "calc_colliPoints.h"
+#include "animFrameSet/calc_colliPoints.h"
 
-#include "esrc_state.h"
+#include "resource/esrc_state.h"
 
 
 //--------------- Script ------------------//

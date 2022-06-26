@@ -6,10 +6,10 @@
  * ----------------------------------------------------------
  */
 
-#include "esrc_coordinate.h"
+#include "resource/esrc_coordinate.h"
 
 //-------------------- Engine --------------------//
-#include "esrc_state.h"
+#include "resource/esrc_state.h"
 
 
 namespace esrc {//------------------ namespace: esrc -------------------------//

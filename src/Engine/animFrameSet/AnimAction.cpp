@@ -6,15 +6,15 @@
  * ----------------------------------------------------------
  */
 
-#include "AnimAction.h"
+#include "animFrameSet/AnimAction.h"
 
 //--------------- Libs ------------------//
 #include "magic_enum.hpp"
 
 //------------------- Engine --------------------//
-#include "AnimFrameSet.h"
+#include "animFrameSet/AnimFrameSet.h"
 
-#include "esrc_time.h"
+#include "resource/esrc_time.h"
 
 
 using namespace std::placeholders;

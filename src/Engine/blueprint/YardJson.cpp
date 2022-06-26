@@ -7,7 +7,7 @@
  * handle yard-blueprint json files
  */
 
-#include "YardBlueprint.h"
+#include "blueprint/YardBlueprint.h"
 
 
 
@@ -20,14 +20,14 @@
 #include "tprGeneral.h"
 
 //--------------- Engine ------------------//
-#include "global.h"
-#include "fileIO.h"
-#include "blueprint_oth.h"
-#include "GoSpecFromJson.h"
+#include "sys/global.h"
+#include "fileIO/fileIO.h"
+#include "blueprint/blueprint_oth.h"
+#include "gameObj/goDataForCreate/GoSpecFromJson.h"
 
-#include "json_oth.h"
+#include "json/json_oth.h"
 
-#include "esrc_state.h"
+#include "resource/esrc_state.h"
 
 //--------------- Script ------------------//
 

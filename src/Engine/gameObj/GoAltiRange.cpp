@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "GoAltiRange.h"
+#include "gameObj/GoAltiRange.h"
 
 //--------------- Libs ------------------//
 #include "magic_enum.hpp"

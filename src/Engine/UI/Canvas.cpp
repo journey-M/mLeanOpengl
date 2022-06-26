@@ -6,10 +6,10 @@
  * ----------------------------------------------------------
  */
 
-#include "Canvas.h"
+#include "UI/Canvas.h"
 
 //-------------------- Engine --------------------//
-#include "create_texNames.h"
+#include "tools/create_texNames.h"
 #include "esrc_camera.h"
 
 

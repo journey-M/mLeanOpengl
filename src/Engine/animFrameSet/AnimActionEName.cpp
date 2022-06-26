@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "AnimActionEName.h"
+#include "animFrameSet/AnimActionEName.h"
 
 //--------------- Libs ------------------//
 #include "magic_enum.hpp"
@@ -19,7 +19,6 @@ AnimActionEName str_2_animActionEName( const std::string &str_ )noexcept{
         return *labelOP;
     }else{
         tprDebug::console( "can't find AnimAction::AnimActionEName: {}", str_  );
-        tprAssert(0);
         return AnimActionEName::Idle; // never reach
     }
 }

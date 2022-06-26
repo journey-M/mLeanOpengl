@@ -15,7 +15,7 @@
 #include "GameKey.h"
 #include "dyParams.h"
 #include "create_goes.h"
-#include "GoSpecFromJson.h"
+#include "gameObj/goDataForCreate/GoSpecFromJson.h"
 
 
 #include "esrc_camera.h" 

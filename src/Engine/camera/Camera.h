@@ -14,7 +14,7 @@
 
 
 //-------------------- Engine --------------------//
-#include "ViewingBox.h"
+#include "camera/ViewingBox.h"
 #include "FloatVec.h"
 
 

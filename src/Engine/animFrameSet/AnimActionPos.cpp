@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "AnimActionPos.h"
+#include "animFrameSet/AnimActionPos.h"
 
 //============== static ===============//
 ID_Manager  AnimActionPos::id_manager { ID_TYPE::U32, 1};

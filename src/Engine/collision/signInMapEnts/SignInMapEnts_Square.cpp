@@ -6,7 +6,8 @@
  * ----------------------------------------------------------
  */
 
-#include "SignInMapEnts_Square.h"
+#include "collision/signInMapEnts/SignInMapEnts_Square.h"
+#include "sys/config.h"
 
 
 

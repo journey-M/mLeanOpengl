@@ -9,7 +9,7 @@
 #define TPR_GO_BIO_SOUP_H
 
 //-------------------- Engine --------------------//
-#include "GameObj.h"
+#include "gameObj/GameObj.h"
 #include "DyParam.h"
 
 

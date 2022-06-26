@@ -6,12 +6,12 @@
  * ----------------------------------------------------------
  */
 
-#include "Density.h"
+#include "map/Density.h"
 
 
 //------------------- Engine --------------------//
 #include "simplexNoise.h"
-#include "esrc_gameSeed.h"
+#include "resource/esrc_gameSeed.h"
 #include "esrc_ecoObj.h"
 
 //---------- static ----------//

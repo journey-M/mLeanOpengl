@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "colorTableId.h"
+#include "color/colorTableId.h"
 
 
 //const colorTableId_t NilColorTableId { std::hash<std::string>{}("DEFAULT") };

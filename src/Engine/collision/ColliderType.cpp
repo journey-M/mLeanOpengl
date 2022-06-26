@@ -6,10 +6,14 @@
  * ----------------------------------------------------------
  */
 
-#include "ColliderType.h"
+#include "collision/ColliderType.h"
 
 //--------------- Libs ------------------//
 #include "magic_enum.hpp"
+#include "sys/config.h"
+#include "tprDebug/tprDebug.h"
+#include "tprDebug/tprAssert.h"
+#include "sys/config.h"
 
 
 double Circular::radius_for_dogo { 24.0 }; // Must small than HALF_PIXES_PER_MAPENT_D

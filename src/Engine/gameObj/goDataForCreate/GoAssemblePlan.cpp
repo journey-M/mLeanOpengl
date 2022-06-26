@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "GoAssemblePlan.h"
+#include "gameObj/goDataForCreate/GoAssemblePlan.h"
 
 //--------------- CPP ------------------//
 #include <utility>

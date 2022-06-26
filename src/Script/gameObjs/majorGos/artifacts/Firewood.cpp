@@ -9,7 +9,7 @@
 #include "Script/gameObjs/majorGos/artifacts/Firewood.h"
 
 //-------------------- Engine --------------------//
-#include "animSubspeciesId.h"
+#include "animFrameSet/animSubspeciesId.h"
 #include "dyParams.h"
 #include "assemble_go.h"
 

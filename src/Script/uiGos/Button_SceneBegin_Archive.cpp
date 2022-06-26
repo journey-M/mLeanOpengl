@@ -10,10 +10,10 @@
 
 
 //-------------------- Engine --------------------//
-#include "animSubspeciesId.h"
+#include "animFrameSet/animSubspeciesId.h"
 
 #include "esrc_player.h"
-#include "esrc_animFrameSet.h"
+#include "resource/esrc_animFrameSet.h"
 
 //-------------------- Script --------------------//
 

@@ -9,9 +9,9 @@
 #include "Script/gameObjs/majorGos/artifacts/StoneWall.h"
 
 //-------------------- Engine --------------------//
-#include "animSubspeciesId.h"
+#include "animFrameSet/animSubspeciesId.h"
 #include "dyParams.h"
-#include "GoSpecFromJson.h"
+#include "gameObj/goDataForCreate/GoSpecFromJson.h"
 #include "assemble_go.h"
 
 //-------------------- Script --------------------//

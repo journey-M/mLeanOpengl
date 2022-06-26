@@ -20,11 +20,11 @@
 #include "chunkCreate.h"
 #include "dataBase.h"
 #include "GameArchive.h"
-#include "GameSeed.h"
-#include "UIAnchor.h"
+#include "random/GameSeed.h"
+#include "UI/UIAnchor.h"
 #include "create_goes.h"
 
-#include "GoSpecFromJson.h"
+#include "gameObj/goDataForCreate/GoSpecFromJson.h"
 #include "UIGoSpecFromJson.h"
 
 

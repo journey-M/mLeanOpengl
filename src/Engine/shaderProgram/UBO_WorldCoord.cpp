@@ -10,8 +10,8 @@
 
 //-------------------- Engine --------------------//
 #include "esrc_uniformBlockObj.h"
-#include "esrc_state.h"
-#include "esrc_coordinate.h"
+#include "resource/esrc_state.h"
+#include "resource/esrc_coordinate.h"
 
 
 namespace ubo{//------------- namespace ubo ----------------

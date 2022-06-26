@@ -9,7 +9,7 @@
 #define TPR_UI_BUTTON_SCENE_BEGIN_POINTER_2_H
 
 //-------------------- Engine --------------------//
-#include "GameObj.h"
+#include "gameObj/GameObj.h"
 #include "dyParams.h"
 
 namespace uiGos{//------------- namespace uiGos ----------------

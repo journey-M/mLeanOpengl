@@ -12,7 +12,7 @@
 
 
 //-------------------- Engine --------------------//
-#include "GameObj.h"
+#include "gameObj/GameObj.h"
 
 
 #include "esrc_shader.h"

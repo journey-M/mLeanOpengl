@@ -6,13 +6,13 @@
  * ----------------------------------------------------------
  */
 
-#include "WindClock.h"
+#include "time/WindClock.h"
 
 //------------------- CPP --------------------//
 #include <random>
 
 //------------------- Engine --------------------// 
-#include "random.h"
+#include "random/random.h"
 #include "simplexNoise.h"
 
 

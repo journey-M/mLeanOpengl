@@ -13,15 +13,15 @@
  * ----------------------------
  */
 
-#include "random.h" 
+#include "random/random.h" 
 
 
 //-------------------- Engine --------------------//
 #include "input.h" 
 #include "gl_funcs.h" 
-#include "mapEntKey.h"
+#include "map/mapEntKey.h"
 
-#include "esrc_time.h"
+#include "resource/esrc_time.h"
 
 
 namespace random_inn {//------------- namespace: random_inn ----------------//

@@ -6,12 +6,13 @@
  * ----------------------------------------------------------
  */
 
-#include "CircuitBoard.h"
+#include "circuitBoard/CircuitBoard.h"
+
 
 
 //------------------- Engine --------------------//
-#include "GameObj.h"
-#include "esrc_gameObj.h"
+#include "gameObj/GameObj.h"
+#include "resource/esrc_gameObj.h"
 
 
 

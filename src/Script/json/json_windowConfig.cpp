@@ -15,12 +15,12 @@
 #include "tprGeneral.h"
 
 //-------------------- Engine --------------------//
-#include "global.h"
-#include "fileIO.h"
+#include "sys/global.h"
+#include "fileIO/fileIO.h"
 
-#include "json_oth.h"
+#include "json/json_oth.h"
 
-#include "esrc_state.h"
+#include "resource/esrc_state.h"
 
 //--------------- Script ------------------//
 #include "Script/json/json_all.h"

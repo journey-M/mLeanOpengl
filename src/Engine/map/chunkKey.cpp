@@ -8,10 +8,10 @@
  * ----------------------------
  */
 
-#include "chunkKey.h"
+#include "map/chunkKey.h"
 
 //-------------------- Engine --------------------//
-#include "sectionKey.h"
+#include "map/sectionKey.h"
 
 
 /* ===========================================================

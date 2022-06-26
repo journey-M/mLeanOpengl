@@ -9,7 +9,7 @@
 #define TPR_GO_STONE_WALL_H
 
 //-------------------- Engine --------------------//
-#include "GameObj.h"
+#include "gameObj/GameObj.h"
 #include "DyParam.h"
 
 namespace gameObjs{//------------- namespace gameObjs ----------------

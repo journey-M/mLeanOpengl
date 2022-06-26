@@ -9,11 +9,11 @@
  * ----------------------------
  */
 
-#include "Mesh.h" 
+#include "mesh/Mesh.h" 
 
 //-------------------- Engine --------------------//
 #include "esrc_VAOVBO.h" 
-#include "esrc_coordinate.h"
+#include "resource/esrc_coordinate.h"
 
 //namespace mesh_inn {//------------------ namespace: mesh_inn ---------------------//
 //}//--------------------- namespace: mesh_inn end ------------------------//

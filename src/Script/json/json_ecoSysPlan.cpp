@@ -14,21 +14,21 @@
 #include "rapidjson/stringbuffer.h"
 
 //-------------------- Engine --------------------//
-#include "global.h"
-#include "fileIO.h"
+#include "sys/global.h"
+#include "fileIO/fileIO.h"
 #include "EcoSysPlan.h"
-#include "json_oth.h"
-#include "blueprint.h"
-#include "GoSpecData.h"
+#include "json/json_oth.h"
+#include "blueprint/blueprint.h"
+#include "ecoSys/GoSpecData.h"
 
-#include "GoSpecFromJson.h"
+#include "gameObj/goDataForCreate/GoSpecFromJson.h"
 
-#include "YardBlueprint.h"
+#include "blueprint/YardBlueprint.h"
 
 
 #include "esrc_ecoSysPlan.h"
 #include "esrc_colorTableSet.h"
-#include "esrc_state.h"
+#include "resource/esrc_state.h"
 
 //--------------- Script ------------------//
 #include "Script/json/json_all.h"

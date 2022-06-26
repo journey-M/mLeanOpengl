@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "EcoSysPlanType.h"
+#include "ecoSys/EcoSysPlanType.h"
 
 //--------------- Libs ------------------//
 #include "magic_enum.hpp"

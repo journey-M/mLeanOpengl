@@ -12,7 +12,7 @@
 #include "uniformBlockObjs.h"
 #include "ColorTable.h"
 
-#include "esrc_state.h"
+#include "resource/esrc_state.h"
 
 #include "ubo_all.h"
 

@@ -10,9 +10,9 @@
 
 
 //-------------------- Engine --------------------//
-#include "random.h"
+#include "random/random.h"
 #include "esrc_ecoSysPlan.h"
-#include "esrc_gameSeed.h"
+#include "resource/esrc_gameSeed.h"
 
 //-------------------- Script --------------------//
 #include "Script/json/json_all.h"

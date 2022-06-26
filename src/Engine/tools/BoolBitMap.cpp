@@ -5,7 +5,7 @@
  *                                        MODIFY -- 
  * ----------------------------------------------------------
  */
-#include "BoolBitMap.h"
+#include "tools/BoolBitMap.h"
 
 //===== static =====//
 size_t BoolBitMap::BITS_PER_BYTE {8};

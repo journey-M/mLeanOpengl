@@ -7,7 +7,7 @@
  */
 
 #include "esrc_camera.h"
-#include "esrc_state.h"
+#include "resource/esrc_state.h"
 
 namespace esrc {//------------------ namespace: esrc -------------------------//
 namespace camera_inn {//------------------ namespace: camera_inn -------------------------//

@@ -6,14 +6,14 @@
  * ----------------------------------------------------------
  */
 
-#include "json_oth.h"
+#include "json/json_oth.h"
 
 //--------------- Libs ------------------//
 #include "tprGeneral.h"
 
 //-------------------- Engine --------------------//
-#include "global.h"
-#include "fileIO.h"
+#include "sys/global.h"
+#include "fileIO/fileIO.h"
 
 
 

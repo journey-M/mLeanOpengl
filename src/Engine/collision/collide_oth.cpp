@@ -6,13 +6,13 @@
  * ----------------------------------------------------------
  */
 
-#include "collide_oth.h"
+#include "collision/collide_oth.h"
 
 //-------------------- Engine --------------------//
-#include "NineDirection.h"
-#include "MapCoord.h"
+#include "tools/NineDirection.h"
+#include "tools/MapCoord.h"
 
-#include "esrc_coordinate.h"
+#include "resource/esrc_coordinate.h"
 
 
 namespace colliOth_inn {//----------- namespace: colliOth_inn ----------------//

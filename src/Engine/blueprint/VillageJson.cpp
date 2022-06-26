@@ -7,7 +7,7 @@
  * handle Village-blueprint json files
  */
 
-#include "VillageBlueprint.h"
+#include "blueprint/VillageBlueprint.h"
 
 
 
@@ -19,14 +19,14 @@
 #include "tprGeneral.h"
 
 //--------------- Engine ------------------//
-#include "global.h"
-#include "fileIO.h"
-#include "blueprint_oth.h"
-#include "FloorGoType.h"
+#include "sys/global.h"
+#include "fileIO/fileIO.h"
+#include "blueprint/blueprint_oth.h"
+#include "gameObj/FloorGoType.h"
 
-#include "json_oth.h"
+#include "json/json_oth.h"
 
-#include "esrc_state.h"
+#include "resource/esrc_state.h"
 
 //--------------- Script ------------------//
 

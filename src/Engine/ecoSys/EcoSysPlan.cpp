@@ -6,12 +6,12 @@
  * ----------------------------------------------------------
  */
 
-#include "EcoSysPlan.h"
+#include "ecoSys/EcoSysPlan.h"
 
 //-------------------- Engine --------------------//
-#include "Density.h"
-#include "random.h"
-#include "esrc_gameSeed.h"
+#include "map/Density.h"
+#include "random/random.h"
+#include "resource/esrc_gameSeed.h"
 
 
 

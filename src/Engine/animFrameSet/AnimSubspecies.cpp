@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "AnimSubspecies.h"
+#include "animFrameSet/AnimSubspecies.h"
 
 
 //============== static ===============//

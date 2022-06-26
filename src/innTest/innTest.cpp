@@ -12,16 +12,16 @@
 #include "magic_enum.hpp"
 
 //------------------- Engine --------------------//
-#include "History.h"
-#include "DirAxes.h"
-#include "DyBinary.h"
+#include "tools/History.h"
+#include "input/DirAxes.h"
+#include "dynamicParam/DyBinary.h"
 
-#include "random.h"
+#include "random/random.h"
 #include "simplexNoise.h"
 
-#include "NineDirection.h"
+#include "tools/NineDirection.h"
 
-#include "RGBA.h"
+#include "tools/RGBA.h"
 
 
 namespace innTest {//---------- namespace: innTest --------------//

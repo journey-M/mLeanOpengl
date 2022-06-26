@@ -14,7 +14,7 @@
 
 
 //-------------------- Engine --------------------//
-#include "esrc_state.h"
+#include "resource/esrc_state.h"
 #include "esrc_ecoObj.h"
 
 namespace esrc {//------------------ namespace: esrc -------------------------//

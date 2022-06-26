@@ -6,13 +6,13 @@
  * ----------------------------------------------------------
  */
 
-#include "ColliDataFromJson.h"
+#include "collision/ColliDataFromJson.h"
 
 //------------------- Engine --------------------//
-#include "calc_colliPoints.h"
+#include "animFrameSet/calc_colliPoints.h"
 
-#include "esrc_state.h"
-#include "esrc_coordinate.h"
+#include "resource/esrc_state.h"
+#include "resource/esrc_coordinate.h"
 
 
 //===== static =====//

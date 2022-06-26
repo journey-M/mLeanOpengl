@@ -13,11 +13,11 @@
 
 //-------------------- Engine --------------------//
 
-#include "GoSpecFromJson.h"
+#include "gameObj/goDataForCreate/GoSpecFromJson.h"
 #include "UIGoSpecFromJson.h"
 
 
-#include "esrc_state.h"
+#include "resource/esrc_state.h"
 
 //-------------------- Script --------------------//
 #include "Script/gameObjs/allGoes.h"

@@ -7,7 +7,7 @@
  */
 
 #include "esrc_behaviour.h"
-#include "esrc_state.h"
+#include "resource/esrc_state.h"
 
 namespace esrc {//------------------ namespace: esrc -------------------------//
 namespace behaviour_inn {//------------------ namespace: behaviour_inn -------------------------//

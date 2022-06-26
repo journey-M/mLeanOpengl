@@ -12,8 +12,8 @@
 #include <random>
 
 //-------------------- Engine --------------------//
-#include "animSubspeciesId.h"
-#include "random.h"
+#include "animFrameSet/animSubspeciesId.h"
+#include "random/random.h"
 #include "simplexNoise.h"
 #include "dyParams.h"
 

@@ -6,11 +6,11 @@
  * ----------------------------------------------------------
  */
 
-#include "GoSpecFromJson.h"
+#include "gameObj/goDataForCreate/GoSpecFromJson.h"
 
 
 //-------------------- Engine --------------------//
-#include "GameObj.h"
+#include "gameObj/GameObj.h"
 
 
 //======== static ========//

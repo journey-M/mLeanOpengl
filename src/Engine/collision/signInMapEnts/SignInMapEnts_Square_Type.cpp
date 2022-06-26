@@ -6,10 +6,12 @@
  * ----------------------------------------------------------
  */
 
-#include "SignInMapEnts_Square_Type.h"
+#include "collision/signInMapEnts/SignInMapEnts_Square_Type.h"
 
 //--------------- Libs ------------------//
 #include "magic_enum.hpp"
+#include "tprDebug/tprDebug.h"
+#include "tprDebug/tprAssert.h"
 
 
 

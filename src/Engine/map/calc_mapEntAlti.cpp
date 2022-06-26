@@ -8,9 +8,9 @@
 
 
 //-------------------- Engine --------------------//
-#include "MapCoord.h"
+#include "tools/MapCoord.h"
 #include "simplexNoise.h"
-#include "esrc_gameSeed.h"
+#include "resource/esrc_gameSeed.h"
 
 
 namespace cmea_inn {//----------- namespace: cmea_inn ----------------//

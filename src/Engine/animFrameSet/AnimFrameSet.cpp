@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "AnimFrameSet.h"
+#include "animFrameSet/AnimFrameSet.h"
 
 //-------------------- CPP --------------------//
 #include <algorithm> //- find
@@ -14,12 +14,12 @@
 #include <utility> //- move
 
 //------------------- Engine --------------------//
-#include "global.h"
-#include "create_texNames.h"
-#include "load_and_divide_png.h"
+#include "sys/global.h"
+#include "tools/create_texNames.h"
+#include "animFrameSet/load_and_divide_png.h"
 
 
-#include "esrc_animFrameSet.h"
+#include "resource/esrc_animFrameSet.h"
 
 
 namespace afs_inn {//----------------- namespace: afs_inn ------------------//

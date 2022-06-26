@@ -18,15 +18,15 @@
 #include "tprGeneral.h"
 
 //-------------------- Engine --------------------//
-#include "global.h"
-#include "fileIO.h"
-#include "AnimFrameSet.h"
-#include "AnimAction.h"
+#include "sys/global.h"
+#include "fileIO/fileIO.h"
+#include "animFrameSet/AnimFrameSet.h"
+#include "animFrameSet/AnimAction.h"
 
-#include "json_oth.h"
+#include "json/json_oth.h"
 
-#include "esrc_animFrameSet.h"
-#include "esrc_state.h"
+#include "resource/esrc_animFrameSet.h"
+#include "resource/esrc_state.h"
 
 
 using namespace rapidjson;

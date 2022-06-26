@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "occupyWeight.h"
+#include "map/occupyWeight.h"
 
 
 namespace ow_inn {//-------- namespace: ow_inn --------------//

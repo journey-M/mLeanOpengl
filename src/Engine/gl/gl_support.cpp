@@ -16,9 +16,9 @@
 
 //-------------------- Engine --------------------//
 #include "input.h" 
-#include "global.h"
+#include "sys/global.h"
 #include "gl_funcs.h" 
-#include "ViewingBox.h"
+#include "camera/ViewingBox.h"
 #include "esrc_window.h" 
 
 //------------------- 提供给全局的 函数 ----------------

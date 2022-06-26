@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "ShaderType.h"
+#include "shaderProgram/ShaderType.h"
 
 
 //--------------- Libs ------------------//

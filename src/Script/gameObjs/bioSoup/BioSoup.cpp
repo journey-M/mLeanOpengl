@@ -12,11 +12,11 @@
 #include "tprGeneral.h"
 
 //-------------------- Engine --------------------//
-#include "animSubspeciesId.h"
+#include "animFrameSet/animSubspeciesId.h"
 #include "dyParams.h"
 #include "assemble_go.h"
-#include "GoDataForCreate.h"
-#include "GoSpecFromJson.h"
+#include "gameObj/goDataForCreate/GoDataForCreate.h"
+#include "gameObj/goDataForCreate/GoSpecFromJson.h"
 
 //-------------------- Script --------------------//
 #include "Script/gameObjs/bioSoup/BioSoupDataForCreate.h"

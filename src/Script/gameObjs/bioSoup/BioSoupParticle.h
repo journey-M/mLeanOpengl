@@ -16,11 +16,11 @@
 #include <map>
 
 //-------------------- Engine --------------------//
-#include "tprAssert.h"
-#include "animSubspeciesId.h"
+#include "tprDebug/tprAssert.h"
+#include "animFrameSet/animSubspeciesId.h"
 #include "fieldFractType.h"
-#include "MapAltitude.h"
-#include "SignInMapEnts_Square_Type.h"
+#include "map/MapAltitude.h"
+#include "collision/signInMapEnts/SignInMapEnts_Square_Type.h"
 
 
 //-------------------- Script --------------------//

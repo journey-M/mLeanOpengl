@@ -9,12 +9,12 @@
 #include "ChildMesh.h"
 
 //-------------------- Engine --------------------//
-#include "GameObj.h"
-#include "GameObjMesh.h"
+#include "gameObj/GameObj.h"
+#include "mesh/GameObjMesh.h"
 
 #include "esrc_VAOVBO.h" 
 #include "esrc_camera.h"
-#include "esrc_coordinate.h"
+#include "resource/esrc_coordinate.h"
 
 
 namespace childMesh_inn {//------------------ namespace: childMesh_inn ---------------------//

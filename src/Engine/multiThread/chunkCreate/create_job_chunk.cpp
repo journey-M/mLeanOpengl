@@ -17,12 +17,12 @@
 #include "Job.h"
 #include "simplexNoise.h"
 #include "MapTexture.h" 
-#include "Quad.h"
-#include "random.h"
-#include "EcoObjBorder.h"
+#include "map/Quad.h"
+#include "random/random.h"
+#include "ecoSys/ecoObjBorder/EcoObjBorder.h"
 
 #include "esrc_job_chunk.h"
-#include "esrc_gameSeed.h"
+#include "resource/esrc_gameSeed.h"
 #include "esrc_field.h"
 #include "esrc_ecoObj.h"
 

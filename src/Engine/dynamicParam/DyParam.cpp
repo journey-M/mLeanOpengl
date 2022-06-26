@@ -6,6 +6,6 @@
  * ----------------------------------------------------------
  */
 
-#include "DyParam.h"
+#include "dynamicParam/DyParam.h"
 
 DyParam emptyDyParam {};

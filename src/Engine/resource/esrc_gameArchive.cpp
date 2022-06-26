@@ -7,7 +7,7 @@
  */
 
 #include "esrc_gameArchive.h"
-#include "esrc_state.h"
+#include "resource/esrc_state.h"
 
 namespace esrc {//------------------ namespace: esrc -------------------------//
 

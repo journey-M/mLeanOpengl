@@ -9,7 +9,7 @@
 #define TPR_GO_POPLAR_TREE_H
 
 //-------------------- Engine --------------------//
-#include "GameObj.h"
+#include "gameObj/GameObj.h"
 #include "DyParam.h"
 
 namespace gameObjs{//------------- namespace gameObjs ----------------

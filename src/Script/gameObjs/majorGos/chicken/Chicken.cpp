@@ -9,12 +9,12 @@
 #include "Script/gameObjs/majorGos/chicken/Chicken.h"
 
 //-------------------- Engine --------------------//
-#include "animSubspeciesId.h"
+#include "animFrameSet/animSubspeciesId.h"
 #include "dyParams.h"
-#include "GoSpecFromJson.h"
+#include "gameObj/goDataForCreate/GoSpecFromJson.h"
 #include "assemble_go.h"
 
-#include "esrc_gameSeed.h"
+#include "resource/esrc_gameSeed.h"
 
 //-------------------- Script --------------------//
 

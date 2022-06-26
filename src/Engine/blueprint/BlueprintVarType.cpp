@@ -5,7 +5,7 @@
  *                                        MODIFY -- 
  * ----------------------------------------------------------
  */
-#include "BlueprintVarType.h"
+#include "blueprint/BlueprintVarType.h"
 
 //--------------- Libs ------------------//
 #include "magic_enum.hpp"

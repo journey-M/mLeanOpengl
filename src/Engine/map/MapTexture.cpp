@@ -11,8 +11,8 @@
 #include "MapTexture.h" 
 
 //------------------- Engine --------------------//
-#include "RGBA.h"
-#include "create_texNames.h"
+#include "tools/RGBA.h"
+#include "tools/create_texNames.h"
 
 
 namespace mapTexture_inn {//----------- namespace: mapTexture_inn ---------------//

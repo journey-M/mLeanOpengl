@@ -6,20 +6,20 @@
  * ----------------------------------------------------------
  */
 
-#include "GoDataForCreate.h"
+#include "gameObj/goDataForCreate/GoDataForCreate.h"
 
 //-------------------- Libs --------------------//
 #include "tprGeneral.h"
 
 //------------------- Engine --------------------//
-#include "GoSpecFromJson.h"
-#include "WindClock.h"
-#include "random.h"
+#include "gameObj/goDataForCreate/GoSpecFromJson.h"
+#include "time/WindClock.h"
+#include "random/random.h"
 
 #include "Job_GroundGoEnt.h"
 #include "Job_Field.h"
 
-#include "esrc_animFrameSet.h"
+#include "resource/esrc_animFrameSet.h"
 
 
 extern const std::string &calc_groundGoMeshName( FieldFractType fieldFractType_, colorTableId_t colorTableId_ )noexcept;

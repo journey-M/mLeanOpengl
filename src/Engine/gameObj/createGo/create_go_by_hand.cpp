@@ -14,7 +14,7 @@
 
 //------------------- Engine --------------------//
 #include "DiskGameObj.h"
-#include "GoSpecFromJson.h"
+#include "gameObj/goDataForCreate/GoSpecFromJson.h"
 #include "UIGoSpecFromJson.h"
 
 #include "esrc_gameObj.h" 

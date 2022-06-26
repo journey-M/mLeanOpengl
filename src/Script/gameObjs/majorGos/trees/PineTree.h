@@ -9,7 +9,7 @@
 #define TPR_GO_PINE_TREE_H
 
 //-------------------- Engine --------------------//
-#include "GameObj.h"
+#include "gameObj/GameObj.h"
 #include "DyParam.h"
 
 namespace gameObjs{//------------- namespace gameObjs ----------------

@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "Move.h"
+#include "move/Move.h"
 
 //-------------------- CPP --------------------//
 #include <utility> //- pair
@@ -16,17 +16,17 @@
 #include "magic_enum.hpp"
 
 //-------------------- Engine --------------------//
-#include "SpeedLevel.h"
-#include "GameObjPos.h"
-#include "MapCoord.h"
-#include "Collision.h"
-#include "GameObj.h" 
+#include "move/SpeedLevel.h"
+#include "gameObj/GameObjPos.h"
+#include "tools/MapCoord.h"
+#include "collision/Collision.h"
+#include "gameObj/GameObj.h" 
 
-#include "esrc_time.h"
+#include "resource/esrc_time.h"
 #include "esrc_chunk.h"
 #include "esrc_gameObj.h"
 
-#include "speedLog.h"
+#include "tprDebug/speedLog.h"
 
 
 MoveType str_2_moveType( const std::string name_ )noexcept{

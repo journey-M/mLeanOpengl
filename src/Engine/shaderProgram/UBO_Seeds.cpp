@@ -10,7 +10,7 @@
 
 
 //-------------------- Engine --------------------//
-#include "esrc_gameSeed.h"
+#include "resource/esrc_gameSeed.h"
 #include "esrc_uniformBlockObj.h"
 
 namespace ubo{//------------- namespace ubo ----------------

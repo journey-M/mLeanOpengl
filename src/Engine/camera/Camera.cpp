@@ -5,13 +5,13 @@
  *                                        MODIFY -- 
  * --------------------------------------------------------------
  */
-#include "Camera.h"
+#include "camera/Camera.h"
 
 //-------------------- Engine --------------------//
-#include "speedLog.h"
+#include "tprDebug/speedLog.h"
 
-#include "esrc_state.h"
-#include "esrc_coordinate.h"
+#include "resource/esrc_state.h"
+#include "resource/esrc_coordinate.h"
 
 
 namespace camera_inn {//------------------ namespace: camera_inn ---------------------//

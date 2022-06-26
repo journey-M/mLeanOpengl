@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "speedLog.h"
+#include "tprDebug/speedLog.h"
 
 //------------------- CPP --------------------//
 #include <sstream>
@@ -17,8 +17,8 @@
 #include "tprGeneral.h"
 
 //-------------------- Engine --------------------//
-#include "global.h"
-#include "timeLog.h"
+#include "sys/global.h"
+#include "time/TimeBase.h" 
 
 
 using std::endl;

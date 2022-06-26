@@ -9,10 +9,10 @@
 #include "Script/gameObjs/majorGos/bushs/Bush.h"
 
 //-------------------- Engine --------------------//
-#include "animSubspeciesId.h"
+#include "animFrameSet/animSubspeciesId.h"
 #include "dyParams.h"
 
-#include "esrc_gameSeed.h"
+#include "resource/esrc_gameSeed.h"
 
 
 //-------------------- Script --------------------//

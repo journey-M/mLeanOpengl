@@ -9,7 +9,7 @@
 #define TPR_BIO_SOUP_STATE_H
 
 //-------------------- Engine --------------------//
-#include "MapAltitude.h"
+#include "map/MapAltitude.h"
 
 namespace gameObjs::bioSoup {//------------- namespace gameObjs::bioSoup ----------------
 

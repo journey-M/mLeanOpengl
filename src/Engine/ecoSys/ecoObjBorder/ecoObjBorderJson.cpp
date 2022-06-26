@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "EcoObjBorder.h"
+#include "ecoSys/ecoObjBorder/EcoObjBorder.h"
 
 //--------------- Libs ------------------//
 #include "rapidjson/document.h"
@@ -16,9 +16,10 @@
 #include "tprGeneral.h"
 
 //--------------- Engine ------------------//
-#include "global.h"
-#include "fileIO.h"
-#include "json_oth.h"
+#include "sys/global.h"
+#include "fileIO/fileIO.h"
+#include "json/json_oth.h"
+#include "tprDebug/tprDebug.h"
 
 
 //--------------- Script ------------------//

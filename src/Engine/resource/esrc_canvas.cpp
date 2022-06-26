@@ -8,14 +8,14 @@
 
 
 //-------------------- Engine --------------------//
-#include "ViewingBox.h"
+#include "camera/ViewingBox.h"
 #include "esrc_canvas.h"
 #include "esrc_window.h"
 #include "esrc_camera.h"
-#include "esrc_gameSeed.h"
+#include "resource/esrc_gameSeed.h"
 
 #include "esrc_shader.h"
-#include "esrc_state.h"
+#include "resource/esrc_state.h"
 
 
 namespace esrc{//------------------ namespace: esrc -------------------------//

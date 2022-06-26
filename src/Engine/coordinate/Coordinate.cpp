@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "Coordinate.h"
+#include "coordinate/Coordinate.h"
 
 
 

@@ -13,12 +13,12 @@
 
 //-------------------- Engine --------------------//
 #include "esrc_field.h"
-#include "chunkKey.h"
+#include "map/chunkKey.h"
 
 #include "esrc_ecoObj.h"
 #include "esrc_gameObj.h" 
 #include "esrc_chunk.h" 
-#include "esrc_state.h"
+#include "resource/esrc_state.h"
 
 
 namespace esrc {//------------------ namespace: esrc -------------------------//

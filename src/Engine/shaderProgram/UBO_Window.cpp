@@ -9,7 +9,7 @@
 #include "ubo_all.h"
 
 //-------------------- Engine --------------------//
-#include "ViewingBox.h"
+#include "camera/ViewingBox.h"
 #include "esrc_uniformBlockObj.h"
 
 namespace ubo{//------------- namespace ubo ----------------

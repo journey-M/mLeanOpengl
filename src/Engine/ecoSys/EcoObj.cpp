@@ -6,15 +6,15 @@
  * ----------------------------------------------------------
  */
 
-#include "EcoObj.h"
+#include "ecoSys/EcoObj.h"
 
 //-------------------- Engine --------------------//
-#include "random.h"
-#include "Density.h"
-#include "simplexNoise.h"
-#include "esrc_gameSeed.h"
-#include "esrc_ecoSysPlan.h"
-#include "esrc_ecoObj.h"
+#include "random/random.h"
+#include "map/Density.h"
+#include "random/simplexNoise.h"
+#include "resource/esrc_gameSeed.h"
+#include "resource/esrc_ecoSysPlan.h"
+#include "resource/esrc_ecoObj.h"
 
 
 

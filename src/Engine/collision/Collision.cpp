@@ -6,21 +6,21 @@
  * ----------------------------------------------------------
  */
 
-#include "Collision.h"
+#include "collision/Collision.h"
 
 //-------------------- Engine --------------------//
-#include "GameObjMesh.h"
-#include "GameObj.h"
-#include "AnimActionPos.h"
-#include "MapCoord.h"
-#include "MapEnt.h"
-#include "collide_oth.h"
-#include "calc_colliPoints.h"
+#include "mesh/GameObjMesh.h"
+#include "gameObj/GameObj.h"
+#include "animFrameSet/AnimActionPos.h"
+#include "tools/MapCoord.h"
+#include "map/MapEnt.h"
+#include "collision/collide_oth.h"
+#include "animFrameSet/calc_colliPoints.h"
 
-#include "esrc_chunk.h"
-#include "esrc_gameObj.h"
-#include "esrc_time.h"
-#include "esrc_coordinate.h"
+#include "resource/esrc_chunk.h"
+#include "resource/esrc_gameObj.h"
+#include "resource/esrc_time.h"
+#include "resource/esrc_coordinate.h"
 
 
 //===== static =====//

@@ -12,17 +12,17 @@
 
 //-------------------- Engine --------------------//
 #include "simplexNoise.h"
-#include "mapEntKey.h"
-#include "GoAssemblePlan.h"
-#include "WindClock.h"
-#include "random.h"
+#include "map/mapEntKey.h"
+#include "gameObj/goDataForCreate/GoAssemblePlan.h"
+#include "time/WindClock.h"
+#include "random/random.h"
 
-#include "GoSpecFromJson.h"
+#include "gameObj/goDataForCreate/GoSpecFromJson.h"
 
-#include "YardBlueprint.h"
+#include "blueprint/YardBlueprint.h"
 
 #include "esrc_ecoObj.h"
-#include "esrc_animFrameSet.h" // tmp
+#include "resource/esrc_animFrameSet.h" // tmp
 
 
 

@@ -15,40 +15,51 @@ message(STATUS "[__INFO__] PROJECT_BINARY_DIR: ${PROJECT_BINARY_DIR}")
 message(STATUS "[__INFO__] CMAKE_RUNTIME_OUTPUT_DIRECTORY: ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}")
 
 
+
+include_directories(include ../ ../../deps/glm.9.9.5 ../../deps/magic_enum ../../deps/glad/include 
+../../deps/tprGeneral ../../deps/stb_image ../../deps/tprInUnix)
+
 aux_source_directory(. ENGINE_SRCS)
+
+get_property(dirs DIRECTORY ${CMAKE_SOURCE_DIR} PROPERTY INCLUDE_DIRECTORIES)
+message(">>> SET DEFAULT TO BEFORE, include_dirs=${dirs}")
+
 
 add_subdirectory(actionFSM)
 add_subdirectory(animFrameSet)
 add_subdirectory(actionSwitch)
 add_subdirectory(blueprint)
 add_subdirectory(camera)
+add_subdirectory(circuitBoard)
+add_subdirectory(collision)
+add_subdirectory(color)
+add_subdirectory(coordinate)
+add_subdirectory(dynamicParam)
+add_subdirectory(ecoSys)
+add_subdirectory(fileIO)
+
 
 
 #[[
-add_subdirectory(collision)
-add_subdirectory(dynamicParam)
+
+
 add_subdirectory(gl)
 add_subdirectory(mesh)
 add_subdirectory(random)
 add_subdirectory(script)
 add_subdirectory(tools)
-add_subdirectory(color)
-add_subdirectory(ecoSys)
 add_subdirectory(input)
 add_subdirectory(move)
 add_subdirectory(renderPool)
 add_subdirectory(shaderProgram)
 add_subdirectory(tprDebug)
 add_subdirectory(affect)
-add_subdirectory(coordinate)
-add_subdirectory(fileIO)
 add_subdirectory(json)
 add_subdirectory(multiThread)
 add_subdirectory(resource)
 add_subdirectory(sys)
 add_subdirectory(UI)
 add_subdirectory(AI)
-add_subdirectory(circuitBoard)
 add_subdirectory(dataBase)
 add_subdirectory(gameObj)
 add_subdirectory(map)
@@ -60,4 +71,7 @@ add_subdirectory(VAOVBO)
 ]]
 
 add_library (engine ${ENGINE_SRCS})
-target_link_libraries(engine PUBLIC engine_actionfsm  engine_actionswitch  engine_animframset engine_blueprint engine_camera)
+target_link_libraries(engine PUBLIC engine_actionfsm engine_actionswitch  engine_animframset engine_blueprint 
+engine_camera engine_circuitboard engine_collision engine_color engine_coordinate engine_dynamicprogram engine_ecosys
+engine_fileio
+)

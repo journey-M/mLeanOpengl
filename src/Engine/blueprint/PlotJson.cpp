@@ -7,7 +7,7 @@
  * handle plot-blueprint json files
  */
 
-#include "PlotBlueprint.h"
+#include "blueprint/PlotBlueprint.h"
 
 
 
@@ -19,15 +19,15 @@
 #include "tprGeneral.h"
 
 //--------------- Engine ------------------//
-#include "global.h"
-#include "fileIO.h"
-#include "blueprint_oth.h"
+#include "sys/global.h"
+#include "fileIO/fileIO.h"
+#include "blueprint/blueprint_oth.h"
 
-#include "GoSpecFromJson.h"
+#include "gameObj/goDataForCreate/GoSpecFromJson.h"
 
-#include "json_oth.h"
+#include "json/json_oth.h"
 
-#include "esrc_state.h"
+#include "resource/esrc_state.h"
 
 //--------------- Script ------------------//
 

@@ -11,7 +11,7 @@
 #include "create_goes.h"
 
 //-------------------- Engine --------------------//
-#include "GoSpecFromJson.h"
+#include "gameObj/goDataForCreate/GoSpecFromJson.h"
 #include "UIGoSpecFromJson.h"
 
 #include "esrc_gameObj.h" 

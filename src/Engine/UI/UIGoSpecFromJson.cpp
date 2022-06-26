@@ -10,7 +10,7 @@
 
 
 //-------------------- Engine --------------------//
-#include "GameObj.h"
+#include "gameObj/GameObj.h"
 
 
 //======== static ========//

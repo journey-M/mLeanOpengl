@@ -6,8 +6,8 @@
  * ----------------------------------------------------------
  */
 
-#include "esrc_gameSeed.h"
-#include "esrc_state.h"
+#include "resource/esrc_gameSeed.h"
+#include "resource/esrc_state.h"
 
 namespace esrc {//------------------ namespace: esrc -------------------------//
 

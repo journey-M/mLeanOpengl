@@ -10,7 +10,7 @@
 
 //-------------------- Engine --------------------//
 #include "DyParam.h"
-#include "animSubspeciesId.h"
+#include "animFrameSet/animSubspeciesId.h"
 #include "assemble_go.h"
 
 //-------------------- Script --------------------//

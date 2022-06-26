@@ -10,7 +10,7 @@
 
 
 //-------------------- Engine --------------------//
-#include "esrc_animFrameSet.h"
+#include "resource/esrc_animFrameSet.h"
 
 
 namespace esrc {//------------------ namespace: esrc -------------------------//

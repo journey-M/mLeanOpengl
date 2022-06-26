@@ -6,10 +6,10 @@
  * ----------------------------------------------------------
  */
 
-#include "YardBlueprint.h"
+#include "blueprint/YardBlueprint.h"
 
 //-------------------- Engine --------------------//
-#include "esrc_gameSeed.h"
+#include "resource/esrc_gameSeed.h"
 
 
 

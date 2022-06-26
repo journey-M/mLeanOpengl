@@ -12,11 +12,11 @@
 #include <shared_mutex> //- c++17 读写锁
 
 //-------------------- Engine --------------------//
-#include "sectionKey.h"
-#include "GameObj.h"
+#include "map/sectionKey.h"
+#include "gameObj/GameObj.h"
 
 #include "esrc_ecoObj.h"
-#include "esrc_state.h"
+#include "resource/esrc_state.h"
 #include "esrc_player.h"
 
 

@@ -11,12 +11,12 @@
 #include "MapField.h"
 
 //-------------------- Engine --------------------//
-#include "random.h"
-#include "EcoObj.h"
+#include "random/random.h"
+#include "ecoSys/EcoObj.h"
 #include "simplexNoise.h"
 #include "MapEnt.h"
 
-#include "esrc_gameSeed.h"
+#include "resource/esrc_gameSeed.h"
 #include "esrc_ecoObj.h"
 
 

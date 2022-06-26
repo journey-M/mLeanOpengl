@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "FloorGoType.h"
+#include "gameObj/FloorGoType.h"
 
 //--------------- Libs ------------------//
 #include "magic_enum.hpp"

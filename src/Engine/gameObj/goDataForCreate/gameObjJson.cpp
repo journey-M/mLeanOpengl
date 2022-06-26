@@ -17,17 +17,17 @@
 #include "tprGeneral.h"
 
 //-------------------- Engine --------------------//
-#include "global.h"
-#include "fileIO.h"
-#include "GameObjType.h"
-#include "AnimFrameSet.h"
-#include "AnimActionEName.h"
+#include "sys/global.h"
+#include "fileIO/fileIO.h"
+#include "gameObj/GameObjType.h"
+#include "animFrameSet/AnimFrameSet.h"
+#include "animFrameSet/AnimActionEName.h"
 
-#include "GoSpecFromJson.h"
+#include "gameObj/goDataForCreate/GoSpecFromJson.h"
 
-#include "json_oth.h"
+#include "json/json_oth.h"
 
-#include "esrc_state.h"
+#include "resource/esrc_state.h"
 
 
 using namespace rapidjson;

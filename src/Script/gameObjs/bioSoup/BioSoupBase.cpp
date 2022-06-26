@@ -8,14 +8,14 @@
 
 #include "Script/gameObjs/bioSoup/BioSoupBase.h"
 
-#include "random.h"
+#include "random/random.h"
 #include "assemble_go.h"
-#include "GoDataForCreate.h"
-#include "GoSpecFromJson.h"
-#include "GoAssemblePlan.h"
+#include "gameObj/goDataForCreate/GoDataForCreate.h"
+#include "gameObj/goDataForCreate/GoSpecFromJson.h"
+#include "gameObj/goDataForCreate/GoAssemblePlan.h"
 
-#include "esrc_coordinate.h"
-#include "esrc_animFrameSet.h"
+#include "resource/esrc_coordinate.h"
+#include "resource/esrc_animFrameSet.h"
 
 
 //-------------------- Script --------------------//

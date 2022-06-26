@@ -9,8 +9,8 @@
 #include "Script/components/windAnim/WindAnim.h"
 
 //-------------------- Engine --------------------//
-#include "random.h"
-#include "esrc_time.h"
+#include "random/random.h"
+#include "resource/esrc_time.h"
 
 
 

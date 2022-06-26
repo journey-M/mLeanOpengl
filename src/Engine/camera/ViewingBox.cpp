@@ -5,12 +5,12 @@
  *                                        MODIFY -- 
  * ----------------------------------------------------------
  */
-#include "ViewingBox.h"
+#include "camera/ViewingBox.h"
 
 //--------------- Script ------------------//
 #include "Script/json/json_all.h"
-
-#include "esrc_state.h"
+#include "tprDebug/tprDebug.h"
+#include "resource/esrc_state.h"
 
 
 //-- init is delay to ViewingBox::init() --

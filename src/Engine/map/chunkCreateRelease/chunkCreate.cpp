@@ -15,9 +15,9 @@
 #include <chrono>
 
 //-------------------- Engine --------------------//
-#include "NineDirection.h"
-#include "Chunk.h"
-#include "sectionKey.h"
+#include "tools/NineDirection.h"
+#include "map/Chunk.h"
+#include "map/sectionKey.h"
 #include "create_goes.h"
 
 #include "esrc_gameObj.h"
@@ -28,7 +28,7 @@
 #include "esrc_jobQue.h"
 #include "esrc_job_chunk.h"
 #include "esrc_job_ecoObj.h"
-#include "esrc_time.h" // debug
+#include "resource/esrc_time.h" // debug
 
 #include "jobs_all.h"
 #include "Job.h"

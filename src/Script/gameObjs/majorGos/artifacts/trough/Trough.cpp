@@ -9,7 +9,7 @@
 #include "Script/gameObjs/majorGos/artifacts/trough/Trough.h"
 
 //-------------------- Engine --------------------//
-#include "animSubspeciesId.h"
+#include "animFrameSet/animSubspeciesId.h"
 #include "dyParams.h"
 #include "assemble_go.h"
 

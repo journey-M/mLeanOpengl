@@ -6,10 +6,10 @@
  * ----------------------------------------------------------
  */
 
-#include "calc_colliPoints.h"
+#include "animFrameSet/calc_colliPoints.h"
 
 //-------------------- Engine --------------------//
-#include "ColliderType.h"
+#include "collision/ColliderType.h"
 
 
 namespace calc_colli_inn {//----------- namespace: calc_colli_inn -------------//
@@ -100,7 +100,6 @@ void calc_colliPoints_for_circular(  std::vector<glm::dvec2> &container_, double
         calc_colli_inn::init();
     }
 
-    tprAssert( radius_ > 0.0 );
 
     double radius = radius_ + 10.0; //- 适当向外延伸 
     double scale  = radius / PIXES_PER_MAPENT_D;
@@ -120,7 +119,6 @@ void calc_colliPoints_for_circular(  std::vector<glm::dvec2> &container_, double
             container_.push_back( i * radius );
         }
     }else{
-        tprAssert(0); // not support jet
     }
 }
 

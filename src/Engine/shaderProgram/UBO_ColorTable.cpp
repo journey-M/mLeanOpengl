@@ -9,7 +9,7 @@
 #include "ubo_all.h"
 
 //-------------------- Engine --------------------//
-#include "GameObj.h"
+#include "gameObj/GameObj.h"
 
 #include "esrc_colorTableSet.h"
 #include "esrc_uniformBlockObj.h"
@@ -17,7 +17,7 @@
 #include "esrc_field.h"
 #include "esrc_chunk.h"
 
-#include "esrc_time.h"
+#include "resource/esrc_time.h"
 
 namespace ubo{//------------- namespace ubo ----------------
 

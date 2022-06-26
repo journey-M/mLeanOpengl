@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "blueprint_inn.h"
+#include "blueprint/blueprint_inn.h"
 
 
 namespace blueprint {//------------------ namespace: blueprint start ---------------------//

@@ -6,15 +6,10 @@
  * ----------------------------------------------------------
  */
 
-#include "fileIO.h"
+#include "fileIO/fileIO.h"
 
 //--------------- Libs ------------------//
-#include "SysConfig.h" // MUST BEFORE TPR_OS_WIN32_ !!!
-#if defined TPR_OS_WIN32_ 
-    #include "tprFileSys_win.h"
-#elif defined TPR_OS_UNIX_ 
-    #include "tprFileSys_unix.h"
-#endif
+#include "tprFileSys_unix.h"
 
 /* ===========================================================
  *                    read_a_file

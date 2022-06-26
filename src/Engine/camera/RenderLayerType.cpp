@@ -6,10 +6,11 @@
  * ----------------------------------------------------------
  */
 
-#include "RenderLayerType.h"
+#include "camera/RenderLayerType.h"
 
 //--------------- Libs ------------------//
 #include "magic_enum.hpp"
+#include "tprDebug/tprDebug.h"
 
 
 
@@ -25,7 +26,6 @@ RenderLayerType str_2_renderLayerType( const std::string &str_ )noexcept{
         return *labelOP;
     }else{
         tprDebug::console( "can't find RenderLayerType: {}", str_ );
-        tprAssert(0);
         return RenderLayerType::MajorGoes; // never reach
     }
 }

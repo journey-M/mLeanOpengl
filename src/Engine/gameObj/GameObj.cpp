@@ -6,11 +6,11 @@
  * ----------------------------------------------------------
  */
 
-#include "GameObj.h" 
+#include "gameObj/GameObj.h" 
 
 //-------------------- Engine --------------------//
-#include "Chunk.h"
-#include "GoSpecFromJson.h"
+#include "map/Chunk.h"
+#include "gameObj/goDataForCreate/GoSpecFromJson.h"
 
 #include "esrc_chunk.h"
 

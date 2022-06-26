@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "NineDirection.h"
+#include "tools/NineDirection.h"
 
 size_t nineDirectionSize {9};
 

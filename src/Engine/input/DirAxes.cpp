@@ -6,10 +6,10 @@
  * ----------------------------------------------------------
  */
 
-#include "DirAxes.h"
+#include "input/DirAxes.h"
 
 //-------------------- Engine --------------------//
-#include "esrc_coordinate.h"
+#include "resource/esrc_coordinate.h"
 
 
 // 将 初始值 修正成 游戏坐标系中的 值

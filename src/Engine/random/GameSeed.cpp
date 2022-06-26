@@ -8,8 +8,8 @@
  * ----------------------------
  */
 
-#include "GameSeed.h"
-#include "tprAssert.h"
+#include "random/GameSeed.h"
+#include "tprDebug/tprAssert.h"
 
 
 namespace gameSeed_inn {//----------- namespace: gameSeed_inn ----------------//

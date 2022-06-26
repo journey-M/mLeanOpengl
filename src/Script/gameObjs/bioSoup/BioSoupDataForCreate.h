@@ -10,7 +10,7 @@
 
 
 //-------------------- Engine --------------------//
-#include "MapAltitude.h"
+#include "map/MapAltitude.h"
 
 //-------------------- Script --------------------//
 #include "Script/gameObjs/bioSoup/BioSoupState.h"

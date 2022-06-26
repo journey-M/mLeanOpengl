@@ -12,11 +12,11 @@
 #include "tprGeneral.h"
 
 //-------------------- Engine --------------------//
-#include "animSubspeciesId.h"
+#include "animFrameSet/animSubspeciesId.h"
 #include "dyParams.h"
 #include "assemble_go.h"
 
-#include "esrc_animFrameSet.h"
+#include "resource/esrc_animFrameSet.h"
 
 //-------------------- Script --------------------//
 

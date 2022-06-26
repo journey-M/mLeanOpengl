@@ -13,11 +13,11 @@
 #include "tprGeneral.h"
 
 //-------------------- Engine --------------------//
-#include "global.h"
-#include "GameObj.h"
+#include "sys/global.h"
+#include "gameObj/GameObj.h"
 #include "esrc_gameArchive.h"
 #include "esrc_player.h"
-#include "esrc_time.h"
+#include "resource/esrc_time.h"
 
 
 

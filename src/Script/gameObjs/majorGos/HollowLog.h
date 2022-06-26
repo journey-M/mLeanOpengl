@@ -10,7 +10,7 @@
 #define TPR_GO_HOLLOW_LOG_H
 
 //-------------------- Engine --------------------//
-#include "GameObj.h"
+#include "gameObj/GameObj.h"
 #include "DyParam.h"
 
 

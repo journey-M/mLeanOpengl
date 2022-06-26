@@ -6,13 +6,13 @@
  * ----------------------------------------------------------
  */
 
-#include "EcoObjBorder.h"
+#include "ecoSys/ecoObjBorder/EcoObjBorder.h"
 
 
 //-------------------- Engine --------------------//
-#include "global.h"
-#include "load_and_divide_png.h"
-#include "RGBA.h"
+#include "sys/global.h"
+#include "animFrameSet/load_and_divide_png.h"
+#include "tools/RGBA.h"
 
 
 //======= static =======//

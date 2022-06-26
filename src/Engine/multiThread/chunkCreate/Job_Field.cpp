@@ -9,12 +9,12 @@
 #include "Job_Field.h"
 
 //-------------------- Engine --------------------//
-#include "GoSpecFromJson.h"
+#include "gameObj/goDataForCreate/GoSpecFromJson.h"
 #include "Job_GroundGoEnt.h"
 
-#include "esrc_state.h"
-#include "esrc_coordinate.h"
-#include "esrc_animFrameSet.h"
+#include "resource/esrc_state.h"
+#include "resource/esrc_coordinate.h"
+#include "resource/esrc_animFrameSet.h"
 
 #include "Job_Chunk.h"
 

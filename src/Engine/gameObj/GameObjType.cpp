@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "GameObjType.h"
+#include "gameObj/GameObjType.h"
 
 //--------------- Libs ------------------//
 #include "magic_enum.hpp"

@@ -6,12 +6,12 @@
  * ----------------------------------------------------------
  */
 
-#include "GameObjMesh.h" 
+#include "mesh/GameObjMesh.h" 
 
 //-------------------- Engine --------------------//
-#include "GameObj.h"
+#include "gameObj/GameObj.h"
 #include "RenderPool.h"
-#include "esrc_animFrameSet.h"
+#include "resource/esrc_animFrameSet.h"
 #include "esrc_renderPool.h"
 #include "esrc_camera.h"
 

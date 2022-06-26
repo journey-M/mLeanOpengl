@@ -14,21 +14,21 @@
 
 //-------------------- Engine --------------------//
 #include "prepare.h"
-#include "global.h"
+#include "sys/global.h"
 #include "gl_funcs.h"
 #include "input.h" 
-#include "TimeCircle.h" 
+#include "time/TimeCircle.h" 
 #include "chunkCreate.h"
 #include "dataBase.h"
 #include "sceneLoop.h"
-#include "blueprint.h"
-#include "GoSpecFromJson.h"
+#include "blueprint/blueprint.h"
+#include "gameObj/goDataForCreate/GoSpecFromJson.h"
 #include "UIGoSpecFromJson.h"
 #include "CircuitBoard.h"
-#include "EcoObjBorder.h"
-#include "SignInMapEnts_Square.h"
-#include "Collision.h"
-#include "ColliDataFromJson.h"
+#include "ecoSys/ecoObjBorder/EcoObjBorder.h"
+#include "collision/signInMapEnts/SignInMapEnts_Square.h"
+#include "collision/Collision.h"
+#include "collision/ColliDataFromJson.h"
 
 #include "Job_Field.h"
 
@@ -36,8 +36,8 @@
 #include "esrc_all.h"
 #include "ubo_all.h"
 
-#include "timeLog.h" // debug_tmp
-#include "speedLog.h" // debug_tmp
+#include "time/TimeBase.h"  // debug_tmp
+#include "tprDebug/speedLog.h" // debug_tmp
 
 //-------------------- innTest --------------------//
 #include "innTest.h"

@@ -35,7 +35,7 @@
 #endif
 
 //-------------------- Engine --------------------//
-#include "global.h"
+#include "sys/global.h"
 
 
 //----- type detection -----//

@@ -15,8 +15,8 @@
 
 
 //-------------------- Engine --------------------//
-#include "AnimActionEName.h"
-#include "GameObjMesh.h"
+#include "animFrameSet/AnimActionEName.h"
+#include "mesh/GameObjMesh.h"
 
 
 namespace component{//------------- namespace component ----------------

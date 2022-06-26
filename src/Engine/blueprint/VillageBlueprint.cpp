@@ -6,10 +6,10 @@
  * ----------------------------------------------------------
  */
 
-#include "VillageBlueprint.h"
+#include "blueprint/VillageBlueprint.h"
 
 //-------------------- Engine --------------------//
-#include "esrc_gameSeed.h"
+#include "resource/esrc_gameSeed.h"
 
 
 namespace blueprint {//------------------ namespace: blueprint start ---------------------//

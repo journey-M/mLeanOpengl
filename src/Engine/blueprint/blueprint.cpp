@@ -6,20 +6,20 @@
  * ----------------------------------------------------------
  */
 
-#include "blueprint.h"
+#include "blueprint/blueprint.h"
 
 //-------------------- Engine --------------------//
-#include "PlotBlueprint.h"
-#include "YardBlueprint.h"
-#include "VillageBlueprint.h"
-#include "random.h"
-#include "blueprint_inn.h"
-#include "WindClock.h"
-#include "GoSpecFromJson.h"
+#include "blueprint/PlotBlueprint.h"
+#include "blueprint/YardBlueprint.h"
+#include "blueprint/VillageBlueprint.h"
+#include "random/random.h"
+#include "blueprint/blueprint_inn.h"
+#include "time/WindClock.h"
+#include "gameObj/goDataForCreate/GoSpecFromJson.h"
 
 
-#include "esrc_state.h"
-#include "esrc_animFrameSet.h"
+#include "resource/esrc_state.h"
+#include "resource/esrc_animFrameSet.h"
 
 
 
