@@ -18,7 +18,7 @@
 //-------------------- Engine --------------------//
 #include "tprDebug/tprAssert.h"
 #include "animFrameSet/animSubspeciesId.h"
-#include "fieldFractType.h"
+#include "map/fieldFractType.h"
 #include "map/MapAltitude.h"
 #include "collision/signInMapEnts/SignInMapEnts_Square_Type.h"
 

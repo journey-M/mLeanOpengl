@@ -15,11 +15,12 @@
 
 
 //-------------------- Engine --------------------//
-#include "input.h" 
+#include "input/input.h" 
 #include "sys/global.h"
-#include "gl_funcs.h" 
+#include "gl/gl_funcs.h" 
 #include "camera/ViewingBox.h"
-#include "esrc_window.h" 
+#include "resource/esrc_window.h" 
+#include "tprDebug/tprDebug.h"
 
 //------------------- 提供给全局的 函数 ----------------
 void glfw_init();

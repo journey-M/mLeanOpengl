@@ -38,32 +38,32 @@ add_subdirectory(dynamicParam)
 add_subdirectory(ecoSys)
 add_subdirectory(fileIO)
 
+add_subdirectory(gameObj)
+add_subdirectory(gl)
+add_subdirectory(input)
+add_subdirectory(json)
+add_subdirectory(map)
+add_subdirectory(mesh)
+add_subdirectory(move)
+add_subdirectory(multiThread)
+add_subdirectory(player)
 
 
 #[[
 
 
-add_subdirectory(gl)
-add_subdirectory(mesh)
 add_subdirectory(random)
 add_subdirectory(script)
 add_subdirectory(tools)
-add_subdirectory(input)
-add_subdirectory(move)
 add_subdirectory(renderPool)
 add_subdirectory(shaderProgram)
 add_subdirectory(tprDebug)
 add_subdirectory(affect)
-add_subdirectory(json)
-add_subdirectory(multiThread)
 add_subdirectory(resource)
 add_subdirectory(sys)
 add_subdirectory(UI)
 add_subdirectory(AI)
 add_subdirectory(dataBase)
-add_subdirectory(gameObj)
-add_subdirectory(map)
-add_subdirectory(player)
 add_subdirectory(scene)
 add_subdirectory(time)
 add_subdirectory(VAOVBO)
@@ -73,5 +73,6 @@ add_subdirectory(VAOVBO)
 add_library (engine ${ENGINE_SRCS})
 target_link_libraries(engine PUBLIC engine_actionfsm engine_actionswitch  engine_animframset engine_blueprint 
 engine_camera engine_circuitboard engine_collision engine_color engine_coordinate engine_dynamicprogram engine_ecosys
-engine_fileio
+engine_fileio engine_gameobj engine_gameobj engine_mgl engine_input engine_json engine_map engine_mesh
+engine_move engine_multithread engine_player
 )

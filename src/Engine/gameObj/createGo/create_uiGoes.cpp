@@ -8,18 +8,19 @@
  * ----------
  */
 
-#include "create_goes.h"
+#include <map>
 
 //-------------------- Engine --------------------//
 #include "gameObj/goDataForCreate/GoSpecFromJson.h"
-#include "UIGoSpecFromJson.h"
-
-#include "esrc_gameObj.h" 
+#include "UI/UIGoSpecFromJson.h"
+#include "gameObj/createGo/create_goes.h"
+#include "resource/esrc_gameObj.h" 
 
 
 //--------------- Script ------------------//
 #include "Script/gameObjs/allGoes.h"
 #include "Script/json/json_all.h"
+#include "glm_no_warnings.h"
 
 
 

@@ -16,7 +16,7 @@
 #include "gameObj/GameObjType.h" 
 #include "tools/ID_Manager.h"
 #include "move/SpeedLevel.h"
-#include "InputINS.h"
+#include "input/InputINS.h"
 
 // need:
 class GameObj;

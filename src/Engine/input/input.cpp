@@ -8,21 +8,21 @@
  * ----------------------------
  */
 
-#include "input.h" 
+#include "input/input.h" 
 
 //-------------------- Engine --------------------//
-#include "KeyBoard.h"
-#include "GameKey.h"
+#include "input/KeyBoard.h"
+#include "input/GameKey.h"
 
-#include "InputOriginData.h"
+#include "input/InputOriginData.h"
 
-#include "JoystickButton_2_GameKey_map.h"
-#include "KeyBoardKey_2_GameKey_map.h"
+#include "input/JoystickButton_2_GameKey_map.h"
+#include "input/KeyBoardKey_2_GameKey_map.h"
 
 
-#include "esrc_player.h"
-#include "esrc_window.h"
-#include "esrc_thread.h"
+#include "resource/esrc_player.h"
+#include "resource/esrc_window.h"
+#include "resource/esrc_thread.h"
 
 
 

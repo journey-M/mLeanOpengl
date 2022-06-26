@@ -9,7 +9,7 @@
 #define TPR_ESRC_COLOR_TABLE_SET_H
 
 //-------------------- Engine --------------------//
-#include "ColorTable.h"
+#include "color/ColorTable.h"
 
 namespace esrc {//------------------ namespace: esrc -------------------------//
 

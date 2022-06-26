@@ -6,10 +6,10 @@
  * ----------------------------------------------------------
  */
 
-#include "Job_MapEnt.h"
+#include "multiThread/chunkCreate/Job_MapEnt.h"
 
 //-------------------- Engine --------------------//
-#include "MapEnt.h"
+#include "map/MapEnt.h"
 #include "random/random.h"
 
 

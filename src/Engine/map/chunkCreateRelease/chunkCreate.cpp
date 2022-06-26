@@ -18,22 +18,22 @@
 #include "tools/NineDirection.h"
 #include "map/Chunk.h"
 #include "map/sectionKey.h"
-#include "create_goes.h"
+#include "gameObj/createGo/create_goes.h"
 
-#include "esrc_gameObj.h"
-#include "esrc_field.h"
-#include "esrc_chunk.h"
-#include "esrc_player.h"
-#include "esrc_ecoObj.h"
-#include "esrc_jobQue.h"
-#include "esrc_job_chunk.h"
-#include "esrc_job_ecoObj.h"
+#include "resource/esrc_gameObj.h"
+#include "resource/esrc_field.h"
+#include "resource/esrc_chunk.h"
+#include "resource/esrc_player.h"
+#include "resource/esrc_ecoObj.h"
+#include "resource/esrc_jobQue.h"
+#include "resource/esrc_job_chunk.h"
+#include "resource/esrc_job_ecoObj.h"
 #include "resource/esrc_time.h" // debug
 
-#include "jobs_all.h"
-#include "Job.h"
+#include "multiThread/jobs_all.h"
+#include "multiThread/Job.h"
 
-#include "chunkCreate.h"
+#include "map/chunkCreateRelease/chunkCreate.h"
 
 
 

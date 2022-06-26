@@ -12,6 +12,8 @@
 #ifndef TPR_JOB_THREAD_H
 #define TPR_JOB_THREAD_H
 
+#include "tprDebug/tprDebug.h"
+
 
 void jobThread_main();
 

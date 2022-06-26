@@ -6,11 +6,11 @@
  * ----------------------------------------------------------
  */
 
-#include "GroundRenderPool.h"
+#include "renderPool/GroundRenderPool.h"
 
 
 //-------------------- Engine --------------------//
-#include "esrc_colorTableSet.h"
+#include "resource/esrc_colorTableSet.h"
 
 #include "ubo_all.h"
 

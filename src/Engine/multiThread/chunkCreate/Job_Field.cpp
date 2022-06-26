@@ -6,17 +6,17 @@
  * ----------------------------------------------------------
  */
 
-#include "Job_Field.h"
+#include "multiThread/chunkCreate/Job_Field.h"
 
 //-------------------- Engine --------------------//
 #include "gameObj/goDataForCreate/GoSpecFromJson.h"
-#include "Job_GroundGoEnt.h"
+#include "multiThread/chunkCreate/Job_GroundGoEnt.h"
 
 #include "resource/esrc_state.h"
 #include "resource/esrc_coordinate.h"
 #include "resource/esrc_animFrameSet.h"
 
-#include "Job_Chunk.h"
+#include "multiThread/chunkCreate/Job_Chunk.h"
 
 
 //-------------------- Scrit --------------------//

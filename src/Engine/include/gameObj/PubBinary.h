@@ -14,7 +14,7 @@
 
 //-------------------- Engine --------------------//
 #include "tprDebug/tprAssert.h"
-#include "PubBinaryValType.h"
+#include "gameObj/PubBinaryValType.h"
 
 //-- 维护一个 二进制块，可以动态存储 各种 pubBinary变量（一种一个）
 class PubBinary{

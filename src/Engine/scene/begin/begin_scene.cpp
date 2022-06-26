@@ -16,16 +16,16 @@
 #include "sceneLoop.h"
 
 //-------------------- Engine --------------------//
-#include "input.h"
-#include "chunkCreate.h"
+#include "input/input.h"
+#include "map/chunkCreateRelease/chunkCreate.h"
 #include "dataBase.h"
 #include "GameArchive.h"
 #include "random/GameSeed.h"
 #include "UI/UIAnchor.h"
-#include "create_goes.h"
+#include "gameObj/createGo/create_goes.h"
 
 #include "gameObj/goDataForCreate/GoSpecFromJson.h"
-#include "UIGoSpecFromJson.h"
+#include "UI/UIGoSpecFromJson.h"
 
 
 #include "ubo_all.h"

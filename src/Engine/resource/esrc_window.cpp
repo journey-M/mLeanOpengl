@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "esrc_window.h"
+#include "resource/esrc_window.h"
 
 namespace esrc {//------------------ namespace: esrc -------------------------//
 

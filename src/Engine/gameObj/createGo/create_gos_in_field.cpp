@@ -8,19 +8,19 @@
 
 
 //-------------------- Engine --------------------//
-#include "esrc_field.h"
+#include "resource/esrc_field.h"
 #include "map/chunkKey.h"
-#include "dyParams.h"
+#include "dynamicParam/dyParams.h"
 #include "gameObj/GameObj.h"
-#include "create_goes.h"
+#include "gameObj/createGo/create_goes.h"
 #include "gameObj/goDataForCreate/GoSpecFromJson.h"
 
-#include "esrc_field.h"
-#include "esrc_ecoObj.h"
-#include "esrc_gameObj.h" 
+#include "resource/esrc_field.h"
+#include "resource/esrc_ecoObj.h"
+#include "resource/esrc_gameObj.h" 
 #include "resource/esrc_time.h" 
-#include "esrc_chunk.h" 
-#include "esrc_job_chunk.h"
+#include "resource/esrc_chunk.h" 
+#include "resource/esrc_job_chunk.h"
 
 
 

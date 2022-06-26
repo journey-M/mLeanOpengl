@@ -12,9 +12,9 @@
 
 //-------------------- Engine --------------------//
 #include "animFrameSet/animSubspeciesId.h"
-#include "assemble_go.h"
+#include "gameObj/goDataForCreate/assemble_go.h"
 
-#include "esrc_player.h"
+#include "resource/esrc_player.h"
 
 //-------------------- Script --------------------//
 

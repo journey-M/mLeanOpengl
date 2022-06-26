@@ -9,7 +9,7 @@
 #define TPR_ESRC_SHADER_H
 
 //-------------------- Engine --------------------//
-#include "ShaderProgram/ShaderProgram.h"
+#include "shaderProgram/ShaderProgram.h"
 #include "shaderProgram/ShaderType.h"
 
 namespace esrc {//------------------ namespace: esrc -------------------------//

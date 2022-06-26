@@ -8,17 +8,17 @@
 
 
 //-------------------- Engine --------------------//
-#include "chunkCreate.h"
+#include "map/chunkCreateRelease/chunkCreate.h"
 #include "map/sectionKey.h"
 //#include "tprDebug/tprAssert.h"
 #include "gameObj/GameObj.h"
 
-#include "jobs_all.h"
-#include "Job.h"
+#include "multiThread/jobs_all.h"
+#include "multiThread/Job.h"
 
-#include "esrc_player.h"
-#include "esrc_ecoObj.h"
-#include "esrc_jobQue.h"
+#include "resource/esrc_player.h"
+#include "resource/esrc_ecoObj.h"
+#include "resource/esrc_jobQue.h"
 
 
 

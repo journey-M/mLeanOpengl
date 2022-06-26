@@ -9,13 +9,14 @@
 #define TPR_JOB_FIELD_H
 
 
+#include <set>
 
 //-------------------- Engine --------------------//
-#include "Job_MapEnt.h"
+#include "multiThread/chunkCreate/Job_MapEnt.h"
 #include "animFrameSet/animSubspeciesId.h"
 #include "map/mapEntKey.h"
 #include "gameObj/goDataForCreate/goLabelId.h"
-#include "fieldFractType.h"
+#include "map/fieldFractType.h"
 
 #include "gameObj/goDataForCreate/GoDataForCreate.h"
 

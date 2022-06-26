@@ -12,8 +12,8 @@
 
 #include <unordered_map>
 
-#include "Joystick.h"
-#include "GameKey.h"
+#include "input/Joystick.h"
+#include "input/GameKey.h"
 
 
 // 按键映射表

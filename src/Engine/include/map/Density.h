@@ -18,6 +18,8 @@
 //------------------- Engine --------------------//
 #include "tprDebug/tprAssert.h"
 #include "tools/IntVec.h" 
+#include "glm_no_warnings.h"
+
 
 
 class EcoObj;

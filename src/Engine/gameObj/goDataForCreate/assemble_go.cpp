@@ -6,13 +6,13 @@
  * ----------------------------------------------------------
  */
 
-#include "assemble_go.h"
+#include "gameObj/goDataForCreate/assemble_go.h"
 
 //-------------------- Engine --------------------//
 #include "gameObj/GameObj.h"
-#include "DyParam.h"
+#include "dynamicParam/DyParam.h"
 #include "gameObj/goDataForCreate/GoSpecFromJson.h"
-#include "dyParams.h"
+#include "dynamicParam/dyParams.h"
 
 
 // 被 具象go类 调用，将 GoDataForCreate 中的数据，配置进 regularGo 中

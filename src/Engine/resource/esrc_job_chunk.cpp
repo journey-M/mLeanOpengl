@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "esrc_job_chunk.h"
+#include "resource/esrc_job_chunk.h"
 
 //-------------------- CPP --------------------//
 #include <mutex>

@@ -15,7 +15,7 @@
 #include <unordered_set>
 
 //-------------------- Engine --------------------//
-#include "ChildMesh.h"
+#include "mesh/ChildMesh.h"
 #include "mesh/Mesh.h"
 #include "color/colorTableId.h"
 

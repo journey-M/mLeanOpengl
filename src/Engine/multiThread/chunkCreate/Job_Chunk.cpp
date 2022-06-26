@@ -8,10 +8,10 @@
  * ----------------------------
  */
 
-#include "Job_Chunk.h"
+#include "multiThread/chunkCreate/Job_Chunk.h"
 
 //-------------------- Engine --------------------//
-#include "simplexNoise.h"
+#include "random/simplexNoise.h"
 #include "map/mapEntKey.h"
 #include "gameObj/goDataForCreate/GoAssemblePlan.h"
 #include "time/WindClock.h"
@@ -21,7 +21,7 @@
 
 #include "blueprint/YardBlueprint.h"
 
-#include "esrc_ecoObj.h"
+#include "resource/esrc_ecoObj.h"
 #include "resource/esrc_animFrameSet.h" // tmp
 
 

@@ -12,12 +12,12 @@
 
 
 //-------------------- Engine --------------------//
-#include "esrc_field.h"
+#include "resource/esrc_field.h"
 #include "map/chunkKey.h"
 
-#include "esrc_ecoObj.h"
-#include "esrc_gameObj.h" 
-#include "esrc_chunk.h" 
+#include "resource/esrc_ecoObj.h"
+#include "resource/esrc_gameObj.h" 
+#include "resource/esrc_chunk.h" 
 #include "resource/esrc_state.h"
 
 

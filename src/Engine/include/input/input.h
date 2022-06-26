@@ -19,7 +19,7 @@
 
 //-------------------- Engine --------------------//
 #include "tools/IntVec.h" 
-#include "InputINS.h"
+#include "input/InputINS.h"
 
 
 namespace input{//------------- namespace input --------------------

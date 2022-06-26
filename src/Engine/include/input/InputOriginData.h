@@ -23,8 +23,8 @@
 //-------------------- Engine --------------------//
 #include "tprDebug/tprAssert.h"
 
-#include "KeyBoard.h"
-#include "Joystick.h"
+#include "input/KeyBoard.h"
+#include "input/Joystick.h"
 #include "Mouse.h"
 
 

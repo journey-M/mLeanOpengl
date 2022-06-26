@@ -10,10 +10,10 @@
 
 //-------------------- Engine --------------------//
 #include "gameObj/GameObj.h"
-#include "RenderPool.h"
+#include "renderPool/RenderPool.h"
 #include "resource/esrc_animFrameSet.h"
-#include "esrc_renderPool.h"
-#include "esrc_camera.h"
+#include "resource/esrc_renderPool.h"
+#include "resource/esrc_camera.h" 
 
 using namespace std::placeholders;
 

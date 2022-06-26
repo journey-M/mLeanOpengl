@@ -8,16 +8,16 @@
  * ----------------------------
  */
 
-#include "MapField.h"
+#include "map/MapField.h"
 
 //-------------------- Engine --------------------//
 #include "random/random.h"
 #include "ecoSys/EcoObj.h"
-#include "simplexNoise.h"
-#include "MapEnt.h"
+#include "random/simplexNoise.h"
+#include "map/MapEnt.h"
 
 #include "resource/esrc_gameSeed.h"
-#include "esrc_ecoObj.h"
+#include "resource/esrc_ecoObj.h"
 
 
 // 仅 初始化 一阶数据

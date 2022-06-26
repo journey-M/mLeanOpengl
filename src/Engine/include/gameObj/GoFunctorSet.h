@@ -17,7 +17,7 @@
 //-------------------- Engine --------------------//
 #include "tprDebug/tprAssert.h"
 #include "dynamicParam/DyFunctor.h"
-#include "GoFunctorLabel.h"
+#include "gameObj/GoFunctorLabel.h"
 
 
 class GoFunctorSet{

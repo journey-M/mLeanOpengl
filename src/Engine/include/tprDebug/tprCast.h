@@ -11,6 +11,7 @@
 #define TPR_CAST_H
 
 #include "tprDebug/tprAssert.h"
+#include <cstddef>
 
 
 /* ===========================================================

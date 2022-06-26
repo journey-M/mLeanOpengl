@@ -11,11 +11,11 @@
 //-------------------- Engine --------------------//
 #include "gameObj/GameObj.h"
 
-#include "esrc_colorTableSet.h"
+#include "resource/esrc_colorTableSet.h"
 #include "esrc_uniformBlockObj.h"
-#include "esrc_player.h"
-#include "esrc_field.h"
-#include "esrc_chunk.h"
+#include "resource/esrc_player.h"
+#include "resource/esrc_field.h"
+#include "resource/esrc_chunk.h"
 
 #include "resource/esrc_time.h"
 

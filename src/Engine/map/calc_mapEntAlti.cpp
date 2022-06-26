@@ -9,7 +9,7 @@
 
 //-------------------- Engine --------------------//
 #include "tools/MapCoord.h"
-#include "simplexNoise.h"
+#include "random/simplexNoise.h"
 #include "resource/esrc_gameSeed.h"
 
 

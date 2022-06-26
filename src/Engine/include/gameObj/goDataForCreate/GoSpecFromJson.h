@@ -9,6 +9,9 @@
 #define TPR_GO_SPEC_FROM_JSON_H
 
 
+#include <set>
+#include <map>
+
 
 //-------------------- Engine --------------------//
 #include "gameObj/GameObjType.h" 

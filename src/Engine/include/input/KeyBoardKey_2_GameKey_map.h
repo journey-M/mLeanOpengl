@@ -12,8 +12,8 @@
 
 #include <unordered_map>
 
-#include "KeyBoard.h"
-#include "GameKey.h"
+#include "input/KeyBoard.h"
+#include "input/GameKey.h"
 
 
 // 按键映射表

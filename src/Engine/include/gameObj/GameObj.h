@@ -14,6 +14,7 @@
 
 //-------------------- CPP --------------------//
 #include <variant>
+#include <map>
 
 //-------------------- Engine --------------------//
 #include "tools/functorTypes.h"
@@ -38,6 +39,9 @@
 #include "GoFunctorSet.h"
 #include "shaderProgram/ShaderType.h"
 #include "collision/signInMapEnts/SignInMapEnts_Square.h"
+#include "tprDebug/tprAssert.h"
+#include "tprDebug/tprDebug.h"
+
 
 
 //--- 一个仍在建设中的 丑陋的 大杂烩 ----//

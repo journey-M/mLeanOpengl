@@ -6,15 +6,15 @@
  * ----------------------------------------------------------
  */
 
-#include "chunkRelease.h"
+#include "map/chunkCreateRelease/chunkRelease.h"
 
 
 //-------------------- Engine --------------------//
 #include "map/Chunk.h"
-#include "esrc_gameObj.h"
-#include "esrc_player.h"
-#include "esrc_field.h"
-#include "esrc_chunk.h"
+#include "resource/esrc_gameObj.h"
+#include "resource/esrc_player.h"
+#include "resource/esrc_field.h"
+#include "resource/esrc_chunk.h"
 
 namespace chunkRelease {//------- namespace: chunkRelease ----------//
 namespace cr_inn {//----------- namespace: cr_inn ----------------//

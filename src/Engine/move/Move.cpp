@@ -23,8 +23,8 @@
 #include "gameObj/GameObj.h" 
 
 #include "resource/esrc_time.h"
-#include "esrc_chunk.h"
-#include "esrc_gameObj.h"
+#include "resource/esrc_chunk.h"
+#include "resource/esrc_gameObj.h"
 
 #include "tprDebug/speedLog.h"
 

@@ -16,8 +16,8 @@
 #include "time/WindClock.h"
 #include "random/random.h"
 
-#include "Job_GroundGoEnt.h"
-#include "Job_Field.h"
+#include "multiThread/chunkCreate/Job_GroundGoEnt.h"
+#include "multiThread/chunkCreate/Job_Field.h"
 
 #include "resource/esrc_animFrameSet.h"
 

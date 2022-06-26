@@ -8,7 +8,7 @@
  * ----------------------------
  */
 
-#include "MapTexture.h" 
+#include "map/MapTexture.h" 
 
 //------------------- Engine --------------------//
 #include "tools/RGBA.h"

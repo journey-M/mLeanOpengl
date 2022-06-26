@@ -17,7 +17,8 @@
 #include "sys/config.h"
 #include "tprDebug/tprAssert.h"
 #include "tools/tprMath.h"
-
+#include "tprDebug/tprAssert.h"
+#include "tprDebug/tprDebug.h"
 
 enum class FloorGoSize{
     MapEnt_2m2,

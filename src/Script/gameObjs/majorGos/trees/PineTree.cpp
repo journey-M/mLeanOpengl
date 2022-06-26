@@ -10,9 +10,9 @@
 
 //-------------------- Engine --------------------//
 #include "animFrameSet/animSubspeciesId.h"
-#include "dyParams.h"
+#include "dynamicParam/dyParams.h"
 #include "gameObj/goDataForCreate/GoSpecFromJson.h"
-#include "assemble_go.h"
+#include "gameObj/goDataForCreate/assemble_go.h"
 
 
 //-------------------- Script --------------------//

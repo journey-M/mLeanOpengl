@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "UIGoSpecFromJson.h"
+#include "UI/UIGoSpecFromJson.h"
 
 //--------------- CPP ------------------//
 #include <utility>

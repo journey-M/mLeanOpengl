@@ -11,7 +11,7 @@
 #include "magic_enum.hpp"
 
 
-#include "KeyBoard.h" // After magic_enum.hpp
+#include "input/KeyBoard.h" // After magic_enum.hpp
 
 
 // 手动设置 上下界

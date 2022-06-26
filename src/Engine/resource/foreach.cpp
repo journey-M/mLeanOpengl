@@ -8,7 +8,7 @@
  * ----------------------------
  */
 
-#include "esrc_gameObj.h"
+#include "resource/esrc_gameObj.h"
 
 namespace esrc {//------------------ namespace: esrc -------------------------//
 

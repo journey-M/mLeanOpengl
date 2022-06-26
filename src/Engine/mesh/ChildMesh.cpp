@@ -6,14 +6,14 @@
  * ----------------------------------------------------------
  */
 
-#include "ChildMesh.h"
+#include "mesh/ChildMesh.h"
 
 //-------------------- Engine --------------------//
 #include "gameObj/GameObj.h"
 #include "mesh/GameObjMesh.h"
 
-#include "esrc_VAOVBO.h" 
-#include "esrc_camera.h"
+#include "resource/esrc_VAOVBO.h" 
+#include "resource/esrc_camera.h" 
 #include "resource/esrc_coordinate.h"
 
 

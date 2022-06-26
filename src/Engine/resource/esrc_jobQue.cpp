@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "esrc_jobQue.h"
+#include "resource/esrc_jobQue.h"
 
 //-------------------- CPP --------------------//
 #include <deque>

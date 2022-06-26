@@ -12,9 +12,10 @@
 #include <thread>
 
 //-------------------- Engine --------------------//
-#include "Job.h"
-#include "jobs_all.h"
-#include "esrc_jobQue.h"
+#include "multiThread/Job.h"
+#include "multiThread/jobs_all.h"
+#include "resource/esrc_jobQue.h"
+#include "tprDebug/tprDebug.h"
 
 
 /* ===========================================================

@@ -9,10 +9,10 @@
 #include "Script/gameObjs/oth/GroundGo.h"
 
 //-------------------- Engine --------------------//
-#include "DyParam.h"
+#include "dynamicParam/DyParam.h"
 #include "animFrameSet/animSubspeciesId.h"
-#include "dyParams.h"
-#include "assemble_go.h"
+#include "dynamicParam/dyParams.h"
+#include "gameObj/goDataForCreate/assemble_go.h"
 
 //-------------------- Script --------------------//
 

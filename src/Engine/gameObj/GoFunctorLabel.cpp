@@ -6,8 +6,9 @@
  * ----------------------------------------------------------
  */
 
-#include "GoFunctorLabel.h"
-
+#include "gameObj/GoFunctorLabel.h"
+#include "tprDebug/tprAssert.h"
+#include "tprDebug/tprDebug.h"
 
 //--------------- Libs ------------------//
 #include "magic_enum.hpp"

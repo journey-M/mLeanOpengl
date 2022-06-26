@@ -12,7 +12,7 @@
 #include "mesh/Mesh.h" 
 
 //-------------------- Engine --------------------//
-#include "esrc_VAOVBO.h" 
+#include "resource/esrc_VAOVBO.h" 
 #include "resource/esrc_coordinate.h"
 
 //namespace mesh_inn {//------------------ namespace: mesh_inn ---------------------//

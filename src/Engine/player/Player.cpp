@@ -8,18 +8,18 @@
  * ----------------------------
  */
 
-#include "Player.h"
+#include "player/Player.h"
 
 //-------------------- Engine --------------------//
-#include "input.h" 
-#include "GameKey.h"
-#include "dyParams.h"
-#include "create_goes.h"
+#include "input/input.h" 
+#include "input/GameKey.h"
+#include "dynamicParam/dyParams.h"
+#include "gameObj/createGo/create_goes.h"
 #include "gameObj/goDataForCreate/GoSpecFromJson.h"
 
 
-#include "esrc_camera.h" 
-#include "esrc_gameObj.h" 
+#include "resource/esrc_camera.h" 
+#include "resource/esrc_gameObj.h" 
 
 
 using namespace std::placeholders;

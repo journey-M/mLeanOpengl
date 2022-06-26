@@ -15,9 +15,9 @@
 #include "map/sectionKey.h"
 #include "gameObj/GameObj.h"
 
-#include "esrc_ecoObj.h"
+#include "resource/esrc_ecoObj.h"
 #include "resource/esrc_state.h"
-#include "esrc_player.h"
+#include "resource/esrc_player.h"
 
 
 namespace esrc {//------------------ namespace: esrc -------------------------//

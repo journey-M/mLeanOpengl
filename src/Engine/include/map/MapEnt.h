@@ -9,6 +9,8 @@
 #define TPR_MAP_ENT_H
 
 
+#include <unordered_set>
+#include <set>
 
 //-------------------- Engine --------------------//
 #include "gameObj/GoAltiRange.h"

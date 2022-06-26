@@ -14,8 +14,8 @@
 //-------------------- Engine --------------------//
 #include "animFrameSet/animSubspeciesId.h"
 #include "random/random.h"
-#include "simplexNoise.h"
-#include "dyParams.h"
+#include "random/simplexNoise.h"
+#include "dynamicParam/dyParams.h"
 
 //-------------------- Script --------------------//
 #include "Script/components/windAnim/WindAnim.h"

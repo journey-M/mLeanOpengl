@@ -12,7 +12,7 @@
 //-------------------- Engine --------------------//
 #include "map/sectionKey.h"
 #include "color/colorTableId.h"
-#include "fieldFractType.h"
+#include "map/fieldFractType.h"
 
 //-- 每个实例，都会变成 GroundGo 的一个 mesh
 class Job_GroundGoEnt{

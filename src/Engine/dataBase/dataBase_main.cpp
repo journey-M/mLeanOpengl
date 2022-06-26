@@ -16,7 +16,7 @@
 #include "sys/global.h"
 #include "gameObj/GameObj.h"
 #include "esrc_gameArchive.h"
-#include "esrc_player.h"
+#include "resource/esrc_player.h"
 #include "resource/esrc_time.h"
 
 

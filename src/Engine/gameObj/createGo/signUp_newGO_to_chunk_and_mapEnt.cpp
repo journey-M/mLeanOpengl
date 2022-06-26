@@ -6,12 +6,12 @@
  * ----------------------------------------------------------
  */
 
-#include "create_goes.h"
+#include "gameObj/createGo/create_goes.h"
 
 
 //-------------------- Engine --------------------//
-#include "esrc_gameObj.h"
-#include "esrc_chunk.h"
+#include "resource/esrc_gameObj.h"
+#include "resource/esrc_chunk.h"
 
 
 

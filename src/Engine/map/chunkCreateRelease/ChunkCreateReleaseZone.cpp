@@ -9,10 +9,10 @@
 #include "map/chunkCreateRelease/ChunkCreateReleaseZone.h" 
 
 //-------------------- Engine --------------------//
-#include "chunkRelease.h"
+#include "map/chunkCreateRelease/chunkRelease.h"
 
-#include "esrc_chunk.h"
-#include "esrc_player.h"
+#include "resource/esrc_chunk.h"
+#include "resource/esrc_player.h"
 
 
 //namespace ccrz_inn {//------------------ namespace: ccrz_inn -------------------------//

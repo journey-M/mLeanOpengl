@@ -18,7 +18,8 @@
 //------------------- Engine --------------------//
 #include "tprDebug/tprAssert.h"
 #include "tools/tprMath.h"
-
+#include "tprDebug/tprAssert.h"
+#include "tprDebug/tprDebug.h"
 
 // go 的高度区间
 class GoAltiRange{

@@ -17,14 +17,14 @@
 #include "tprDebug/tprCast.h"
 #include "tprDebug/tprAssert.h"
 #include "sys/config.h"
-#include "MapTexture.h"
+#include "map/MapTexture.h"
 #include "map/MapAltitude.h"
 #include "map/fieldKey.h"
 #include "map/chunkKey.h"
-#include "Job_MapEnt.h"
-#include "Job_Field.h"
+#include "multiThread/chunkCreate/Job_MapEnt.h"
+#include "multiThread/chunkCreate/Job_Field.h"
 
-#include "MapField.h"
+#include "map/MapField.h"
 
 
 

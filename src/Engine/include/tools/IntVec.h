@@ -12,6 +12,7 @@
 
 //-------------------- CPP --------------------//
 #include <cmath>
+#include <algorithm>
 
 //-------------------- Engine --------------------//
 #include "tprDebug/tprCast.h"

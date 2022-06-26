@@ -9,7 +9,7 @@
 #include "Script/gameObjs/bioSoup/BioSoupBase.h"
 
 #include "random/random.h"
-#include "assemble_go.h"
+#include "gameObj/goDataForCreate/assemble_go.h"
 #include "gameObj/goDataForCreate/GoDataForCreate.h"
 #include "gameObj/goDataForCreate/GoSpecFromJson.h"
 #include "gameObj/goDataForCreate/GoAssemblePlan.h"

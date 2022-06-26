@@ -17,7 +17,7 @@
 #include "dynamicParam/DyBinary.h"
 
 #include "random/random.h"
-#include "simplexNoise.h"
+#include "random/simplexNoise.h"
 
 #include "tools/NineDirection.h"
 

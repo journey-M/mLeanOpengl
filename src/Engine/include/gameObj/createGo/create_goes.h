@@ -12,7 +12,7 @@
 
 //-------------------- Engine --------------------//
 #include "tools/IntVec.h"
-#include "dyParams.h"
+#include "dynamicParam/dyParams.h"
 #include "UI/UIAnchor.h"
 #include "map/Chunk.h"
 

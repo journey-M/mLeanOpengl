@@ -13,7 +13,7 @@
 
 
 //-------------------- Engine --------------------//
-#include "MapEnt.h"
+#include "map/MapEnt.h"
 #include "gameObj/GameObjType.h"
 #include "map/fieldKey.h"
 #include "map/chunkKey.h"

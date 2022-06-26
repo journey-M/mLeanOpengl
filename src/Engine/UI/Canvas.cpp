@@ -10,7 +10,7 @@
 
 //-------------------- Engine --------------------//
 #include "tools/create_texNames.h"
-#include "esrc_camera.h"
+#include "resource/esrc_camera.h" 
 
 
 /* ===========================================================

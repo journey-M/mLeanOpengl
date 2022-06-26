@@ -9,8 +9,8 @@
 #define TPR_ESRC_RENDER_POOL_H
 
 //-------------------- Engine --------------------//
-#include "RenderPool.h"
-#include "GroundRenderPool.h"
+#include "renderPool/RenderPool.h"
+#include "renderPool/GroundRenderPool.h"
 
 namespace esrc {//------------------ namespace: esrc -------------------------//
 

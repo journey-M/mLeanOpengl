@@ -13,20 +13,20 @@
 #include <cstring>
 
 //-------------------- Engine --------------------//
-#include "jobs_all.h"
-#include "Job.h"
-#include "simplexNoise.h"
-#include "MapTexture.h" 
+#include "multiThread/jobs_all.h"
+#include "multiThread/Job.h"
+#include "random/simplexNoise.h"
+#include "map/MapTexture.h" 
 #include "map/Quad.h"
 #include "random/random.h"
 
-#include "esrc_job_ecoObj.h"
+#include "resource/esrc_job_ecoObj.h"
 #include "resource/esrc_gameSeed.h"
-#include "esrc_field.h"
-#include "esrc_ecoObj.h"
+#include "resource/esrc_field.h"
+#include "resource/esrc_ecoObj.h"
 
-#include "Job_MapEnt.h"
-#include "Job_Field.h"
+#include "multiThread/chunkCreate/Job_MapEnt.h"
+#include "multiThread/chunkCreate/Job_Field.h"
 
 
 

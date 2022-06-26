@@ -13,7 +13,7 @@
 
 //-------------------- Engine --------------------//
 #include "tools/IntVec.h"
-#include "DiskGameObj.h"
+#include "gameObj/DiskGameObj.h"
 #include "gameArchiveId.h"
 
 

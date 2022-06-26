@@ -14,7 +14,8 @@
 #include "shaderProgram/ShaderProgram.h" //-- each GameObjMesh instance,will bind a shader
 #include "camera/ViewingBox.h"
 #include "tools/functorTypes.h"
-
+#include "glm_no_warnings.h"
+#include "tools/IntVec.h"
 
 //--- need ---//
 class GameObjMesh;

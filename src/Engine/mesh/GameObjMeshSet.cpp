@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "GameObjMeshSet.h"
+#include "mesh/GameObjMeshSet.h"
 
 //-------------------- CPP --------------------//
 
@@ -15,7 +15,7 @@
 #include "gameObj/GameObj.h"
 
 
-#include "esrc_shader.h"
+#include "resource/esrc_shader.h"
 
 
 

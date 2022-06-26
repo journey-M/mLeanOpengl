@@ -15,22 +15,22 @@
 //-------------------- Engine --------------------//
 #include "prepare.h"
 #include "sys/global.h"
-#include "gl_funcs.h"
-#include "input.h" 
+#include "gl/gl_funcs.h"
+#include "input/input.h" 
 #include "time/TimeCircle.h" 
-#include "chunkCreate.h"
+#include "map/chunkCreateRelease/chunkCreate.h"
 #include "dataBase.h"
 #include "sceneLoop.h"
 #include "blueprint/blueprint.h"
 #include "gameObj/goDataForCreate/GoSpecFromJson.h"
-#include "UIGoSpecFromJson.h"
+#include "UI/UIGoSpecFromJson.h"
 #include "CircuitBoard.h"
 #include "ecoSys/ecoObjBorder/EcoObjBorder.h"
 #include "collision/signInMapEnts/SignInMapEnts_Square.h"
 #include "collision/Collision.h"
 #include "collision/ColliDataFromJson.h"
 
-#include "Job_Field.h"
+#include "multiThread/chunkCreate/Job_Field.h"
 
 
 #include "esrc_all.h"

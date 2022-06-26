@@ -9,9 +9,9 @@
 #include "Script/gameObjs/oth/FieldRim.h"
 
 //-------------------- Engine --------------------//
-#include "DyParam.h"
+#include "dynamicParam/DyParam.h"
 #include "animFrameSet/animSubspeciesId.h"
-#include "assemble_go.h"
+#include "gameObj/goDataForCreate/assemble_go.h"
 
 //-------------------- Script --------------------//
 

@@ -10,7 +10,7 @@
 
 
 //-------------------- Engine --------------------//
-#include "esrc_shader.h"
+#include "resource/esrc_shader.h"
 #include "esrc_uniformBlockObj.h"
 #include "resource/esrc_state.h"
 

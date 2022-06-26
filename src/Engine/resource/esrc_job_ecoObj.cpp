@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "esrc_job_ecoObj.h"
+#include "resource/esrc_job_ecoObj.h"
 
 //-------------------- CPP --------------------//
 #include <mutex>
@@ -15,7 +15,7 @@
 
 //-------------------- Engine --------------------//
 #include "resource/esrc_state.h"
-#include "esrc_ecoObj.h"
+#include "resource/esrc_ecoObj.h"
 
 namespace esrc {//------------------ namespace: esrc -------------------------//
 namespace jeo_inn {//------------ namespace: jeo_inn --------------//

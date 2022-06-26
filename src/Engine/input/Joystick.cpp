@@ -6,10 +6,11 @@
  * ----------------------------------------------------------
  */
 
-#include "Joystick.h"
+#include "input/Joystick.h"
 
 //--------------- Libs ------------------//
 #include "magic_enum.hpp"
+#include "tools/IntVec.h"
 
 
 namespace joystick_inn {//------------------- namespace: joystick_inn ----------------------//

@@ -8,10 +8,10 @@
 
 
 //-------------------- Engine --------------------//
-#include "ColorTable.h"
-#include "fieldFractType.h"
+#include "color/ColorTable.h"
+#include "map/fieldFractType.h"
 
-#include "esrc_colorTableSet.h"
+#include "resource/esrc_colorTableSet.h"
 
 
 

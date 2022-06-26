@@ -15,7 +15,7 @@
 
 
 //-------------------- Engine --------------------//
-#include "DyParam.h"
+#include "dynamicParam/DyParam.h"
 #include "gameObj/goDataForCreate/GoDataForCreate.h"
 
 

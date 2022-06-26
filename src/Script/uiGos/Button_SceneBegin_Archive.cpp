@@ -12,7 +12,7 @@
 //-------------------- Engine --------------------//
 #include "animFrameSet/animSubspeciesId.h"
 
-#include "esrc_player.h"
+#include "resource/esrc_player.h"
 #include "resource/esrc_animFrameSet.h"
 
 //-------------------- Script --------------------//

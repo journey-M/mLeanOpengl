@@ -17,8 +17,8 @@
 
 
 //-------------------- Engine --------------------//
-#include "input.h" 
-#include "gl_funcs.h" 
+#include "input/input.h" 
+#include "gl/gl_funcs.h" 
 #include "map/mapEntKey.h"
 
 #include "resource/esrc_time.h"

@@ -11,7 +11,7 @@
 
 //-------------------- Engine --------------------//
 #include "gameObj/GameObj.h"
-#include "DyParam.h"
+#include "dynamicParam/DyParam.h"
 
 
 namespace gameObjs{//------------- namespace gameObjs ----------------

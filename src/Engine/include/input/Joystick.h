@@ -21,7 +21,9 @@
 
 //-------------------- Engine --------------------//
 #include "tprDebug/tprAssert.h"
-
+#include "glm_no_warnings.h"
+#include "tools/IntVec.h"
+#include "tools/FloatVec.h"
 
 // support SDL_GameControllerDB
 // 本游戏 暂时仅支持 这类 joystick

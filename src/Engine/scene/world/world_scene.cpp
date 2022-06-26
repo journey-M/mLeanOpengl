@@ -14,9 +14,9 @@
 #include "sceneLoop.h"
 
 //-------------------- Engine --------------------//
-#include "input.h"
-#include "chunkCreate.h"
-#include "chunkRelease.h"
+#include "input/input.h"
+#include "map/chunkCreateRelease/chunkCreate.h"
+#include "map/chunkCreateRelease/chunkRelease.h"
 
 #include "ubo_all.h"
 

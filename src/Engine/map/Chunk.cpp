@@ -14,12 +14,12 @@
 #include "random/random.h"
 #include "map/occupyWeight.h"
 #include "map/Quad.h"
-#include "MapField.h"
-#include "Job_Chunk.h"
-#include "simplexNoise.h"
-#include "create_goes.h"
+#include "map/MapField.h"
+#include "multiThread/chunkCreate/Job_Chunk.h"
+#include "random/simplexNoise.h"
+#include "gameObj/createGo/create_goes.h"
 
-#include "esrc_job_chunk.h"
+#include "resource/esrc_job_chunk.h"
 
 
 void Chunk::init(){

@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "esrc_player.h"
+#include "resource/esrc_player.h"
 #include "resource/esrc_state.h"
 
 namespace esrc {//------------------ namespace: esrc -------------------------//

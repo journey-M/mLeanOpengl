@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "ShaderProgram/ShaderProgram.h"
+#include "shaderProgram/ShaderProgram.h"
 
 //------------------- Libs --------------------//
 #include "tprGeneral.h"

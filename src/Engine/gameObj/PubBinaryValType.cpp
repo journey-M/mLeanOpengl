@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "PubBinaryValType.h"
+#include "gameObj/PubBinaryValType.h"
 
 
 namespace PubBinaryValType_inn {//-------- namespace: PubBinaryValType_inn --------------//

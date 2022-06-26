@@ -10,7 +10,7 @@
 
 //-------------------- Engine --------------------//
 #include "gameObj/GameObj.h"
-#include "dyParams.h"
+#include "dynamicParam/dyParams.h"
 
 namespace uiGos{//------------- namespace uiGos ----------------
 

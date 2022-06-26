@@ -12,7 +12,7 @@
 #include "map/Chunk.h"
 #include "gameObj/goDataForCreate/GoSpecFromJson.h"
 
-#include "esrc_chunk.h"
+#include "resource/esrc_chunk.h"
 
 using namespace std::placeholders;
 

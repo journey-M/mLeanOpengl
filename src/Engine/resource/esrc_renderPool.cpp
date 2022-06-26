@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "esrc_renderPool.h"
+#include "resource/esrc_renderPool.h"
 
 //-------------------- CPP --------------------//
 #include "resource/esrc_state.h"

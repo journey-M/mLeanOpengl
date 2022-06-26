@@ -21,7 +21,7 @@
 
 #include "json/json_oth.h"
 
-#include "esrc_colorTableSet.h"
+#include "resource/esrc_colorTableSet.h"
 #include "resource/esrc_state.h"
 
 //--------------- Script ------------------//

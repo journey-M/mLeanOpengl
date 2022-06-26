@@ -13,7 +13,7 @@
 
 
 //-------------------- Engine --------------------//
-#include "dyParams.h"
+#include "dynamicParam/dyParams.h"
 
 
 template< typename T >

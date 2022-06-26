@@ -14,7 +14,7 @@
 //-------------------- Engine --------------------//
 
 #include "gameObj/goDataForCreate/GoSpecFromJson.h"
-#include "UIGoSpecFromJson.h"
+#include "UI/UIGoSpecFromJson.h"
 
 
 #include "resource/esrc_state.h"

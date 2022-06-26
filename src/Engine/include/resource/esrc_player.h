@@ -9,7 +9,7 @@
 #define TPR_ESRC_PLAYER_H
 
 //-------------------- Engine --------------------//
-#include "Player.h" 
+#include "player/Player.h" 
 
 namespace esrc {//------------------ namespace: esrc -------------------------//  
 

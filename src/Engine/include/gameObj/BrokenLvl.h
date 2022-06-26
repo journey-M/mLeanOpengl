@@ -13,6 +13,7 @@
 
 //-------------------- Engine --------------------//
 #include "tprDebug/tprAssert.h"
+#include "tprDebug/tprDebug.h"
 
 
 

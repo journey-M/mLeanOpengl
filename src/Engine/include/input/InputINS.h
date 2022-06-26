@@ -20,7 +20,7 @@
 
 //-------------------- Engine --------------------//
 #include "tprDebug/tprAssert.h"
-#include "GameKey.h"
+#include "input/GameKey.h"
 #include "input/DirAxes.h"
 
 

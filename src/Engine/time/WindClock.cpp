@@ -13,7 +13,7 @@
 
 //------------------- Engine --------------------// 
 #include "random/random.h"
-#include "simplexNoise.h"
+#include "random/simplexNoise.h"
 
 
 void WindClock::init()noexcept{

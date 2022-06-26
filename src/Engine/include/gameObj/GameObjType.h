@@ -13,7 +13,8 @@
 //-------------------- CPP --------------------//
 #include <string>
 #include <functional>
-
+#include "tprDebug/tprAssert.h"
+#include "tprDebug/tprDebug.h"
 
 class GameObj;
 //class UIObj;

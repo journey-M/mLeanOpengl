@@ -6,16 +6,16 @@
  * ----------------------------------------------------------
  */
 
-#include "esrc_chunk.h"
+#include "resource/esrc_chunk.h"
 //-------------------- CPP --------------------//
 #include <deque>
 
 //-------------------- Engine --------------------//
-#include "chunkCreate.h"
+#include "map/chunkCreateRelease/chunkCreate.h"
 
-#include "esrc_renderPool.h"
+#include "resource/esrc_renderPool.h"
 #include "resource/esrc_state.h"
-#include "esrc_player.h"
+#include "resource/esrc_player.h"
 
 
 namespace esrc {//------------------ namespace: esrc -------------------------//

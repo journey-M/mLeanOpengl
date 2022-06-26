@@ -8,11 +8,11 @@
  * ----------------------------
  */
 
-#include "esrc_gameObj.h"
-#include "esrc_camera.h"
+#include "resource/esrc_gameObj.h"
+#include "resource/esrc_camera.h" 
 
 //-------------------- Engine --------------------//
-#include "esrc_chunk.h"
+#include "resource/esrc_chunk.h"
 #include "resource/esrc_state.h"
 
 

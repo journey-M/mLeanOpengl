@@ -20,7 +20,7 @@
 #include <vector>
 
 //-------------------- Engine --------------------//
-#include "ShaderProgram/ShaderProgram.h" //-- each Mesh instance,will bind a shader
+#include "shaderProgram/ShaderProgram.h" //-- each Mesh instance,will bind a shader
 
 #include "animFrameSet/AnimFrameSet.h"    
 

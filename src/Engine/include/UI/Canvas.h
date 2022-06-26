@@ -25,7 +25,7 @@
 //-------------------- Engine --------------------//
 #include "tprDebug/tprAssert.h"
 #include "tools/IntVec.h"
-#include "ShaderProgram/ShaderProgram.h"
+#include "shaderProgram/ShaderProgram.h"
 #include "mesh/Mesh.h"
 
 

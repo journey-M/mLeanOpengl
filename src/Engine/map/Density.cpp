@@ -10,9 +10,9 @@
 
 
 //------------------- Engine --------------------//
-#include "simplexNoise.h"
+#include "random/simplexNoise.h"
 #include "resource/esrc_gameSeed.h"
-#include "esrc_ecoObj.h"
+#include "resource/esrc_ecoObj.h"
 
 //---------- static ----------//
 int Density::minLvl {-3};

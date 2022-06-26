@@ -10,8 +10,8 @@
 #include <thread>
 
 //-------------------- Engine --------------------//
-#include "esrc_thread.h"
-#include "esrc_jobQue.h"
+#include "resource/esrc_thread.h"
+#include "resource/esrc_jobQue.h"
 #include "jobThread.h"
 
 

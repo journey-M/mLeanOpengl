@@ -10,7 +10,7 @@
 
 //-------------------- Engine --------------------//
 #include "animFrameSet/animSubspeciesId.h"
-#include "dyParams.h"
+#include "dynamicParam/dyParams.h"
 
 #include "resource/esrc_gameSeed.h"
 

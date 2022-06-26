@@ -24,10 +24,10 @@
 
 
 //-------------------- Engine --------------------//
-#include "ChildMesh.h"
+#include "mesh/ChildMesh.h"
 #include "animFrameSet/AnimAction.h"
 #include "animFrameSet/AnimActionEName.h"
-#include "RotateScaleData.h"
+#include "mesh/RotateScaleData.h"
 #include "animFrameSet/animSubspeciesId.h"
 #include "dynamicParam/DyBinary.h"
 #include "tools/functorTypes.h"

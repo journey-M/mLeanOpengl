@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "esrc_colorTableSet.h"
+#include "resource/esrc_colorTableSet.h"
 #include "resource/esrc_state.h"
 
 namespace esrc {//------------------ namespace: esrc -------------------------//

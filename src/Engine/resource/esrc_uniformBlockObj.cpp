@@ -10,7 +10,7 @@
 
 //-------------------- Engine --------------------//
 #include "uniformBlockObjs.h"
-#include "ColorTable.h"
+#include "color/ColorTable.h"
 
 #include "resource/esrc_state.h"
 
