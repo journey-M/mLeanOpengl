@@ -11,7 +11,7 @@
 
 //-------------------- Engine --------------------//
 #include "random/random.h"
-#include "esrc_ecoSysPlan.h"
+#include "resource/esrc_ecoSysPlan.h"
 #include "resource/esrc_gameSeed.h"
 
 //-------------------- Script --------------------//

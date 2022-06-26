@@ -29,7 +29,7 @@
 //-------------------- Engine --------------------//
 #include "tprDebug/tprAssert.h"
 #include "tools/tprMath.h"
-#include "tprDebug.h"
+#include "tprDebug/tprDebug.h"
 #include "tprDebug/tprCast.h"
 #include "sys/config.h"
 #include "tools/IntVec.h"

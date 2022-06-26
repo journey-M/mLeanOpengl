@@ -13,13 +13,13 @@
  * ----------------------------
  */
 
-#include "sceneLoop.h"
+#include "scene/sceneLoop.h"
 
 //-------------------- Engine --------------------//
 #include "input/input.h"
 #include "map/chunkCreateRelease/chunkCreate.h"
-#include "dataBase.h"
-#include "GameArchive.h"
+#include "dataBase/dataBase.h"
+#include "player/GameArchive.h"
 #include "random/GameSeed.h"
 #include "UI/UIAnchor.h"
 #include "gameObj/createGo/create_goes.h"
@@ -28,9 +28,9 @@
 #include "UI/UIGoSpecFromJson.h"
 
 
-#include "ubo_all.h"
+#include "shaderProgram/ubo_all.h"
 
-#include "esrc_all.h" //- 所有资源
+#include "resource/esrc_all.h" //- 所有资源
 
 
 

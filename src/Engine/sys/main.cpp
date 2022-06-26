@@ -13,18 +13,18 @@
 
 
 //-------------------- Engine --------------------//
-#include "prepare.h"
+#include "sys/prepare.h"
 #include "sys/global.h"
 #include "gl/gl_funcs.h"
 #include "input/input.h" 
 #include "time/TimeCircle.h" 
 #include "map/chunkCreateRelease/chunkCreate.h"
-#include "dataBase.h"
-#include "sceneLoop.h"
+#include "dataBase/dataBase.h"
+#include "scene/sceneLoop.h"
 #include "blueprint/blueprint.h"
 #include "gameObj/goDataForCreate/GoSpecFromJson.h"
 #include "UI/UIGoSpecFromJson.h"
-#include "CircuitBoard.h"
+#include "circuitBoard/CircuitBoard.h"
 #include "ecoSys/ecoObjBorder/EcoObjBorder.h"
 #include "collision/signInMapEnts/SignInMapEnts_Square.h"
 #include "collision/Collision.h"
@@ -33,14 +33,13 @@
 #include "multiThread/chunkCreate/Job_Field.h"
 
 
-#include "esrc_all.h"
-#include "ubo_all.h"
+#include "resource/esrc_all.h"
+#include "shaderProgram/ubo_all.h"
 
 #include "time/TimeBase.h"  // debug_tmp
 #include "tprDebug/speedLog.h" // debug_tmp
 
 //-------------------- innTest --------------------//
-#include "innTest.h"
 
 //-------------------- Script --------------------//
 #include "Script/json/json_all.h"
@@ -82,8 +81,6 @@ int main( int argc, char* argv[] ){
     //==========================================//
     //                  TEST
     //------------------------------------------//
-        //return(0);
-        innTest::innTest_main();
 
 
     //------------------------------------------//

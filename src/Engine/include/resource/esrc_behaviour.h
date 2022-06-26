@@ -9,7 +9,8 @@
 #define TPR_ESRC_BEHAVIOUR_H
 
 //-------------------- Engine --------------------//
-#include "Behaviour.h" 
+#include "tools/Behaviour.h" 
+#include <memory>
 
 namespace esrc {//------------------ namespace: esrc -------------------------//
 

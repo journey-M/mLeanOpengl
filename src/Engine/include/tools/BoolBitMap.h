@@ -13,6 +13,8 @@
 //-------------------- CPP --------------------//
 #include <cmath>
 #include <vector>
+#include <cstdint>
+#include <cstddef>
 
 //-------------------- Engine --------------------//
 #include "tprDebug/tprAssert.h"

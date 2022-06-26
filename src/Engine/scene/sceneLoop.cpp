@@ -7,8 +7,9 @@
  */
 
 //-------------------- Engine --------------------//
-#include "sceneLoop.h"
-#include "sceneLoopInn.h"
+#include "scene/sceneLoop.h"
+#include "scene/sceneLoopInn.h"
+#include "tprDebug/tprDebug.h"
 
 
 void switch_sceneLoop( SceneLoopType type_ ){

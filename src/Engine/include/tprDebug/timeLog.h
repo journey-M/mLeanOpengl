@@ -10,6 +10,10 @@
 
 //------------------- CPP --------------------//
 #include <map>
+#include "tprDebug/tprCast.h"
+#include "tprDebug/tprAssert.h"
+#include "glm_no_warnings.h"
+
 
 namespace tprDebug {//---------- namespace: tprDebug --------------//
 

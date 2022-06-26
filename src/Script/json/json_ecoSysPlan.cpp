@@ -16,7 +16,7 @@
 //-------------------- Engine --------------------//
 #include "sys/global.h"
 #include "fileIO/fileIO.h"
-#include "EcoSysPlan.h"
+#include "ecoSys/EcoSysPlan.h"
 #include "json/json_oth.h"
 #include "blueprint/blueprint.h"
 #include "ecoSys/GoSpecData.h"
@@ -26,7 +26,7 @@
 #include "blueprint/YardBlueprint.h"
 
 
-#include "esrc_ecoSysPlan.h"
+#include "resource/esrc_ecoSysPlan.h"
 #include "resource/esrc_colorTableSet.h"
 #include "resource/esrc_state.h"
 

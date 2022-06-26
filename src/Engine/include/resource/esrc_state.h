@@ -10,6 +10,10 @@
 
 //-------------------- CPP --------------------//
 #include <string>
+#include <unordered_set>
+#include "tprDebug/tprDebug.h"
+#include "tprDebug/tprAssert.h"
+
 
 namespace esrc {//------------------ namespace: esrc -------------------------//
 

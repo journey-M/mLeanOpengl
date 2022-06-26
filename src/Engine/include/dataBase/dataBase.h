@@ -14,7 +14,7 @@
 //-------------------- Engine --------------------//
 #include "tools/IntVec.h"
 #include "gameObj/DiskGameObj.h"
-#include "gameArchiveId.h"
+#include "player/gameArchiveId.h"
 
 
 class GameArchive;

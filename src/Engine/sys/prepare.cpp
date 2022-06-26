@@ -6,33 +6,31 @@
  * ----------------------------------------------------------
  */
 
-#include "prepare.h"
+#include "sys/prepare.h"
 
 //---------------- from cmake ------------------//
-#include "SysConfig.h" // MUST BEFORE TPR_OS_XXX macros !!!
+// #include "SysConfig.h" // MUST BEFORE TPR_OS_XXX macros !!!
 
 //-------------------- C ----------------------//
-#if defined TPR_OS_WIN32_
-	#include <windows.h>
-#elif defined TPR_OS_UNIX_
+
     #include <limits.h>  //- PATH_MAX
     #include <stdlib.h>  //- realpath
 	#include <unistd.h>  //- fchdir
 	#include <fcntl.h>    //-- open，openat, AT_FDCWD
-#endif
 
 //------------------- Libs --------------------//
 #include "tprGeneral.h"
 #include "magic_enum.hpp"
 
+#include "tprDebug/tprDebug.h"
+#include "tprDebug/tprAssert.h"
 
-#if defined TPR_OS_WIN32_
-    #include "tprFileSys_win.h" 
-#elif defined TPR_OS_UNIX_
-    #include "wrapUnix.h"
-    #include "tprFileModeT.h"
-    #include "tprFileSys_unix.h" 
-#endif
+
+
+#include "wrapUnix.h"
+#include "tprFileModeT.h"
+#include "tprFileSys_unix.h" 
+
 
 //-------------------- Engine --------------------//
 #include "sys/global.h"
@@ -110,16 +108,7 @@ namespace prepare_inn {//------------ namespace: prepare_inn ------------//
  */
 void build_path_cwd( char *exeDirPath_ ){
 
-#if defined TPR_OS_WIN32_
 
-	char buf[MAX_PATH];
-	GetModuleFileName( nullptr, buf, MAX_PATH ); //- exe文件path
-	// 当前 buf数据 为 ".../xx.exe"
-	// 需要将 最后一段 截掉
-	std::string::size_type pos = std::string(buf).find_last_of( "\\/" );
-	path_cwd = std::string(buf).substr( 0, pos );
-
-#elif defined TPR_OS_UNIX_
 
     char ubuf[ PATH_MAX + 1 ];
     char *res = realpath( exeDirPath_, ubuf);
@@ -131,7 +120,6 @@ void build_path_cwd( char *exeDirPath_ ){
 	std::string::size_type pos = std::string(ubuf).find_last_of( "/" );
 	path_cwd = std::string(ubuf).substr( 0, pos );
     
-#endif
 
 }
 
@@ -147,54 +135,6 @@ void check_and_creat_important_dir(){
     //----------------------------//
     tprDebug::console( "path_cwd = {}", path_cwd );
 
-#if defined TPR_OS_WIN32_
-
-    //---------------------------------//
-    //           path_data
-    //---------------------------------//
-    path_dataBase = tprWin::mk_dir( path_cwd,
-                                "dataBase/",
-                                err_info );
-    //---------------------------------//
-    //           path_shaders
-    //---------------------------------//
-    path_shaders = tprWin::mk_dir( path_cwd,
-                                "shaders/",
-                                err_info );
-    //---------------------------------//
-    //           path_textures
-    //---------------------------------//
-    /*
-    path_textures = tprWin::mk_dir( path_cwd,
-                                "textures/",
-                                err_info );
-    */
-    //---------------------------------//
-    //           path_jsons
-    //---------------------------------//
-    path_jsons = tprWin::mk_dir( path_cwd,
-                                "jsons/",
-                                err_info );
-    //---------------------------------//
-    //           path_tprLog
-    //---------------------------------//
-    path_tprLog = tprWin::mk_dir( path_cwd,
-                                "tprLog/",
-                                err_info );
-    //---------------------------------//
-    //      path_blueprintDatas
-    //---------------------------------//
-    path_blueprintDatas = tprWin::mk_dir( path_cwd,
-                                "blueprintDatas/",
-                                err_info );
-    //---------------------------------//
-    //      path_gameObjDatas
-    //---------------------------------//
-    path_gameObjDatas = tprWin::mk_dir( path_cwd,
-                                "gameObjDatas/",
-                                err_info );
-
-#elif defined TPR_OS_UNIX_
 
     //---------------------------------//
     //           path_data
@@ -248,7 +188,6 @@ void check_and_creat_important_dir(){
                         RWXR_XR_X,
                         err_info );
 
-#endif
 }
 
 
@@ -260,22 +199,12 @@ void check_and_creat_important_dir(){
  */
 void check_OS(){
 
-    tprDebug::console( "{}", SYSTEM_NAME );
+    // tprDebug::console( "{}", SYSTEM_NAME );
 
-    current_OS = OS_NULL; //-- 先设置为 未找到状态
+    // current_OS = OS_NULL; //-- 先设置为 未找到状态
 
-    #if defined TPR_OS_MACOSX_
-        current_OS = OS_APPLE;
-        tprDebug::console( "TPR_OS_MACOSX_" );
-
-    #elif defined TPR_OS_LINUX_
         current_OS = OS_UNIX;
         tprDebug::console( "TPR_OS_LINUX_" );
-
-    #elif defined TPR_OS_WIN32_
-        current_OS = OS_WIN32;
-        tprDebug::console( "TPR_OS_WIN32_" );
-    #endif 
     
 }
 

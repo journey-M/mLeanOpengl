@@ -9,7 +9,9 @@
 #define TPR_ESRC_GAME_ARCHIVE_H
 
 //-------------------- Engine --------------------//
-#include "GameArchive.h"
+#include "player/GameArchive.h"
+#include "glm_no_warnings.h"
+#include <memory>
 
 namespace esrc {//------------------ namespace: esrc -------------------------//
 

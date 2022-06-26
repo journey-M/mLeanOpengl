@@ -9,7 +9,7 @@
 
 //-------------------- Engine --------------------//
 #include "camera/ViewingBox.h"
-#include "esrc_canvas.h"
+#include "resource/esrc_canvas.h"
 #include "resource/esrc_window.h"
 #include "resource/esrc_camera.h" 
 #include "resource/esrc_gameSeed.h"

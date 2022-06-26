@@ -13,8 +13,10 @@
 //-------------------- Engine --------------------//
 #include "tools/IntVec.h"
 #include "tools/ID_Manager.h"
-#include "gameArchiveId.h"
+#include "player/gameArchiveId.h"
 #include "gameObj/GameObjType.h"
+#include "glm_no_warnings.h"
+
 
 //-- 与 数据库 table_gameArchive 的结构 一致
 class GameArchive{

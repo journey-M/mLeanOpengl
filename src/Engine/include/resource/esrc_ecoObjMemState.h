@@ -11,6 +11,7 @@
 
 //-------------------- CPP --------------------//
 #include <utility>
+#include <unordered_set>
 
 //-------------------- Engine --------------------// 
 #include "map/sectionKey.h"

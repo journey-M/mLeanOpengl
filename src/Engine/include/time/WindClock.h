@@ -17,6 +17,9 @@
 
 //------------------- Engine --------------------// 
 #include "tprDebug/tprAssert.h"
+#include "glm_no_warnings.h"
+#include "tools/tprMath.h"
+#include "sys/config.h"
 
 
 class WindClock{

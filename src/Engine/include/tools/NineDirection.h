@@ -16,6 +16,8 @@
 //-------------------- Engine --------------------//
 #include "tprDebug/tprAssert.h"
 #include "tprDebug/tprCast.h"
+#include "tprDebug/tprDebug.h"
+
 #include "tools/IntVec.h"
 
 #include "glm_no_warnings.h"

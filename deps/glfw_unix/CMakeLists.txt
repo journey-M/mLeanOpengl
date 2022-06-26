@@ -373,3 +373,7 @@ if (GLFW_INSTALL)
     endif()
 endif()
 
+
+
+message ("glfw_LIBRARIES")
+message (${glfw_LIBRARIES})

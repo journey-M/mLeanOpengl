@@ -9,8 +9,8 @@
 #define TPR_ESRC_UNIFORM_BLOCK_OBJ_H
 
 //-------------------- Engine --------------------//
-#include "UniformBlockObj.h"
-#include "uniformBlockObjs.h"
+#include "shaderProgram/UniformBlockObj.h"
+#include "shaderProgram/uniformBlockObjs.h"
 
 
 namespace esrc {//------------------ namespace: esrc -------------------------//  

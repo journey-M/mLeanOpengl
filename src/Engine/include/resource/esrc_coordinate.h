@@ -10,7 +10,8 @@
 
 //-------------------- Engine --------------------//
 #include "../coordinate/Coordinate.h"
-
+#include "tprDebug/tprDebug.h"
+#include <memory>
 
 namespace esrc {//------------------ namespace: esrc -------------------------//
 

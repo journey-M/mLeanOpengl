@@ -11,7 +11,7 @@
 
 //-------------------- Engine --------------------//
 #include "resource/esrc_shader.h"
-#include "esrc_uniformBlockObj.h"
+#include "resource/esrc_uniformBlockObj.h"
 #include "resource/esrc_state.h"
 
 namespace esrc {//------------------ namespace: esrc -------------------------//

@@ -6,15 +6,15 @@
  * ----------------------------------------------------------
  */
 
-#include "esrc_uniformBlockObj.h"
+#include "resource/esrc_uniformBlockObj.h"
 
 //-------------------- Engine --------------------//
-#include "uniformBlockObjs.h"
+#include "shaderProgram/uniformBlockObjs.h"
 #include "color/ColorTable.h"
 
 #include "resource/esrc_state.h"
 
-#include "ubo_all.h"
+#include "shaderProgram/ubo_all.h"
 
 
 //-------------------- Script --------------------//

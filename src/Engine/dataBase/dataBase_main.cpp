@@ -6,8 +6,8 @@
  * ----------------------------------------------------------
  */
 
-#include "dataBase.h"
-#include "dataBase_inn.h"
+#include "dataBase/dataBase.h"
+#include "dataBase/dataBase_inn.h"
 
 //------------------- Libs --------------------//
 #include "tprGeneral.h"
@@ -15,7 +15,7 @@
 //-------------------- Engine --------------------//
 #include "sys/global.h"
 #include "gameObj/GameObj.h"
-#include "esrc_gameArchive.h"
+#include "resource/esrc_gameArchive.h"
 #include "resource/esrc_player.h"
 #include "resource/esrc_time.h"
 

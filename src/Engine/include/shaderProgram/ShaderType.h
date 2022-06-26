@@ -9,6 +9,8 @@
 #define TPR_SHADER_TYPE_H
 
 #include <string>
+#include "tprDebug/tprDebug.h"
+#include "tprDebug/tprAssert.h"
 
 enum class ShaderType{
 

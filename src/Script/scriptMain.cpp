@@ -17,7 +17,7 @@
 
 //-------------------- Engine --------------------//
 #include "map/MapTexture.h" 
-#include "esrc_behaviour.h" 
+#include "resource/esrc_behaviour.h" 
 
 //-------------------- Script --------------------//
 #include "Script/json/json_all.h"

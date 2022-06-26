@@ -12,7 +12,7 @@
 //-------------------- Engine --------------------//
 #include "resource/esrc_colorTableSet.h"
 
-#include "ubo_all.h"
+#include "shaderProgram/ubo_all.h"
 
 
 //-- Must after esrc::init_colorTableSet !!!

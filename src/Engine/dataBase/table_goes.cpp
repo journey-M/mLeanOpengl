@@ -6,8 +6,8 @@
  * ----------------------------------------------------------
  */
 
-#include "dataBase.h"
-#include "dataBase_inn.h"
+#include "dataBase/dataBase.h"
+#include "dataBase/dataBase_inn.h"
 
 
 namespace db{//---------------- namespace: db ----------------------//

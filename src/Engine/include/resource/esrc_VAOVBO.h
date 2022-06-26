@@ -17,6 +17,7 @@
 //-------------------- CPP --------------------//
 #include <vector>
 #include <utility>
+#include <memory>
 
 //-------------------- Engine --------------------//
 #include "VAOVBO/VAOVBO.h"

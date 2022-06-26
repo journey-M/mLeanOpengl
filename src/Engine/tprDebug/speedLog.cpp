@@ -19,6 +19,11 @@
 //-------------------- Engine --------------------//
 #include "sys/global.h"
 #include "time/TimeBase.h" 
+#include "tools/IntVec.h"
+#include "tools/FloatVec.h"
+
+#include "tprDebug/tprDebug.h"
+
 
 
 using std::endl;

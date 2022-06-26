@@ -17,7 +17,7 @@
 #include "tprDebug/tprAssert.h"
 #include "sqlite3.h"
 
-#include "tprDebug.h"
+#include "tprDebug/tprDebug.h"
 
 
 /* ===========================================================

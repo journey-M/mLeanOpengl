@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "esrc_VAOVBO.h"
+#include "resource/esrc_VAOVBO.h"
 
 //-------------------- Engine --------------------//
 #include "resource/esrc_state.h"

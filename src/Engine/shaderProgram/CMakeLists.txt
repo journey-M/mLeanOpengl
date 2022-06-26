@@ -1,0 +1,4 @@
+aux_source_directory(. DIR_shaderprogram_SRCS)
+
+add_library(engine_shaderprogram ${DIR_shaderprogram_SRCS})
+target_link_libraries(engine_shaderprogram fmt engine_tprdebug)

@@ -21,6 +21,7 @@
 #include "map/fieldFractType.h"
 #include "map/MapAltitude.h"
 #include "collision/signInMapEnts/SignInMapEnts_Square_Type.h"
+#include "glm_no_warnings.h"
 
 
 //-------------------- Script --------------------//

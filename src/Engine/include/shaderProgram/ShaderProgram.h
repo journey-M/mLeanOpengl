@@ -22,9 +22,11 @@
 #include <memory>
 
 //-------------------- Engine --------------------//
-#include "UniformBlockObj.h"
+#include "shaderProgram/UniformBlockObj.h"
 #include "tprDebug/tprAssert.h"
 #include "glm_no_warnings.h"
+#include "tprDebug/tprDebug.h"
+#include "tprDebug/tprAssert.h"
 
 
 

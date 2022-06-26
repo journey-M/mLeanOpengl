@@ -10,6 +10,7 @@
 
 //-------------------- Engine --------------------//
 #include "random/GameSeed.h"
+#include <memory>
 
 namespace esrc {//------------------ namespace: esrc -------------------------//
 

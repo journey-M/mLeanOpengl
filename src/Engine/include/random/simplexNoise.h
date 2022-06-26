@@ -10,6 +10,8 @@
 #ifndef TPR_SIMPLEX_NOISE_H
 #define TPR_SIMPLEX_NOISE_H
 
+#include "glm_no_warnings.h"
+
 
 
 double simplex_noise2( const glm::dvec2 &v_ ); // return [-1.0， 1.0]

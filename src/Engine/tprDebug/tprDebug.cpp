@@ -8,7 +8,7 @@
  * ----------------------------
  */
 
-#include "tprDebug.h"
+#include "tprDebug/tprDebug.h"
 
 // 临时版 ...
 #include <iostream>

@@ -13,6 +13,8 @@
 
 //-------------------- Engine --------------------//
 #include "tools/functorTypes.h"
+#include "tprDebug/tprDebug.h"
+#include "tprDebug/tprAssert.h"
 
 
 enum class SceneLoopType : int{

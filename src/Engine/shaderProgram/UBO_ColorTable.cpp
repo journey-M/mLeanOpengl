@@ -6,13 +6,13 @@
  * ----------------------------------------------------------
  */
 
-#include "ubo_all.h"
+#include "shaderProgram/ubo_all.h"
 
 //-------------------- Engine --------------------//
 #include "gameObj/GameObj.h"
 
 #include "resource/esrc_colorTableSet.h"
-#include "esrc_uniformBlockObj.h"
+#include "resource/esrc_uniformBlockObj.h"
 #include "resource/esrc_player.h"
 #include "resource/esrc_field.h"
 #include "resource/esrc_chunk.h"

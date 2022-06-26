@@ -15,8 +15,8 @@
 #include <unordered_map>
 
 //-------------------- Engine --------------------//
-#include "UniformBlockObj.h"
-#include "FloatVec.h"
+#include "shaderProgram/UniformBlockObj.h"
+#include "tools/FloatVec.h"
 
 namespace ubo{//------------- namespace ubo ----------------
 

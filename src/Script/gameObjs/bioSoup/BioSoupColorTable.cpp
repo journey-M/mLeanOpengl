@@ -9,9 +9,9 @@
 #include "Script/gameObjs/bioSoup/BioSoupColorTable.h"
 
 //-------------------- Engine --------------------//
-#include "uniformBlockObjs.h"
+#include "shaderProgram/uniformBlockObjs.h"
 
-#include "esrc_uniformBlockObj.h"
+#include "resource/esrc_uniformBlockObj.h"
 
 //-------------------- Script --------------------//
 #include "Script/gameObjs/bioSoup/BioSoupColor.h"

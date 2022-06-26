@@ -6,10 +6,10 @@
  * ----------------------------------------------------------
  */
 
-#include "ubo_all.h"
+#include "shaderProgram/ubo_all.h"
 
 //-------------------- Engine --------------------//
-#include "esrc_uniformBlockObj.h"
+#include "resource/esrc_uniformBlockObj.h"
 #include "resource/esrc_camera.h" 
 
 namespace ubo{//------------- namespace ubo ----------------

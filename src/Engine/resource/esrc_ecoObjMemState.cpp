@@ -6,7 +6,7 @@
  * ----------------------------------------------------------
  */
 
-#include "esrc_ecoObjMemState.h"
+#include "resource/esrc_ecoObjMemState.h"
 //-------------------- CPP --------------------//
 #include <deque>
 

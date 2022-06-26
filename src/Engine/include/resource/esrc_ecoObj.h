@@ -20,7 +20,7 @@
 #include "ecoSys/EcoObj_ReadOnly.h"
 #include "ecoSys/GoSpecData.h"
 
-#include "esrc_ecoObjMemState.h"
+#include "resource/esrc_ecoObjMemState.h"
 
 
 

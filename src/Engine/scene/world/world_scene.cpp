@@ -11,16 +11,16 @@
  * ----------------------------
  */
 
-#include "sceneLoop.h"
+#include "scene/sceneLoop.h"
 
 //-------------------- Engine --------------------//
 #include "input/input.h"
 #include "map/chunkCreateRelease/chunkCreate.h"
 #include "map/chunkCreateRelease/chunkRelease.h"
 
-#include "ubo_all.h"
+#include "shaderProgram/ubo_all.h"
 
-#include "esrc_all.h" //- 所有资源
+#include "resource/esrc_all.h" //- 所有资源
 
 
 //-------------------- Script --------------------//

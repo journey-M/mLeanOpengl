@@ -6,12 +6,12 @@
  * ----------------------------------------------------------
  */
 
-#include "ubo_all.h"
+#include "shaderProgram/ubo_all.h"
 
 
 //-------------------- Engine --------------------//
 #include "resource/esrc_gameSeed.h"
-#include "esrc_uniformBlockObj.h"
+#include "resource/esrc_uniformBlockObj.h"
 
 namespace ubo{//------------- namespace ubo ----------------
 

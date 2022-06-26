@@ -19,6 +19,8 @@
 //-------------------- Engine --------------------//
 #include "random/random.h"
 #include "tools/IntVec.h"
+#include "glm_no_warnings.h"
+
 
 
 //- singleton --
