@@ -2,3 +2,4 @@
 main
 build
 build/*
+CMakeFiles/
