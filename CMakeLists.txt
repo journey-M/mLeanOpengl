@@ -6,15 +6,23 @@ set(CMAKE_BUILD_TYPE Debug)
 set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
 set(UNIX 1)
 
+
+
+set (EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/../runner)
+
+
 # 确认一些 变量值：
 message(STATUS "[__INFO__] CMAKE_BINARY_DIR: ${CMAKE_BINARY_DIR}")
 message(STATUS "[__INFO__] PROJECT_BINARY_DIR: ${PROJECT_BINARY_DIR}")
 message(STATUS "[__INFO__] CMAKE_RUNTIME_OUTPUT_DIRECTORY: ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}")
+message(STATUS "[__INFO__] EXECUTABLE_OUTPUT_PATH: ${EXECUTABLE_OUTPUT_PATH}")
+
 
 
 #/代码中有些依赖  Script目录问题，需要解决，目前只能加.解决 
 include_directories(.
 Engine/include
+third_libs
 third_libs/glm.9.9.5 
 third_libs/magic_enum 
 third_libs/glad/include 
@@ -22,12 +30,15 @@ third_libs/tprGeneral
 third_libs/stb_image 
 third_libs/tprInUnix 
 third_libs/tprGeneral 
-third_libs/rapidjson)
+)
 
 
-get_property(dirs DIRECTORY ${CMAKE_SOURCE_DIR} PROPERTY INCLUDE_DIRECTORIES)
-message(">>> SET DEFAULT TO BEFORE, include_dirs=${dirs}")
-
+#编译第三方的库
+#-- 官网推荐，避免编译 test --
+# 需要在 add_subdirectory 语句之前
+set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
+set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 
 add_subdirectory(third_libs/glad)
 add_subdirectory(third_libs/tprGeneral)
@@ -38,9 +49,7 @@ add_subdirectory(third_libs/glfw_unix)
 add_subdirectory(Engine)
 
 
-FILE(GLOB_RECURSE PIXEL_FILES   
-                        Script/*.cpp 
-                        )
+FILE(GLOB_RECURSE PIXEL_FILES Script/*.cpp)
 add_executable (tprpix ${PIXEL_FILES} )
 target_link_libraries(tprpix
         tprGeneral
