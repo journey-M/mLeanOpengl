@@ -1,6 +1,7 @@
 #include "../include/TestFileShader.h"
 
 void TestFileShader::init(){
+  IOperator::init();
     this->initShader();
     this->initVertex();
 }

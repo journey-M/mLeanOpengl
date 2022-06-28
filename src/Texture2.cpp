@@ -1,6 +1,7 @@
 #include "../include/Texture2.h"
 
 void Texture2::init(){
+  IOperator::init();
     
     printf("this is Texture2 init ! \n");
     glActiveTexture(GL_TEXTURE0);

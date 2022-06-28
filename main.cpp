@@ -6,10 +6,19 @@
 
 Single Single::instance;
 
+int gotoAnther = 0;
 void processInput(GLFWwindow *window) {
 
+  if (glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS) {
+    gotoAnther = -1;
+    return;
+  } else if (glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS) {
+    gotoAnther = 1;
+    return ;
+  }
+
   if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS) {
-        glfwSetWindowShouldClose(window, true);
+    glfwSetWindowShouldClose(window, true);
   }
   IOperator *opt = Single::instance.getOperator();
   if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS) {
@@ -35,7 +44,6 @@ void scroll_callback(GLFWwindow *window, double xoffset, double yoffset) {
 }
 
 int main(int argc, char **argv) {
-  printf("this is in main function ! \n");
 
   int ret = glfwInit();
   glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -59,9 +67,6 @@ int main(int argc, char **argv) {
   glViewport(0, 0, 800, 600);
   // glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
-  IOperator *opclz;
-  opclz = Single::instance.getOperator();
-  opclz->init();
 
   while (!glfwWindowShouldClose(window)) {
     processInput(window);
@@ -69,8 +74,14 @@ int main(int argc, char **argv) {
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
 
-    opclz->render();
-
+    if(gotoAnther == 0){
+      Single::instance.getOperator()->render();
+    }else if(gotoAnther > 0){
+      Single::instance.gotoNext();
+    }else {
+      Single::instance.gotoPre();
+    }
+    gotoAnther = 0;
     glfwSwapBuffers(window);
     glfwPollEvents();
   }

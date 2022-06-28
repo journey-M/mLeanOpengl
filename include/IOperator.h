@@ -1,31 +1,34 @@
 #ifndef __OPREATOR_H__
 #define __OPREATOR_H__
 
-class IOperator{
-	private:
-	
-	public:
-		virtual void init(){
-		};
-		virtual void render(){
-		};
-		virtual void proceessKeyEvent(int key ){
-		};
-		virtual void mouse_callback(double xoffset, double yoffset){
+#include <functional>
+#include <vector>
 
-		};
-
-		virtual void scroll_callback(double xoffset, double yoffset){
-
-		};
+class IOperator {
+private:
+public:
+  bool inited = false;
+  virtual void init() { inited = true; };
+  virtual void render(){};
+  virtual void destroy(){};
+  virtual void proceessKeyEvent(int key){};
+  virtual void mouse_callback(double xoffset, double yoffset){};
+  virtual void scroll_callback(double xoffset, double yoffset){};
 };
 
-class Single{
-	private :
-		IOperator* currentOperator;
-		Single();
-	public:
-		static Single instance;	
-		IOperator* getOperator();
+class Single {
+private:
+  int currentIndex;
+  IOperator *currentOperator;
+  Single();
+
+public:
+  static Single instance;
+
+  std::vector<std::function<IOperator *()>> creaters;
+  IOperator *getOperator();
+  IOperator *createOperator(int index);
+  void gotoPre();
+  void gotoNext();
 };
 #endif

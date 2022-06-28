@@ -3,6 +3,7 @@
 
 
 void Texture::init(){
+  IOperator::init();
     this->initVertex();
     this->initShader();
     this->initTexture();

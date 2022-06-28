@@ -5,6 +5,7 @@
 #include <math.h>
 
 void LeanShader::init(){
+  IOperator::init();
 	this->initShader();
 	this->initVertex();
 }

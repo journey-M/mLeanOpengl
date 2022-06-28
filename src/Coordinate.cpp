@@ -1,6 +1,7 @@
 #include "../include/Coordinate.h"
 
 void Coordinate::init(){
+  IOperator::init();
 	this->initShader();
 	this->initVertex();
 	this->initTexture();
@@ -9,7 +10,6 @@ void Coordinate::init(){
 	shader->setInt("texture1",0);
 	shader->setInt("texture2",1);
 
-    printf("afterInit  --- : %d  \n", glGetError());
 }
 
 void Coordinate::initVertex(){

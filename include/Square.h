@@ -5,10 +5,10 @@
 
 class Square:public IOperator{
 	private:
-		void init();
+		void init() override;
 		
 	public:
-	 	void render();	
+	 	void render() override;	
 		
 		void initShader();
 		void initVertex();

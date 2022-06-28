@@ -1,6 +1,7 @@
 #include "../include/Transformations.h"
 
 void Transformation::init(){
+  IOperator::init();
     
     printf("this is Transformation init ! \n");
     glActiveTexture(GL_TEXTURE0);

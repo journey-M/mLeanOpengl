@@ -15,6 +15,7 @@ class Shader{
 		 
 	public:
 		unsigned int ID;
+	  unsigned int vertixShader, fragmentShader;
 
 		Shader(const GLchar* vertexPath, const GLchar* fragmentPath);
 

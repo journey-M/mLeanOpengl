@@ -2,6 +2,7 @@
 
 
 void Camera01::init(){
+  IOperator::init();
     this->initShader();
     this->initVertex();
     this->initTexture();

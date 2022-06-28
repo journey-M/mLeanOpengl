@@ -3,6 +3,7 @@
 #include "../include/glad/glad.h"
 
 void Trigle::init(){
+  IOperator::init();
 	this->initShader();
 	this->initVertex();
 }
@@ -88,7 +89,6 @@ void Trigle::initShader(){
 
 
 void Trigle::render(){
-	printf("this is in runRenderProgram ! \n");
 	
 	glUseProgram(shaderProgram);
 	glBindVertexArray(VAO); 

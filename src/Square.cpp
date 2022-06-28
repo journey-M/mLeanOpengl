@@ -33,7 +33,8 @@ unsigned int indices [] = {
     1, 2, 3   
 };
 
-void Square::init(){
+void Square::init() {
+  IOperator::init();
 	this->initVertex();
 	this->initShader();
 }

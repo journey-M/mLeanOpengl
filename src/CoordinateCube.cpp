@@ -2,6 +2,7 @@
 
 
 void CoordinateCube::init(){
+  IOperator::init();
     this->initShader();
     this->initVertex();
     this->initTexture();
