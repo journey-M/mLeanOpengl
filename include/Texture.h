@@ -8,8 +8,9 @@
 
 class Texture :public IOperator{
 	private:
-		void init();
+		void init() override;
 
+  void destroy() override;
         unsigned int shaderProgram;
         unsigned int VAO;
         unsigned int VBO;
@@ -18,7 +19,7 @@ class Texture :public IOperator{
         Shader * shader;
 
 	public:
-	 	void render();	
+	 	void render() override;	
 		
 		void initShader();
 		void initVertex();

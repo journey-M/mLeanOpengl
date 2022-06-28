@@ -5,11 +5,19 @@
 #include <math.h>
 
 void LeanShader::init(){
+	printf("init  lenaSahder! \n"	);
   IOperator::init();
 	this->initShader();
 	this->initVertex();
 }
 
+    void LeanShader::destroy() {
+  glDeleteVertexArrays(1,&VAO1);
+  glDeleteBuffers(1, &VBO1);
+  glDeleteShader(vertexShader);
+  glDeleteShader(fragmentShader);
+  glDeleteProgram(shaderProgram1);
+    }
 const char *vertexShaderSource1 = "#version 330 core\n"
 		"layout (location = 0) in vec3 aPos;\n"
 		"void main()\n"
@@ -33,10 +41,6 @@ const char *fragmentShaderSource1 = "#version 330 core\n"
 		"}\n\0";
 
 
-
-unsigned int shaderProgram1;
-unsigned int VAO1;
-unsigned int VBO1;
 
 void LeanShader::initVertex(){
 	
@@ -74,7 +78,6 @@ void LeanShader::initVertex(){
 void LeanShader::initShader(){
 
 	//2. create gl shader
-	unsigned int vertexShader;
 	vertexShader = glCreateShader(GL_VERTEX_SHADER);
 	glShaderSource(vertexShader, 1, &vertexShaderSource1, NULL);
 	glCompileShader(vertexShader);
@@ -88,7 +91,6 @@ void LeanShader::initShader(){
 	}
 
 	//compile fragment shader
-	unsigned int fragmentShader;
 	fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
 	glShaderSource(fragmentShader, 1, &fragmentShaderSource1, NULL);
 	glCompileShader(fragmentShader);

@@ -44,6 +44,7 @@ void Single::gotoNext() {
 }
 IOperator *Single::createOperator(int index) {
   if (currentOperator != NULL) {
+ //   currentOperator->destroy();
     delete (currentOperator);
     currentOperator = NULL;
   }
@@ -52,7 +53,7 @@ IOperator *Single::createOperator(int index) {
   }else if(index >= creaters.size()){
     index = creaters.size() -1;
   }
-  auto toCallfunc = creaters[index];
+  std::function<IOperator*()> toCallfunc = creaters[index];
   currentOperator = toCallfunc();
 
   return currentOperator;

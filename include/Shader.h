@@ -14,8 +14,8 @@ class Shader{
 	 	void checkCompileErrors(unsigned int shader, std::string type);
 		 
 	public:
-		unsigned int ID;
-	  unsigned int vertixShader, fragmentShader;
+		unsigned int ID = -1;
+	  unsigned int vertixShader = -1, fragmentShader = -1;
 
 		Shader(const GLchar* vertexPath, const GLchar* fragmentPath);
 

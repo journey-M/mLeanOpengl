@@ -23,6 +23,16 @@ void CameraMove::init() {
   shader->setMat4("projection", projection);
 }
 
+void CameraMove::destroy(){
+  glDeleteVertexArrays(1,&VAO);
+  glDeleteBuffers(1, &VBO);
+  glDeleteTextures(1, &texture1); 
+  glDeleteTextures(1, &texture2); 
+  glDeleteShader(shader->vertixShader);
+  glDeleteShader(shader->fragmentShader);
+  glDeleteProgram(shader->ID);
+}
+
 void CameraMove::proceessKeyEvent(int key) {
   float cameraSpeed = 2.5f * deltaTime;
   // printf("in proccessKeyEvent  now tid is %d  \n", gettid());

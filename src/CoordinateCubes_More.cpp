@@ -14,6 +14,15 @@ void CoordinateCubeMore::init(){
 	shader->setInt("texture2",1);
 }
 
+    void CoordinateCubeMore::destroy() {
+  glDeleteVertexArrays(1,&VAO);
+  glDeleteBuffers(1, &VBO);
+  glDeleteTextures(1, &texture1); 
+  glDeleteTextures(1, &texture2); 
+  glDeleteShader(shader->vertixShader);
+  glDeleteShader(shader->fragmentShader);
+  glDeleteProgram(shader->ID);
+    }
 
 void CoordinateCubeMore::initShader(){
     shader = new Shader("res/coordinate_cube.vs","res/coordinate_cube.fs"); 

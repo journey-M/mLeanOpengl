@@ -20,6 +20,16 @@ void Camera01::proceessKeyEvent(int key){
 
 }
 
+void Camera01::destroy(){
+    glDeleteVertexArrays(1,&VAO);
+  glDeleteBuffers(1, &VBO);
+  glDeleteTextures(1, &texture1); 
+  glDeleteTextures(1, &texture2); 
+  glDeleteShader(shader->vertixShader);
+  glDeleteShader(shader->fragmentShader);
+  glDeleteProgram(shader->ID);
+}
+
 void Camera01::initShader(){
     shader = new Shader("res/camera.vs","res/camera.fs"); 
 }

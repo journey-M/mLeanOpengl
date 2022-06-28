@@ -17,10 +17,7 @@ const char *fragmentShaderSource = "#version 330 core\n"
     "   FragColor = vec4(1.0f, 0.2f, 0.2f, 1.0f);\n"
     "}\n\0";
 
-unsigned int shaderProgram;
-unsigned int VAO;
-unsigned int VBO;
-unsigned int EBO;
+
 
 float vertices [] = {
     0.5f, 0.5f , 0.0f,
@@ -34,14 +31,21 @@ unsigned int indices [] = {
 };
 
 void Square::init() {
+	printf("init  Square! \n"	);
   IOperator::init();
 	this->initVertex();
 	this->initShader();
 }
 
+  void Square::destroy() {
+        glDeleteVertexArrays(1,&VAO);
+  glDeleteBuffers(1, &VBO);
+  glDeleteShader(vertexShader);
+  glDeleteShader(fragmentShader);
+  glDeleteProgram(shaderProgram);
+  }
 
 void Square::initShader(){
-	unsigned int vertexShader; 
     vertexShader = glCreateShader(GL_VERTEX_SHADER);
     glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
     glCompileShader(vertexShader);
@@ -54,7 +58,6 @@ void Square::initShader(){
 		printf("ERRO::SHARED: VERTEX compile er ");
 	}
 
-    unsigned int fragmentShader;
     fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
     glShaderSource(fragmentShader, 1, &fragmentShaderSource, NULL);
     glCompileShader(fragmentShader);

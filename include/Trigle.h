@@ -5,7 +5,6 @@
 
 class Trigle : public IOperator {
 private:
-  void init();
 
   const char *vertexShaderSource =
       "#version 330 core\n"
@@ -24,9 +23,14 @@ private:
   unsigned int shaderProgram;
   unsigned int VAO;
   unsigned int VBO;
+	unsigned int vertexShader;
+	unsigned int fragmentShader;
+
 
 public:
-  void render();
+  void init() override;
+  void destroy() override;
+  void render() override;
 
   void initShader();
   void initVertex();

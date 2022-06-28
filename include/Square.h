@@ -5,9 +5,19 @@
 
 class Square:public IOperator{
 	private:
-		void init() override;
+	void init() override;
+
+  	unsigned int shaderProgram;
+	unsigned int vertexShader; 
+    unsigned int fragmentShader;
+
+unsigned int VAO;
+unsigned int VBO;
+unsigned int EBO;
 		
 	public:
+  		void destroy() override;
+
 	 	void render() override;	
 		
 		void initShader();

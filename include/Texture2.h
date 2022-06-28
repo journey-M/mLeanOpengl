@@ -8,8 +8,9 @@
 
 class Texture2 :public IOperator{
 	private:
-		void init();
+		void init() override;
 
+  void destroy() override;
         void initShader();
 		void initVertex();
         void initTexture();
@@ -25,7 +26,7 @@ class Texture2 :public IOperator{
         Shader * shader;
 
 	public:
-	 	void render();	
+	 	void render() override;	
 		
 
 };

@@ -5,11 +5,11 @@
 
 class LColor1:public IOperator{
 	private:
-		void init();
+		void init() override;
 		
-		
+		void destroy() override;
 	public:
-	 	void render();	
+	 	void render() override;	
 		
 		void initShader();
 		void initVertex();

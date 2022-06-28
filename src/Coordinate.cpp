@@ -11,6 +11,15 @@ void Coordinate::init(){
 	shader->setInt("texture2",1);
 
 }
+void Coordinate::destroy(){
+  glDeleteVertexArrays(1,&VAO);
+  glDeleteBuffers(1, &VBO);
+  glDeleteTextures(1, &texture1); 
+  glDeleteTextures(1, &texture2); 
+  glDeleteShader(shader->vertixShader);
+  glDeleteShader(shader->fragmentShader);
+  glDeleteProgram(shader->ID);
+}
 
 void Coordinate::initVertex(){
 

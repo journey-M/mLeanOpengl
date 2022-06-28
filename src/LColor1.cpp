@@ -5,6 +5,9 @@ void LColor1::init(){
   IOperator::init();
 }
 
+void LColor1::destroy(){
+}
+
 void LColor1::initShader(){
 
 }

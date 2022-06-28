@@ -13,6 +13,7 @@ class Camera01:public IOperator{
 	private:
 		void init();
 
+   void destroy();
 		Shader* shader;
         unsigned int VAO;
         unsigned int VBO;

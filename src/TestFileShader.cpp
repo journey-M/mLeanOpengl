@@ -2,10 +2,26 @@
 
 void TestFileShader::init(){
   IOperator::init();
+	printf("init  TestFielShader! \n"	);
     this->initShader();
     this->initVertex();
 }
 
+  void TestFileShader:: destroy() {
+	    glDeleteVertexArrays(1,&VAO);
+  glDeleteBuffers(1, &VBO);
+  if(shader->vertixShader > 0){
+    glDeleteShader(shader->vertixShader);
+  }
+  if(shader->fragmentShader >0){
+    glDeleteShader(shader->fragmentShader);
+
+  }
+  if(shader->ID >0){
+
+    glDeleteProgram(shader->ID);
+  }
+  }
 
 void TestFileShader::initShader(){
     shader = new Shader("res/trigle.sc", "res/frag.sc");

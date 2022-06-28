@@ -3,15 +3,16 @@
 #include "../include/glad/glad.h"
 
 void Trigle::init(){
+	printf("init  Trigle! \n"	);
   IOperator::init();
 	this->initShader();
 	this->initVertex();
 }
 
 
+
 void Trigle::initVertex(){
 	
-	printf("this is in initVertex ! \n"	);
 
 	float vertices[] = {
 		-0.5f, -0.5f, 0.0f,
@@ -42,10 +43,17 @@ void Trigle::initVertex(){
 
 
 }
+  void Trigle:: destroy() {
+ //   glDeleteVertexArrays(1,&VAO);
+ // glDeleteBuffers(1, &VBO);
+//  glDeleteShader(vertexShader);
+//  glDeleteShader(fragmentShader);
+//  glDeleteProgram(shaderProgram);
+  printf("destroy Trigle");
+  }
 void Trigle::initShader(){
 
 	//2. create gl shader
-	unsigned int vertexShader;
 	vertexShader = glCreateShader(GL_VERTEX_SHADER);
 	glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
 	glCompileShader(vertexShader);
@@ -59,7 +67,6 @@ void Trigle::initShader(){
 	}
 
 	//compile fragment shader
-	unsigned int fragmentShader;
 	fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
 	glShaderSource(fragmentShader, 1, &fragmentShaderSource, NULL);
 	glCompileShader(fragmentShader);

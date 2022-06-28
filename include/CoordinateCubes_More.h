@@ -11,7 +11,8 @@
 
 class CoordinateCubeMore :public IOperator{
 	private:
-		void init();
+		void init() override;
+    void destroy() override;
 
 		Shader* shader;
         unsigned int VAO;
@@ -19,7 +20,7 @@ class CoordinateCubeMore :public IOperator{
 		unsigned int texture1, texture2;
 
 	public:
-	 	void render();
+	 	void render() override;
 		void initShader();
 		void initVertex();
         void initTexture();

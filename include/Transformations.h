@@ -12,7 +12,8 @@
 
 class Transformation :public IOperator{
 	private:
-		void init();
+		void init() override;
+    void destroy() override;
 
         unsigned int shaderProgram;
         unsigned int VAO;
@@ -23,7 +24,7 @@ class Transformation :public IOperator{
         Shader * shader;
 
 	public:
-	 	void render();	
+	 	void render() override;	
 		
 		void initShader();
 		void initVertex();

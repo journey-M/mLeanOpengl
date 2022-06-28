@@ -9,6 +9,14 @@ void Texture::init(){
     this->initTexture();
 }
 
+  void Texture::destroy() {
+        glDeleteVertexArrays(1,&VAO);
+  glDeleteBuffers(1, &VBO);
+  glDeleteTextures(1, &texture); 
+  glDeleteShader(shader->vertixShader);
+  glDeleteShader(shader->fragmentShader);
+  glDeleteProgram(shader->ID);
+  }
 void Texture::initShader(){
     shader = new Shader("res/texture.vs", "res/texture.fs");
 }

@@ -13,14 +13,15 @@ class TestFileShader: public IOperator{
 	unsigned int VAO;
 	unsigned int VBO;
 
-		void init();
+		void init() override;
 		
+  void destroy() override;
 	public:
 
 		void initShader();
 		void initVertex();
 
-	 	void render();	
+	 	void render() override;	
 
 };
 

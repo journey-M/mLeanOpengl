@@ -11,7 +11,8 @@
 
 class Coordinate : public IOperator {
 private:
-  void init();
+  void init() override;
+  void destroy() override;
 
   Shader *shader;
   unsigned int VAO;
@@ -20,7 +21,7 @@ private:
   unsigned int texture1, texture2;
 
 public:
-  void render();
+  void render() override;
 
   void initShader();
   void initVertex();

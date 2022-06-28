@@ -11,6 +11,16 @@ void Transformation::init(){
     this->initTexture();
 }
 
+void Transformation::destroy(){
+    glDeleteVertexArrays(1,&VAO);
+  glDeleteBuffers(1, &VBO);
+  glDeleteTextures(1, &texture1); 
+  glDeleteTextures(1, &texture2); 
+  glDeleteShader(shader->vertixShader);
+  glDeleteShader(shader->fragmentShader);
+  glDeleteProgram(shader->ID);
+}
+
 void Transformation::initShader(){
     shader = new Shader("res/transform.vs", "res/transform.fs");
 }
@@ -99,7 +109,6 @@ void Transformation::initTexture(){
     stbi_image_free(data);
 
 }
-
 
 void Transformation::render(){
 
