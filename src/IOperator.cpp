@@ -40,23 +40,21 @@ void Single::gotoPre() {
 }
 void Single::gotoNext() {
   currentIndex++;
-  createOperator(currentIndex);
+  if( currentIndex<0){
+    currentIndex = 0;
+  }else if(currentIndex >= creaters.size()){
+    currentIndex = creaters.size() -1;
+  }
+  currentOperator = createOperator(currentIndex);
 }
 IOperator *Single::createOperator(int index) {
   if (currentOperator != NULL) {
- //   currentOperator->destroy();
-    delete (currentOperator);
+    currentOperator->destroy();
+    delete currentOperator;
     currentOperator = NULL;
   }
-  if(index<0){
-    index = 0;
-  }else if(index >= creaters.size()){
-    index = creaters.size() -1;
-  }
   std::function<IOperator*()> toCallfunc = creaters[index];
-  currentOperator = toCallfunc();
-
-  return currentOperator;
+  return toCallfunc();
 }
 
 IOperator *Single::getOperator() {

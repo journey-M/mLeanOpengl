@@ -10,6 +10,9 @@ void TestFileShader::init(){
   void TestFileShader:: destroy() {
 	    glDeleteVertexArrays(1,&VAO);
   glDeleteBuffers(1, &VBO);
+  if(shader== NULL){
+	  return ;
+  }
   if(shader->vertixShader > 0){
     glDeleteShader(shader->vertixShader);
   }
@@ -18,14 +21,12 @@ void TestFileShader::init(){
 
   }
   if(shader->ID >0){
-
     glDeleteProgram(shader->ID);
   }
   }
 
 void TestFileShader::initShader(){
     shader = new Shader("res/trigle.sc", "res/frag.sc");
-
 }
 
 

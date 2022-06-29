@@ -19,9 +19,19 @@ void CoordinateCubeMore::init(){
   glDeleteBuffers(1, &VBO);
   glDeleteTextures(1, &texture1); 
   glDeleteTextures(1, &texture2); 
-  glDeleteShader(shader->vertixShader);
-  glDeleteShader(shader->fragmentShader);
-  glDeleteProgram(shader->ID);
+  if(shader== NULL){
+	  return ;
+  }
+  if(shader->vertixShader > 0){
+    glDeleteShader(shader->vertixShader);
+  }
+  if(shader->fragmentShader >0){
+    glDeleteShader(shader->fragmentShader);
+
+  }
+  if(shader->ID >0){
+    glDeleteProgram(shader->ID);
+  }
     }
 
 void CoordinateCubeMore::initShader(){
