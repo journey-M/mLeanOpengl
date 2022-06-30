@@ -1,5 +1,5 @@
-#ifndef __LCOLOR1_H__
-#define __LCOLOR1_H__
+#ifndef __LBASICELIGHT_H__
+#define __LBASICELIGHT_H__
 
 #include "../IOperator.h"
 #include "../Shader.h"
@@ -12,8 +12,7 @@
 #include <GLFW/glfw3.h>
 
 
-
-class LColor1:public IOperator{
+class BasicLightingSpecular:public IOperator{
 	private:
 		void init() override;
 		void destroy() override;
@@ -39,13 +38,11 @@ class LColor1:public IOperator{
  		unsigned int lightCubeVAO;
 	 	
 		void render() override;	
-		
-		void initShader();
-		void initVertex();
 		void mouse_callback(double xoffset, double yoffset) override;
 		void scroll_callback(double xoffset, double yoffset) override;
-		void proceessKeyEvent(int key) override;
-		
+  		virtual void proceessKeyEvent(int key) override;
+		void initShader();
+		void initVertex();
 };
 
 #endif

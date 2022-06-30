@@ -173,6 +173,30 @@ void LColor1::mouse_callback( double xposIn, double yposIn)
     camera.ProcessMouseMovement(xoffset, yoffset);
 }
 
+
+void LColor1::proceessKeyEvent(int key) {
+
+  switch (key) {
+  case GLFW_KEY_W:
+        camera.ProcessKeyboard(FORWARD, deltaTime);
+    break;
+  case GLFW_KEY_A:
+        camera.ProcessKeyboard(LEFT, deltaTime);
+
+    break;
+  case GLFW_KEY_S:
+        camera.ProcessKeyboard(BACKWARD, deltaTime);
+
+    break;
+  case GLFW_KEY_D:
+        camera.ProcessKeyboard(RIGHT, deltaTime);
+    break;
+  default:
+    break;
+  }
+}
+
+
 // glfw: whenever the mouse scroll wheel scrolls, this callback is called
 // ----------------------------------------------------------------------
 void LColor1::scroll_callback( double xoffset, double yoffset)

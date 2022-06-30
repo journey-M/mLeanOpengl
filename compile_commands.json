@@ -1,1 +1,102 @@
-build/compile_commands.json
+[
+{
+  "directory": "/home/gwj/workspaces/TowerDefends",
+  "command": "/usr/bin/c++  -I/home/gwj/workspaces/TowerDefends/. -g -o CMakeFiles/glrun.dir/main.cpp.o -c /home/gwj/workspaces/TowerDefends/main.cpp",
+  "file": "/home/gwj/workspaces/TowerDefends/main.cpp"
+},
+{
+  "directory": "/home/gwj/workspaces/TowerDefends",
+  "command": "/usr/bin/c++  -I/home/gwj/workspaces/TowerDefends/. -g -o CMakeFiles/glrun.dir/src/CameraMouse.cpp.o -c /home/gwj/workspaces/TowerDefends/src/CameraMouse.cpp",
+  "file": "/home/gwj/workspaces/TowerDefends/src/CameraMouse.cpp"
+},
+{
+  "directory": "/home/gwj/workspaces/TowerDefends",
+  "command": "/usr/bin/c++  -I/home/gwj/workspaces/TowerDefends/. -g -o CMakeFiles/glrun.dir/src/CameraMove.cpp.o -c /home/gwj/workspaces/TowerDefends/src/CameraMove.cpp",
+  "file": "/home/gwj/workspaces/TowerDefends/src/CameraMove.cpp"
+},
+{
+  "directory": "/home/gwj/workspaces/TowerDefends",
+  "command": "/usr/bin/c++  -I/home/gwj/workspaces/TowerDefends/. -g -o CMakeFiles/glrun.dir/src/Camera_01.cpp.o -c /home/gwj/workspaces/TowerDefends/src/Camera_01.cpp",
+  "file": "/home/gwj/workspaces/TowerDefends/src/Camera_01.cpp"
+},
+{
+  "directory": "/home/gwj/workspaces/TowerDefends",
+  "command": "/usr/bin/c++  -I/home/gwj/workspaces/TowerDefends/. -g -o CMakeFiles/glrun.dir/src/Coordinate.cpp.o -c /home/gwj/workspaces/TowerDefends/src/Coordinate.cpp",
+  "file": "/home/gwj/workspaces/TowerDefends/src/Coordinate.cpp"
+},
+{
+  "directory": "/home/gwj/workspaces/TowerDefends",
+  "command": "/usr/bin/c++  -I/home/gwj/workspaces/TowerDefends/. -g -o CMakeFiles/glrun.dir/src/CoordinateCube.cpp.o -c /home/gwj/workspaces/TowerDefends/src/CoordinateCube.cpp",
+  "file": "/home/gwj/workspaces/TowerDefends/src/CoordinateCube.cpp"
+},
+{
+  "directory": "/home/gwj/workspaces/TowerDefends",
+  "command": "/usr/bin/c++  -I/home/gwj/workspaces/TowerDefends/. -g -o CMakeFiles/glrun.dir/src/CoordinateCubes_More.cpp.o -c /home/gwj/workspaces/TowerDefends/src/CoordinateCubes_More.cpp",
+  "file": "/home/gwj/workspaces/TowerDefends/src/CoordinateCubes_More.cpp"
+},
+{
+  "directory": "/home/gwj/workspaces/TowerDefends",
+  "command": "/usr/bin/c++  -I/home/gwj/workspaces/TowerDefends/. -g -o CMakeFiles/glrun.dir/src/LeanShader.cpp.o -c /home/gwj/workspaces/TowerDefends/src/LeanShader.cpp",
+  "file": "/home/gwj/workspaces/TowerDefends/src/LeanShader.cpp"
+},
+{
+  "directory": "/home/gwj/workspaces/TowerDefends",
+  "command": "/usr/bin/c++  -I/home/gwj/workspaces/TowerDefends/. -g -o CMakeFiles/glrun.dir/src/Shader.cpp.o -c /home/gwj/workspaces/TowerDefends/src/Shader.cpp",
+  "file": "/home/gwj/workspaces/TowerDefends/src/Shader.cpp"
+},
+{
+  "directory": "/home/gwj/workspaces/TowerDefends",
+  "command": "/usr/bin/c++  -I/home/gwj/workspaces/TowerDefends/. -g -o CMakeFiles/glrun.dir/src/Single.cpp.o -c /home/gwj/workspaces/TowerDefends/src/Single.cpp",
+  "file": "/home/gwj/workspaces/TowerDefends/src/Single.cpp"
+},
+{
+  "directory": "/home/gwj/workspaces/TowerDefends",
+  "command": "/usr/bin/c++  -I/home/gwj/workspaces/TowerDefends/. -g -o CMakeFiles/glrun.dir/src/Square.cpp.o -c /home/gwj/workspaces/TowerDefends/src/Square.cpp",
+  "file": "/home/gwj/workspaces/TowerDefends/src/Square.cpp"
+},
+{
+  "directory": "/home/gwj/workspaces/TowerDefends",
+  "command": "/usr/bin/c++  -I/home/gwj/workspaces/TowerDefends/. -g -o CMakeFiles/glrun.dir/src/TestFileShader.cpp.o -c /home/gwj/workspaces/TowerDefends/src/TestFileShader.cpp",
+  "file": "/home/gwj/workspaces/TowerDefends/src/TestFileShader.cpp"
+},
+{
+  "directory": "/home/gwj/workspaces/TowerDefends",
+  "command": "/usr/bin/c++  -I/home/gwj/workspaces/TowerDefends/. -g -o CMakeFiles/glrun.dir/src/Texture.cpp.o -c /home/gwj/workspaces/TowerDefends/src/Texture.cpp",
+  "file": "/home/gwj/workspaces/TowerDefends/src/Texture.cpp"
+},
+{
+  "directory": "/home/gwj/workspaces/TowerDefends",
+  "command": "/usr/bin/c++  -I/home/gwj/workspaces/TowerDefends/. -g -o CMakeFiles/glrun.dir/src/Texture2.cpp.o -c /home/gwj/workspaces/TowerDefends/src/Texture2.cpp",
+  "file": "/home/gwj/workspaces/TowerDefends/src/Texture2.cpp"
+},
+{
+  "directory": "/home/gwj/workspaces/TowerDefends",
+  "command": "/usr/bin/c++  -I/home/gwj/workspaces/TowerDefends/. -g -o CMakeFiles/glrun.dir/src/Transformations.cpp.o -c /home/gwj/workspaces/TowerDefends/src/Transformations.cpp",
+  "file": "/home/gwj/workspaces/TowerDefends/src/Transformations.cpp"
+},
+{
+  "directory": "/home/gwj/workspaces/TowerDefends",
+  "command": "/usr/bin/c++  -I/home/gwj/workspaces/TowerDefends/. -g -o CMakeFiles/glrun.dir/src/Trigle.cpp.o -c /home/gwj/workspaces/TowerDefends/src/Trigle.cpp",
+  "file": "/home/gwj/workspaces/TowerDefends/src/Trigle.cpp"
+},
+{
+  "directory": "/home/gwj/workspaces/TowerDefends",
+  "command": "/usr/bin/cc  -I/home/gwj/workspaces/TowerDefends/. -g -o CMakeFiles/glrun.dir/src/glad.c.o -c /home/gwj/workspaces/TowerDefends/src/glad.c",
+  "file": "/home/gwj/workspaces/TowerDefends/src/glad.c"
+},
+{
+  "directory": "/home/gwj/workspaces/TowerDefends",
+  "command": "/usr/bin/c++  -I/home/gwj/workspaces/TowerDefends/. -g -o CMakeFiles/glrun.dir/src/std_image.cpp.o -c /home/gwj/workspaces/TowerDefends/src/std_image.cpp",
+  "file": "/home/gwj/workspaces/TowerDefends/src/std_image.cpp"
+},
+{
+  "directory": "/home/gwj/workspaces/TowerDefends",
+  "command": "/usr/bin/c++  -I/home/gwj/workspaces/TowerDefends/. -g -o CMakeFiles/glrun.dir/src/lights/BasicLightingSpecular.cpp.o -c /home/gwj/workspaces/TowerDefends/src/lights/BasicLightingSpecular.cpp",
+  "file": "/home/gwj/workspaces/TowerDefends/src/lights/BasicLightingSpecular.cpp"
+},
+{
+  "directory": "/home/gwj/workspaces/TowerDefends",
+  "command": "/usr/bin/c++  -I/home/gwj/workspaces/TowerDefends/. -g -o CMakeFiles/glrun.dir/src/lights/LColor1.cpp.o -c /home/gwj/workspaces/TowerDefends/src/lights/LColor1.cpp",
+  "file": "/home/gwj/workspaces/TowerDefends/src/lights/LColor1.cpp"
+}
+]

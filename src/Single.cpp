@@ -14,6 +14,7 @@
 #include "../include/Transformations.h"
 #include "../include/Trigle.h"
 #include "../include/lights/L_Color1.h"
+#include "../include/lights/BasicLightingSpecular.h"
 
 #include <cstdio>
 
@@ -31,7 +32,11 @@ Single::Single():currentIndex(0) {
   creaters.push_back([]() -> IOperator * { return new Camera01(); });
   creaters.push_back([]() -> IOperator * { return new CameraMove(); });
   creaters.push_back([]() -> IOperator * { return new CameraMouse(); });
+
+  //light
   creaters.push_back([]() -> IOperator * { return new LColor1(); });
+  creaters.push_back([]() -> IOperator * { return new BasicLightingSpecular(); });
+
   //设置为最后一个
   currentIndex = creaters.size() -1;
   currentOperator = creaters[currentIndex]();
