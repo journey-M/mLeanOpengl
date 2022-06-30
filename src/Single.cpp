@@ -6,7 +6,6 @@
 #include "../include/Coordinate.h"
 #include "../include/CoordinateCube.h"
 #include "../include/CoordinateCubes_More.h"
-#include "../include/L_Color1.h"
 #include "../include/LeanShader.h"
 #include "../include/Square.h"
 #include "../include/TestFileShader.h"
@@ -14,6 +13,8 @@
 #include "../include/Texture2.h"
 #include "../include/Transformations.h"
 #include "../include/Trigle.h"
+#include "../include/lights/L_Color1.h"
+
 #include <cstdio>
 
 Single::Single():currentIndex(0) {
@@ -30,7 +31,9 @@ Single::Single():currentIndex(0) {
   creaters.push_back([]() -> IOperator * { return new Camera01(); });
   creaters.push_back([]() -> IOperator * { return new CameraMove(); });
   creaters.push_back([]() -> IOperator * { return new CameraMouse(); });
-  // creaters.push_back([]() -> IOperator * { return new LColor1(); });
+  creaters.push_back([]() -> IOperator * { return new LColor1(); });
+  //设置为最后一个
+  currentIndex = creaters.size() -1;
   currentOperator = creaters[currentIndex]();
   lastIndex = currentIndex;
 }
@@ -63,6 +66,7 @@ IOperator *Single::createOperator(int index) {
   }
   printf("CURRENT INDEX CREATE: %d \n", index);
   std::function<IOperator*()> toCallfunc = creaters[index];
+  lastIndex = index;
   return toCallfunc();
 }
 

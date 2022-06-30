@@ -7,5 +7,8 @@ include_directories(.)
 
 AUX_SOURCE_DIRECTORY(src MAIN_CODE_SRCS)
 
-add_executable(glrun main.cpp ${MAIN_CODE_SRCS})
+AUX_SOURCE_DIRECTORY(src/lights MAIN_LIGHTS_SRCS)
+
+
+add_executable(glrun main.cpp ${MAIN_CODE_SRCS} ${MAIN_LIGHTS_SRCS})
 target_link_libraries(glrun -lGL -lglfw -ldl )
