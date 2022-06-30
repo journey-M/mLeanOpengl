@@ -5,17 +5,23 @@
 #include <stdio.h>
 
 Single Single::instance;
+static int gotoAnther = 0;
 
-int gotoAnther = 0;
-void processInput(GLFWwindow *window) {
 
-  if (glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS) {
+
+static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
+{
+  if (key == GLFW_KEY_LEFT&& action == GLFW_RELEASE) {
     gotoAnther = -1;
     return;
-  } else if (glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS) {
+  } else if (key == GLFW_KEY_RIGHT && action == GLFW_RELEASE) {
     gotoAnther = 1;
     return ;
   }
+}
+
+
+void processInput(GLFWwindow *window) {
 
   if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS) {
     glfwSetWindowShouldClose(window, true);
@@ -66,7 +72,7 @@ int main(int argc, char **argv) {
   }
   glViewport(0, 0, 800, 600);
   // glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-
+  glfwSetKeyCallback(window, key_callback);
 
   while (!glfwWindowShouldClose(window)) {
     processInput(window);

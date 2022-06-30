@@ -21,7 +21,7 @@ void Camera01::proceessKeyEvent(int key){
 }
 
 void Camera01::destroy(){
-    glDeleteVertexArrays(1,&VAO);
+  glDeleteVertexArrays(1,&VAO);
   glDeleteBuffers(1, &VBO);
   glDeleteTextures(1, &texture1); 
   glDeleteTextures(1, &texture2); 
@@ -41,7 +41,7 @@ void Camera01::destroy(){
 }
 
 void Camera01::initShader(){
-    shader = new Shader("res/camera.vs","res/camera.fs"); 
+    shader = new Shader(std::string(baseDir).append("res/camera.vs").c_str(),std::string(baseDir).append("res/camera.fs").c_str()); 
 }
 void Camera01::initVertex(){
     float vertices[] = {
@@ -117,7 +117,7 @@ void Camera01::initTexture(){
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     int width, height, nrChannels;
     stbi_set_flip_vertically_on_load(true); // tell stb_image.h to flip loaded texture's on the y-axis.
-    unsigned char *data = stbi_load("res/container.jpg", &width, &height, &nrChannels, 0);
+    unsigned char *data = stbi_load(std::string(baseDir).append("res/container.jpg").c_str(), &width, &height, &nrChannels, 0);
     if (data)
     {
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
@@ -140,7 +140,7 @@ void Camera01::initTexture(){
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
-    data = stbi_load("res/awesomeface.png", &width, &height, &nrChannels, 0);
+    data = stbi_load(std::string(baseDir).append("res/awesomeface.png").c_str(), &width, &height, &nrChannels, 0);
     if (data)
     {
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);

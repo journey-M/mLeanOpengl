@@ -5,25 +5,26 @@
 #include <math.h>
 
 void LeanShader::init(){
-	printf("init  lenaSahder! \n"	);
-  IOperator::init();
-	this->initShader();
+  	IOperator::init();
 	this->initVertex();
+	this->initShader();
 }
 
-    void LeanShader::destroy() {
+
+void LeanShader::destroy() {
   glDeleteVertexArrays(1,&VAO1);
   glDeleteBuffers(1, &VBO1);
   glDeleteShader(vertexShader);
   glDeleteShader(fragmentShader);
   glDeleteProgram(shaderProgram1);
-    }
+}
 const char *vertexShaderSource1 = "#version 330 core\n"
 		"layout (location = 0) in vec3 aPos;\n"
 		"void main()\n"
 		"{\n"
 		"   gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
 		"}\0";
+		
 /** const char *fragmentShaderSource1 = "#version 330 core\n"
 		"out vec4 FragColor;\n"
 		"void main()\n"
@@ -43,9 +44,6 @@ const char *fragmentShaderSource1 = "#version 330 core\n"
 
 
 void LeanShader::initVertex(){
-	
-	printf("this is in initVertex ! \n"	);
-
 	float vertices[] = {
 		-0.5f, -0.5f, 0.0f,
 		0.5f,	-0.5f, 0.0f,
@@ -120,8 +118,6 @@ void LeanShader::initShader(){
 
 
 void LeanShader::render(){
-	printf("this is in runRenderProgram ! \n");
-
 	//实时设置颜色 uniform
 	float timeValue = glfwGetTime();
 	float greenValue = (sin(timeValue)/2.0f)+0.5;

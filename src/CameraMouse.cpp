@@ -1,4 +1,6 @@
 #include "../include/Camera_mouse.h"
+#include "include/IOperator.h"
+#include <string>
 #include <unistd.h>
 
 CameraMouse::CameraMouse() : deltaTime(0.0f), lastFrame(0.0f) {
@@ -49,6 +51,7 @@ void CameraMouse::scroll_callback(double xoffset, double yoffset) {
 }
 
 void CameraMouse::init() {
+  IOperator::init();
   this->initShader();
   this->initVertex();
   this->initTexture();
@@ -110,7 +113,10 @@ void CameraMouse::proceessKeyEvent(int key) {
 }
 
 void CameraMouse::initShader() {
-  shader = new Shader("res/camera.vs", "res/camera.fs");
+  printf("path  is :  %s   ::::::   %s \n", std::string(baseDir).append("res/camera.vs").c_str() ,
+   std::string(baseDir).append("res/camera.vs").c_str() );
+  shader = new Shader(std::string(baseDir).append("res/camera.vs").c_str(),
+    std::string(baseDir).append("res/camera.fs").c_str()); 
 }
 void CameraMouse::initVertex() {
   // 1.intput vertices
@@ -146,7 +152,7 @@ void CameraMouse::initTexture() {
   stbi_set_flip_vertically_on_load(
       true); // tell stb_image.h to flip loaded texture's on the y-axis.
   unsigned char *data =
-      stbi_load("res/container.jpg", &width, &height, &nrChannels, 0);
+      stbi_load(std::string(baseDir).append("res/container.jpg").c_str(), &width, &height, &nrChannels, 0);
   if (data) {
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB,
                  GL_UNSIGNED_BYTE, data);
@@ -169,7 +175,7 @@ void CameraMouse::initTexture() {
   glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
   glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
-  data = stbi_load("res/awesomeface.png", &width, &height, &nrChannels, 0);
+  data = stbi_load(std::string(baseDir).append("res/awesomeface.png").c_str(), &width, &height, &nrChannels, 0);
   if (data) {
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA,
                  GL_UNSIGNED_BYTE, data);
@@ -182,12 +188,12 @@ void CameraMouse::initTexture() {
 
 void CameraMouse::render() {
 
-  printf("before deltaTime: %f %f \n", lastFrame, this->deltaTime);
+  // printf("before deltaTime: %f %f \n", lastFrame, this->deltaTime);
   // printf("in rendder  now tid is %d  \n", gettid());
   float currentFrame = glfwGetTime();
   deltaTime = currentFrame - lastFrame;
   lastFrame = currentFrame;
-  printf("currentFram : %f  %f \n", currentFrame, this->deltaTime);
+  // printf("currentFram : %f  %f \n", currentFrame, this->deltaTime);
 
   static glm::vec3 cubePositions[] = {
       glm::vec3(0.0f, 0.0f, 0.0f),    glm::vec3(2.0f, 5.0f, -15.0f),

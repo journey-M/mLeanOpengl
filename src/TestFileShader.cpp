@@ -26,7 +26,9 @@ void TestFileShader::init(){
   }
 
 void TestFileShader::initShader(){
-    shader = new Shader("res/trigle.sc", "res/frag.sc");
+  shader = new Shader(std::string(baseDir).append("res/trigle.sc").c_str(),std::string(baseDir).append("res/frag.sc").c_str()); 
+
+
 }
 
 

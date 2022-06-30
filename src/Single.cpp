@@ -14,8 +14,9 @@
 #include "../include/Texture2.h"
 #include "../include/Transformations.h"
 #include "../include/Trigle.h"
+#include <cstdio>
 
-Single::Single() {
+Single::Single():currentIndex(0) {
   creaters.push_back([]() -> IOperator * { return new Trigle(); });
   creaters.push_back([]() -> IOperator * { return new Square();});
   creaters.push_back([]() -> IOperator * { return new LeanShader(); });
@@ -29,14 +30,18 @@ Single::Single() {
   creaters.push_back([]() -> IOperator * { return new Camera01(); });
   creaters.push_back([]() -> IOperator * { return new CameraMove(); });
   creaters.push_back([]() -> IOperator * { return new CameraMouse(); });
-  creaters.push_back([]() -> IOperator * { return new LColor1(); });
-
-  currentOperator = creaters[0]();
-  currentIndex = 0;
+  // creaters.push_back([]() -> IOperator * { return new LColor1(); });
+  currentOperator = creaters[currentIndex]();
+  lastIndex = currentIndex;
 }
 void Single::gotoPre() {
   currentIndex--;
-  createOperator(currentIndex);
+  if( currentIndex<0){
+    currentIndex = 0;
+  }else if(currentIndex >= creaters.size()){
+    currentIndex = creaters.size() -1;
+  }
+  currentOperator = createOperator(currentIndex);
 }
 void Single::gotoNext() {
   currentIndex++;
@@ -48,11 +53,15 @@ void Single::gotoNext() {
   currentOperator = createOperator(currentIndex);
 }
 IOperator *Single::createOperator(int index) {
+  if(index == lastIndex){
+    return currentOperator;
+  }
   if (currentOperator != NULL) {
     currentOperator->destroy();
     delete currentOperator;
     currentOperator = NULL;
   }
+  printf("CURRENT INDEX CREATE: %d \n", index);
   std::function<IOperator*()> toCallfunc = creaters[index];
   return toCallfunc();
 }

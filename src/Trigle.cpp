@@ -44,12 +44,12 @@ void Trigle::initVertex(){
 
 }
   void Trigle:: destroy() {
- //   glDeleteVertexArrays(1,&VAO);
- // glDeleteBuffers(1, &VBO);
-//  glDeleteShader(vertexShader);
-//  glDeleteShader(fragmentShader);
-//  glDeleteProgram(shaderProgram);
-  printf("destroy Trigle");
+   	glDeleteVertexArrays(1,&VAO);
+	glDeleteBuffers(1, &VBO);
+	glDeleteShader(vertexShader);
+	glDeleteShader(fragmentShader);
+	glDeleteProgram(shaderProgram);
+  	printf("destroy Trigle \n");
   }
 void Trigle::initShader(){
 

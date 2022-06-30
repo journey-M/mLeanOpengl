@@ -14,6 +14,8 @@ void Transformation::init(){
 void Transformation::destroy(){
     glDeleteVertexArrays(1,&VAO);
   glDeleteBuffers(1, &VBO);
+  glDeleteBuffers(1, &EBO);
+
   glDeleteTextures(1, &texture1); 
   glDeleteTextures(1, &texture2); 
   if(shader== NULL){
@@ -32,7 +34,7 @@ void Transformation::destroy(){
 }
 
 void Transformation::initShader(){
-    shader = new Shader("res/transform.vs", "res/transform.fs");
+  shader = new Shader(std::string(baseDir).append("res/transform.vs").c_str(),std::string(baseDir).append("res/transform.fs").c_str()); 
 }
 
 void Transformation::initVertex(){
@@ -83,7 +85,7 @@ void Transformation::initTexture(){
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     int width, height, nrChannels;
     stbi_set_flip_vertically_on_load(true); // tell stb_image.h to flip loaded texture's on the y-axis.
-    unsigned char *data = stbi_load("res/container.jpg", &width, &height, &nrChannels, 0);
+    unsigned char *data = stbi_load(std::string(baseDir).append("res/container.jpg").c_str(), &width, &height, &nrChannels, 0);
     if (data)
     {
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
@@ -106,7 +108,7 @@ void Transformation::initTexture(){
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
-    data = stbi_load("res/awesomeface.png", &width, &height, &nrChannels, 0);
+    data = stbi_load(std::string(baseDir).append("res/awesomeface.png").c_str(), &width, &height, &nrChannels, 0);
     if (data)
     {
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);

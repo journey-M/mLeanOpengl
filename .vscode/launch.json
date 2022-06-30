@@ -8,6 +8,7 @@
             "name": "Launch",
             "type": "lldb",
             "request": "launch",
+            "cwd":"${workspaceFolder}/build/",
             "program": "${workspaceFolder}/build/glrun",
             "args": ["-arg1", "-arg2"],
         }

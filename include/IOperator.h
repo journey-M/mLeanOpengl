@@ -2,12 +2,14 @@
 #define __OPREATOR_H__
 
 #include <functional>
+#include <string>
 #include <vector>
 
 class IOperator {
 private:
 public:
   bool inited = false;
+  const std::string baseDir = "../";
   virtual void init() { inited = true; };
   virtual void render(){};
   virtual void destroy(){};
@@ -18,7 +20,8 @@ public:
 
 class Single {
 private:
-  int currentIndex;
+  int currentIndex = 0;;
+  int lastIndex = 0;
   IOperator *currentOperator;
   Single();
 

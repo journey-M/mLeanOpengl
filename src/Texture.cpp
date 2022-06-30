@@ -12,6 +12,8 @@ void Texture::init(){
   void Texture::destroy() {
         glDeleteVertexArrays(1,&VAO);
   glDeleteBuffers(1, &VBO);
+  glDeleteBuffers(1, &EBO);
+
   glDeleteTextures(1, &texture); 
   if(shader== NULL){
 	  return ;
@@ -28,7 +30,8 @@ void Texture::init(){
   }
   }
 void Texture::initShader(){
-    shader = new Shader("res/texture.vs", "res/texture.fs");
+  shader = new Shader(std::string(baseDir).append("res/texture.vs").c_str(),std::string(baseDir).append("res/texture.fs").c_str()); 
+
 }
 
 void Texture::initVertex(){
@@ -81,7 +84,7 @@ void Texture::initTexture(){
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
     int width, height, nrChannels;
-    unsigned char *data = stbi_load("res/container.jpg", &width, &height, &nrChannels, 0);
+    unsigned char *data = stbi_load(std::string(baseDir).append("res/container.jpg").c_str(), &width, &height, &nrChannels, 0);
     if (data)
     {
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
