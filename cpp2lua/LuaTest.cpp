@@ -9,7 +9,7 @@ int main(int argc ,char * argv[]){
 
   lua_State *L = luaL_newstate();
   luaL_openlibs(L);
-  int retLoad = luaL_loadfile(L, "Test.lua");
+  int retLoad = luaL_loadfile(L, "cpp2lua/Test.lua");
 
   if(retLoad == 0){
     printf("load file sucesss \n");
