@@ -15,6 +15,8 @@
 #include "../include/Trigle.h"
 #include "../include/lights/L_Color1.h"
 #include "../include/lights/BasicLightingSpecular.h"
+#include "../include/lights/Materials.h"
+
 
 #include <cstdio>
 
@@ -36,6 +38,8 @@ Single::Single():currentIndex(0) {
   //light
   creaters.push_back([]() -> IOperator * { return new LColor1(); });
   creaters.push_back([]() -> IOperator * { return new BasicLightingSpecular(); });
+  creaters.push_back([]() -> IOperator * { return new Material(); });
+
 
   //设置为最后一个
   currentIndex = creaters.size() -1;
