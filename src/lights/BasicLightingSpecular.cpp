@@ -2,10 +2,13 @@
 #include <string>
 
 void BasicLightingSpecular::init(){
+  printf("init BasicLightgSpecular..");
   IOperator::init();
 
   initVertex();
   initShader();
+  glEnable(GL_DEPTH_TEST);
+
 
 }
 
@@ -120,9 +123,16 @@ void BasicLightingSpecular::initVertex(){
 }
 
 void BasicLightingSpecular::render(){
+
   float currentFrame = static_cast<float>(glfwGetTime());
   deltaTime = currentFrame - lastFrame;
   lastFrame = currentFrame;
+
+
+  //clear the depth buffer noew !
+  glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+
 
   lightingShader->use();
   lightingShader->setVec3("objectColor", 1.0f, 0.5f, 0.31f);
