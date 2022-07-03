@@ -87,9 +87,9 @@ void CameraMouse::destroy() {
 void CameraMouse::proceessKeyEvent(int key) {
   float cameraSpeed = 2.5f * deltaTime;
   // printf("in proccessKeyEvent  now tid is %d  \n", gettid());
-  printf(
-      "this is in Camera proceessInput %d , deltaTime %f  cameraSpeed : %f \n",
-      key, deltaTime, cameraSpeed);
+  // printf(
+  //     "this is in Camera proceessInput %d , deltaTime %f  cameraSpeed : %f \n",
+  //     key, deltaTime, cameraSpeed);
 
   switch (key) {
   case GLFW_KEY_W:

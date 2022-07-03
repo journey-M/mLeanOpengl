@@ -16,6 +16,7 @@
 #include "../include/lights/L_Color1.h"
 #include "../include/lights/BasicLightingSpecular.h"
 #include "../include/lights/Materials.h"
+#include "include/lights/LightingMapsSpecular.h"
 
 
 #include <cstdio>
@@ -39,6 +40,7 @@ Single::Single():currentIndex(0) {
   creaters.push_back([]() -> IOperator * { return new LColor1(); });
   creaters.push_back([]() -> IOperator * { return new BasicLightingSpecular(); });
   creaters.push_back([]() -> IOperator * { return new Material(); });
+  creaters.push_back([]() -> IOperator * { return new LightingMapsSpecular(); });
 
 
   //设置为最后一个
