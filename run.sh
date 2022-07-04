@@ -29,7 +29,7 @@ cmake ../CMakeLists.txt
 make -j6
 
 if [ $DEBUG -eq 1 ];then
-  (alacritty -e tmuxinator voltron ) &
+  (alacritty -e tmuxinator cppdebug) &
   (alacritty -e lldb glrun ) &
 else
   ./glrun &
