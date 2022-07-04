@@ -1,5 +1,5 @@
 #include "../../include/lights/LightingMapsSpecular.h"
-#include "include/IOperator.h"
+#include "../../include/IOperator.h"
 #include <string>
 
 void LightingMapsSpecular::init(){
@@ -47,8 +47,8 @@ void LightingMapsSpecular::destroy(){
 void LightingMapsSpecular::initShader(){
   lightingShader = new Shader(std::string(baseDir).append("res/lights/4.2.lighting_map.vs").c_str(), 
     std::string(baseDir).append("res/lights/4.2.lighting_map.fs").c_str());
-  lightCubeShader = new Shader(std::string(baseDir).append("res/lights/4.2.ligth_cube.vs").c_str(), 
-    std::string(baseDir).append("res/lights/4.2.ligth_cube.fs").c_str());
+  lightCubeShader = new Shader(std::string(baseDir).append("res/lights/4.2.light_cube.vs").c_str(), 
+    std::string(baseDir).append("res/lights/4.2.light_cube.fs").c_str());
 
     // shader configuration
     // --------------------

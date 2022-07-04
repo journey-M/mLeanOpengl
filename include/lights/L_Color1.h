@@ -4,11 +4,11 @@
 #include "../IOperator.h"
 #include "../Shader.h"
 #include "../glm/glm.hpp"
-#include "include/Camera.h"
+#include "../Camera.h"
 #include "../stb_image.h"
 #include "../glm/gtc/matrix_transform.hpp"
 #include "../glm/gtc/type_ptr.hpp"
-#include "include/glm/fwd.hpp"
+#include "../glm/fwd.hpp"
 #include <GLFW/glfw3.h>
 
 

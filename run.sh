@@ -1,15 +1,38 @@
-echo $#
+DEBUG=0
+CLEAN=0
 
-if [[ $# -gt 0 && $1 -eq 'clean' ]];
-then rm build -rf
+while getopts "cd" arg;do
+  case $arg in 
+  c)
+    CLEAN=1
+    ;;
+  d)
+    DEBUG=1
+    ;;
+  \?)
+    echo "unkown argument"
+    ;;
+  esac
+done
+
+if [ $CLEAN -eq 1 ]; then
+  rm build -rf
 fi
 
+# create build dir
 if [ ! -d build ];
 then mkdir build;
 fi
 
-
 cd build 
 cmake ../CMakeLists.txt
 make -j6
-./glrun
+
+if [ $DEBUG -eq 1 ];then
+  (alacritty -e tmuxinator voltron ) &
+  (alacritty -e lldb glrun ) &
+else
+  ./glrun &
+fi
+
+wait

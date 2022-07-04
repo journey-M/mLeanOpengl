@@ -7,19 +7,16 @@
 Single Single::instance;
 static int gotoAnther = 0;
 
-
-
-static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
-{
-  if (key == GLFW_KEY_LEFT&& action == GLFW_RELEASE) {
+static void key_callback(GLFWwindow *window, int key, int scancode, int action,
+                         int mods) {
+  if (key == GLFW_KEY_LEFT && action == GLFW_RELEASE) {
     gotoAnther = -1;
     return;
   } else if (key == GLFW_KEY_RIGHT && action == GLFW_RELEASE) {
     gotoAnther = 1;
-    return ;
+    return;
   }
 }
-
 
 void processInput(GLFWwindow *window) {
 
@@ -80,11 +77,11 @@ int main(int argc, char **argv) {
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
 
-    if(gotoAnther == 0){
+    if (gotoAnther == 0) {
       Single::instance.getOperator()->render();
-    }else if(gotoAnther > 0){
+    } else if (gotoAnther > 0) {
       Single::instance.gotoNext();
-    }else {
+    } else {
       Single::instance.gotoPre();
     }
     gotoAnther = 0;

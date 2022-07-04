@@ -16,7 +16,7 @@
 #include "../include/lights/L_Color1.h"
 #include "../include/lights/BasicLightingSpecular.h"
 #include "../include/lights/Materials.h"
-#include "include/lights/LightingMapsSpecular.h"
+#include "../include/lights/LightingMapsSpecular.h"
 
 
 #include <cstdio>

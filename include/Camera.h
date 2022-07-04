@@ -2,8 +2,8 @@
 #define __CAMERA_H__
 
 #include "IOperator.h"
-#include "include/glm/glm.hpp"
-#include "include/glad/glad.h"
+#include "glm/glm.hpp"
+#include "glad/glad.h"
 #include "glm/gtc/matrix_transform.hpp"
 
 
