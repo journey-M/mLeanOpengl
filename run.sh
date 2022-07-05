@@ -29,7 +29,7 @@ cmake ../CMakeLists.txt
 make -j6
 
 if [ $DEBUG -eq 1 ];then
-  (alacritty -e tmuxinator cppdebug) &
+  (alacritty -e tmuxp load cppdebug -y) &
   (alacritty -e lldb glrun ) &
 else
   ./glrun &
