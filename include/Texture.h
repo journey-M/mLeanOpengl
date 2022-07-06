@@ -1,12 +1,12 @@
-#ifndef __TEXTURE_H__
-#define __TEXTURE_H__
+#ifndef __TextureScene_H__
+#define __TextureScene_H__
 
 #include "./IOperator.h"
 #include "stb_image.h"
 #include "Shader.h"
 
 
-class Texture :public IOperator{
+class TextureScene :public IOperator{
 	private:
 		void init() override;
 

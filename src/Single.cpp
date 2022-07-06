@@ -22,6 +22,7 @@
 #include "../include/lights/LightCastersSpot.h"
 #include "../include/lights/LightCastersSpotSoft.h"
 #include "../include/lights/MultipleLights.h"
+#include "../include/model/ModelLoading.h"
 
 
 
@@ -32,7 +33,7 @@ Single::Single():currentIndex(0) {
   creaters.push_back([]() -> IOperator * { return new Square();});
   creaters.push_back([]() -> IOperator * { return new LeanShader(); });
   creaters.push_back([]() -> IOperator * { return new TestFileShader(); });
-  creaters.push_back([]() -> IOperator * { return new Texture(); });
+  creaters.push_back([]() -> IOperator * { return new TextureScene(); });
   creaters.push_back([]() -> IOperator * { return new Texture2(); });
   creaters.push_back([]() -> IOperator * { return new Transformation(); });
   creaters.push_back([]() -> IOperator * { return new Coordinate(); });
@@ -52,6 +53,7 @@ Single::Single():currentIndex(0) {
   creaters.push_back([]() -> IOperator * { return new LightCastersSpot(); });
   creaters.push_back([]() -> IOperator * { return new LightCastersSpotSoft(); });
   creaters.push_back([]() -> IOperator * { return new MultipleLights(); });
+  creaters.push_back([]() -> IOperator * { return new ModelLoading(); });
 
 
   //设置为最后一个

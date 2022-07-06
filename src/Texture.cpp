@@ -2,14 +2,14 @@
 
 
 
-void Texture::init(){
+void TextureScene::init(){
   IOperator::init();
     this->initVertex();
     this->initShader();
     this->initTexture();
 }
 
-  void Texture::destroy() {
+  void TextureScene::destroy() {
         glDeleteVertexArrays(1,&VAO);
   glDeleteBuffers(1, &VBO);
   glDeleteBuffers(1, &EBO);
@@ -29,12 +29,12 @@ void Texture::init(){
     glDeleteProgram(shader->ID);
   }
   }
-void Texture::initShader(){
+void TextureScene::initShader(){
   shader = new Shader(std::string(baseDir).append("res/texture.vs").c_str(),std::string(baseDir).append("res/texture.fs").c_str()); 
 
 }
 
-void Texture::initVertex(){
+void TextureScene::initVertex(){
     float vertices[] = {
     //     ---- 位置 ----       ---- 颜色 ----     - 纹理坐标 -
         0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f,   // 右上
@@ -75,7 +75,7 @@ void Texture::initVertex(){
 	glBindVertexArray(0);	
 }
 
-void Texture::initTexture(){
+void TextureScene::initTexture(){
     glGenTextures(1, &texture);
     glBindTexture(GL_TEXTURE_2D, texture);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);   
@@ -97,7 +97,7 @@ void Texture::initTexture(){
     stbi_image_free(data);
 }
 
-void Texture::render(){
+void TextureScene::render(){
 
     // printf("this is in Texture... \n");
     glBindTexture(GL_TEXTURE_2D ,texture);
