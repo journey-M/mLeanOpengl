@@ -29,7 +29,8 @@ cmake ../CMakeLists.txt
 make -j6
 
 if [ $DEBUG -eq 1 ];then
-  (alacritty -e tmuxp load cppdebug -y) &
+  (alacritty --config-file ~/.config/alacritty/alacritty_debug.yml -e tmuxp load cppdebug -y) &
+  sleep 0.2
   (alacritty -e lldb glrun ) &
 else
   ./glrun &
