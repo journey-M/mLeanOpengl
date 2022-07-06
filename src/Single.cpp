@@ -17,6 +17,12 @@
 #include "../include/lights/BasicLightingSpecular.h"
 #include "../include/lights/Materials.h"
 #include "../include/lights/LightingMapsSpecular.h"
+#include "../include/lights/LightCastersDirectional.h"
+#include "../include/lights/LightCastersPoint.h"
+#include "../include/lights/LightCastersSpot.h"
+#include "../include/lights/LightCastersSpotSoft.h"
+#include "../include/lights/MultipleLights.h"
+
 
 
 #include <cstdio>
@@ -41,6 +47,11 @@ Single::Single():currentIndex(0) {
   creaters.push_back([]() -> IOperator * { return new BasicLightingSpecular(); });
   creaters.push_back([]() -> IOperator * { return new Material(); });
   creaters.push_back([]() -> IOperator * { return new LightingMapsSpecular(); });
+  creaters.push_back([]() -> IOperator * { return new LightCastersDirectional(); });
+  creaters.push_back([]() -> IOperator * { return new LightCastersPoint(); });
+  creaters.push_back([]() -> IOperator * { return new LightCastersSpot(); });
+  creaters.push_back([]() -> IOperator * { return new LightCastersSpotSoft(); });
+  creaters.push_back([]() -> IOperator * { return new MultipleLights(); });
 
 
   //设置为最后一个

@@ -1,9 +1,9 @@
-#include "../../include/lights/LightingMapsSpecular.h"
+#include "../../include/lights/LightCastersDirectional.h"
 #include "../../include/IOperator.h"
 #include <string>
 
-void LightingMapsSpecular::init() {
-  printf("init LightingMapsSpecular.. \n");
+void LightCastersDirectional::init() {
+  printf("init LightCastersDirectional.. \n");
   IOperator::init();
 
   initVertex();
@@ -12,7 +12,7 @@ void LightingMapsSpecular::init() {
   glEnable(GL_DEPTH_TEST);
 }
 
-void LightingMapsSpecular::destroy() {
+void LightCastersDirectional::destroy() {
   glDeleteVertexArrays(1, &cubeVAO);
   glDeleteBuffers(1, &VBO);
   if (lightingShader != NULL) {
@@ -27,26 +27,12 @@ void LightingMapsSpecular::destroy() {
     }
   }
 
-  if (lightCubeShader != NULL) {
-    if (lightCubeShader->vertixShader > 0) {
-      glDeleteShader(lightCubeShader->vertixShader);
-    }
-    if (lightCubeShader->fragmentShader > 0) {
-      glDeleteShader(lightCubeShader->fragmentShader);
-    }
-    if (lightCubeShader->ID > 0) {
-      glDeleteProgram(lightCubeShader->ID);
-    }
-  }
 }
 
-void LightingMapsSpecular::initShader() {
+void LightCastersDirectional::initShader() {
   lightingShader = new Shader(
-      std::string(baseDir).append("res/lights/4.2.lighting_map.vs").c_str(),
-      std::string(baseDir).append("res/lights/4.2.lighting_map.fs").c_str());
-  lightCubeShader = new Shader(
-      std::string(baseDir).append("res/lights/4.2.light_cube.vs").c_str(),
-      std::string(baseDir).append("res/lights/4.2.light_cube.fs").c_str());
+      std::string(baseDir).append("res/lights/5.1.lighting_casters.vs").c_str(),
+      std::string(baseDir).append("res/lights/5.1.lighting_casters.fs").c_str());
 
   // shader configuration
   // --------------------
@@ -55,7 +41,7 @@ void LightingMapsSpecular::initShader() {
   lightingShader->setInt("material.specular", 1);
 }
 
-void LightingMapsSpecular::initVertex() {
+void LightCastersDirectional::initVertex() {
   float vertices[] = {
       // positions          // normals           // texture coords
       -0.5f, -0.5f, -0.5f, 0.0f,  0.0f,  -1.0f, 0.0f,  0.0f,  0.5f,  -0.5f,
@@ -94,6 +80,7 @@ void LightingMapsSpecular::initVertex() {
       1.0f,  0.0f,  -0.5f, 0.5f,  0.5f,  0.0f,  1.0f,  0.0f,  0.0f,  0.0f,
       -0.5f, 0.5f,  -0.5f, 0.0f,  1.0f,  0.0f,  0.0f,  1.0f};
 
+
   // first, configure the cube's VAO (and VBO)
   glGenVertexArrays(1, &cubeVAO);
   glGenBuffers(1, &VBO);
@@ -123,7 +110,7 @@ void LightingMapsSpecular::initVertex() {
   glEnableVertexAttribArray(0);
 }
 
-void LightingMapsSpecular::initTexture() {
+void LightCastersDirectional::initTexture() {
   // load textures (we now use a utility function to keep the code more
   // organized)
   // -----------------------------------------------------------------------------
@@ -135,7 +122,7 @@ void LightingMapsSpecular::initTexture() {
                       .c_str());
 }
 
-void LightingMapsSpecular::render() {
+void LightCastersDirectional::render() {
 
   float currentFrame = static_cast<float>(glfwGetTime());
   deltaTime = currentFrame - lastFrame;
@@ -147,7 +134,7 @@ void LightingMapsSpecular::render() {
 
   // be sure to activate shader when setting uniforms/drawing objects
   lightingShader->use();
-  lightingShader->setVec3("light.position", lightPos);
+  lightingShader->setVec3("light.direction", -0.2f, -1.0f, -0.3f);
   lightingShader->setVec3("viewPos", camera.Position);
 
   // light properties
@@ -156,7 +143,7 @@ void LightingMapsSpecular::render() {
   lightingShader->setVec3("light.specular", 1.0f, 1.0f, 1.0f);
 
   // material properties
-  lightingShader->setFloat("material.shininess", 64.0f);
+  lightingShader->setFloat("material.shininess", 32.0f);
 
   // view/projection transformations
   glm::mat4 projection = glm::perspective(
@@ -178,22 +165,22 @@ void LightingMapsSpecular::render() {
 
   // render the cube
   glBindVertexArray(cubeVAO);
-  glDrawArrays(GL_TRIANGLES, 0, 36);
+  for (unsigned int i = 0; i < 10; i++)
+    {
+        // calculate the model matrix for each object and pass it to shader before drawing
+        glm::mat4 model = glm::mat4(1.0f);
+        model = glm::translate(model, cubePositions[i]);
+        float angle = 20.0f * i;
+        model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
+        lightingShader->setMat4("model", model);
 
-  // also draw the lamp object
-  lightCubeShader->use();
-  lightCubeShader->setMat4("projection", projection);
-  lightCubeShader->setMat4("view", view);
-  model = glm::mat4(1.0f);
-  model = glm::translate(model, lightPos);
-  model = glm::scale(model, glm::vec3(0.2f)); // a smaller cube
-  lightCubeShader->setMat4("model", model);
+        glDrawArrays(GL_TRIANGLES, 0, 36);
+    }
 
-  glBindVertexArray(lightCubeVAO);
   glDrawArrays(GL_TRIANGLES, 0, 36);
 }
 
-unsigned int LightingMapsSpecular::loadTexture(char const *path) {
+unsigned int LightCastersDirectional::loadTexture(char const *path) {
   unsigned int textureID;
   glGenTextures(1, &textureID);
 
@@ -228,7 +215,7 @@ unsigned int LightingMapsSpecular::loadTexture(char const *path) {
   return textureID;
 }
 
-void LightingMapsSpecular::proceessKeyEvent(int key) {
+void LightCastersDirectional::proceessKeyEvent(int key) {
 
   switch (key) {
   case GLFW_KEY_W:
@@ -252,7 +239,7 @@ void LightingMapsSpecular::proceessKeyEvent(int key) {
 
 // glfw: whenever the mouse moves, this callback is called
 // -------------------------------------------------------
-void LightingMapsSpecular::mouse_callback(double xposIn, double yposIn) {
+void LightCastersDirectional::mouse_callback(double xposIn, double yposIn) {
   float xpos = static_cast<float>(xposIn);
   float ypos = static_cast<float>(yposIn);
 
@@ -274,6 +261,6 @@ void LightingMapsSpecular::mouse_callback(double xposIn, double yposIn) {
 
 // glfw: whenever the mouse scroll wheel scrolls, this callback is called
 // ----------------------------------------------------------------------
-void LightingMapsSpecular::scroll_callback(double xoffset, double yoffset) {
+void LightCastersDirectional::scroll_callback(double xoffset, double yoffset) {
   camera.ProcessMouseScroll(static_cast<float>(yoffset));
 }
