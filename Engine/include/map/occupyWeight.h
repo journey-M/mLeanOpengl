@@ -14,6 +14,7 @@
 
 //-------------------- Engine --------------------//
 #include "tools/IntVec.h"
+#include <vector>
 
 
 using occupyWeight_t = int;

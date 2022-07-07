@@ -12,6 +12,8 @@
 
 
 #include <utility>
+#include <vector>
+#include <unordered_map>
 
 //-------------------- Engine --------------------//
 #include "tools/FloatVec.h"

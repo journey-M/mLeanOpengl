@@ -12,6 +12,7 @@
 #include "../coordinate/Coordinate.h"
 #include "tprDebug/tprDebug.h"
 #include <memory>
+#include <vector>
 
 namespace esrc {//------------------ namespace: esrc -------------------------//
 

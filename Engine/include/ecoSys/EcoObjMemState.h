@@ -8,6 +8,7 @@
 #ifndef TPR_ECO_OBJ_MEM_STATE_H
 #define TPR_ECO_OBJ_MEM_STATE_H
 
+#include <vector>
 // ecoobj 在游戏运行期间的 所有状态
 //
 enum class EcoObjMemState : int{

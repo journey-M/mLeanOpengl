@@ -84,6 +84,7 @@ inline bool IntVec2::is_closeEnough( IntVec2 v1_, IntVec2 v2_, size_t off_ ) noe
 
 // std::hash 特化
 // IntVec2 可以成为 std::unordered_map / std::unordered_set 的 key
+/*
 namespace std{
 template<> 
 struct hash<IntVec2>{
@@ -100,6 +101,7 @@ struct hash<IntVec2>{
 };
 }// namespace std
 
+*/
 
 
 /* ===========================================================
