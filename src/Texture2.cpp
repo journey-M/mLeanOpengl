@@ -13,25 +13,25 @@ void Texture2::init() {
 }
 
   void Texture2::destroy() {
-        glDeleteVertexArrays(1,&VAO);
-  glDeleteBuffers(1, &VBO);
-  glDeleteBuffers(1, &EBO);
+    glDeleteVertexArrays(1,&VAO);
+    glDeleteBuffers(1, &VBO);
+    glDeleteBuffers(1, &EBO);
 
-  glDeleteTextures(1, &texture1); 
-  glDeleteTextures(1, &texture2); 
-  if(shader== NULL){
-	  return ;
-  }
-  if(shader->vertixShader > 0){
+    glDeleteTextures(1, &texture1); 
+    glDeleteTextures(1, &texture2); 
+    if(shader== NULL){
+    return ;
+    }
+    if(shader->vertixShader > 0){
     glDeleteShader(shader->vertixShader);
-  }
-  if(shader->fragmentShader >0){
+    }
+    if(shader->fragmentShader >0){
     glDeleteShader(shader->fragmentShader);
 
-  }
-  if(shader->ID >0){
+    }
+    if(shader->ID >0){
     glDeleteProgram(shader->ID);
-  }
+    }
   }
 void Texture2::initShader() {
   shader = new Shader(std::string(baseDir).append("res/texture2.vs").c_str(),std::string(baseDir).append("res/texture2.fs").c_str()); 

@@ -23,6 +23,8 @@
 #include "../include/lights/LightCastersSpotSoft.h"
 #include "../include/lights/MultipleLights.h"
 #include "../include/model/ModelLoading.h"
+#include "../include/advancegl/DepthTest.h"
+#include "../include/advancegl/StencilTest.h"
 
 
 
@@ -54,6 +56,9 @@ Single::Single():currentIndex(0) {
   creaters.push_back([]() -> IOperator * { return new LightCastersSpotSoft(); });
   creaters.push_back([]() -> IOperator * { return new MultipleLights(); });
   creaters.push_back([]() -> IOperator * { return new ModelLoading(); });
+  creaters.push_back([]() -> IOperator * { return new DepthTest(); });
+  creaters.push_back([]() -> IOperator * { return new StencilTest(); });
+
 
 
   //设置为最后一个
