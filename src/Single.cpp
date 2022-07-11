@@ -26,6 +26,8 @@
 #include "../include/advancegl/DepthTest.h"
 #include "../include/advancegl/StencilTest.h"
 #include "../include/advancegl/BlendingDiscard.h"
+#include "../include/advancegl/BlendingSorted.h"
+
 
 
 
@@ -61,6 +63,7 @@ Single::Single():currentIndex(0) {
   creaters.push_back([]() -> IOperator * { return new DepthTest(); });
   creaters.push_back([]() -> IOperator * { return new StencilTest(); });
   creaters.push_back([]() -> IOperator * { return new BlendingDiscard(); });
+  creaters.push_back([]() -> IOperator * { return new BlendingSorted(); });
 
 
 
