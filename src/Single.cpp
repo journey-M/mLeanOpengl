@@ -25,6 +25,8 @@
 #include "../include/model/ModelLoading.h"
 #include "../include/advancegl/DepthTest.h"
 #include "../include/advancegl/StencilTest.h"
+#include "../include/advancegl/BlendingDiscard.h"
+
 
 
 
@@ -58,6 +60,8 @@ Single::Single():currentIndex(0) {
   creaters.push_back([]() -> IOperator * { return new ModelLoading(); });
   creaters.push_back([]() -> IOperator * { return new DepthTest(); });
   creaters.push_back([]() -> IOperator * { return new StencilTest(); });
+  creaters.push_back([]() -> IOperator * { return new BlendingDiscard(); });
+
 
 
 
