@@ -27,6 +27,8 @@
 #include "../include/advancegl/StencilTest.h"
 #include "../include/advancegl/BlendingDiscard.h"
 #include "../include/advancegl/BlendingSorted.h"
+#include "../include/advancegl/FrameBufferTest.h"
+
 
 
 
@@ -64,6 +66,8 @@ Single::Single():currentIndex(0) {
   creaters.push_back([]() -> IOperator * { return new StencilTest(); });
   creaters.push_back([]() -> IOperator * { return new BlendingDiscard(); });
   creaters.push_back([]() -> IOperator * { return new BlendingSorted(); });
+  creaters.push_back([]() -> IOperator * { return new FrameBufferTest(); });
+
 
 
 
