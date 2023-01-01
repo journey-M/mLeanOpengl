@@ -26,3 +26,8 @@ install/
 src/build
 CMakeFiles/
 runner/
+*.a
+*.cmake
+*Makefile
+*CMakeCache.txt
+*compile_commands.json
