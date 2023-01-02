@@ -12,6 +12,7 @@
 #include "../include/Camera.h"
 #include "../include/Camera_move.h"
 #include "../include/Camera_mouse.h"
+#include "../include/Player.h"
 
 
 Single::Single(){
@@ -25,7 +26,7 @@ IOperator* Single::getOperator(){
 			// currentOperator = new Square();
 			// currentOperator = new LeanShader();
 			// currentOperator = new TestFileShader();
-			// currentOperator = new Texture();
+			//currentOperator = new Texture();
 			// currentOperator = new Texture2();
 			// currentOperator = new Transformation();
 			// currentOperator = new Coordinate();
@@ -33,7 +34,9 @@ IOperator* Single::getOperator(){
 			// currentOperator = new CoordinateCubeMore();
 			// currentOperator = new Camera();
 			// currentOperator= new CameraMove();
-			currentOperator= new CameraMouse();
+			//currentOperator= new CameraMouse();
+			currentOperator= new Player();
+
 		}
 		return currentOperator; 
 }
