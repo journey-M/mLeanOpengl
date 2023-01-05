@@ -12,3 +12,5 @@ Makefile
 cmake_install.cmake
 audio.pcm
 video.yuv
+libsublib.a
+vidoe.yuv

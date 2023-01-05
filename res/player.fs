@@ -17,7 +17,7 @@ void main(){
 
   yuv.x = texture2D(texturey , TexCoord).r;
   yuv.y = texture2D(textureu , TexCoord).r -0.5;
-  yuv.z = texture2D(texturev , TexCoord).r - 0.5;
+  yuv.z = texture2D(texturev , TexCoord).r- 0.5;
   rgb = mat3(1.0,     1.0,        1.0,
              0.0,     -0.39465, 2.03210,
              1.13983,-0.58060, 0.0) *yuv;

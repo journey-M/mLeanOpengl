@@ -95,7 +95,7 @@ int Decoder::output_video_frame(AVFrame *frame)
     if(decodyuv.size() > 2){
       std::this_thread::sleep_for(std::chrono::milliseconds(60));
     }
-    uint8_t * dataYuv = (uint8_t*) malloc( width * height * 3);
+    uint8_t * dataYuv = (uint8_t*) malloc( video_dst_bufsize);
     memcpy(dataYuv, video_dst_data[0], video_dst_bufsize);
 
     decodyuv.push(dataYuv) ;
