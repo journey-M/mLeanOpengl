@@ -83,9 +83,9 @@ int Decoder::output_video_frame(AVFrame *frame)
       fwrite(video_dst_data[0], 1, video_dst_bufsize, video_dst_file);
 
     // 转换吗后的rgb
-    if(decodrgb.size() > 2){
-      std::this_thread::sleep_for(std::chrono::milliseconds(60));
-    }
+    // if(decodrgb.size() > 2){
+    //   std::this_thread::sleep_for(std::chrono::milliseconds(60));
+    // }
     //解码rgb数据
     // uint8_t * dataRgb = (uint8_t*) malloc( width * height * 3);
     // YUV420p_to_RGB24(video_dst_data, dataRgb, width, height);

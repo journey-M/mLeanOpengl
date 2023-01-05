@@ -5,7 +5,7 @@
 
 void Player::init(){
     decoder =new  Decoder();
-    decoder ->init("/home/gwj/bb.mp4", "audio.pcm", "vidoe.yuv");
+    decoder ->init("/home/guoweiji/test.mp4", "audio.pcm", "vidoe.yuv");
     std::thread th (&Decoder::startDecode, decoder);
     th.detach();
 
@@ -18,6 +18,9 @@ void Player::init(){
 
 void Player::initShader(){
     shader = new Shader("res/player.vs", "res/player.fs");
+    int errNo = glGetError();
+    printf( "inishader : %d \n", errNo);
+
 }
 
 void Player::initVertex(){
@@ -63,27 +66,44 @@ void Player::initVertex(){
 
 void Player::initTexture(){
 
+    int err =  glad_glGetError();
+    printf("before init texture  :  %d  \n", err);
+
     glGenTextures(1, &textureY);
+    // glActiveTexture(0);
     glBindTexture(GL_TEXTURE_2D, textureY);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_LINEAR);   
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);   
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    err =  glad_glGetError();
+    printf("before init texture  1:  %d  \n", err);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RED, decoder->width, decoder->height, 0, GL_RED, GL_UNSIGNED_BYTE, NULL);
+    err =  glad_glGetError();
+    printf("before init texture  1:  %d  width : %d   height :  %d \n", err, decoder->width, decoder->height);
 
+    GL_NO_ERROR;
     glGenTextures(1, &textureU);
     glBindTexture(GL_TEXTURE_2D, textureU);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_LINEAR);   
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);   
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RED, decoder->width/2, decoder->height/2, 0, GL_RED, GL_UNSIGNED_BYTE, NULL);
     
+    err =  glad_glGetError();
+    printf("before init texture  2:  %d  width : %d   height :  %d \n", err, decoder->width, decoder->height);
 
     glGenTextures(1, &textureV);
     glBindTexture(GL_TEXTURE_2D, textureV);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_LINEAR);   
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);   
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RED, decoder->width/2, decoder->height/2, 0, GL_RED, GL_UNSIGNED_BYTE, NULL);
+    
+    err =  glad_glGetError();
+    printf("before init texture  3:  %d  width : %d   height :  %d \n", err, decoder->width, decoder->height);
     // int width, height, nrchannels;
     // unsigned char *data = stbi_load("res/container.jpg", &width, &height, &nrchannels, 0);
     // if (data)
@@ -103,12 +123,18 @@ void Player::initTexture(){
     glBindTexture(GL_TEXTURE_2D ,textureU);
     glActiveTexture(GL_TEXTURE2);
     glBindTexture(GL_TEXTURE_2D ,textureV);
+    err =  glad_glGetError();
+    printf(" init texture  :  %d  \n", err);
 }
 
 void Player::render(){
-    printf("this is in render start ... \n");
+    // printf("this is in render start ... \n");
+    //
 
-    if(decoder->decodyuv.size()>0 ){
+    shader->use();
+
+    bool render = true;
+    if(decoder->decodyuv.size()>0 && render ){
       uint8_t * tmp = decoder->decodyuv.top();
       decoder->decodyuv.pop();
 
@@ -116,25 +142,36 @@ void Player::render(){
       uint8_t *u = tmp + decoder->width * decoder->height ;
       uint8_t *v = u + decoder->width * decoder->height/ 4; 
       
+      glActiveTexture(GL_TEXTURE0);
       glBindTexture(GL_TEXTURE_2D ,textureY);
-      glTexImage2D(GL_TEXTURE_2D, 0, GL_ALPHA, decoder->width, decoder->height,0, GL_ALPHA, GL_UNSIGNED_BYTE, y);
+      glTexSubImage2D(GL_TEXTURE_2D, 0,  0,0, decoder->width, decoder->height, GL_RED, GL_UNSIGNED_BYTE, y);
       glGenerateMipmap(GL_TEXTURE_2D);
-      
-      glBindTexture(GL_TEXTURE_2D ,textureU);
-      glTexImage2D(GL_TEXTURE_2D, 0, GL_ALPHA, decoder->width, decoder->height,0, GL_ALPHA, GL_UNSIGNED_BYTE, u);
-      glGenerateMipmap(GL_TEXTURE_2D);
-      
-      glBindTexture(GL_TEXTURE_2D ,textureV);
-      glTexImage2D(GL_TEXTURE_2D, 0, GL_ALPHA, decoder->width, decoder->height,0, GL_ALPHA, GL_UNSIGNED_BYTE, v);
-      glGenerateMipmap(GL_TEXTURE_2D);
+      shader->setInt("texturey", 0);
 
-      shader->setInt("textureY", 0);
-      shader->setInt("textureU", 1);
+      
+      glActiveTexture(GL_TEXTURE1);
+      glBindTexture(GL_TEXTURE_2D ,textureU);
+      glTexSubImage2D(GL_TEXTURE_2D, 0,0,0 , decoder->width/2, decoder->height/2,GL_RED, GL_UNSIGNED_BYTE, u);
+      glGenerateMipmap(GL_TEXTURE_2D);
+      shader->setInt("textureu", 1);
+
+      glActiveTexture(GL_TEXTURE2);
+      glBindTexture(GL_TEXTURE_2D ,textureV);
+      glTexSubImage2D(GL_TEXTURE_2D,0,0, 0, decoder->width/2, decoder->height/2, GL_RED, GL_UNSIGNED_BYTE, v);
+      glGenerateMipmap(GL_TEXTURE_2D);
       shader->setInt("textureV", 2);
 
       int err =  glad_glGetError();
-      printf("err is settexture  :  %d  \n", err);
+      if(err != 0){
+        printf("err after settexture  :  %d  \n", err);
+        exit(-1) ;
+      }
       free(tmp);
+
+      glBindVertexArray(VAO); 
+      // seeing as we only have a single VAO there's no need to bind it every time, but we'll do so to keep things a bit more organized
+      // glDrawArrays(GL_TRIANGLES, 0, 6);
+      glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
     }
 
     // 解码 rgb数据
@@ -154,14 +191,5 @@ void Player::render(){
     //   free(tmp);
     // }
 
-    shader->use();
-
-    int err =  glad_glGetError();
-    printf("err after settexture  :  %d  \n", err);
-
-    glBindVertexArray(VAO); 
-    // seeing as we only have a single VAO there's no need to bind it every time, but we'll do so to keep things a bit more organized
-    // glDrawArrays(GL_TRIANGLES, 0, 6);
-    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-    printf("redner  time   end  \n ");
+//    printf("err end in render  \n");
 }

@@ -58,6 +58,9 @@ int main(int argc, char** argv){
 			printf("Failed to initialize GLAD ! \n");
 			return -1;
 	}
+
+  const GLubyte * version = glGetString(GL_VERSION);
+  printf("GL VERSION : %s  \n", version);
 	glViewport(0,0,800,600);
 	// glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 

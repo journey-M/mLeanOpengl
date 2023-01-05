@@ -8,6 +8,7 @@ add_definitions("-Wall -g")
 
 message("${DIR_LIB_SRCS}")
 
+include_directories(main PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 aux_source_directory(src DIR_LIB_SRCS)
 add_library (sublib ${DIR_LIB_SRCS})
