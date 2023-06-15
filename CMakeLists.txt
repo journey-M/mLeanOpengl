@@ -8,7 +8,7 @@ set(UNIX 1)
 
 
 
-set (EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/../runner)
+set (EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/runner)
 
 
 # 确认一些 变量值：

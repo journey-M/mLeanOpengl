@@ -21,19 +21,17 @@ fi
 
 # create build dir
 if [ ! -d build ];
-then mkdir build;
+  then cmake -G Ninja -B build
 fi
 
-cd build 
-cmake ../CMakeLists.txt
-make -j6
+ninja -C build/ -j4
 
 if [ $DEBUG -eq 1 ];then
   (alacritty --config-file ~/.config/alacritty/alacritty_debug.yml -e tmuxinator tm_cppdebug ) &
   sleep 0.2
   (alacritty -e lldb ../runner/tprpix ) &
 else
-  ../runner/tprpix &
+  build/runner/tprpix &
 fi
 
 wait
