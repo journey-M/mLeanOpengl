@@ -29,9 +29,9 @@ ninja -C build/ -j4
 if [ $DEBUG -eq 1 ];then
   (alacritty --config-file ~/.config/alacritty/alacritty_debug.yml -e tmuxinator tm_cppdebug ) &
   sleep 0.2
-  (alacritty -e lldb ../runner/tprpix ) &
+  (alacritty -e lldb runner/tprpix ) &
 else
-  build/runner/tprpix &
+  runner/tprpix &
 fi
 
 wait
