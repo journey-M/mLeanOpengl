@@ -5,7 +5,7 @@
 
 void Player::init(){
     decoder =new  Decoder();
-    decoder ->init("/home/guoweiji/test.mp4", "audio.pcm", "vidoe.yuv");
+    decoder ->init("/home/gwj/test.mp4", "audio.pcm", "vidoe.yuv");
     std::thread th (&Decoder::startDecode, decoder);
     th.detach();
 
