@@ -11,7 +11,7 @@
 
 class CameraMouse:public IOperator{
 	private:
-		void init();
+		void init() override;
 
 		Shader* shader;
         unsigned int VAO;
@@ -37,7 +37,7 @@ class CameraMouse:public IOperator{
 	public:
 
 		CameraMouse();
-	 	void render();
+	 	void render() override;
 		void initShader();
 		void initVertex();
         void initTexture();
